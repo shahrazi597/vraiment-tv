@@ -8,3 +8,6 @@ assets/raw/
 music*.mp3
 */assets/music.mp3
 *.wav
+.*.hf-transaction-*/
+work-*/
+renders/
