@@ -141,10 +141,30 @@ def ig_prepare(qpath):
     return cid
 
 
+def ig_already(q):
+    """Anti-doublon : un Reel publié dans les 3 dernières heures avec le même début de légende ?"""
+    st, r = g("GET", f"/{IG_USER}/media", {"fields": "id,caption,timestamp,permalink", "limit": "10"})
+    if st >= 300 or not isinstance(r, dict):
+        return None
+    head = q["instagram"][:60]
+    import datetime as dt
+    now = dt.datetime.now(dt.timezone.utc)
+    for m in r.get("data", []):
+        t = dt.datetime.strptime(m["timestamp"], "%Y-%m-%dT%H:%M:%S%z")
+        if (m.get("caption") or "")[:60] == head and (now - t).total_seconds() < 3 * 3600:
+            return m
+    return None
+
+
 def ig_publish(qpath):
     q = load(qpath)
     if q.get("ig_media"):
         print("déjà publié", q["ig_media"]); return True
+    m = ig_already(q)
+    if m:
+        q["ig_media"], q["ig_permalink"] = m["id"], m.get("permalink")
+        save(qpath, q)
+        print("déjà publié sur Instagram :", m.get("permalink")); return True
     cid = q.get("ig_container")
     if not cid or time.time() - q.get("ig_container_at", 0) > 23 * 3600:
         cid = ig_prepare(qpath); q = load(qpath)
@@ -184,3 +204,13 @@ if __name__ == "__main__":
         sys.exit(0 if ig_publish(arg) else 1)
     elif cmd == "status":
         status(arg)
+    elif cmd == "slot":  # ex. slot 1900 → publie le Reel du créneau du jour et affiche l'état
+        import glob, datetime as dt, zoneinfo
+        day = dt.datetime.now(zoneinfo.ZoneInfo(TZ)).strftime("%Y-%m-%d")
+        here = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        files = sorted(glob.glob(os.path.join(here, "queue", f"{day}-{arg}-*.json")))
+        if not files:
+            print(f"AUCUNE vidéo prévue pour {day} {arg} : la production d'hier a échoué pour ce créneau."); sys.exit(2)
+        ok = ig_publish(files[0])
+        status(files[0])
+        sys.exit(0 if ok else 1)

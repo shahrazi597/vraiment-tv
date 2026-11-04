@@ -39,7 +39,7 @@ Lire `kit/DA.md` (identité, à respecter à la lettre), `kit/kit.py`, et un ép
 
 ## 3. Textes de publication (dans `queue/AAAA-MM-JJ-HHMM-<slug>.json`)
 Champs : `video` (nom du mp4), `when` (`AAAA-MM-JJTHH:MM:00`, heure de Bruxelles), `series`, `ep`, `tiktok`, `instagram`, `yt_title`, `yt_desc`. Modèles : les fichiers `queue/2026-11-04-*`.
-- **TikTok** : 1-2 phrases choc + question pour les commentaires + « 🎙️ Voix et visuels générés par IA » + 5 à 7 hashtags (2-3 larges comme #lesaviezvous #pourtoi #apprendresurtiktok, 3-4 précis au sujet).
+- **TikTok** : 1-2 phrases choc + question pour les commentaires + « 🤖 Voix et visuels générés par IA » + 5 à 7 hashtags (2-3 larges comme #lesaviezvous #pourtoi #apprendresurtiktok, 3-4 précis au sujet).
 - **Instagram** : 3-4 lignes qui donnent envie + appel au commentaire et à l'abonnement + mention IA + 8 à 10 hashtags (mélange larges/précis, dont #reelsfrance #culturegenerale).
 - **YouTube** : titre ≤ 70 caractères avec emoji + « #shorts » ; description : résumé, « <Série> Épisode N », mention IA, sources, 3-5 hashtags.
 - Vérifier quelles hashtags sont tendance cette semaine en français (WebSearch) et en intégrer 1-2 pertinentes.
