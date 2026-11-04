@@ -21,17 +21,21 @@ openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass file:.secrets/passphrase 
 pip install --break-system-packages -q faster-whisper numpy
 which ffmpeg || (apt-get install -y ffmpeg || pip install --break-system-packages imageio-ffmpeg)
 ```
-Lire `kit/DA.md` (identité, à respecter à la lettre), `kit/kit.py`, et un épisode modèle complet : `frigo/` (episode.py, script.txt, src/scene.tpl). Charger les skills `hyperframes` et `hyperframes-cli` avant d'animer.
+Lire `kit/DA.md` (identité, à respecter à la lettre), `kit/kit.py`, et deux épisodes modèles complets : `frigo/` et `midterms/` (episode.py, script.txt, src/scene.tpl). Charger les skills `hyperframes` et `hyperframes-cli` avant d'animer.
 
-## 1. Choisir 3 sujets
-- Prendre les prochains sujets ⏳ de `kit/sujets.md` (ou en ajouter de nouveaux, tendance, qui intriguent tout le monde).
+## 1. Choisir les sujets
+**Le critère n°1 : est-ce que quelqu'un qui scrolle s'arrête ?** On veut des sujets « je ne savais pas ça et ça me retourne le cerveau » :
+- un objet ou un geste du quotidien que tout le monde utilise sans savoir ce qui se passe vraiment (Face ID, Shazam, Google Maps, un mot de passe, l'algorithme TikTok…) ;
+- un chiffre qui choque (« Combien ça coûte vraiment ? » : ce que touche vraiment le fabricant, l'artiste, le chauffeur, l'État) ;
+- une idée reçue que la vidéo démonte, avec une chute qu'on a envie d'envoyer à un ami.
+Éviter les sujets trop scolaires ou vus partout. Préférer les sujets de la partie « À faire en priorité » de `kit/sujets.md`, puis le reste ; en ajouter de nouveaux si un meilleur sujet se présente (tendance de la semaine, saison, actu non polémique). Pas de sujet politique ou religieux sans demande explicite de Razi.
 - Vérifier chaque fait avec WebSearch/WebFetch sur au moins 2 sources fiables (organisme officiel, université, régulateur). Pour « Combien ça coûte », utiliser les **chiffres les plus récents** et écrire la date des prix.
 - Si une accroche ne tient pas, la reformuler ou changer de sujet.
 
 ## 2. Pour chaque vidéo (dossier `<slug>/`, sur le modèle de `frigo/`)
-1. **Script** (`script.txt`), 30 à 35 s : accroche qui contredit une idée reçue → un mécanisme en 3-4 étapes → chute qui surprend → « Abonne-toi… vraiment ? ». Tags de voix [excited] [curious] [mischievously].
-2. **Voix** : ElevenLabs `creative_generate_speech`, voix Kevin `zVrWtLr70jn6SeaARX0i`, modèle eleven_v4. Garder la meilleure prise. Puis `kit.prep_voice` et `kit.transcribe` → `assets/words.json`.
-3. **Image IA** seulement si elle apporte vraiment (≈ 1 vidéo sur 3) : bytedance-seedream-5-pro, 9:16.
+1. **Script** (`script.txt`), **35 à 50 s** (130 à 190 mots ; 45 s ou un peu plus est bien si le sujet le mérite, jamais de remplissage) : accroche en moins de 2 s qui contredit une idée reçue → le mécanisme en 3 à 5 étapes, chacune avec une image concrète → un « bonus » qui surprend encore (un chiffre, une conséquence inattendue) → chute → « Abonne-toi… vraiment ». Relancer l'attention toutes les 5 à 7 s (question, chiffre, rupture). Tags de voix [excited] [curious] [mischievously].
+2. **Voix** : ElevenLabs `creative_generate_speech`, voix Kevin `zVrWtLr70jn6SeaARX0i`, modèle eleven_v4, **`generations_count: 1`** (budget). Transcrire et comparer au script : si un mot est mal prononcé ou changé (ex. « réalisent » au lieu de « réélisent »), reformuler la phrase et refaire une seule prise. Écrire les nombres en chiffres. Puis `kit.prep_voice` et `kit.transcribe` → `assets/words.json`.
+3. **Image IA** seulement si elle apporte vraiment (≈ 1 vidéo sur 3), **1 seule variation** : bytedance-seedream-5-pro. Le modèle sort souvent du 16:9 : composer en conséquence (image en bas de l'accroche, fondu vers le fond, comme `midterms/`).
 4. **Animation** HyperFrames (`src/scene.tpl` + `episode.py build`) : schéma animé du mécanisme, sous-titres karaoké, pastille de série, tampon rouge, carte de fin avec sources. Bruitages depuis `kit/assets/sfx` (12 max).
 5. `npx hyperframes check`, puis regarder des images clés (`snapshot`) : aucun texte coupé, rien sous 1330 px, image 0 = accroche lisible.
 6. **Rendu** puis `python3 episode.py mix <rendu.mp4>` → `<slug>_FR.mp4` à la racine. **Pas de musique.** `kit.verify` doit confirmer une seule voix et ≈ −14,5 LUFS.
@@ -49,7 +53,7 @@ Champs : `video` (nom du mp4), `when` (`AAAA-MM-JJTHH:MM:00`, heure de Bruxelles
 ## 4. Programmer
 ```bash
 python3 kit/publish.py zernio queue/<fichier>.json        # TikTok + YouTube à l'heure "when"
-python3 kit/publish.py ig-prepare queue/<fichier>.json    # conteneur Instagram prêt (publié par la tâche du créneau)
+python3 kit/publish.py ig-prepare queue/<fichier>.json    # conteneur Instagram prêt (publié à l'heure par GitHub Actions / la session de contrôle)
 ```
 Programmer chaque vidéo **dès qu'elle est prête** (ne pas attendre les 3).
 

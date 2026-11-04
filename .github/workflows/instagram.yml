@@ -27,10 +27,12 @@ jobs:
         env:
           PASSPHRASE: ${{ secrets.VRAIMENT_PASSPHRASE }}
         run: |
+          if [ -z "$PASSPHRASE" ]; then echo "Secret VRAIMENT_PASSPHRASE absent : rien à faire (publication assurée par la session de contrôle)."; echo "SKIP=1" >> "$GITHUB_ENV"; exit 0; fi
           mkdir -p .secrets && chmod 700 .secrets
           printf '%s' "$PASSPHRASE" > .secrets/passphrase
           openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass file:.secrets/passphrase -in secrets.enc | tar -C .secrets -xf -
       - name: Publier
+        if: env.SKIP != '1'
         env:
           VRAIMENT_SECRETS: ${{ github.workspace }}/.secrets
         run: python3 kit/publish.py slot "${{ github.event.inputs.slot || 'auto' }}"

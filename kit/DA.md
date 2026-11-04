@@ -3,7 +3,7 @@
 Une seule identité pour toutes les séries : **Combien ça coûte vraiment ?**, **Comment ça marche vraiment ?**, et les suivantes. Le mot « vraiment » est la signature du compte.
 
 ## Format
-- Vertical 1080 × 1920, 30 i/s, 25 à 40 s.
+- Vertical 1080 × 1920, 30 i/s, 35 à 50 s (un peu plus si le sujet le mérite, jamais de remplissage).
 - Texte et éléments importants uniquement entre 168 et 1330 px de hauteur, pour ne pas passer sous l'interface de TikTok, Reels et Shorts. Rien d'important sous la barre d'actions à droite.
 - Image 0 = miniature : la phrase d'accroche est déjà à l'écran, jamais un fond vide.
 
@@ -55,7 +55,7 @@ Une seule identité pour toutes les séries : **Combien ça coûte vraiment ?**,
 - Horaires (heure de Bruxelles) : **9 h 00** et **19 h 00** → « Comment ça marche vraiment ? » ; **12 h 00** → « Combien ça coûte vraiment ? ».
 - Les 3 vidéos sont produites la veille au soir (voir `PRODUCTION.md`), puis programmées : TikTok et YouTube via Zernio, Instagram via l'API officielle (une tâche publie le Reel à l'heure).
 - Chaque publication a sa description et ses hashtags propres à la plateforme, sans mention « généré par IA » dans le texte (le label IA officiel de TikTok et YouTube reste activé).
-- Budget ElevenLabs (121 000 crédits/mois) : scripts de 30 à 35 s, image IA seulement quand elle apporte vraiment (environ 1 vidéo sur 3), bruitages réutilisés depuis la bibliothèque.
+- Budget ElevenLabs (121 000 crédits/mois) : une seule prise de voix par vidéo (≈ 1 000 crédits pour 45 s), une seule image IA quand elle apporte vraiment (environ 1 vidéo sur 3), bruitages réutilisés depuis la bibliothèque.
 
 ## Fond
 - Faits vérifiés et sources affichées sur la carte de fin.

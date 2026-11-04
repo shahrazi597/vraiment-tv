@@ -4,7 +4,53 @@ Règle : 3 vidéos par jour — 9 h et 19 h « Comment ça marche vraiment ? »,
 
 Statut : ✅ publié · 📅 programmé · 🎬 prêt · ⏳ à faire
 
-## Comment ça marche vraiment ?
+## À faire en priorité (les sujets les plus forts)
+
+Choisis pour faire s'arrêter quelqu'un qui scrolle. Accroches à vérifier : si un fait ne tient pas, on reformule ou on passe au suivant.
+
+**Comment ça marche vraiment ?**
+
+| Sujet | Accroche (à vérifier) | Statut |
+|---|---|---|
+| L'algorithme TikTok | « TikTok ne sait pas ce que tu aimes. Il mesure combien de temps tu hésites. » | ⏳ |
+| Face ID | « Ton iPhone projette plus de 30 000 points invisibles sur ton visage. » | ⏳ |
+| Shazam | « Shazam n'écoute pas la musique. Il cherche une empreinte, comme la police. » | ⏳ |
+| Google Maps et les bouchons | « Google sait qu'il y a un bouchon… parce que tu es dedans. » | ⏳ |
+| Ton mot de passe | « Le site où tu te connectes ne connaît pas ton mot de passe. » | ⏳ |
+| Le GPS | « Ton téléphone ne sait pas où il est. Il chronomètre des satellites… et Einstein s'en mêle. » | ⏳ |
+| Les satellites | « Un satellite ne flotte pas. Il tombe en permanence… et rate la Terre. » | ⏳ |
+| Le casque à réduction de bruit | « Pour faire le silence, il ajoute du bruit. » | ⏳ |
+| L'airbag | « Ton airbag, c'est une petite explosion : 30 millisecondes pour te sauver. » | ⏳ |
+| Une centrale nucléaire | « Une centrale nucléaire, c'est une bouilloire géante. » | ⏳ |
+| Ce que voient tes yeux | « Tu as un trou dans ta vision… et ton cerveau le remplit en inventant. » | ⏳ |
+| Le micro-ondes | « Il ne chauffe pas ton assiette. Il fait danser l'eau 2,45 milliards de fois par seconde. » | ⏳ |
+| Une puce électronique | « Dans ton téléphone, des milliards d'interrupteurs plus petits qu'un virus. » | ⏳ |
+| Le ciel bleu et le coucher de soleil | « Le ciel n'est pas bleu. C'est la lumière qui rebondit. » | ⏳ |
+| L'eau du robinet | « L'eau de tes toilettes et celle de ton robinet ont peut-être le même passé. » | ⏳ |
+
+**Combien ça coûte vraiment ?**
+
+| Sujet | Ce qu'on décompose (source à trouver) | Statut |
+|---|---|---|
+| Un iPhone | Prix des composants et de l'assemblage contre prix de vente (analyses de démontage) | ⏳ |
+| Une course Uber | Ce que touche le chauffeur, la commission, les frais | ⏳ |
+| Un streaming sur Spotify | Ce que touche un artiste pour 1 000 écoutes | ⏳ |
+| Un billet d'avion Paris–New York | Taxes, kérosène, aéroport, compagnie | ⏳ |
+| Une paire de Nike | Fabrication, transport, marque, magasin | ⏳ |
+| Une baguette | Farine, énergie, salaire, marge du boulanger | ⏳ |
+| Une place de concert | Artiste, salle, billetterie, frais cachés | ⏳ |
+| Un menu au fast-food | Matières premières, salaires, loyer, marge | ⏳ |
+| Une nuit Airbnb | Hôte, commission, ménage, taxe de séjour | ⏳ |
+| Une question à ChatGPT | Électricité et eau d'une requête (sources sérieuses seulement) | ⏳ |
+| La facture d'électricité | Énergie, réseau, taxes (régulateur de l'énergie) | ⏳ |
+
+## Éditions spéciales (actualité, sur demande de Razi)
+
+| Date | Sujet | Statut |
+|---|---|---|
+| 04/11/2026 | Les élections de mi-mandat américaines | ✅ 04/11 19h |
+
+## Réserve — Comment ça marche vraiment ?
 
 | # | Sujet | Accroche (à vérifier) | Statut |
 |---|---|---|---|
@@ -24,7 +70,7 @@ Statut : ✅ publié · 📅 programmé · 🎬 prêt · ⏳ à faire
 | 14 | Le chargeur sans fil | « Aucun courant ne passe entre ton téléphone et le chargeur. » | ⏳ |
 | 15 | La climatisation | « Ta clim est un frigo retourné. » | ⏳ |
 
-## Combien ça coûte vraiment ?
+## Réserve — Combien ça coûte vraiment ?
 
 | # | Sujet | Ce qu'on décompose (source officielle à trouver) | Statut |
 |---|---|---|---|
