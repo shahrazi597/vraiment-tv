@@ -1,0 +1,882 @@
+{
+ "cues": {
+  "pourtant": 2.24,
+  "perdre": 3.2,
+  "congres": 3.62,
+  "comment": 4.18,
+  "elections": 5.18,
+  "mimandat": 5.62,
+  "tous": 6.32,
+  "revotent": 7.56,
+  "toute": 8.16,
+  "chambre": 8.6,
+  "n435": 9.74,
+  "et_senat": 10.8,
+  "tiers": 11.48,
+  "senat": 11.88,
+  "depuis": 12.34,
+  "y1946": 12.54,
+  "parti": 14.7,
+  "perd": 15.42,
+  "sauf": 16.72,
+  "fois": 17.32,
+  "mais": 17.68,
+  "historique": 18.52,
+  "democrates": 19.48,
+  "prennent": 19.96,
+  "chambres": 20.58,
+  "ils": 21.1,
+  "texas": 21.6,
+  "premiere": 22.34,
+  "y1988": 22.94,
+  "kansas": 24.32,
+  "y1932": 25.22,
+  "michigan": 26.66,
+  "abdul": 27.34,
+  "devient": 28.0,
+  "musulman": 29.28,
+  "etatsunis": 29.88,
+  "alors": 30.48,
+  "fini": 31.52,
+  "non": 31.96,
+  "reste": 32.48,
+  "janvier": 33.68,
+  "aucune": 34.36,
+  "loi": 34.84,
+  "passe": 35.14,
+  "sans": 35.42,
+  "abonne": 36.38,
+  "depuis_tx": 22.72,
+  "depuis_ks": 24.66,
+  "et_mi": 26.54,
+  "vraiment": 37.86,
+  "voEnd": 38.193265000000004,
+  "end": 40.39
+ },
+ "sfx": [
+  [
+   "stamp",
+   3.629,
+   0.7,
+   0.4
+  ],
+  [
+   "whoosh-short",
+   3.961,
+   0.575,
+   0.22
+  ],
+  [
+   "click-soft",
+   8.582,
+   0.366,
+   0.16
+  ],
+  [
+   "ticker",
+   12.427,
+   1.045,
+   0.14
+  ],
+  [
+   "pop",
+   16.638,
+   0.72,
+   0.26
+  ],
+  [
+   "impact-bass-1",
+   20.611,
+   1.4,
+   0.34
+  ],
+  [
+   "ticker",
+   22.557,
+   0.9,
+   0.13
+  ],
+  [
+   "ticker",
+   24.497,
+   0.9,
+   0.13
+  ],
+  [
+   "pop",
+   29.198,
+   0.72,
+   0.26
+  ],
+  [
+   "whoosh-short",
+   30.261,
+   0.575,
+   0.2
+  ],
+  [
+   "stamp2",
+   35.384,
+   0.7,
+   0.45
+  ],
+  [
+   "pop",
+   36.598,
+   0.72,
+   0.28
+  ]
+ ],
+ "tokens": [
+  {
+   "text": "Trump",
+   "key": "trump",
+   "start": 0.28,
+   "end": 0.28
+  },
+  {
+   "text": "n'était",
+   "key": "netait",
+   "start": 0.28,
+   "end": 0.52
+  },
+  {
+   "text": "même",
+   "key": "meme",
+   "start": 0.52,
+   "end": 0.74
+  },
+  {
+   "text": "pas",
+   "key": "pas",
+   "start": 0.74,
+   "end": 1.0
+  },
+  {
+   "text": "sur",
+   "key": "sur",
+   "start": 1.0,
+   "end": 1.18
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 1.18,
+   "end": 1.28
+  },
+  {
+   "text": "bulletin",
+   "key": "bulletin",
+   "start": 1.28,
+   "end": 1.54
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 1.54,
+   "end": 1.6
+  },
+  {
+   "text": "vote…",
+   "key": "vote",
+   "start": 1.6,
+   "end": 2.12
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 2.12,
+   "end": 2.24
+  },
+  {
+   "text": "pourtant,",
+   "key": "pourtant",
+   "start": 2.24,
+   "end": 2.58
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 2.8,
+   "end": 2.86
+  },
+  {
+   "text": "vient",
+   "key": "vient",
+   "start": 2.86,
+   "end": 3.06
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 3.06,
+   "end": 3.2
+  },
+  {
+   "text": "perdre",
+   "key": "perdre",
+   "start": 3.2,
+   "end": 3.44
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 3.44,
+   "end": 3.62
+  },
+  {
+   "text": "Congrès !",
+   "key": "congres",
+   "start": 3.62,
+   "end": 4.18
+  },
+  {
+   "text": "Comment",
+   "key": "comment",
+   "start": 4.18,
+   "end": 4.32
+  },
+  {
+   "text": "marchent",
+   "key": "marchent",
+   "start": 4.32,
+   "end": 4.68
+  },
+  {
+   "text": "vraiment",
+   "key": "vraiment",
+   "start": 4.68,
+   "end": 4.94
+  },
+  {
+   "text": "les",
+   "key": "les",
+   "start": 4.94,
+   "end": 5.18
+  },
+  {
+   "text": "élections",
+   "key": "elections",
+   "start": 5.18,
+   "end": 5.52
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 5.52,
+   "end": 5.62
+  },
+  {
+   "text": "mi-mandat ?",
+   "key": "mimandat",
+   "start": 5.62,
+   "end": 6.32
+  },
+  {
+   "text": "Tous",
+   "key": "tous",
+   "start": 6.32,
+   "end": 6.44
+  },
+  {
+   "text": "les",
+   "key": "les",
+   "start": 6.44,
+   "end": 6.56
+  },
+  {
+   "text": "deux",
+   "key": "deux",
+   "start": 6.56,
+   "end": 6.7
+  },
+  {
+   "text": "ans,",
+   "key": "ans",
+   "start": 6.7,
+   "end": 6.92
+  },
+  {
+   "text": "les",
+   "key": "les",
+   "start": 7.1,
+   "end": 7.18
+  },
+  {
+   "text": "Américains",
+   "key": "americains",
+   "start": 7.18,
+   "end": 7.56
+  },
+  {
+   "text": "revotent",
+   "key": "revotent",
+   "start": 7.56,
+   "end": 8.04
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 8.04,
+   "end": 8.16
+  },
+  {
+   "text": "toute",
+   "key": "toute",
+   "start": 8.16,
+   "end": 8.4
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 8.4,
+   "end": 8.6
+  },
+  {
+   "text": "Chambre",
+   "key": "chambre",
+   "start": 8.6,
+   "end": 8.8
+  },
+  {
+   "text": "des",
+   "key": "des",
+   "start": 8.8,
+   "end": 8.94
+  },
+  {
+   "text": "représentants :",
+   "key": "representants",
+   "start": 8.94,
+   "end": 9.48
+  },
+  {
+   "text": "435",
+   "key": "435",
+   "start": 9.74,
+   "end": 10.14
+  },
+  {
+   "text": "sièges.",
+   "key": "sieges",
+   "start": 10.14,
+   "end": 10.68
+  },
+  {
+   "text": "Et",
+   "key": "et",
+   "start": 10.8,
+   "end": 10.96
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 10.96,
+   "end": 11.24
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 11.24,
+   "end": 11.48
+  },
+  {
+   "text": "tiers",
+   "key": "tiers",
+   "start": 11.48,
+   "end": 11.68
+  },
+  {
+   "text": "du",
+   "key": "du",
+   "start": 11.68,
+   "end": 11.88
+  },
+  {
+   "text": "Sénat.",
+   "key": "senat",
+   "start": 11.88,
+   "end": 12.16
+  },
+  {
+   "text": "Depuis",
+   "key": "depuis",
+   "start": 12.34,
+   "end": 12.54
+  },
+  {
+   "text": "1946,",
+   "key": "1946",
+   "start": 12.54,
+   "end": 13.32
+  },
+  {
+   "text": "à",
+   "key": "a",
+   "start": 13.7,
+   "end": 13.74
+  },
+  {
+   "text": "chaque",
+   "key": "chaque",
+   "start": 13.74,
+   "end": 13.98
+  },
+  {
+   "text": "mi-mandat,",
+   "key": "mimandat",
+   "start": 13.98,
+   "end": 14.46
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 14.66,
+   "end": 14.7
+  },
+  {
+   "text": "parti",
+   "key": "parti",
+   "start": 14.7,
+   "end": 14.9
+  },
+  {
+   "text": "du",
+   "key": "du",
+   "start": 14.9,
+   "end": 15.04
+  },
+  {
+   "text": "président",
+   "key": "president",
+   "start": 15.04,
+   "end": 15.42
+  },
+  {
+   "text": "perd",
+   "key": "perd",
+   "start": 15.42,
+   "end": 15.72
+  },
+  {
+   "text": "des",
+   "key": "des",
+   "start": 15.72,
+   "end": 15.94
+  },
+  {
+   "text": "sièges",
+   "key": "sieges",
+   "start": 15.94,
+   "end": 16.16
+  },
+  {
+   "text": "à",
+   "key": "a",
+   "start": 16.16,
+   "end": 16.22
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 16.22,
+   "end": 16.32
+  },
+  {
+   "text": "Chambre…",
+   "key": "chambre",
+   "start": 16.32,
+   "end": 16.6
+  },
+  {
+   "text": "sauf",
+   "key": "sauf",
+   "start": 16.72,
+   "end": 17.06
+  },
+  {
+   "text": "deux",
+   "key": "deux",
+   "start": 17.06,
+   "end": 17.32
+  },
+  {
+   "text": "fois.",
+   "key": "fois",
+   "start": 17.32,
+   "end": 17.52
+  },
+  {
+   "text": "Mais",
+   "key": "mais",
+   "start": 17.68,
+   "end": 17.84
+  },
+  {
+   "text": "cette",
+   "key": "cette",
+   "start": 17.84,
+   "end": 18.02
+  },
+  {
+   "text": "année,",
+   "key": "annee",
+   "start": 18.02,
+   "end": 18.24
+  },
+  {
+   "text": "c'est",
+   "key": "cest",
+   "start": 18.42,
+   "end": 18.52
+  },
+  {
+   "text": "historique !",
+   "key": "historique",
+   "start": 18.52,
+   "end": 19.38
+  },
+  {
+   "text": "Les",
+   "key": "les",
+   "start": 19.38,
+   "end": 19.48
+  },
+  {
+   "text": "démocrates",
+   "key": "democrates",
+   "start": 19.48,
+   "end": 19.96
+  },
+  {
+   "text": "prennent",
+   "key": "prennent",
+   "start": 19.96,
+   "end": 20.24
+  },
+  {
+   "text": "les",
+   "key": "les",
+   "start": 20.24,
+   "end": 20.36
+  },
+  {
+   "text": "deux",
+   "key": "deux",
+   "start": 20.36,
+   "end": 20.58
+  },
+  {
+   "text": "chambres.",
+   "key": "chambres",
+   "start": 20.58,
+   "end": 20.96
+  },
+  {
+   "text": "Ils",
+   "key": "ils",
+   "start": 21.1,
+   "end": 21.22
+  },
+  {
+   "text": "gagnent",
+   "key": "gagnent",
+   "start": 21.22,
+   "end": 21.48
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 21.48,
+   "end": 21.6
+  },
+  {
+   "text": "Texas :",
+   "key": "texas",
+   "start": 21.6,
+   "end": 21.86
+  },
+  {
+   "text": "une",
+   "key": "une",
+   "start": 22.22,
+   "end": 22.34
+  },
+  {
+   "text": "première",
+   "key": "premiere",
+   "start": 22.34,
+   "end": 22.72
+  },
+  {
+   "text": "depuis",
+   "key": "depuis",
+   "start": 22.72,
+   "end": 22.94
+  },
+  {
+   "text": "1988.",
+   "key": "1988",
+   "start": 22.94,
+   "end": 23.84
+  },
+  {
+   "text": "Le",
+   "key": "le",
+   "start": 23.84,
+   "end": 24.32
+  },
+  {
+   "text": "Kansas :",
+   "key": "kansas",
+   "start": 24.32,
+   "end": 24.66
+  },
+  {
+   "text": "depuis",
+   "key": "depuis",
+   "start": 24.66,
+   "end": 25.22
+  },
+  {
+   "text": "1932 !",
+   "key": "1932",
+   "start": 25.22,
+   "end": 26.22
+  },
+  {
+   "text": "Et",
+   "key": "et",
+   "start": 26.54,
+   "end": 26.58
+  },
+  {
+   "text": "au",
+   "key": "au",
+   "start": 26.58,
+   "end": 26.66
+  },
+  {
+   "text": "Michigan,",
+   "key": "michigan",
+   "start": 26.66,
+   "end": 26.98
+  },
+  {
+   "text": "Abdul",
+   "key": "abdul",
+   "start": 27.34,
+   "end": 27.5
+  },
+  {
+   "text": "El-Sayed",
+   "key": "elsayed",
+   "start": 27.5,
+   "end": 28.0
+  },
+  {
+   "text": "devient",
+   "key": "devient",
+   "start": 28.0,
+   "end": 28.24
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 28.24,
+   "end": 28.4
+  },
+  {
+   "text": "tout",
+   "key": "tout",
+   "start": 28.4,
+   "end": 28.64
+  },
+  {
+   "text": "premier",
+   "key": "premier",
+   "start": 28.64,
+   "end": 28.92
+  },
+  {
+   "text": "sénateur",
+   "key": "senateur",
+   "start": 28.92,
+   "end": 29.28
+  },
+  {
+   "text": "musulman",
+   "key": "musulman",
+   "start": 29.28,
+   "end": 29.76
+  },
+  {
+   "text": "des",
+   "key": "des",
+   "start": 29.76,
+   "end": 29.88
+  },
+  {
+   "text": "États-Unis.",
+   "key": "etatsunis",
+   "start": 29.88,
+   "end": 30.34
+  },
+  {
+   "text": "Alors,",
+   "key": "alors",
+   "start": 30.48,
+   "end": 30.68
+  },
+  {
+   "text": "Trump,",
+   "key": "trump",
+   "start": 30.92,
+   "end": 31.2
+  },
+  {
+   "text": "c'est",
+   "key": "cest",
+   "start": 31.32,
+   "end": 31.52
+  },
+  {
+   "text": "fini ?",
+   "key": "fini",
+   "start": 31.52,
+   "end": 31.96
+  },
+  {
+   "text": "Non,",
+   "key": "non",
+   "start": 31.96,
+   "end": 32.14
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 32.4,
+   "end": 32.48
+  },
+  {
+   "text": "reste",
+   "key": "reste",
+   "start": 32.48,
+   "end": 32.7
+  },
+  {
+   "text": "président.",
+   "key": "president",
+   "start": 32.7,
+   "end": 33.12
+  },
+  {
+   "text": "Mais",
+   "key": "mais",
+   "start": 33.36,
+   "end": 33.46
+  },
+  {
+   "text": "dès",
+   "key": "des",
+   "start": 33.46,
+   "end": 33.68
+  },
+  {
+   "text": "janvier,",
+   "key": "janvier",
+   "start": 33.68,
+   "end": 34.06
+  },
+  {
+   "text": "plus",
+   "key": "plus",
+   "start": 34.24,
+   "end": 34.36
+  },
+  {
+   "text": "aucune",
+   "key": "aucune",
+   "start": 34.36,
+   "end": 34.84
+  },
+  {
+   "text": "loi",
+   "key": "loi",
+   "start": 34.84,
+   "end": 35.02
+  },
+  {
+   "text": "ne",
+   "key": "ne",
+   "start": 35.02,
+   "end": 35.14
+  },
+  {
+   "text": "passe",
+   "key": "passe",
+   "start": 35.14,
+   "end": 35.42
+  },
+  {
+   "text": "sans",
+   "key": "sans",
+   "start": 35.42,
+   "end": 35.64
+  },
+  {
+   "text": "les",
+   "key": "les",
+   "start": 35.64,
+   "end": 35.74
+  },
+  {
+   "text": "démocrates.",
+   "key": "democrates",
+   "start": 35.74,
+   "end": 36.24
+  },
+  {
+   "text": "Abonne-toi",
+   "key": "abonnetoi",
+   "start": 36.38,
+   "end": 36.8
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 36.8,
+   "end": 36.98
+  },
+  {
+   "text": "savoir",
+   "key": "savoir",
+   "start": 36.98,
+   "end": 37.18
+  },
+  {
+   "text": "comment",
+   "key": "comment",
+   "start": 37.18,
+   "end": 37.52
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 37.52,
+   "end": 37.7
+  },
+  {
+   "text": "marche",
+   "key": "marche",
+   "start": 37.7,
+   "end": 37.86
+  },
+  {
+   "text": "vraiment.",
+   "key": "vraiment",
+   "start": 37.86,
+   "end": 38.18
+  }
+ ]
+}
