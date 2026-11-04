@@ -204,9 +204,22 @@ if __name__ == "__main__":
         sys.exit(0 if ig_publish(arg) else 1)
     elif cmd == "status":
         status(arg)
-    elif cmd == "slot":  # ex. slot 1900 → publie le Reel du créneau du jour et affiche l'état
+    elif cmd == "slot":  # ex. slot 1900 → publie le Reel du créneau du jour ; slot auto → créneau le plus proche
         import glob, datetime as dt, zoneinfo
-        day = dt.datetime.now(zoneinfo.ZoneInfo(TZ)).strftime("%Y-%m-%d")
+        now = dt.datetime.now(zoneinfo.ZoneInfo(TZ))
+        day = now.strftime("%Y-%m-%d")
+        if arg == "auto":  # lancé par GitHub Actions un peu avant l'heure : attend l'heure exacte puis publie
+            best = None
+            for hm in ("0900", "1200", "1900"):
+                t = now.replace(hour=int(hm[:2]), minute=int(hm[2:]), second=0, microsecond=0)
+                delta = (t - now).total_seconds()
+                if -75 * 60 <= delta <= 30 * 60:
+                    best = (hm, delta)
+            if not best:
+                print(f"{now:%H:%M} : aucun créneau dans la fenêtre, rien à faire."); sys.exit(0)
+            arg, delta = best
+            if delta > 0:
+                print(f"créneau {arg} dans {int(delta)} s, j'attends"); sys.stdout.flush(); time.sleep(delta)
         here = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         files = sorted(glob.glob(os.path.join(here, "queue", f"{day}-{arg}-*.json")))
         if not files:

@@ -1,0 +1,36 @@
+name: Instagram — publication des Reels
+
+# Lancé un peu avant chaque créneau (9h, 12h, 19h, heure de Bruxelles).
+# Deux jeux d'horaires UTC : heure d'hiver (UTC+1) et heure d'été (UTC+2).
+# Le script choisit le créneau, attend l'heure exacte, vérifie qu'il n'est pas déjà publié, puis publie.
+on:
+  schedule:
+    - cron: "40 7,10,17 * * *"   # hiver : 8h40, 11h40, 18h40 à Bruxelles
+    - cron: "40 6,9,16 * * *"    # été : 8h40, 11h40, 18h40 à Bruxelles
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "Créneau (0900, 1200, 1900 ou auto)"
+        default: "auto"
+
+concurrency:
+  group: instagram-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Identifiants
+        env:
+          PASSPHRASE: ${{ secrets.VRAIMENT_PASSPHRASE }}
+        run: |
+          mkdir -p .secrets && chmod 700 .secrets
+          printf '%s' "$PASSPHRASE" > .secrets/passphrase
+          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass file:.secrets/passphrase -in secrets.enc | tar -C .secrets -xf -
+      - name: Publier
+        env:
+          VRAIMENT_SECRETS: ${{ github.workspace }}/.secrets
+        run: python3 kit/publish.py slot "${{ github.event.inputs.slot || 'auto' }}"
