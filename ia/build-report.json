@@ -1,0 +1,740 @@
+{
+ "cues": {
+  "connait": 0.7,
+  "avance": 1.72,
+  "il": 2.34,
+  "devine": 2.62,
+  "mot": 3.22,
+  "question": 4.84,
+  "decoupee": 5.28,
+  "morceaux": 5.92,
+  "tokens": 6.64,
+  "chacun": 7.24,
+  "nombres": 8.42,
+  "pendant": 9.58,
+  "lu": 10.68,
+  "montagnes": 10.92,
+  "textes": 11.62,
+  "apprendre": 12.24,
+  "vient": 13.2,
+  "apres": 13.38,
+  "autre": 13.76,
+  "chaque": 14.98,
+  "possible": 15.5,
+  "calcule": 16.14,
+  "probabilite": 16.64,
+  "tire": 18.42,
+  "lajoute": 19.2,
+  "phrase": 19.64,
+  "recommence": 20.3,
+  "centaines": 21.22,
+  "reponse2": 22.18,
+  "cest": 22.82,
+  "saffiche": 23.7,
+  "lecrit": 24.92,
+  "lis": 26.14,
+  "abonne": 26.8,
+  "vraiment": 28.22,
+  "mot2": 3.7,
+  "e1": 4.24,
+  "e2": 8.96,
+  "e3": 14.18,
+  "e4": 17.44,
+  "voEnd": 28.606327,
+  "end": 30.81
+ },
+ "sfx": [
+  [
+   "stamp",
+   3.229,
+   0.7,
+   0.4
+  ],
+  [
+   "whoosh-short",
+   3.941,
+   0.575,
+   0.22
+  ],
+  [
+   "click-soft",
+   4.222,
+   0.366,
+   0.16
+  ],
+  [
+   "click-soft",
+   8.942,
+   0.366,
+   0.16
+  ],
+  [
+   "click-soft",
+   14.162,
+   0.366,
+   0.16
+  ],
+  [
+   "click-soft",
+   17.422,
+   0.366,
+   0.16
+  ],
+  [
+   "pop",
+   5.838,
+   0.72,
+   0.24
+  ],
+  [
+   "whoosh",
+   10.721,
+   0.575,
+   0.2
+  ],
+  [
+   "ticker",
+   16.377,
+   1.045,
+   0.24
+  ],
+  [
+   "pop",
+   18.438,
+   0.72,
+   0.26
+  ],
+  [
+   "stamp2",
+   26.104,
+   0.7,
+   0.42
+  ],
+  [
+   "pop",
+   27.018,
+   0.72,
+   0.28
+  ]
+ ],
+ "tokens": [
+  {
+   "text": "ChatGPT",
+   "key": "chatgpt",
+   "start": 0.0,
+   "end": 0.58
+  },
+  {
+   "text": "ne",
+   "key": "ne",
+   "start": 0.58,
+   "end": 0.7
+  },
+  {
+   "text": "connaît",
+   "key": "connait",
+   "start": 0.7,
+   "end": 1.0
+  },
+  {
+   "text": "pas",
+   "key": "pas",
+   "start": 1.0,
+   "end": 1.16
+  },
+  {
+   "text": "sa",
+   "key": "sa",
+   "start": 1.16,
+   "end": 1.32
+  },
+  {
+   "text": "réponse",
+   "key": "reponse",
+   "start": 1.32,
+   "end": 1.54
+  },
+  {
+   "text": "à",
+   "key": "a",
+   "start": 1.54,
+   "end": 1.72
+  },
+  {
+   "text": "l'avance.",
+   "key": "lavance",
+   "start": 1.72,
+   "end": 2.34
+  },
+  {
+   "text": "Il",
+   "key": "il",
+   "start": 2.34,
+   "end": 2.46
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 2.46,
+   "end": 2.62
+  },
+  {
+   "text": "devine,",
+   "key": "devine",
+   "start": 2.62,
+   "end": 3.08
+  },
+  {
+   "text": "MOT",
+   "key": "mot",
+   "start": 3.22,
+   "end": 3.5
+  },
+  {
+   "text": "PAR",
+   "key": "par",
+   "start": 3.5,
+   "end": 3.7
+  },
+  {
+   "text": "MOT !",
+   "key": "mot",
+   "start": 3.7,
+   "end": 4.24
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 4.24,
+   "end": 4.46
+  },
+  {
+   "text": "1 :",
+   "key": "1",
+   "start": 4.46,
+   "end": 4.84
+  },
+  {
+   "text": "ta",
+   "key": "ta",
+   "start": 4.84,
+   "end": 4.84
+  },
+  {
+   "text": "question",
+   "key": "question",
+   "start": 4.84,
+   "end": 5.14
+  },
+  {
+   "text": "est",
+   "key": "est",
+   "start": 5.14,
+   "end": 5.28
+  },
+  {
+   "text": "découpée",
+   "key": "decoupee",
+   "start": 5.28,
+   "end": 5.62
+  },
+  {
+   "text": "en",
+   "key": "en",
+   "start": 5.62,
+   "end": 5.7
+  },
+  {
+   "text": "petits",
+   "key": "petits",
+   "start": 5.7,
+   "end": 5.92
+  },
+  {
+   "text": "morceaux,",
+   "key": "morceaux",
+   "start": 5.92,
+   "end": 6.34
+  },
+  {
+   "text": "les",
+   "key": "les",
+   "start": 6.5,
+   "end": 6.64
+  },
+  {
+   "text": "tokens.",
+   "key": "tokens",
+   "start": 6.64,
+   "end": 7.06
+  },
+  {
+   "text": "Chacun",
+   "key": "chacun",
+   "start": 7.24,
+   "end": 7.58
+  },
+  {
+   "text": "devient",
+   "key": "devient",
+   "start": 7.58,
+   "end": 7.88
+  },
+  {
+   "text": "une",
+   "key": "une",
+   "start": 7.88,
+   "end": 8.06
+  },
+  {
+   "text": "liste",
+   "key": "liste",
+   "start": 8.06,
+   "end": 8.32
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 8.32,
+   "end": 8.42
+  },
+  {
+   "text": "nombres.",
+   "key": "nombres",
+   "start": 8.42,
+   "end": 8.72
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 8.96,
+   "end": 9.18
+  },
+  {
+   "text": "2 :",
+   "key": "2",
+   "start": 9.18,
+   "end": 9.58
+  },
+  {
+   "text": "pendant",
+   "key": "pendant",
+   "start": 9.58,
+   "end": 9.7
+  },
+  {
+   "text": "son",
+   "key": "son",
+   "start": 9.7,
+   "end": 9.88
+  },
+  {
+   "text": "entraînement,",
+   "key": "entrainement",
+   "start": 9.88,
+   "end": 10.32
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 10.52,
+   "end": 10.58
+  },
+  {
+   "text": "a",
+   "key": "a",
+   "start": 10.58,
+   "end": 10.68
+  },
+  {
+   "text": "lu",
+   "key": "lu",
+   "start": 10.68,
+   "end": 10.78
+  },
+  {
+   "text": "des",
+   "key": "des",
+   "start": 10.78,
+   "end": 10.92
+  },
+  {
+   "text": "montagnes",
+   "key": "montagnes",
+   "start": 10.92,
+   "end": 11.5
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 11.5,
+   "end": 11.62
+  },
+  {
+   "text": "textes,",
+   "key": "textes",
+   "start": 11.62,
+   "end": 12.04
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 12.14,
+   "end": 12.24
+  },
+  {
+   "text": "apprendre",
+   "key": "apprendre",
+   "start": 12.24,
+   "end": 12.52
+  },
+  {
+   "text": "quel",
+   "key": "quel",
+   "start": 12.52,
+   "end": 12.76
+  },
+  {
+   "text": "morceau",
+   "key": "morceau",
+   "start": 12.76,
+   "end": 13.2
+  },
+  {
+   "text": "vient",
+   "key": "vient",
+   "start": 13.2,
+   "end": 13.38
+  },
+  {
+   "text": "après",
+   "key": "apres",
+   "start": 13.38,
+   "end": 13.58
+  },
+  {
+   "text": "quel",
+   "key": "quel",
+   "start": 13.58,
+   "end": 13.76
+  },
+  {
+   "text": "autre.",
+   "key": "autre",
+   "start": 13.76,
+   "end": 14.0
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 14.18,
+   "end": 14.44
+  },
+  {
+   "text": "3 :",
+   "key": "3",
+   "start": 14.44,
+   "end": 14.88
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 14.88,
+   "end": 14.98
+  },
+  {
+   "text": "chaque",
+   "key": "chaque",
+   "start": 14.98,
+   "end": 15.18
+  },
+  {
+   "text": "morceau",
+   "key": "morceau",
+   "start": 15.18,
+   "end": 15.5
+  },
+  {
+   "text": "possible,",
+   "key": "possible",
+   "start": 15.5,
+   "end": 15.84
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 16.08,
+   "end": 16.14
+  },
+  {
+   "text": "calcule",
+   "key": "calcule",
+   "start": 16.14,
+   "end": 16.52
+  },
+  {
+   "text": "une",
+   "key": "une",
+   "start": 16.52,
+   "end": 16.64
+  },
+  {
+   "text": "probabilité.",
+   "key": "probabilite",
+   "start": 16.64,
+   "end": 17.26
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 17.44,
+   "end": 17.68
+  },
+  {
+   "text": "4 :",
+   "key": "4",
+   "start": 17.68,
+   "end": 18.2
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 18.2,
+   "end": 18.32
+  },
+  {
+   "text": "en",
+   "key": "en",
+   "start": 18.32,
+   "end": 18.42
+  },
+  {
+   "text": "tire",
+   "key": "tire",
+   "start": 18.42,
+   "end": 18.58
+  },
+  {
+   "text": "un,",
+   "key": "un",
+   "start": 18.58,
+   "end": 18.88
+  },
+  {
+   "text": "l'ajoute",
+   "key": "lajoute",
+   "start": 19.2,
+   "end": 19.46
+  },
+  {
+   "text": "à",
+   "key": "a",
+   "start": 19.46,
+   "end": 19.56
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 19.56,
+   "end": 19.64
+  },
+  {
+   "text": "phrase…",
+   "key": "phrase",
+   "start": 19.64,
+   "end": 19.94
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 19.94,
+   "end": 20.3
+  },
+  {
+   "text": "recommence.",
+   "key": "recommence",
+   "start": 20.3,
+   "end": 20.82
+  },
+  {
+   "text": "Des",
+   "key": "des",
+   "start": 21.12,
+   "end": 21.22
+  },
+  {
+   "text": "centaines",
+   "key": "centaines",
+   "start": 21.22,
+   "end": 21.7
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 21.7,
+   "end": 21.84
+  },
+  {
+   "text": "fois",
+   "key": "fois",
+   "start": 21.84,
+   "end": 22.0
+  },
+  {
+   "text": "par",
+   "key": "par",
+   "start": 22.0,
+   "end": 22.18
+  },
+  {
+   "text": "réponse.",
+   "key": "reponse",
+   "start": 22.18,
+   "end": 22.46
+  },
+  {
+   "text": "C'est",
+   "key": "cest",
+   "start": 22.82,
+   "end": 22.94
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 22.94,
+   "end": 23.08
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 23.08,
+   "end": 23.24
+  },
+  {
+   "text": "que",
+   "key": "que",
+   "start": 23.24,
+   "end": 23.32
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 23.32,
+   "end": 23.4
+  },
+  {
+   "text": "texte",
+   "key": "texte",
+   "start": 23.4,
+   "end": 23.7
+  },
+  {
+   "text": "s'affiche",
+   "key": "saffiche",
+   "start": 23.7,
+   "end": 23.96
+  },
+  {
+   "text": "petit",
+   "key": "petit",
+   "start": 23.96,
+   "end": 24.24
+  },
+  {
+   "text": "à",
+   "key": "a",
+   "start": 24.24,
+   "end": 24.4
+  },
+  {
+   "text": "petit :",
+   "key": "petit",
+   "start": 24.4,
+   "end": 24.58
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 24.8,
+   "end": 24.92
+  },
+  {
+   "text": "l'écrit",
+   "key": "lecrit",
+   "start": 24.92,
+   "end": 25.34
+  },
+  {
+   "text": "pendant",
+   "key": "pendant",
+   "start": 25.34,
+   "end": 25.68
+  },
+  {
+   "text": "que",
+   "key": "que",
+   "start": 25.68,
+   "end": 25.92
+  },
+  {
+   "text": "tu",
+   "key": "tu",
+   "start": 25.92,
+   "end": 26.02
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 26.02,
+   "end": 26.14
+  },
+  {
+   "text": "lis !",
+   "key": "lis",
+   "start": 26.14,
+   "end": 26.26
+  },
+  {
+   "text": "Abonne-toi",
+   "key": "abonnetoi",
+   "start": 26.8,
+   "end": 27.24
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 27.24,
+   "end": 27.42
+  },
+  {
+   "text": "savoir",
+   "key": "savoir",
+   "start": 27.42,
+   "end": 27.62
+  },
+  {
+   "text": "comment",
+   "key": "comment",
+   "start": 27.62,
+   "end": 27.88
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 27.88,
+   "end": 28.06
+  },
+  {
+   "text": "marche",
+   "key": "marche",
+   "start": 28.06,
+   "end": 28.22
+  },
+  {
+   "text": "vraiment.",
+   "key": "vraiment",
+   "start": 28.22,
+   "end": 28.46
+  }
+ ]
+}

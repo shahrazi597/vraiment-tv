@@ -1,0 +1,791 @@
+{
+ "cues": {
+  "batterie": 1.14,
+  "aucune": 1.68,
+  "alors": 2.4,
+  "energie": 3.12,
+  "du": 3.78,
+  "secret": 4.84,
+  "antenne": 5.6,
+  "autour": 6.5,
+  "champ": 9.1,
+  "magnetique": 9.28,
+  "oscille": 9.84,
+  "treize": 10.42,
+  "seconde": 11.4,
+  "approches": 12.82,
+  "traverse": 14.0,
+  "courant": 15.6,
+  "puce": 16.18,
+  "reveille": 16.56,
+  "calcule": 17.96,
+  "code": 18.42,
+  "seul": 19.84,
+  "renvoie": 21.48,
+  "varier": 22.68,
+  "et_si": 23.7,
+  "eloignes": 24.28,
+  "centimetres": 25.34,
+  "plus2": 26.16,
+  "seteint": 27.26,
+  "abonne": 28.06,
+  "vraiment": 29.52,
+  "terminal": 3.9,
+  "terminal2": 8.38,
+  "cree": 8.68,
+  "e1": 7.5,
+  "e2": 11.92,
+  "e3": 17.1,
+  "e4": 20.42,
+  "voEnd": 29.94,
+  "end": 32.14
+ },
+ "sfx": [
+  [
+   "stamp",
+   1.689,
+   0.7,
+   0.4
+  ],
+  [
+   "whoosh-short",
+   3.651,
+   0.575,
+   0.22
+  ],
+  [
+   "click-soft",
+   7.482,
+   0.366,
+   0.16
+  ],
+  [
+   "click-soft",
+   11.902,
+   0.366,
+   0.16
+  ],
+  [
+   "click-soft",
+   17.082,
+   0.366,
+   0.16
+  ],
+  [
+   "click-soft",
+   20.402,
+   0.366,
+   0.16
+  ],
+  [
+   "hiss",
+   9.866,
+   1.045,
+   0.16
+  ],
+  [
+   "pop",
+   16.478,
+   0.72,
+   0.28
+  ],
+  [
+   "ticker",
+   17.797,
+   0.9,
+   0.22
+  ],
+  [
+   "kaching2",
+   22.824,
+   1.0,
+   0.26
+  ],
+  [
+   "stamp2",
+   27.224,
+   0.7,
+   0.42
+  ],
+  [
+   "pop",
+   28.278,
+   0.72,
+   0.28
+  ]
+ ],
+ "tokens": [
+  {
+   "text": "Ta",
+   "key": "ta",
+   "start": 0.0,
+   "end": 0.16
+  },
+  {
+   "text": "carte",
+   "key": "carte",
+   "start": 0.16,
+   "end": 0.36
+  },
+  {
+   "text": "bancaire",
+   "key": "bancaire",
+   "start": 0.36,
+   "end": 0.74
+  },
+  {
+   "text": "n'a",
+   "key": "na",
+   "start": 0.74,
+   "end": 0.86
+  },
+  {
+   "text": "pas",
+   "key": "pas",
+   "start": 0.86,
+   "end": 1.06
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 1.06,
+   "end": 1.14
+  },
+  {
+   "text": "batterie.",
+   "key": "batterie",
+   "start": 1.14,
+   "end": 1.68
+  },
+  {
+   "text": "AUCUNE.",
+   "key": "aucune",
+   "start": 1.68,
+   "end": 2.4
+  },
+  {
+   "text": "Alors",
+   "key": "alors",
+   "start": 2.4,
+   "end": 2.62
+  },
+  {
+   "text": "d'où",
+   "key": "dou",
+   "start": 2.62,
+   "end": 2.84
+  },
+  {
+   "text": "vient",
+   "key": "vient",
+   "start": 2.84,
+   "end": 3.0
+  },
+  {
+   "text": "son",
+   "key": "son",
+   "start": 3.0,
+   "end": 3.12
+  },
+  {
+   "text": "énergie ?",
+   "key": "energie",
+   "start": 3.12,
+   "end": 3.78
+  },
+  {
+   "text": "Du",
+   "key": "du",
+   "start": 3.78,
+   "end": 3.9
+  },
+  {
+   "text": "terminal !",
+   "key": "terminal",
+   "start": 3.9,
+   "end": 4.74
+  },
+  {
+   "text": "Le",
+   "key": "le",
+   "start": 4.74,
+   "end": 4.84
+  },
+  {
+   "text": "secret :",
+   "key": "secret",
+   "start": 4.84,
+   "end": 5.48
+  },
+  {
+   "text": "une",
+   "key": "une",
+   "start": 5.48,
+   "end": 5.6
+  },
+  {
+   "text": "antenne",
+   "key": "antenne",
+   "start": 5.6,
+   "end": 5.94
+  },
+  {
+   "text": "cachée",
+   "key": "cachee",
+   "start": 5.94,
+   "end": 6.28
+  },
+  {
+   "text": "tout",
+   "key": "tout",
+   "start": 6.28,
+   "end": 6.5
+  },
+  {
+   "text": "autour",
+   "key": "autour",
+   "start": 6.5,
+   "end": 6.76
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 6.76,
+   "end": 6.9
+  },
+  {
+   "text": "ta",
+   "key": "ta",
+   "start": 6.9,
+   "end": 7.02
+  },
+  {
+   "text": "carte.",
+   "key": "carte",
+   "start": 7.02,
+   "end": 7.3
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 7.5,
+   "end": 7.8
+  },
+  {
+   "text": "1 :",
+   "key": "1",
+   "start": 7.8,
+   "end": 7.98
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 8.3,
+   "end": 8.38
+  },
+  {
+   "text": "terminal",
+   "key": "terminal",
+   "start": 8.38,
+   "end": 8.68
+  },
+  {
+   "text": "crée",
+   "key": "cree",
+   "start": 8.68,
+   "end": 9.0
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 9.0,
+   "end": 9.1
+  },
+  {
+   "text": "champ",
+   "key": "champ",
+   "start": 9.1,
+   "end": 9.28
+  },
+  {
+   "text": "magnétique",
+   "key": "magnetique",
+   "start": 9.28,
+   "end": 9.64
+  },
+  {
+   "text": "qui",
+   "key": "qui",
+   "start": 9.64,
+   "end": 9.84
+  },
+  {
+   "text": "oscille",
+   "key": "oscille",
+   "start": 9.84,
+   "end": 10.1
+  },
+  {
+   "text": "plus",
+   "key": "plus",
+   "start": 10.1,
+   "end": 10.28
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 10.28,
+   "end": 10.42
+  },
+  {
+   "text": "13",
+   "key": "13",
+   "start": 10.42,
+   "end": 10.78
+  },
+  {
+   "text": "millions",
+   "key": "millions",
+   "start": 10.78,
+   "end": 11.0
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 11.0,
+   "end": 11.12
+  },
+  {
+   "text": "fois",
+   "key": "fois",
+   "start": 11.12,
+   "end": 11.24
+  },
+  {
+   "text": "par",
+   "key": "par",
+   "start": 11.24,
+   "end": 11.4
+  },
+  {
+   "text": "seconde.",
+   "key": "seconde",
+   "start": 11.4,
+   "end": 11.76
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 11.92,
+   "end": 12.18
+  },
+  {
+   "text": "2 :",
+   "key": "2",
+   "start": 12.18,
+   "end": 12.34
+  },
+  {
+   "text": "quand",
+   "key": "quand",
+   "start": 12.6,
+   "end": 12.68
+  },
+  {
+   "text": "tu",
+   "key": "tu",
+   "start": 12.68,
+   "end": 12.82
+  },
+  {
+   "text": "approches",
+   "key": "approches",
+   "start": 12.82,
+   "end": 13.1
+  },
+  {
+   "text": "ta",
+   "key": "ta",
+   "start": 13.1,
+   "end": 13.22
+  },
+  {
+   "text": "carte,",
+   "key": "carte",
+   "start": 13.22,
+   "end": 13.52
+  },
+  {
+   "text": "ce",
+   "key": "ce",
+   "start": 13.72,
+   "end": 13.813
+  },
+  {
+   "text": "champ",
+   "key": "champ",
+   "start": 13.813,
+   "end": 14.0
+  },
+  {
+   "text": "traverse",
+   "key": "traverse",
+   "start": 14.0,
+   "end": 14.28
+  },
+  {
+   "text": "son",
+   "key": "son",
+   "start": 14.28,
+   "end": 14.54
+  },
+  {
+   "text": "antenne",
+   "key": "antenne",
+   "start": 14.54,
+   "end": 14.94
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 14.94,
+   "end": 15.08
+  },
+  {
+   "text": "y",
+   "key": "y",
+   "start": 15.08,
+   "end": 15.18
+  },
+  {
+   "text": "fait",
+   "key": "fait",
+   "start": 15.18,
+   "end": 15.28
+  },
+  {
+   "text": "naître",
+   "key": "naitre",
+   "start": 15.28,
+   "end": 15.44
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 15.44,
+   "end": 15.6
+  },
+  {
+   "text": "courant.",
+   "key": "courant",
+   "start": 15.6,
+   "end": 15.86
+  },
+  {
+   "text": "La",
+   "key": "la",
+   "start": 16.04,
+   "end": 16.18
+  },
+  {
+   "text": "puce",
+   "key": "puce",
+   "start": 16.18,
+   "end": 16.42
+  },
+  {
+   "text": "se",
+   "key": "se",
+   "start": 16.42,
+   "end": 16.56
+  },
+  {
+   "text": "réveille !",
+   "key": "reveille",
+   "start": 16.56,
+   "end": 17.1
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 17.1,
+   "end": 17.4
+  },
+  {
+   "text": "3 :",
+   "key": "3",
+   "start": 17.4,
+   "end": 17.62
+  },
+  {
+   "text": "elle",
+   "key": "elle",
+   "start": 17.86,
+   "end": 17.96
+  },
+  {
+   "text": "calcule",
+   "key": "calcule",
+   "start": 17.96,
+   "end": 18.3
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 18.3,
+   "end": 18.42
+  },
+  {
+   "text": "code",
+   "key": "code",
+   "start": 18.42,
+   "end": 18.58
+  },
+  {
+   "text": "secret,",
+   "key": "secret",
+   "start": 18.58,
+   "end": 18.84
+  },
+  {
+   "text": "valable",
+   "key": "valable",
+   "start": 18.84,
+   "end": 19.38
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 19.38,
+   "end": 19.58
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 19.58,
+   "end": 19.84
+  },
+  {
+   "text": "seul",
+   "key": "seul",
+   "start": 19.84,
+   "end": 20.0
+  },
+  {
+   "text": "paiement.",
+   "key": "paiement",
+   "start": 20.0,
+   "end": 20.28
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 20.42,
+   "end": 20.7
+  },
+  {
+   "text": "4 :",
+   "key": "4",
+   "start": 20.7,
+   "end": 20.9
+  },
+  {
+   "text": "elle",
+   "key": "elle",
+   "start": 21.2,
+   "end": 21.3
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 21.3,
+   "end": 21.48
+  },
+  {
+   "text": "renvoie",
+   "key": "renvoie",
+   "start": 21.48,
+   "end": 21.72
+  },
+  {
+   "text": "au",
+   "key": "au",
+   "start": 21.72,
+   "end": 21.84
+  },
+  {
+   "text": "terminal,",
+   "key": "terminal",
+   "start": 21.84,
+   "end": 22.14
+  },
+  {
+   "text": "en",
+   "key": "en",
+   "start": 22.14,
+   "end": 22.46
+  },
+  {
+   "text": "faisant",
+   "key": "faisant",
+   "start": 22.46,
+   "end": 22.68
+  },
+  {
+   "text": "varier",
+   "key": "varier",
+   "start": 22.68,
+   "end": 22.94
+  },
+  {
+   "text": "ce",
+   "key": "ce",
+   "start": 22.94,
+   "end": 23.12
+  },
+  {
+   "text": "même",
+   "key": "meme",
+   "start": 23.12,
+   "end": 23.3
+  },
+  {
+   "text": "champ.",
+   "key": "champ",
+   "start": 23.3,
+   "end": 23.52
+  },
+  {
+   "text": "Et",
+   "key": "et",
+   "start": 23.7,
+   "end": 23.88
+  },
+  {
+   "text": "si",
+   "key": "si",
+   "start": 23.88,
+   "end": 24.12
+  },
+  {
+   "text": "tu",
+   "key": "tu",
+   "start": 24.12,
+   "end": 24.28
+  },
+  {
+   "text": "éloignes",
+   "key": "eloignes",
+   "start": 24.28,
+   "end": 24.56
+  },
+  {
+   "text": "ta",
+   "key": "ta",
+   "start": 24.56,
+   "end": 24.7
+  },
+  {
+   "text": "carte",
+   "key": "carte",
+   "start": 24.7,
+   "end": 24.98
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 24.98,
+   "end": 25.16
+  },
+  {
+   "text": "quelques",
+   "key": "quelques",
+   "start": 25.16,
+   "end": 25.34
+  },
+  {
+   "text": "centimètres ?",
+   "key": "centimetres",
+   "start": 25.34,
+   "end": 25.98
+  },
+  {
+   "text": "Plus",
+   "key": "plus",
+   "start": 26.16,
+   "end": 26.28
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 26.28,
+   "end": 26.42
+  },
+  {
+   "text": "courant…",
+   "key": "courant",
+   "start": 26.42,
+   "end": 26.66
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 26.9,
+   "end": 27.04
+  },
+  {
+   "text": "puce",
+   "key": "puce",
+   "start": 27.04,
+   "end": 27.26
+  },
+  {
+   "text": "s'éteint !",
+   "key": "seteint",
+   "start": 27.26,
+   "end": 27.54
+  },
+  {
+   "text": "Abonne-toi",
+   "key": "abonnetoi",
+   "start": 28.06,
+   "end": 28.56
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 28.56,
+   "end": 28.72
+  },
+  {
+   "text": "savoir",
+   "key": "savoir",
+   "start": 28.72,
+   "end": 28.92
+  },
+  {
+   "text": "comment",
+   "key": "comment",
+   "start": 28.92,
+   "end": 29.16
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 29.16,
+   "end": 29.34
+  },
+  {
+   "text": "marche",
+   "key": "marche",
+   "start": 29.34,
+   "end": 29.52
+  },
+  {
+   "text": "vraiment.",
+   "key": "vraiment",
+   "start": 29.52,
+   "end": 29.94
+  }
+ ]
+}

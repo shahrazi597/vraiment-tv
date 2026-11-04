@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/gsap.min.js"></script>
+    <script src="assets/da.js"></script>
+    <link rel="stylesheet" href="assets/da.css" />
+    <style>
+      #h-t1 { top: 300px; font-size: 100px; }
+      #h-t2 { top: 300px; font-size: 100px; }
+      #h-t2 .wsp, #h-t3 .wsp { opacity: 0; }
+      #h-t3 { top: 300px; font-size: 104px; }
+      #h-stamp { top: 545px; }
+      #stage { position: absolute; inset: 0; }
+      #stage svg, #hk { position: absolute; left: 0; top: 0; }
+      .row { position: absolute; left: 0; right: 0; display: flex; justify-content: center; }
+      .row .chip { position: absolute; }
+      .chip i { display: block; width: 22px; height: 22px; border-radius: 50%; }
+      #steps { top: 290px; height: 80px; }
+      #infos { top: 384px; height: 80px; }
+      #capshade { position: absolute; left: 0; right: 0; top: 1120px; height: 800px; opacity: 0;
+        background: linear-gradient(180deg, rgba(11,11,14,0) 0%, rgba(11,11,14,.92) 9%, rgba(11,11,14,.97) 100%); }
+      #tw-title { top: 300px; font-size: 90px; }
+      #tw-title .wsp { opacity: 0; }
+      #tw-stamp { top: 330px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="32.14" data-width="1080" data-height="1920">
+      <audio id="vo" src="assets/voix.mp3" data-start="0" data-duration="29.989" data-volume="1"></audio>
+      <audio id="sfx0" src="assets/sfx/stamp.mp3" data-start="1.689" data-duration="0.7" data-volume="0.4" data-fade-out="0.20"></audio>
+      <audio id="sfx1" src="assets/sfx/whoosh-short.mp3" data-start="3.651" data-duration="0.575" data-volume="0.22" data-fade-out="0.19"></audio>
+      <audio id="sfx2" src="assets/sfx/click-soft.mp3" data-start="7.482" data-duration="0.366" data-volume="0.16" data-fade-out="0.12"></audio>
+      <audio id="sfx3" src="assets/sfx/click-soft.mp3" data-start="11.902" data-duration="0.366" data-volume="0.16" data-fade-out="0.12"></audio>
+      <audio id="sfx4" src="assets/sfx/click-soft.mp3" data-start="17.082" data-duration="0.366" data-volume="0.16" data-fade-out="0.12"></audio>
+      <audio id="sfx5" src="assets/sfx/click-soft.mp3" data-start="20.402" data-duration="0.366" data-volume="0.16" data-fade-out="0.12"></audio>
+      <audio id="sfx6" src="assets/sfx/hiss.mp3" data-start="9.866" data-duration="1.045" data-volume="0.16" data-fade-out="0.20"></audio>
+      <audio id="sfx7" src="assets/sfx/pop.mp3" data-start="16.478" data-duration="0.72" data-volume="0.28" data-fade-out="0.20"></audio>
+      <audio id="sfx8" src="assets/sfx/ticker.mp3" data-start="17.797" data-duration="0.9" data-volume="0.22" data-fade-out="0.20"></audio>
+      <audio id="sfx9" src="assets/sfx/kaching2.mp3" data-start="22.824" data-duration="1.0" data-volume="0.26" data-fade-out="0.20"></audio>
+      <audio id="sfx10" src="assets/sfx/stamp2.mp3" data-start="27.224" data-duration="0.7" data-volume="0.42" data-fade-out="0.20"></audio>
+      <audio id="sfx11" src="assets/sfx/pop.mp3" data-start="28.278" data-duration="0.72" data-volume="0.28" data-fade-out="0.20"></audio>
+
+      <div id="bg" class="clip" data-start="0" data-duration="32.14" data-track-index="0" data-track-kind="graphics">
+        <div id="grid"></div>
+        <div id="gl-cream" class="glow"></div>
+        <div id="gl-red" class="glow"></div>
+        <div id="gl-amber" class="glow"></div>
+        <div id="gl-cold" class="glow"></div>
+        <div id="vign"></div>
+      </div>
+
+      <!-- la carte, dessinée une fois, réutilisée -->
+      <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+          <linearGradient id="gCard" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#25303d" /><stop offset="1" stop-color="#11161d" />
+          </linearGradient>
+          <linearGradient id="gChip" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ffe08a" /><stop offset="1" stop-color="#c98d12" />
+          </linearGradient>
+          <g id="cardface">
+            <rect x="300" y="820" width="480" height="302" rx="30" fill="url(#gCard)" stroke="#ece6d6" stroke-width="4" />
+            <rect x="350" y="925" width="78" height="60" rx="12" fill="url(#gChip)" />
+            <path d="M389 925 v60 M350 945 h78 M350 965 h78" stroke="#9c6a06" stroke-width="3" fill="none" />
+            <g fill="none" stroke="#ece6d6" stroke-width="6" stroke-linecap="round" opacity=".8">
+              <path d="M690 935 q 12 20 0 40" /><path d="M706 925 q 20 30 0 60" /><path d="M722 915 q 28 40 0 80" />
+            </g>
+            <rect x="350" y="1050" width="220" height="20" rx="10" fill="#ece6d6" opacity=".25" />
+          </g>
+        </defs>
+      </svg>
+
+      <div id="cam">
+        <!-- 1. Accroche -->
+        <div id="s-hook" class="clip" data-start="0" data-duration="4.990" data-track-index="1" data-track-kind="graphics">
+          <svg id="hk" width="1080" height="1920" viewBox="0 0 1080 1920" aria-hidden="true">
+            <g transform="translate(540 870) scale(1.3) translate(-540 -971)">
+              <use href="#cardface" />
+              <g id="h-batt" opacity="0" transform="translate(560 1000)">
+                <rect x="0" y="0" width="120" height="60" rx="12" fill="none" stroke="#ff5236" stroke-width="7" />
+                <rect x="120" y="18" width="12" height="24" rx="4" fill="#ff5236" />
+                <path d="M-14 74 L146 -14" stroke="#ff5236" stroke-width="9" stroke-linecap="round" />
+              </g>
+            </g>
+          </svg>
+          <div id="h-t1" class="hl">Ta carte n'a<br />pas de <span class="r">batterie.</span></div>
+          <div id="h-t2" class="hl"><span class="wsp">D'où</span> <span class="wsp">vient</span><br /><span class="wsp">son</span> <span class="wsp a">énergie&nbsp;?</span></div>
+          <div id="h-t3" class="hl"><span class="wsp">Du</span><br /><span class="wsp c">terminal&nbsp;!</span></div>
+          <div id="h-stamp" class="stamp"><span>Aucune&nbsp;!</span></div>
+        </div>
+
+        <!-- 2. Le mécanisme -->
+        <div id="s-main" class="clip" data-start="4.590" data-duration="23.470" data-track-index="2" data-track-kind="graphics">
+          <div id="stage">
+            <svg width="1080" height="1920" viewBox="0 0 1080 1920" aria-hidden="true">
+              <defs>
+                <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="22" /></filter>
+              </defs>
+              <!-- ondes du champ -->
+              <g id="waves" fill="none" stroke="#4cc4ff" stroke-width="6"></g>
+              <!-- terminal -->
+              <g id="term" opacity="0">
+                <rect x="370" y="470" width="340" height="230" rx="36" fill="#16161b" stroke="#ece6d6" stroke-width="6" />
+                <rect x="400" y="496" width="280" height="92" rx="16" fill="#0b0b0e" />
+                <text id="scr" x="540" y="557" text-anchor="middle" font-family="Inter Display" font-weight="900" font-size="38" fill="#4cc4ff">0</text>
+                <g fill="none" stroke="#ece6d6" stroke-width="6" stroke-linecap="round" transform="translate(512 610)">
+                  <path d="M6 14 q 8 14 0 28" /><path d="M20 6 q 14 22 0 44" /><path d="M34 -2 q 20 30 0 60" />
+                </g>
+              </g>
+              <!-- la carte -->
+              <g id="cardT">
+                <ellipse id="chipglow" cx="389" cy="955" rx="90" ry="70" fill="#ffb21f" opacity="0" filter="url(#soft)" />
+                <use id="cardU" href="#cardface" />
+                <g id="coils" fill="none" stroke="#ffb21f" stroke-width="5" stroke-linejoin="round">
+                  <rect class="coil" x="318" y="838" width="444" height="266" rx="18" />
+                  <rect class="coil" x="332" y="852" width="416" height="238" rx="14" />
+                  <rect class="coil" x="346" y="866" width="388" height="210" rx="10" />
+                  <path class="coil" d="M346 955 H 350" />
+                </g>
+                <g id="curr"></g>
+                <rect id="chipon" x="350" y="925" width="78" height="60" rx="12" fill="#fff3c4" opacity="0" />
+                <text id="code" x="552" y="982" text-anchor="middle" font-family="Inter Display" font-weight="900" font-size="38" fill="#ffb21f" opacity="0">0000 0000</text>
+              </g>
+              <!-- le code qui remonte -->
+              <g id="packet" opacity="0">
+                <rect x="470" y="-24" width="140" height="48" rx="24" fill="#ffb21f" />
+                <text x="540" y="11" text-anchor="middle" font-family="Inter Display" font-weight="900" font-size="30" fill="#0b0b0e">CODE</text>
+              </g>
+              <!-- distance -->
+              <g id="dist" opacity="0" stroke="#ece6d6" stroke-width="5" stroke-linecap="round">
+                <path d="M850 712 V 900" /><path d="M830 712 h40 M830 900 h40" />
+                <text x="878" y="818" font-size="30" stroke="none" fill="#ece6d6" font-family="Inter Display" font-weight="800">quelques cm</text>
+              </g>
+            </svg>
+          </div>
+
+          <div id="capshade"></div>
+
+          <div id="steps" class="row">
+            <div id="st1" class="chip cold" style="position:absolute"><b>1</b>LE CHAMP</div>
+            <div id="st2" class="chip amb" style="position:absolute"><b>2</b>LE COURANT</div>
+            <div id="st3" class="chip hot" style="position:absolute"><b>3</b>LE CODE</div>
+            <div id="st4" class="chip cold" style="position:absolute"><b>4</b>LA RÉPONSE</div>
+          </div>
+          <div id="infos" class="row">
+            <div id="in0" class="chip" style="position:absolute"><i style="background:var(--amber)"></i>Une antenne tout autour de la carte</div>
+            <div id="in1" class="chip" style="position:absolute"><i style="background:var(--cold)"></i>13,56 MHz : 13,56 millions d'oscillations / s</div>
+            <div id="in2" class="chip" style="position:absolute"><i style="background:var(--amber)"></i>Champ magnétique → courant</div>
+            <div id="in3" class="chip" style="position:absolute"><i style="background:var(--red)"></i>Code unique : 1 seul paiement</div>
+            <div id="in4" class="chip" style="position:absolute"><i style="background:var(--cold)"></i>Elle répond en faisant varier le champ</div>
+          </div>
+
+          <div id="tw-title" class="hl"><span class="wsp">Et</span> <span class="wsp">si</span> <span class="wsp">tu</span> <span class="wsp c">l'éloignes&nbsp;?</span></div>
+          <div id="tw-stamp" class="stamp"><span>Éteinte&nbsp;!</span></div>
+        </div>
+
+        <!-- 3. Carte de fin -->
+        <div id="s-cta" class="clip" data-start="27.910" data-duration="4.230" data-track-index="3" data-track-kind="graphics">
+          <div id="c-title"><div>Comment ça</div><div>marche</div><div class="a">vraiment&nbsp;?</div></div>
+          <div id="c-btn"><span>Abonne-toi</span></div>
+          <div id="c-ep">Épisode 3 · Le paiement sans contact</div>
+          <div id="c-src">Sources : IEEE (Near Field Communication, 13,56 MHz) · EMVCo (EMV Contactless Chip)</div>
+        </div>
+      </div>
+
+      <div id="caps" class="clip" data-start="4.780" data-duration="27.360" data-track-index="5" data-track-kind="captions">
+        <div id="g0" class="cap"><span class="in"><span id="w0_0" class="wd">secret :</span></span></div>
+        <div id="g1" class="cap"><span class="in"><span id="w1_0" class="wd">une</span> <span id="w1_1" class="wd em">antenne</span> <span id="w1_2" class="wd">cachée</span></span></div>
+        <div id="g2" class="cap"><span class="in"><span id="w2_0" class="wd">tout</span> <span id="w2_1" class="wd">autour</span> <span id="w2_2" class="wd">de</span></span></div>
+        <div id="g3" class="cap"><span class="in"><span id="w3_0" class="wd">ta</span> <span id="w3_1" class="wd">carte.</span></span></div>
+        <div id="g4" class="cap"><span class="in"><span id="w4_0" class="wd">Étape</span> <span id="w4_1" class="wd">1 :</span></span></div>
+        <div id="g5" class="cap"><span class="in"><span id="w5_0" class="wd">le</span> <span id="w5_1" class="wd em">terminal</span> <span id="w5_2" class="wd">crée</span></span></div>
+        <div id="g6" class="cap"><span class="in"><span id="w6_0" class="wd">un</span> <span id="w6_1" class="wd">champ</span> <span id="w6_2" class="wd">magnétique</span></span></div>
+        <div id="g7" class="cap"><span class="in"><span id="w7_0" class="wd">qui</span> <span id="w7_1" class="wd">oscille</span> <span id="w7_2" class="wd">plus</span></span></div>
+        <div id="g8" class="cap"><span class="in"><span id="w8_0" class="wd">de</span> <span id="w8_1" class="wd em">13</span> <span id="w8_2" class="wd em">millions</span></span></div>
+        <div id="g9" class="cap"><span class="in"><span id="w9_0" class="wd">de</span> <span id="w9_1" class="wd">fois</span> <span id="w9_2" class="wd">par</span></span></div>
+        <div id="g10" class="cap"><span class="in"><span id="w10_0" class="wd">seconde.</span></span></div>
+        <div id="g11" class="cap"><span class="in"><span id="w11_0" class="wd">Étape</span> <span id="w11_1" class="wd">2 :</span></span></div>
+        <div id="g12" class="cap"><span class="in"><span id="w12_0" class="wd">quand</span> <span id="w12_1" class="wd">tu</span> <span id="w12_2" class="wd">approches</span></span></div>
+        <div id="g13" class="cap"><span class="in"><span id="w13_0" class="wd">ta</span> <span id="w13_1" class="wd">carte</span></span></div>
+        <div id="g14" class="cap"><span class="in"><span id="w14_0" class="wd">ce</span> <span id="w14_1" class="wd">champ</span> <span id="w14_2" class="wd">traverse</span></span></div>
+        <div id="g15" class="cap"><span class="in"><span id="w15_0" class="wd">son</span> <span id="w15_1" class="wd em">antenne</span> <span id="w15_2" class="wd">et</span></span></div>
+        <div id="g16" class="cap"><span class="in"><span id="w16_0" class="wd">y</span> <span id="w16_1" class="wd">fait</span> <span id="w16_2" class="wd">naître</span></span></div>
+        <div id="g17" class="cap"><span class="in"><span id="w17_0" class="wd">un</span> <span id="w17_1" class="wd em">courant.</span></span></div>
+        <div id="g18" class="cap"><span class="in"><span id="w18_0" class="wd">La</span> <span id="w18_1" class="wd">puce</span> <span id="w18_2" class="wd">se</span></span></div>
+        <div id="g19" class="cap"><span class="in"><span id="w19_0" class="wd em">réveille !</span></span></div>
+        <div id="g20" class="cap"><span class="in"><span id="w20_0" class="wd">Étape</span> <span id="w20_1" class="wd">3 :</span></span></div>
+        <div id="g21" class="cap"><span class="in"><span id="w21_0" class="wd">elle</span> <span id="w21_1" class="wd">calcule</span> <span id="w21_2" class="wd">un</span></span></div>
+        <div id="g22" class="cap"><span class="in"><span id="w22_0" class="wd">code</span> <span id="w22_1" class="wd">secret</span></span></div>
+        <div id="g23" class="cap"><span class="in"><span id="w23_0" class="wd">valable</span> <span id="w23_1" class="wd">pour</span> <span id="w23_2" class="wd">un</span></span></div>
+        <div id="g24" class="cap"><span class="in"><span id="w24_0" class="wd em">seul</span> <span id="w24_1" class="wd">paiement.</span></span></div>
+        <div id="g25" class="cap"><span class="in"><span id="w25_0" class="wd">Étape</span> <span id="w25_1" class="wd">4 :</span></span></div>
+        <div id="g26" class="cap"><span class="in"><span id="w26_0" class="wd">elle</span> <span id="w26_1" class="wd">le</span> <span id="w26_2" class="wd">renvoie</span></span></div>
+        <div id="g27" class="cap"><span class="in"><span id="w27_0" class="wd">au</span> <span id="w27_1" class="wd em">terminal</span></span></div>
+        <div id="g28" class="cap"><span class="in"><span id="w28_0" class="wd">en</span> <span id="w28_1" class="wd">faisant</span> <span id="w28_2" class="wd em">varier</span></span></div>
+        <div id="g29" class="cap"><span class="in"><span id="w29_0" class="wd">ce</span> <span id="w29_1" class="wd">même</span> <span id="w29_2" class="wd">champ.</span></span></div>
+        <div id="g30" class="cap"><span class="in"><span id="w30_0" class="wd">Et</span> <span id="w30_1" class="wd">si</span> <span id="w30_2" class="wd">tu</span></span></div>
+        <div id="g31" class="cap"><span class="in"><span id="w31_0" class="wd">éloignes</span> <span id="w31_1" class="wd">ta</span> <span id="w31_2" class="wd">carte</span></span></div>
+        <div id="g32" class="cap"><span class="in"><span id="w32_0" class="wd">de</span> <span id="w32_1" class="wd">quelques</span> <span id="w32_2" class="wd em">centimètres ?</span></span></div>
+        <div id="g33" class="cap"><span class="in"><span id="w33_0" class="wd">Plus</span> <span id="w33_1" class="wd">de</span> <span id="w33_2" class="wd em">courant…</span></span></div>
+        <div id="g34" class="cap"><span class="in"><span id="w34_0" class="wd">la</span> <span id="w34_1" class="wd">puce</span> <span id="w34_2" class="wd em">s'éteint !</span></span></div>
+        <div id="g35" class="cap"><span class="in"><span id="w35_0" class="wd">Abonne-toi</span> <span id="w35_1" class="wd">pour</span> <span id="w35_2" class="wd">savoir</span></span></div>
+        <div id="g36" class="cap"><span class="in"><span id="w36_0" class="wd">comment</span> <span id="w36_1" class="wd">ça</span> <span id="w36_2" class="wd">marche</span></span></div>
+        <div id="g37" class="cap"><span class="in"><span id="w37_0" class="wd em">vraiment.</span></span></div>
+      </div>
+
+      <div id="tag" class="clip" data-start="0" data-duration="32.14" data-track-index="6" data-track-kind="graphics">
+        <span class="pill">COMMENT ÇA MARCHE VRAIMENT&nbsp;?</span><span class="pill num">#3</span>
+      </div>
+
+      <div id="fx" class="clip" data-start="0" data-duration="32.14" data-track-index="7" data-track-kind="graphics">
+        <div id="flash"></div>
+      </div>
+    </div>
+
+    <script>
+      const C = {"batterie": 1.14, "aucune": 1.68, "alors": 2.4, "energie": 3.12, "du": 3.78, "secret": 4.84, "antenne": 5.6, "autour": 6.5, "champ": 9.1, "magnetique": 9.28, "oscille": 9.84, "treize": 10.42, "seconde": 11.4, "approches": 12.82, "traverse": 14.0, "courant": 15.6, "puce": 16.18, "reveille": 16.56, "calcule": 17.96, "code": 18.42, "seul": 19.84, "renvoie": 21.48, "varier": 22.68, "et_si": 23.7, "eloignes": 24.28, "centimetres": 25.34, "plus2": 26.16, "seteint": 27.26, "abonne": 28.06, "vraiment": 29.52, "terminal": 3.9, "terminal2": 8.38, "cree": 8.68, "e1": 7.5, "e2": 11.92, "e3": 17.1, "e4": 20.42, "voEnd": 29.94, "end": 32.14};
+      const CAP = [{"id": "g0", "start": 4.78, "end": 5.53, "w": [{"id": "w0_0", "t": 4.84}]}, {"id": "g1", "start": 5.53, "end": 6.33, "w": [{"id": "w1_0", "t": 5.48}, {"id": "w1_1", "t": 5.6}, {"id": "w1_2", "t": 5.94}]}, {"id": "g2", "start": 6.33, "end": 6.95, "w": [{"id": "w2_0", "t": 6.28}, {"id": "w2_1", "t": 6.5}, {"id": "w2_2", "t": 6.76}]}, {"id": "g3", "start": 6.95, "end": 7.44, "w": [{"id": "w3_0", "t": 6.9}, {"id": "w3_1", "t": 7.02}]}, {"id": "g4", "start": 7.44, "end": 8.24, "w": [{"id": "w4_0", "t": 7.5}, {"id": "w4_1", "t": 7.8}]}, {"id": "g5", "start": 8.24, "end": 9.05, "w": [{"id": "w5_0", "t": 8.3}, {"id": "w5_1", "t": 8.38}, {"id": "w5_2", "t": 8.68}]}, {"id": "g6", "start": 9.05, "end": 9.69, "w": [{"id": "w6_0", "t": 9.0}, {"id": "w6_1", "t": 9.1}, {"id": "w6_2", "t": 9.28}]}, {"id": "g7", "start": 9.69, "end": 10.33, "w": [{"id": "w7_0", "t": 9.64}, {"id": "w7_1", "t": 9.84}, {"id": "w7_2", "t": 10.1}]}, {"id": "g8", "start": 10.33, "end": 11.05, "w": [{"id": "w8_0", "t": 10.28}, {"id": "w8_1", "t": 10.42}, {"id": "w8_2", "t": 10.78}]}, {"id": "g9", "start": 11.05, "end": 11.45, "w": [{"id": "w9_0", "t": 11.0}, {"id": "w9_1", "t": 11.12}, {"id": "w9_2", "t": 11.24}]}, {"id": "g10", "start": 11.45, "end": 11.86, "w": [{"id": "w10_0", "t": 11.4}]}, {"id": "g11", "start": 11.86, "end": 12.54, "w": [{"id": "w11_0", "t": 11.92}, {"id": "w11_1", "t": 12.18}]}, {"id": "g12", "start": 12.54, "end": 13.15, "w": [{"id": "w12_0", "t": 12.6}, {"id": "w12_1", "t": 12.68}, {"id": "w12_2", "t": 12.82}]}, {"id": "g13", "start": 13.15, "end": 13.66, "w": [{"id": "w13_0", "t": 13.1}, {"id": "w13_1", "t": 13.22}]}, {"id": "g14", "start": 13.66, "end": 14.33, "w": [{"id": "w14_0", "t": 13.72}, {"id": "w14_1", "t": 13.813}, {"id": "w14_2", "t": 14.0}]}, {"id": "g15", "start": 14.33, "end": 15.13, "w": [{"id": "w15_0", "t": 14.28}, {"id": "w15_1", "t": 14.54}, {"id": "w15_2", "t": 14.94}]}, {"id": "g16", "start": 15.13, "end": 15.49, "w": [{"id": "w16_0", "t": 15.08}, {"id": "w16_1", "t": 15.18}, {"id": "w16_2", "t": 15.28}]}, {"id": "g17", "start": 15.49, "end": 15.98, "w": [{"id": "w17_0", "t": 15.44}, {"id": "w17_1", "t": 15.6}]}, {"id": "g18", "start": 15.98, "end": 16.61, "w": [{"id": "w18_0", "t": 16.04}, {"id": "w18_1", "t": 16.18}, {"id": "w18_2", "t": 16.42}]}, {"id": "g19", "start": 16.61, "end": 17.15, "w": [{"id": "w19_0", "t": 16.56}]}, {"id": "g20", "start": 17.15, "end": 17.8, "w": [{"id": "w20_0", "t": 17.1}, {"id": "w20_1", "t": 17.4}]}, {"id": "g21", "start": 17.8, "end": 18.47, "w": [{"id": "w21_0", "t": 17.86}, {"id": "w21_1", "t": 17.96}, {"id": "w21_2", "t": 18.3}]}, {"id": "g22", "start": 18.47, "end": 18.89, "w": [{"id": "w22_0", "t": 18.42}, {"id": "w22_1", "t": 18.58}]}, {"id": "g23", "start": 18.89, "end": 19.89, "w": [{"id": "w23_0", "t": 18.84}, {"id": "w23_1", "t": 19.38}, {"id": "w23_2", "t": 19.58}]}, {"id": "g24", "start": 19.89, "end": 20.36, "w": [{"id": "w24_0", "t": 19.84}, {"id": "w24_1", "t": 20.0}]}, {"id": "g25", "start": 20.36, "end": 21.14, "w": [{"id": "w25_0", "t": 20.42}, {"id": "w25_1", "t": 20.7}]}, {"id": "g26", "start": 21.14, "end": 21.77, "w": [{"id": "w26_0", "t": 21.2}, {"id": "w26_1", "t": 21.3}, {"id": "w26_2", "t": 21.48}]}, {"id": "g27", "start": 21.77, "end": 22.19, "w": [{"id": "w27_0", "t": 21.72}, {"id": "w27_1", "t": 21.84}]}, {"id": "g28", "start": 22.19, "end": 22.99, "w": [{"id": "w28_0", "t": 22.14}, {"id": "w28_1", "t": 22.46}, {"id": "w28_2", "t": 22.68}]}, {"id": "g29", "start": 22.99, "end": 23.64, "w": [{"id": "w29_0", "t": 22.94}, {"id": "w29_1", "t": 23.12}, {"id": "w29_2", "t": 23.3}]}, {"id": "g30", "start": 23.64, "end": 24.33, "w": [{"id": "w30_0", "t": 23.7}, {"id": "w30_1", "t": 23.88}, {"id": "w30_2", "t": 24.12}]}, {"id": "g31", "start": 24.33, "end": 25.03, "w": [{"id": "w31_0", "t": 24.28}, {"id": "w31_1", "t": 24.56}, {"id": "w31_2", "t": 24.7}]}, {"id": "g32", "start": 25.03, "end": 26.1, "w": [{"id": "w32_0", "t": 24.98}, {"id": "w32_1", "t": 25.16}, {"id": "w32_2", "t": 25.34}]}, {"id": "g33", "start": 26.1, "end": 26.84, "w": [{"id": "w33_0", "t": 26.16}, {"id": "w33_1", "t": 26.28}, {"id": "w33_2", "t": 26.42}]}, {"id": "g34", "start": 26.84, "end": 28.0, "w": [{"id": "w34_0", "t": 26.9}, {"id": "w34_1", "t": 27.04}, {"id": "w34_2", "t": 27.26}]}, {"id": "g35", "start": 28.0, "end": 28.97, "w": [{"id": "w35_0", "t": 28.06}, {"id": "w35_1", "t": 28.56}, {"id": "w35_2", "t": 28.72}]}, {"id": "g36", "start": 28.97, "end": 29.57, "w": [{"id": "w36_0", "t": 28.92}, {"id": "w36_1", "t": 29.16}, {"id": "w36_2", "t": 29.34}]}, {"id": "g37", "start": 29.57, "end": 30.54, "w": [{"id": "w37_0", "t": 29.52}]}];
+      const NS = "http://www.w3.org/2000/svg";
+      const mk = (parent, tag, attrs) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); parent.appendChild(e); return e; };
+      DA.fitCaptions(CAP);
+      const tl = gsap.timeline({ paused: true });
+      const D = DA(tl);
+      D.drift(C.end);
+
+      // ================= 1. ACCROCHE =================
+      D.glow("cold", 0, 0.45, 0.01);
+      tl.to("#h-batt", { opacity: 1, duration: 0.2 }, C.batterie);
+      tl.fromTo("#h-batt", { scale: 1.6, svgOrigin: "626 1030" }, { scale: 1, svgOrigin: "626 1030", duration: 0.3, ease: "back.out(2)" }, C.batterie);
+      D.stamp("#h-stamp span", C.aucune, -5);
+      D.shake(C.aucune + 0.02, 12);
+      D.glow("red", C.aucune, 0.55, 0.3);
+      D.blurOut(["#h-t1", "#h-stamp span", "#h-batt"], C.alors - 0.12, 0.14);
+      tl.fromTo("#h-t2 .wsp", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.14, stagger: 0.1, ease: "power2.out" }, C.alors);
+      D.glow("red", C.alors, 0, 0.4); D.glow("amber", C.energie, 0.45, 0.4);
+      D.blurOut("#h-t2", C.du - 0.1, 0.12);
+      tl.fromTo("#h-t3 .wsp", { opacity: 0, filter: "blur(8px)", scale: 1.2 }, { opacity: 1, filter: "blur(0px)", scale: 1, duration: 0.18, stagger: 0.12, ease: "expo.out" }, C.du);
+      D.glow("amber", C.terminal, 0, 0.3); D.glow("cold", C.terminal, 0.8, 0.3);
+      D.flash(C.terminal + 0.05, 0.14, "#4cc4ff");
+      const T1 = C.secret - 0.2;
+      D.blurOut("#h-t3", T1 - 0.05, 0.15);
+      tl.set("#hk", { opacity: 0 }, T1 + 0.1);
+
+      // ================= la carte : position pilotée (centre x, centre y, échelle) =================
+      const cardT = document.getElementById("cardT");
+      const P = { cx: 540, cy: 870, s: 1.3 };
+      const place = () => cardT.setAttribute("transform", `translate(${P.cx.toFixed(1)} ${P.cy.toFixed(1)}) scale(${P.s.toFixed(4)}) translate(-540 -971)`);
+      place();
+      const moveCard = (to, at, d = 0.7, ease = "power3.inOut") => tl.to(P, { ...to, duration: d, ease, onUpdate: place }, at);
+      tl.fromTo("#stage", { opacity: 0 }, { opacity: 1, duration: 0.1 }, T1 + 0.05);
+      tl.to("#capshade", { opacity: 1, duration: 0.3 }, T1 + 0.1);
+
+      // ================= LE SECRET : L'ANTENNE =================
+      tl.to("#cardU", { opacity: 0.35, duration: 0.4 }, C.antenne - 0.1);
+      const coils = gsap.utils.toArray(".coil");
+      coils.forEach((c) => { const L = c.getTotalLength(); c.style.strokeDasharray = L; c.style.strokeDashoffset = L; });
+      coils.forEach((c, j) => tl.to(c, { strokeDashoffset: 0, duration: 0.9, ease: "power2.inOut" }, C.antenne + j * 0.15));
+      D.popIn("#in0", C.antenne + 0.1, 0.5);
+      D.glow("cold", C.antenne, 0.2, 0.4); D.glow("amber", C.antenne, 0.55, 0.4);
+      tl.to("#cardU", { opacity: 1, duration: 0.4 }, C.e1 - 0.4);
+      tl.to("#coils", { opacity: 0.35, duration: 0.4 }, C.e1 - 0.4);
+
+      const step = (n, t) => { if (n > 1) D.blurOut("#st" + (n - 1), t - 0.1, 0.12); D.popIn("#st" + n, t, 0.6); };
+
+      // ================= ÉTAPE 1 — LE CHAMP =================
+      D.blurOut("#in0", C.e1 - 0.2, 0.15);
+      step(1, C.e1);
+      moveCard({ cy: 1000, s: 0.85 }, C.e1 - 0.3);
+      tl.fromTo("#term", { opacity: 0, y: -60 }, { opacity: 1, y: 0, duration: 0.45, ease: "expo.out" }, C.e1 + 0.1);
+      D.glow("amber", C.e1, 0, 0.4); D.glow("cold", C.e1, 0.6, 0.4);
+      // ondes : ellipses qui partent du terminal, en boucle finie
+      const waves = document.getElementById("waves"), W = [];
+      for (let j = 0; j < 5; j++) W.push(mk(waves, "ellipse", { cx: 540, cy: 700, rx: 60, ry: 18, opacity: 0 }));
+      const P0 = 1.0, nrep = Math.ceil((C.abonne - C.cree) / P0);
+      W.forEach((e, j) => tl.fromTo(e, { attr: { rx: 70, ry: 18 }, opacity: 0 },
+        { keyframes: [{ opacity: 0.9, duration: 0.1 }, { attr: { rx: 420, ry: 170 }, opacity: 0, duration: P0 - 0.1, ease: "power1.out" }], repeat: nrep }, C.cree + j * P0 / W.length));
+      D.popIn("#in1", C.oscille - 0.1, 0.5);
+      // écran du terminal : une seule fonction du temps
+      { const scr = document.getElementById("scr"), tc0 = C.treize - 0.3, o = { p: 0 };
+        const grp = (n) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+        const at = (t) => { if (t >= C.et_si) return ["…", "#8e8c95"]; if (t >= C.varier + 0.2) return ["✓ PAYÉ", "#ffb21f"];
+          if (t < tc0) return ["0 /s", "#4cc4ff"]; const k = Math.min(1, (t - tc0) / 1.4), e = 1 - (1 - k) * (1 - k);
+          return [grp(Math.round(13560000 * e)) + " /s", t >= C.e2 ? "#ece6d6" : "#4cc4ff"]; };
+        const T0 = C.e1 - 0.4, TD = C.abonne - T0;
+        const upd = (t) => { const [txt, col] = at(t); scr.textContent = txt; scr.setAttribute("fill", col); };
+        upd(T0); tl.to(o, { p: 1, duration: TD, ease: "none", onUpdate() { upd(T0 + this.progress() * TD); } }, T0); }
+
+      // ================= ÉTAPE 2 — LE COURANT =================
+      D.blurOut("#in1", C.e2 - 0.2, 0.15);
+      step(2, C.e2);
+      moveCard({ cy: 930, s: 1 }, C.approches - 0.15, 0.8, "power2.out");
+      tl.to("#coils", { opacity: 1, duration: 0.3 }, C.traverse - 0.1);
+      tl.fromTo("#coils", { filter: "drop-shadow(0 0 0px #ffb21f)" }, { filter: "drop-shadow(0 0 14px #ffb21f)", duration: 0.4 }, C.traverse);
+      D.popIn("#in2", C.traverse, 0.5);
+      D.glow("cold", C.traverse, 0.35, 0.4); D.glow("amber", C.traverse, 0.5, 0.4);
+      // le courant tourne dans l'antenne
+      { const curr = document.getElementById("curr"), path = document.querySelector(".coil:nth-of-type(2)");
+        const L = path.getTotalLength(), N = 16, dots = Array.from({ length: N }, () => mk(curr, "circle", { r: 8, fill: "#fff3c4", opacity: 0 }));
+        const t0 = C.courant - 0.3, t1 = C.et_si + 1.2, dur = t1 - t0, o = { p: 0 };
+        const draw = (pr) => { const ph = pr * dur * 520; dots.forEach((d, j) => { const pt = path.getPointAtLength((ph + j * L / N) % L); d.setAttribute("cx", pt.x.toFixed(1)); d.setAttribute("cy", pt.y.toFixed(1)); }); };
+        draw(0);
+        tl.to(o, { p: 1, duration: dur, ease: "none", onUpdate() { draw(this.progress()); } }, t0);
+        tl.to(dots, { opacity: 1, duration: 0.3, stagger: 0.02 }, C.courant - 0.2);
+        tl.to(dots, { opacity: 0, duration: 0.5 }, C.centimetres); }
+      // la puce se réveille
+      tl.to("#chipglow", { opacity: 0.9, duration: 0.3 }, C.reveille - 0.05);
+      tl.fromTo("#chipon", { opacity: 0 }, { keyframes: [{ opacity: 0.9, duration: 0.08 }, { opacity: 0.35, duration: 0.4 }] }, C.reveille - 0.05);
+      D.flash(C.reveille, 0.14, "#ffb21f");
+
+      // ================= ÉTAPE 3 — LE CODE UNIQUE =================
+      D.blurOut("#in2", C.e3 - 0.2, 0.15);
+      step(3, C.e3);
+      D.glow("cold", C.e3, 0.15, 0.4); D.glow("red", C.e3, 0.4, 0.4);
+      tl.to("#code", { opacity: 1, duration: 0.2 }, C.calcule - 0.1);
+      { const codeEl = document.getElementById("code"), o = { v: 0 }, H = "0123456789ABCDEF";
+        const finalC = "A7F3 9C21";
+        tl.to(o, { v: 1, duration: 1.0, ease: "none", onUpdate: () => { const k = Math.floor(o.v * 24);
+          codeEl.textContent = o.v >= 1 ? finalC : finalC.split("").map((c, i) => c === " " ? " " : H[(k * 7 + i * 5) % 16]).join(""); } }, C.calcule - 0.05); }
+      D.popIn("#in3", C.seul - 0.2, 0.5);
+      tl.fromTo("#code", { scale: 1, svgOrigin: "552 968" }, { keyframes: [{ scale: 1.15, duration: 0.1 }, { scale: 1, duration: 0.35, ease: "expo.out" }], svgOrigin: "552 968" }, C.seul);
+
+      // ================= ÉTAPE 4 — LA RÉPONSE =================
+      D.blurOut("#in3", C.e4 - 0.2, 0.15);
+      step(4, C.e4);
+      D.glow("red", C.e4, 0, 0.4); D.glow("cold", C.e4, 0.5, 0.4);
+      tl.set("#packet", { opacity: 1, x: 70, y: 958 }, C.renvoie - 0.05);
+      tl.to("#code", { opacity: 0.25, duration: 0.2 }, C.renvoie - 0.05);
+      tl.to("#packet", { x: 0, y: 640, duration: 0.9, ease: "power2.inOut" }, C.renvoie);
+      tl.to("#packet", { opacity: 0, scale: 0.5, svgOrigin: "540 640", duration: 0.2 }, C.renvoie + 0.9);
+      D.popIn("#in4", C.varier - 0.3, 0.5);
+      // les ondes changent de rythme (modulation) puis le terminal valide
+      tl.to("#waves", { keyframes: [{ opacity: 0.4, duration: 0.08 }, { opacity: 1, duration: 0.08 }, { opacity: 0.4, duration: 0.08 }, { opacity: 1, duration: 0.08 }, { opacity: 0.4, duration: 0.08 }, { opacity: 1, duration: 0.08 }] }, C.varier - 0.1);
+      tl.fromTo("#term", { scale: 1, svgOrigin: "540 585" }, { keyframes: [{ scale: 1.06, duration: 0.1 }, { scale: 1, duration: 0.35, ease: "expo.out" }], svgOrigin: "540 585" }, C.varier + 0.2);
+      D.glow("amber", C.varier + 0.2, 0.5, 0.3);
+
+      // ================= 5. LA CHUTE : ON L'ÉLOIGNE =================
+      D.blurOut(["#in4", "#st4"], C.et_si - 0.2, 0.15);
+      D.glow("amber", C.et_si, 0, 0.3); D.glow("cold", C.et_si, 0.3, 0.4);
+      tl.fromTo("#tw-title .wsp", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.14, stagger: 0.1, ease: "power2.out" }, C.et_si);
+      moveCard({ cy: 1012, s: 0.8 }, C.eloignes - 0.1, 0.8, "power2.inOut");
+      tl.to("#waves", { scale: 0.55, svgOrigin: "540 700", duration: 0.8, ease: "power2.inOut" }, C.eloignes);
+      tl.to("#dist", { opacity: 1, duration: 0.3 }, C.centimetres - 0.1);
+      tl.to("#coils", { opacity: 0.25, filter: "drop-shadow(0 0 0px #ffb21f)", duration: 0.5 }, C.plus2 - 0.1);
+      tl.to(["#chipglow", "#chipon"], { opacity: 0, duration: 0.25 }, C.seteint - 0.1);
+      tl.to("#cardU", { opacity: 0.55, duration: 0.3 }, C.seteint);
+      D.blurOut("#tw-title", C.seteint - 0.14, 0.12);
+      D.stamp("#tw-stamp span", C.seteint, -5);
+      D.shake(C.seteint + 0.02, 12);
+      D.flash(C.seteint + 0.02, 0.2, "#ff5236");
+      D.glow("red", C.seteint, 0.6, 0.3);
+      tl.to("#s-main", { scale: 1.3, opacity: 0, filter: "blur(16px)", duration: 0.3, ease: "power3.in" }, C.abonne - 0.32);
+      tl.to("#capshade", { opacity: 0, duration: 0.2 }, C.abonne - 0.32);
+
+      // ================= 6. CARTE DE FIN =================
+      D.glow("red", C.abonne - 0.2, 0, 0.4); D.glow("cold", C.abonne - 0.2, 0, 0.4); D.glow("cream", C.abonne - 0.2, 0.5, 0.4);
+      D.endCard(C.abonne - 0.05, C.vraiment);
+
+      D.captions(CAP);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

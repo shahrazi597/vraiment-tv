@@ -1,0 +1,545 @@
+{
+ "cues": {
+  "p1350": 0.86,
+  "fabricant": 2.06,
+  "touche": 2.52,
+  "pas": 2.94,
+  "euro": 3.495,
+  "regarde": 4.02,
+  "accise": 4.84,
+  "taxe": 5.68,
+  "p55": 6.52,
+  "prix": 7.38,
+  "montant": 8.26,
+  "fixe": 8.46,
+  "total": 9.24,
+  "v889": 9.82,
+  "tva": 11.74,
+  "v225": 12.4,
+  "buraliste": 13.5,
+  "v139": 14.16,
+  "v97": 15.92,
+  "centimes": 16.44,
+  "avec": 17.1,
+  "fabriquer": 17.82,
+  "emballer": 18.5,
+  "livrer": 19.06,
+  "resultat": 19.98,
+  "huit": 20.84,
+  "partent": 21.84,
+  "etat": 22.16,
+  "abonne": 22.88,
+  "vraiment": 24.38,
+  "fab2": 15.4,
+  "voEnd": 24.792448999999998,
+  "end": 27.19
+ },
+ "sfx": [
+  [
+   "kaching",
+   0.68,
+   1.2,
+   0.3
+  ],
+  [
+   "stamp",
+   2.949,
+   0.7,
+   0.4
+  ],
+  [
+   "whoosh-short",
+   3.721,
+   0.575,
+   0.22
+  ],
+  [
+   "pour",
+   4.845,
+   1.0,
+   0.22
+  ],
+  [
+   "ticker",
+   9.557,
+   1.0,
+   0.26
+  ],
+  [
+   "pour",
+   11.745,
+   0.9,
+   0.2
+  ],
+  [
+   "click-soft",
+   13.482,
+   0.366,
+   0.2
+  ],
+  [
+   "pop",
+   15.838,
+   0.72,
+   0.28
+  ],
+  [
+   "impact-bass-1",
+   19.961,
+   0.6,
+   0.22
+  ],
+  [
+   "stamp2",
+   22.124,
+   0.7,
+   0.42
+  ],
+  [
+   "pop",
+   23.098,
+   0.72,
+   0.28
+  ]
+ ],
+ "tokens": [
+  {
+   "text": "Ton",
+   "key": "ton",
+   "start": 0.0,
+   "end": 0.1
+  },
+  {
+   "text": "paquet",
+   "key": "paquet",
+   "start": 0.1,
+   "end": 0.38
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 0.38,
+   "end": 0.44
+  },
+  {
+   "text": "cigarettes",
+   "key": "cigarettes",
+   "start": 0.44,
+   "end": 0.7
+  },
+  {
+   "text": "à",
+   "key": "a",
+   "start": 0.7,
+   "end": 0.86
+  },
+  {
+   "text": "13,50 € ?",
+   "key": "1350",
+   "start": 0.86,
+   "end": 1.88
+  },
+  {
+   "text": "Le",
+   "key": "le",
+   "start": 1.88,
+   "end": 2.06
+  },
+  {
+   "text": "fabricant",
+   "key": "fabricant",
+   "start": 2.06,
+   "end": 2.44
+  },
+  {
+   "text": "ne",
+   "key": "ne",
+   "start": 2.44,
+   "end": 2.52
+  },
+  {
+   "text": "touche",
+   "key": "touche",
+   "start": 2.52,
+   "end": 2.76
+  },
+  {
+   "text": "même",
+   "key": "meme",
+   "start": 2.76,
+   "end": 2.94
+  },
+  {
+   "text": "pas",
+   "key": "pas",
+   "start": 2.94,
+   "end": 3.18
+  },
+  {
+   "text": "UN",
+   "key": "un",
+   "start": 3.18,
+   "end": 3.495
+  },
+  {
+   "text": "euro !",
+   "key": "euro",
+   "start": 3.495,
+   "end": 4.02
+  },
+  {
+   "text": "Regarde.",
+   "key": "regarde",
+   "start": 4.02,
+   "end": 4.38
+  },
+  {
+   "text": "D'abord,",
+   "key": "dabord",
+   "start": 4.56,
+   "end": 4.84
+  },
+  {
+   "text": "l'accise,",
+   "key": "laccise",
+   "start": 4.84,
+   "end": 5.42
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 5.56,
+   "end": 5.68
+  },
+  {
+   "text": "taxe",
+   "key": "taxe",
+   "start": 5.68,
+   "end": 5.94
+  },
+  {
+   "text": "sur",
+   "key": "sur",
+   "start": 5.94,
+   "end": 6.02
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 6.02,
+   "end": 6.12
+  },
+  {
+   "text": "tabac :",
+   "key": "tabac",
+   "start": 6.12,
+   "end": 6.36
+  },
+  {
+   "text": "55 %",
+   "key": "55",
+   "start": 6.52,
+   "end": 7.2
+  },
+  {
+   "text": "du",
+   "key": "du",
+   "start": 7.2,
+   "end": 7.38
+  },
+  {
+   "text": "prix,",
+   "key": "prix",
+   "start": 7.38,
+   "end": 7.6
+  },
+  {
+   "text": "plus",
+   "key": "plus",
+   "start": 7.82,
+   "end": 8.02
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 8.02,
+   "end": 8.26
+  },
+  {
+   "text": "montant",
+   "key": "montant",
+   "start": 8.26,
+   "end": 8.46
+  },
+  {
+   "text": "fixe",
+   "key": "fixe",
+   "start": 8.46,
+   "end": 8.74
+  },
+  {
+   "text": "par",
+   "key": "par",
+   "start": 8.74,
+   "end": 8.84
+  },
+  {
+   "text": "paquet.",
+   "key": "paquet",
+   "start": 8.84,
+   "end": 9.1
+  },
+  {
+   "text": "Total :",
+   "key": "total",
+   "start": 9.24,
+   "end": 9.48
+  },
+  {
+   "text": "8,89 € !",
+   "key": "889",
+   "start": 9.82,
+   "end": 10.84
+  },
+  {
+   "text": "Ensuite,",
+   "key": "ensuite",
+   "start": 11.06,
+   "end": 11.36
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 11.66,
+   "end": 11.74
+  },
+  {
+   "text": "TVA :",
+   "key": "tva",
+   "start": 11.74,
+   "end": 12.18
+  },
+  {
+   "text": "2,25 €.",
+   "key": "225",
+   "start": 12.4,
+   "end": 13.1
+  },
+  {
+   "text": "Le",
+   "key": "le",
+   "start": 13.38,
+   "end": 13.5
+  },
+  {
+   "text": "buraliste",
+   "key": "buraliste",
+   "start": 13.5,
+   "end": 13.92
+  },
+  {
+   "text": "garde",
+   "key": "garde",
+   "start": 13.92,
+   "end": 14.16
+  },
+  {
+   "text": "1,39 €.",
+   "key": "139",
+   "start": 14.16,
+   "end": 15.0
+  },
+  {
+   "text": "Et",
+   "key": "et",
+   "start": 15.24,
+   "end": 15.34
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 15.34,
+   "end": 15.4
+  },
+  {
+   "text": "fabricant ?",
+   "key": "fabricant",
+   "start": 15.4,
+   "end": 15.74
+  },
+  {
+   "text": "97",
+   "key": "97",
+   "start": 15.92,
+   "end": 16.44
+  },
+  {
+   "text": "centimes.",
+   "key": "centimes",
+   "start": 16.44,
+   "end": 16.94
+  },
+  {
+   "text": "Avec",
+   "key": "avec",
+   "start": 17.1,
+   "end": 17.26
+  },
+  {
+   "text": "ça,",
+   "key": "ca",
+   "start": 17.26,
+   "end": 17.5
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 17.64,
+   "end": 17.7
+  },
+  {
+   "text": "doit",
+   "key": "doit",
+   "start": 17.7,
+   "end": 17.82
+  },
+  {
+   "text": "fabriquer,",
+   "key": "fabriquer",
+   "start": 17.82,
+   "end": 18.32
+  },
+  {
+   "text": "emballer",
+   "key": "emballer",
+   "start": 18.5,
+   "end": 18.9
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 18.9,
+   "end": 19.06
+  },
+  {
+   "text": "livrer",
+   "key": "livrer",
+   "start": 19.06,
+   "end": 19.38
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 19.38,
+   "end": 19.46
+  },
+  {
+   "text": "paquet.",
+   "key": "paquet",
+   "start": 19.46,
+   "end": 19.72
+  },
+  {
+   "text": "Résultat :",
+   "key": "resultat",
+   "start": 19.98,
+   "end": 20.42
+  },
+  {
+   "text": "plus",
+   "key": "plus",
+   "start": 20.56,
+   "end": 20.68
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 20.68,
+   "end": 20.84
+  },
+  {
+   "text": "8",
+   "key": "8",
+   "start": 20.84,
+   "end": 21.12
+  },
+  {
+   "text": "euros",
+   "key": "euros",
+   "start": 21.12,
+   "end": 21.12
+  },
+  {
+   "text": "sur",
+   "key": "sur",
+   "start": 21.12,
+   "end": 21.12
+  },
+  {
+   "text": "10",
+   "key": "10",
+   "start": 21.12,
+   "end": 21.84
+  },
+  {
+   "text": "partent",
+   "key": "partent",
+   "start": 21.84,
+   "end": 22.096
+  },
+  {
+   "text": "à",
+   "key": "a",
+   "start": 22.096,
+   "end": 22.16
+  },
+  {
+   "text": "l'État.",
+   "key": "letat",
+   "start": 22.16,
+   "end": 22.36
+  },
+  {
+   "text": "Abonne-toi",
+   "key": "abonnetoi",
+   "start": 22.88,
+   "end": 23.36
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 23.36,
+   "end": 23.5
+  },
+  {
+   "text": "savoir",
+   "key": "savoir",
+   "start": 23.5,
+   "end": 23.7
+  },
+  {
+   "text": "combien",
+   "key": "combien",
+   "start": 23.7,
+   "end": 23.98
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 23.98,
+   "end": 24.18
+  },
+  {
+   "text": "coûte",
+   "key": "coute",
+   "start": 24.18,
+   "end": 24.38
+  },
+  {
+   "text": "vraiment.",
+   "key": "vraiment",
+   "start": 24.38,
+   "end": 24.76
+  }
+ ]
+}
