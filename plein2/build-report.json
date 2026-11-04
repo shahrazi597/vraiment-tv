@@ -1,0 +1,485 @@
+{
+ "cues": {
+  "p124": 0.86,
+  "mais": 1.82,
+  "moitie": 3.28,
+  "regarde": 3.86,
+  "l60": 4.58,
+  "p12378": 6.34,
+  "carburant": 8.08,
+  "petrole": 8.66,
+  "raffinage": 9.26,
+  "transport": 9.82,
+  "station": 10.34,
+  "v6174": 11.0,
+  "tout": 12.8,
+  "accise": 13.66,
+  "v4140": 14.94,
+  "meilleur": 16.48,
+  "tva": 17.06,
+  "aussi": 17.92,
+  "v2064": 19.18,
+  "resultat": 20.74,
+  "euro": 21.32,
+  "deux": 21.82,
+  "etat": 22.7,
+  "abonne": 23.88,
+  "vraiment": 25.38,
+  "voEnd": 25.68,
+  "end": 28.08
+ },
+ "tokens": [
+  {
+   "text": "Ton",
+   "key": "ton",
+   "start": 0.0,
+   "end": 0.12
+  },
+  {
+   "text": "plein",
+   "key": "plein",
+   "start": 0.12,
+   "end": 0.26
+  },
+  {
+   "text": "d'essence ?",
+   "key": "dessence",
+   "start": 0.26,
+   "end": 0.86
+  },
+  {
+   "text": "124",
+   "key": "124",
+   "start": 0.86,
+   "end": 1.46
+  },
+  {
+   "text": "euros.",
+   "key": "euros",
+   "start": 1.46,
+   "end": 1.62
+  },
+  {
+   "text": "Mais",
+   "key": "mais",
+   "start": 1.82,
+   "end": 1.98
+  },
+  {
+   "text": "l'essence",
+   "key": "lessence",
+   "start": 1.98,
+   "end": 2.2
+  },
+  {
+   "text": "elle-même ?",
+   "key": "ellememe",
+   "start": 2.2,
+   "end": 2.8
+  },
+  {
+   "text": "Même",
+   "key": "meme",
+   "start": 2.8,
+   "end": 2.96
+  },
+  {
+   "text": "pas",
+   "key": "pas",
+   "start": 2.96,
+   "end": 3.18
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 3.18,
+   "end": 3.28
+  },
+  {
+   "text": "MOITIÉ !",
+   "key": "moitie",
+   "start": 3.28,
+   "end": 3.86
+  },
+  {
+   "text": "Regarde.",
+   "key": "regarde",
+   "start": 3.86,
+   "end": 4.16
+  },
+  {
+   "text": "60",
+   "key": "60",
+   "start": 4.58,
+   "end": 4.86
+  },
+  {
+   "text": "litres",
+   "key": "litres",
+   "start": 4.86,
+   "end": 5.08
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 5.08,
+   "end": 5.26
+  },
+  {
+   "text": "SP95 :",
+   "key": "sp95",
+   "start": 5.26,
+   "end": 5.96
+  },
+  {
+   "text": "123,78 €.",
+   "key": "12378",
+   "start": 6.34,
+   "end": 7.52
+  },
+  {
+   "text": "Le",
+   "key": "le",
+   "start": 7.96,
+   "end": 8.08
+  },
+  {
+   "text": "carburant —",
+   "key": "carburant",
+   "start": 8.08,
+   "end": 8.52
+  },
+  {
+   "text": "pétrole,",
+   "key": "petrole",
+   "start": 8.66,
+   "end": 9.06
+  },
+  {
+   "text": "raffinage,",
+   "key": "raffinage",
+   "start": 9.26,
+   "end": 9.7
+  },
+  {
+   "text": "transport,",
+   "key": "transport",
+   "start": 9.82,
+   "end": 10.02
+  },
+  {
+   "text": "station —",
+   "key": "station",
+   "start": 10.34,
+   "end": 10.5
+  },
+  {
+   "text": "61,74 €.",
+   "key": "6174",
+   "start": 11.0,
+   "end": 12.04
+  },
+  {
+   "text": "Et",
+   "key": "et",
+   "start": 12.52,
+   "end": 12.64
+  },
+  {
+   "text": "c'est",
+   "key": "cest",
+   "start": 12.64,
+   "end": 12.8
+  },
+  {
+   "text": "tout !",
+   "key": "tout",
+   "start": 12.8,
+   "end": 13.12
+  },
+  {
+   "text": "Ensuite,",
+   "key": "ensuite",
+   "start": 13.12,
+   "end": 13.36
+  },
+  {
+   "text": "l'accise,",
+   "key": "laccise",
+   "start": 13.66,
+   "end": 13.98
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 14.12,
+   "end": 14.22
+  },
+  {
+   "text": "taxe",
+   "key": "taxe",
+   "start": 14.22,
+   "end": 14.44
+  },
+  {
+   "text": "carburant :",
+   "key": "carburant",
+   "start": 14.44,
+   "end": 14.82
+  },
+  {
+   "text": "41,40 € !",
+   "key": "4140",
+   "start": 14.94,
+   "end": 15.98
+  },
+  {
+   "text": "Et",
+   "key": "et",
+   "start": 16.28,
+   "end": 16.38
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 16.38,
+   "end": 16.48
+  },
+  {
+   "text": "meilleur ?",
+   "key": "meilleur",
+   "start": 16.48,
+   "end": 16.98
+  },
+  {
+   "text": "La",
+   "key": "la",
+   "start": 16.98,
+   "end": 17.06
+  },
+  {
+   "text": "TVA",
+   "key": "tva",
+   "start": 17.06,
+   "end": 17.44
+  },
+  {
+   "text": "se",
+   "key": "se",
+   "start": 17.44,
+   "end": 17.56
+  },
+  {
+   "text": "calcule",
+   "key": "calcule",
+   "start": 17.56,
+   "end": 17.92
+  },
+  {
+   "text": "AUSSI",
+   "key": "aussi",
+   "start": 17.92,
+   "end": 18.28
+  },
+  {
+   "text": "sur",
+   "key": "sur",
+   "start": 18.28,
+   "end": 18.52
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 18.52,
+   "end": 18.62
+  },
+  {
+   "text": "taxe.",
+   "key": "taxe",
+   "start": 18.62,
+   "end": 18.98
+  },
+  {
+   "text": "20,64 €",
+   "key": "2064",
+   "start": 19.18,
+   "end": 19.92
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 19.92,
+   "end": 20.06
+  },
+  {
+   "text": "plus.",
+   "key": "plus",
+   "start": 20.06,
+   "end": 20.26
+  },
+  {
+   "text": "Résultat :",
+   "key": "resultat",
+   "start": 20.74,
+   "end": 21.14
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 21.14,
+   "end": 21.32
+  },
+  {
+   "text": "euro",
+   "key": "euro",
+   "start": 21.32,
+   "end": 21.62
+  },
+  {
+   "text": "sur",
+   "key": "sur",
+   "start": 21.62,
+   "end": 21.82
+  },
+  {
+   "text": "deux",
+   "key": "deux",
+   "start": 21.82,
+   "end": 22.0
+  },
+  {
+   "text": "part",
+   "key": "part",
+   "start": 22.0,
+   "end": 22.18
+  },
+  {
+   "text": "direct",
+   "key": "direct",
+   "start": 22.18,
+   "end": 22.54
+  },
+  {
+   "text": "à",
+   "key": "a",
+   "start": 22.54,
+   "end": 22.7
+  },
+  {
+   "text": "l'État !",
+   "key": "letat",
+   "start": 22.7,
+   "end": 22.92
+  },
+  {
+   "text": "Abonne-toi",
+   "key": "abonnetoi",
+   "start": 23.88,
+   "end": 24.38
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 24.38,
+   "end": 24.56
+  },
+  {
+   "text": "savoir",
+   "key": "savoir",
+   "start": 24.56,
+   "end": 24.72
+  },
+  {
+   "text": "combien",
+   "key": "combien",
+   "start": 24.72,
+   "end": 24.98
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 24.98,
+   "end": 25.18
+  },
+  {
+   "text": "coûte",
+   "key": "coute",
+   "start": 25.18,
+   "end": 25.38
+  },
+  {
+   "text": "VRAIMENT.",
+   "key": "vraiment",
+   "start": 25.38,
+   "end": 25.68
+  }
+ ],
+ "sfx": [
+  [
+   "kaching",
+   0.68,
+   1.2,
+   0.32
+  ],
+  [
+   "stamp",
+   3.289,
+   0.7,
+   0.4
+  ],
+  [
+   "whoosh-short",
+   4.231,
+   0.575,
+   0.22
+  ],
+  [
+   "ticker",
+   4.417,
+   1.0,
+   0.3
+  ],
+  [
+   "kaching2",
+   6.634,
+   1.3,
+   0.28
+  ],
+  [
+   "pour",
+   8.085,
+   1.0,
+   0.22
+  ],
+  [
+   "pour",
+   13.665,
+   1.0,
+   0.2
+  ],
+  [
+   "stamp2",
+   17.884,
+   0.7,
+   0.36
+  ],
+  [
+   "impact-bass-1",
+   20.721,
+   0.6,
+   0.22
+  ],
+  [
+   "kaching",
+   22.52,
+   1.2,
+   0.3
+  ],
+  [
+   "pop",
+   24.148,
+   0.72,
+   0.28
+  ]
+ ]
+}

@@ -1,0 +1,920 @@
+{
+ "cues": {
+  "jamais": 1.84,
+  "il": 2.42,
+  "deplace": 2.56,
+  "chaleur": 3.24,
+  "pose": 3.8,
+  "arriere": 4.34,
+  "cotes": 4.92,
+  "tiede": 5.92,
+  "part": 7.06,
+  "nourriture": 7.74,
+  "secret": 8.4,
+  "gaz": 9.06,
+  "iso": 9.56,
+  "bout": 10.46,
+  "moins": 10.84,
+  "degres": 11.28,
+  "sevapore": 13.22,
+  "aspire": 13.92,
+  "sueur": 15.58,
+  "compresseur": 17.28,
+  "lecrase": 17.86,
+  "comprime": 18.92,
+  "lexterieur": 21.14,
+  "relache": 22.28,
+  "liquide": 24.32,
+  "tube": 26.22,
+  "pression": 27.34,
+  "chute": 27.7,
+  "glace": 28.76,
+  "boucle": 29.76,
+  "alors": 30.94,
+  "ouvrir": 31.12,
+  "rechauffe": 33.32,
+  "abonne": 34.6,
+  "vraiment": 36.0,
+  "e1": 11.88,
+  "e2": 16.5,
+  "e3": 20.26,
+  "e4": 24.82,
+  "et_boucle": 29.3,
+  "voEnd": 36.364694,
+  "end": 38.56
+ },
+ "sfx": [
+  [
+   "stamp",
+   1.849,
+   0.7,
+   0.4
+  ],
+  [
+   "whoosh-short",
+   3.551,
+   0.575,
+   0.22
+  ],
+  [
+   "boil",
+   10.427,
+   0.966,
+   0.32
+  ],
+  [
+   "click-soft",
+   11.862,
+   0.366,
+   0.16
+  ],
+  [
+   "click-soft",
+   16.482,
+   0.366,
+   0.16
+  ],
+  [
+   "click-soft",
+   20.242,
+   0.366,
+   0.16
+  ],
+  [
+   "click-soft",
+   24.802,
+   0.366,
+   0.16
+  ],
+  [
+   "compressor",
+   17.308,
+   1.8,
+   0.28
+  ],
+  [
+   "hiss",
+   27.726,
+   0.907,
+   0.35
+  ],
+  [
+   "door",
+   31.128,
+   0.925,
+   0.4
+  ],
+  [
+   "stamp2",
+   33.284,
+   0.7,
+   0.45
+  ],
+  [
+   "pop",
+   34.818,
+   0.72,
+   0.28
+  ]
+ ],
+ "tokens": [
+  {
+   "text": "Ton",
+   "key": "ton",
+   "start": 0.0,
+   "end": 0.16
+  },
+  {
+   "text": "frigo",
+   "key": "frigo",
+   "start": 0.16,
+   "end": 0.44
+  },
+  {
+   "text": "ne",
+   "key": "ne",
+   "start": 0.44,
+   "end": 0.6
+  },
+  {
+   "text": "fabrique",
+   "key": "fabrique",
+   "start": 0.6,
+   "end": 0.84
+  },
+  {
+   "text": "pas",
+   "key": "pas",
+   "start": 0.84,
+   "end": 1.08
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 1.08,
+   "end": 1.22
+  },
+  {
+   "text": "froid.",
+   "key": "froid",
+   "start": 1.22,
+   "end": 1.46
+  },
+  {
+   "text": "JAMAIS.",
+   "key": "jamais",
+   "start": 1.84,
+   "end": 2.2
+  },
+  {
+   "text": "Il",
+   "key": "il",
+   "start": 2.42,
+   "end": 2.56
+  },
+  {
+   "text": "déplace",
+   "key": "deplace",
+   "start": 2.56,
+   "end": 3.06
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 3.06,
+   "end": 3.24
+  },
+  {
+   "text": "chaleur !",
+   "key": "chaleur",
+   "start": 3.24,
+   "end": 3.6
+  },
+  {
+   "text": "Pose",
+   "key": "pose",
+   "start": 3.8,
+   "end": 3.9
+  },
+  {
+   "text": "ta",
+   "key": "ta",
+   "start": 3.9,
+   "end": 4.08
+  },
+  {
+   "text": "main",
+   "key": "main",
+   "start": 4.08,
+   "end": 4.16
+  },
+  {
+   "text": "sur",
+   "key": "sur",
+   "start": 4.16,
+   "end": 4.34
+  },
+  {
+   "text": "l'arrière",
+   "key": "larriere",
+   "start": 4.34,
+   "end": 4.66
+  },
+  {
+   "text": "ou",
+   "key": "ou",
+   "start": 4.66,
+   "end": 4.8
+  },
+  {
+   "text": "les",
+   "key": "les",
+   "start": 4.8,
+   "end": 4.92
+  },
+  {
+   "text": "côtés",
+   "key": "cotes",
+   "start": 4.92,
+   "end": 5.16
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 5.16,
+   "end": 5.22
+  },
+  {
+   "text": "ton",
+   "key": "ton",
+   "start": 5.22,
+   "end": 5.3
+  },
+  {
+   "text": "frigo :",
+   "key": "frigo",
+   "start": 5.3,
+   "end": 5.54
+  },
+  {
+   "text": "c'est",
+   "key": "cest",
+   "start": 5.8,
+   "end": 5.92
+  },
+  {
+   "text": "tiède.",
+   "key": "tiede",
+   "start": 5.92,
+   "end": 6.24
+  },
+  {
+   "text": "C'est",
+   "key": "cest",
+   "start": 6.48,
+   "end": 6.72
+  },
+  {
+   "text": "là",
+   "key": "la",
+   "start": 6.72,
+   "end": 6.9
+  },
+  {
+   "text": "que",
+   "key": "que",
+   "start": 6.9,
+   "end": 7.06
+  },
+  {
+   "text": "part",
+   "key": "part",
+   "start": 7.06,
+   "end": 7.22
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 7.22,
+   "end": 7.36
+  },
+  {
+   "text": "chaleur",
+   "key": "chaleur",
+   "start": 7.36,
+   "end": 7.56
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 7.56,
+   "end": 7.66
+  },
+  {
+   "text": "ta",
+   "key": "ta",
+   "start": 7.66,
+   "end": 7.74
+  },
+  {
+   "text": "nourriture.",
+   "key": "nourriture",
+   "start": 7.74,
+   "end": 8.16
+  },
+  {
+   "text": "Le",
+   "key": "le",
+   "start": 8.34,
+   "end": 8.4
+  },
+  {
+   "text": "secret ?",
+   "key": "secret",
+   "start": 8.4,
+   "end": 8.96
+  },
+  {
+   "text": "Un",
+   "key": "un",
+   "start": 8.96,
+   "end": 9.06
+  },
+  {
+   "text": "gaz,",
+   "key": "gaz",
+   "start": 9.06,
+   "end": 9.38
+  },
+  {
+   "text": "l'isobutane,",
+   "key": "lisobutane",
+   "start": 9.56,
+   "end": 10.22
+  },
+  {
+   "text": "qui",
+   "key": "qui",
+   "start": 10.4,
+   "end": 10.46
+  },
+  {
+   "text": "bout",
+   "key": "bout",
+   "start": 10.46,
+   "end": 10.62
+  },
+  {
+   "text": "à",
+   "key": "a",
+   "start": 10.62,
+   "end": 10.84
+  },
+  {
+   "text": "moins",
+   "key": "moins",
+   "start": 10.84,
+   "end": 10.98
+  },
+  {
+   "text": "12",
+   "key": "12",
+   "start": 10.98,
+   "end": 11.28
+  },
+  {
+   "text": "degrés.",
+   "key": "degres",
+   "start": 11.28,
+   "end": 11.66
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 11.88,
+   "end": 12.06
+  },
+  {
+   "text": "1 :",
+   "key": "1",
+   "start": 12.06,
+   "end": 12.24
+  },
+  {
+   "text": "dans",
+   "key": "dans",
+   "start": 12.5,
+   "end": 12.58
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 12.58,
+   "end": 12.68
+  },
+  {
+   "text": "frigo,",
+   "key": "frigo",
+   "start": 12.68,
+   "end": 12.92
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 13.14,
+   "end": 13.22
+  },
+  {
+   "text": "s'évapore",
+   "key": "sevapore",
+   "start": 13.22,
+   "end": 13.6
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 13.6,
+   "end": 13.92
+  },
+  {
+   "text": "aspire",
+   "key": "aspire",
+   "start": 13.92,
+   "end": 14.28
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 14.28,
+   "end": 14.5
+  },
+  {
+   "text": "chaleur",
+   "key": "chaleur",
+   "start": 14.5,
+   "end": 14.74
+  },
+  {
+   "text": "des",
+   "key": "des",
+   "start": 14.74,
+   "end": 14.84
+  },
+  {
+   "text": "aliments.",
+   "key": "aliments",
+   "start": 14.84,
+   "end": 15.12
+  },
+  {
+   "text": "Comme",
+   "key": "comme",
+   "start": 15.3,
+   "end": 15.42
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 15.42,
+   "end": 15.58
+  },
+  {
+   "text": "sueur",
+   "key": "sueur",
+   "start": 15.58,
+   "end": 15.78
+  },
+  {
+   "text": "qui",
+   "key": "qui",
+   "start": 15.78,
+   "end": 15.9
+  },
+  {
+   "text": "te",
+   "key": "te",
+   "start": 15.9,
+   "end": 16.0
+  },
+  {
+   "text": "rafraîchit.",
+   "key": "rafraichit",
+   "start": 16.0,
+   "end": 16.3
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 16.5,
+   "end": 16.8
+  },
+  {
+   "text": "2 :",
+   "key": "2",
+   "start": 16.8,
+   "end": 16.98
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 17.26,
+   "end": 17.28
+  },
+  {
+   "text": "compresseur",
+   "key": "compresseur",
+   "start": 17.28,
+   "end": 17.86
+  },
+  {
+   "text": "l'écrase.",
+   "key": "lecrase",
+   "start": 17.86,
+   "end": 18.4
+  },
+  {
+   "text": "Plus",
+   "key": "plus",
+   "start": 18.6,
+   "end": 18.72
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 18.72,
+   "end": 18.84
+  },
+  {
+   "text": "est",
+   "key": "est",
+   "start": 18.84,
+   "end": 18.92
+  },
+  {
+   "text": "comprimé,",
+   "key": "comprime",
+   "start": 18.92,
+   "end": 19.32
+  },
+  {
+   "text": "plus",
+   "key": "plus",
+   "start": 19.56,
+   "end": 19.66
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 19.66,
+   "end": 19.78
+  },
+  {
+   "text": "chauffe.",
+   "key": "chauffe",
+   "start": 19.78,
+   "end": 20.14
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 20.26,
+   "end": 20.52
+  },
+  {
+   "text": "3 :",
+   "key": "3",
+   "start": 20.52,
+   "end": 20.78
+  },
+  {
+   "text": "à",
+   "key": "a",
+   "start": 21.06,
+   "end": 21.14
+  },
+  {
+   "text": "l'extérieur",
+   "key": "lexterieur",
+   "start": 21.14,
+   "end": 21.56
+  },
+  {
+   "text": "du",
+   "key": "du",
+   "start": 21.56,
+   "end": 21.74
+  },
+  {
+   "text": "frigo,",
+   "key": "frigo",
+   "start": 21.74,
+   "end": 22.0
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 22.2,
+   "end": 22.28
+  },
+  {
+   "text": "relâche",
+   "key": "relache",
+   "start": 22.28,
+   "end": 22.68
+  },
+  {
+   "text": "cette",
+   "key": "cette",
+   "start": 22.68,
+   "end": 22.82
+  },
+  {
+   "text": "chaleur",
+   "key": "chaleur",
+   "start": 22.82,
+   "end": 23.1
+  },
+  {
+   "text": "dans",
+   "key": "dans",
+   "start": 23.1,
+   "end": 23.18
+  },
+  {
+   "text": "ta",
+   "key": "ta",
+   "start": 23.18,
+   "end": 23.3
+  },
+  {
+   "text": "cuisine,",
+   "key": "cuisine",
+   "start": 23.3,
+   "end": 23.56
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 23.56,
+   "end": 23.94
+  },
+  {
+   "text": "redevient",
+   "key": "redevient",
+   "start": 23.94,
+   "end": 24.32
+  },
+  {
+   "text": "liquide.",
+   "key": "liquide",
+   "start": 24.32,
+   "end": 24.66
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 24.82,
+   "end": 25.12
+  },
+  {
+   "text": "4 :",
+   "key": "4",
+   "start": 25.12,
+   "end": 25.34
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 25.34,
+   "end": 25.74
+  },
+  {
+   "text": "passe",
+   "key": "passe",
+   "start": 25.74,
+   "end": 25.94
+  },
+  {
+   "text": "dans",
+   "key": "dans",
+   "start": 25.94,
+   "end": 26.08
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 26.08,
+   "end": 26.22
+  },
+  {
+   "text": "tube",
+   "key": "tube",
+   "start": 26.22,
+   "end": 26.44
+  },
+  {
+   "text": "minuscule,",
+   "key": "minuscule",
+   "start": 26.44,
+   "end": 27.08
+  },
+  {
+   "text": "sa",
+   "key": "sa",
+   "start": 27.24,
+   "end": 27.34
+  },
+  {
+   "text": "pression",
+   "key": "pression",
+   "start": 27.34,
+   "end": 27.7
+  },
+  {
+   "text": "chute…",
+   "key": "chute",
+   "start": 27.7,
+   "end": 28.06
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 28.06,
+   "end": 28.34
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 28.34,
+   "end": 28.42
+  },
+  {
+   "text": "redevient",
+   "key": "redevient",
+   "start": 28.42,
+   "end": 28.76
+  },
+  {
+   "text": "glacé.",
+   "key": "glace",
+   "start": 28.76,
+   "end": 29.12
+  },
+  {
+   "text": "Et",
+   "key": "et",
+   "start": 29.3,
+   "end": 29.34
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 29.34,
+   "end": 29.46
+  },
+  {
+   "text": "tourne",
+   "key": "tourne",
+   "start": 29.46,
+   "end": 29.7
+  },
+  {
+   "text": "en",
+   "key": "en",
+   "start": 29.7,
+   "end": 29.76
+  },
+  {
+   "text": "boucle,",
+   "key": "boucle",
+   "start": 29.76,
+   "end": 30.06
+  },
+  {
+   "text": "jour",
+   "key": "jour",
+   "start": 30.06,
+   "end": 30.4
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 30.4,
+   "end": 30.54
+  },
+  {
+   "text": "nuit.",
+   "key": "nuit",
+   "start": 30.54,
+   "end": 30.7
+  },
+  {
+   "text": "Alors",
+   "key": "alors",
+   "start": 30.94,
+   "end": 31.12
+  },
+  {
+   "text": "ouvrir",
+   "key": "ouvrir",
+   "start": 31.12,
+   "end": 31.48
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 31.48,
+   "end": 31.58
+  },
+  {
+   "text": "frigo",
+   "key": "frigo",
+   "start": 31.58,
+   "end": 31.84
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 31.84,
+   "end": 32.02
+  },
+  {
+   "text": "rafraîchir",
+   "key": "rafraichir",
+   "start": 32.02,
+   "end": 32.34
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 32.34,
+   "end": 32.42
+  },
+  {
+   "text": "cuisine ?",
+   "key": "cuisine",
+   "start": 32.42,
+   "end": 32.64
+  },
+  {
+   "text": "Ça",
+   "key": "ca",
+   "start": 32.98,
+   "end": 33.22
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 33.22,
+   "end": 33.32
+  },
+  {
+   "text": "RÉCHAUFFE !",
+   "key": "rechauffe",
+   "start": 33.32,
+   "end": 34.6
+  },
+  {
+   "text": "Abonne-toi",
+   "key": "abonnetoi",
+   "start": 34.6,
+   "end": 35.06
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 35.06,
+   "end": 35.22
+  },
+  {
+   "text": "savoir",
+   "key": "savoir",
+   "start": 35.22,
+   "end": 35.44
+  },
+  {
+   "text": "comment",
+   "key": "comment",
+   "start": 35.44,
+   "end": 35.66
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 35.66,
+   "end": 35.82
+  },
+  {
+   "text": "marche",
+   "key": "marche",
+   "start": 35.82,
+   "end": 36.0
+  },
+  {
+   "text": "vraiment.",
+   "key": "vraiment",
+   "start": 36.0,
+   "end": 36.22
+  }
+ ]
+}

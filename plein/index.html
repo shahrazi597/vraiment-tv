@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Inter Display"; font-weight: 600; src: url("assets/fonts/InterDisplay-SemiBold.otf"); }
+      @font-face { font-family: "Inter Display"; font-weight: 700; src: url("assets/fonts/InterDisplay-Bold.otf"); }
+      @font-face { font-family: "Inter Display"; font-weight: 800; src: url("assets/fonts/InterDisplay-ExtraBold.otf"); }
+      @font-face { font-family: "Inter Display"; font-weight: 900; src: url("assets/fonts/InterDisplay-Black.otf"); }
+      :root {
+        --ground: #0d0d0f;
+        --panel: #17171b;
+        --line: #2a2a31;
+        --ink: #f4f2ec;
+        --muted: #8d8b93;
+        --fuel: #e9e4d6;
+        --accise: #ff5236;
+        --tva: #ffb01f;
+        --font: "Inter Display", sans-serif;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1080px; height: 1920px; overflow: hidden;
+        background: var(--ground);
+      }
+      #root {
+        position: relative; width: 1080px; height: 1920px;
+        font-family: var(--font); color: var(--ink);
+        font-variant-numeric: tabular-nums;
+      }
+      .clip { position: absolute; inset: 0; }
+      #h-q, #h-stamp, #l-fuel, #l-acc, #l-tva, #tva-note, #bilan, .chip { opacity: 0; }
+      #main-src { position: absolute; top: 1580px; left: 120px; right: 120px; text-align: center; font-size: 28px; font-weight: 600; color: var(--muted); }
+
+      /* série */
+      #tag {
+        position: absolute; top: 120px; left: 0; right: 0; bottom: auto;
+        display: flex; justify-content: center;
+      }
+      #tag span {
+        font-size: 34px; font-weight: 800; letter-spacing: 0.04em;
+        padding: 14px 30px; border-radius: 999px;
+        background: var(--ink); color: var(--ground);
+      }
+
+      /* ---------- accroche ---------- */
+      #hook { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+      .hook-line {
+        font-size: 84px; font-weight: 900; letter-spacing: -0.03em;
+        text-transform: uppercase; text-align: center; line-height: 1;
+      }
+      #h-top { position: absolute; top: 560px; left: 0; right: 0; }
+      #h-q { position: absolute; top: 560px; left: 0; right: 0; font-size: 74px; text-transform: none; letter-spacing: -0.02em; }
+      #h-price {
+        position: absolute; top: 700px; left: 0; right: 0; text-align: center;
+        font-size: 330px; font-weight: 900; letter-spacing: -0.05em; color: var(--tva);
+        line-height: 1;
+      }
+      #h-strike {
+        position: absolute; top: 860px; left: 170px; width: 740px; height: 26px;
+        background: var(--accise); border-radius: 13px; transform-origin: left center;
+      }
+      #h-stamp {
+        position: absolute; top: 1150px; left: 0; right: 0; display: flex; justify-content: center;
+      }
+      #h-stamp span {
+        font-size: 84px; font-weight: 900; text-transform: uppercase; letter-spacing: -0.02em; white-space: nowrap;
+        color: var(--ground); background: var(--accise);
+        padding: 18px 44px; border-radius: 22px; transform: rotate(-4deg); display: block;
+      }
+
+      /* ---------- décomposition ---------- */
+      #pump {
+        position: absolute; top: 250px; left: 120px; right: 120px; height: 190px;
+        background: var(--panel); border: 3px solid var(--line); border-radius: 30px;
+        display: flex; align-items: center; justify-content: space-between; padding: 0 48px;
+      }
+      #pump .lbl { font-size: 28px; font-weight: 700; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+      #pump .big { font-size: 104px; font-weight: 900; letter-spacing: -0.04em; line-height: 1; }
+      #pump .mid { font-size: 64px; font-weight: 800; letter-spacing: -0.03em; line-height: 1; color: var(--muted); }
+      #pump .col { display: flex; flex-direction: column; gap: 10px; }
+      #pump .col.r { align-items: flex-end; }
+
+      #tank {
+        position: absolute; top: 500px; left: 120px; width: 360px; height: 1000px;
+        border: 5px solid var(--line); border-radius: 40px; overflow: hidden; background: #121215;
+      }
+      .seg { position: absolute; left: 0; right: 0; transform-origin: bottom center; }
+      #seg-fuel { bottom: 0; height: 494px; background: var(--fuel); }
+      #seg-acc  { bottom: 494px; height: 331px; background: var(--accise); }
+      #seg-tva  { bottom: 825px; height: 165px; background: var(--tva); }
+      .seg .pct {
+        position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%);
+        text-align: center; font-size: 64px; font-weight: 900; color: var(--ground); letter-spacing: -0.03em;
+      }
+      #tank-cap { position: absolute; top: 1512px; left: 120px; width: 360px; text-align: center; font-size: 30px; font-weight: 700; color: var(--muted); }
+
+      .label { position: absolute; left: 540px; width: 420px; }
+      .label .name { font-size: 40px; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; }
+      .label .sub { font-size: 30px; font-weight: 600; color: var(--muted); margin-top: 6px; line-height: 1.25; }
+      .label .val { font-size: 112px; font-weight: 900; letter-spacing: -0.04em; line-height: 1.02; margin-top: 4px; }
+      #l-fuel { top: 1030px; }
+      #l-fuel .val { color: var(--fuel); }
+      #l-acc { top: 650px; }
+      #l-acc .val { color: var(--accise); }
+      #l-tva { top: 470px; }
+      #l-tva .val { color: var(--tva); font-size: 100px; }
+      .chips { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 22px; }
+      .chip {
+        font-size: 30px; font-weight: 700; padding: 10px 22px; border-radius: 999px;
+        border: 3px solid var(--line); color: var(--ink); background: var(--panel);
+      }
+      #tva-note {
+        position: absolute; left: 540px; top: 760px; width: 420px;
+        font-size: 38px; font-weight: 800; line-height: 1.2;
+        padding: 26px 28px; border-radius: 24px; background: var(--panel); border: 3px solid var(--tva);
+      }
+      #tva-note b { color: var(--tva); }
+
+      #bilan { position: absolute; left: 520px; top: 640px; width: 460px; }
+      #bilan .k { font-size: 40px; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+      #bilan .one { font-size: 200px; font-weight: 900; letter-spacing: -0.05em; line-height: 0.95; margin-top: 10px; }
+      #bilan .one em { font-style: normal; color: var(--accise); }
+      #bilan .etat { font-size: 64px; font-weight: 900; line-height: 1.05; margin-top: 18px; }
+      #bilan .etat span { color: var(--tva); }
+      #bilan .pct { margin-top: 26px; font-size: 34px; font-weight: 700; color: var(--muted); }
+
+      /* ---------- fin ---------- */
+      #cta { display: flex; flex-direction: column; align-items: center; }
+      #cta-main {
+        position: absolute; top: 600px; left: 0; right: 0; text-align: center;
+        font-size: 120px; font-weight: 900; letter-spacing: -0.04em; line-height: 1.02; text-transform: uppercase;
+      }
+      #cta-main span { color: var(--tva); }
+      #cta-btn {
+        position: absolute; top: 1150px; left: 0; right: 0; display: flex; justify-content: center;
+      }
+      #cta-btn span {
+        font-size: 64px; font-weight: 900; padding: 30px 70px; border-radius: 999px;
+        background: var(--accise); color: var(--ground); display: block;
+      }
+      #src {
+        position: absolute; bottom: 440px; left: 120px; right: 120px; text-align: center;
+        font-size: 30px; font-weight: 600; color: var(--muted); line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="31.6" data-width="1080" data-height="1920">
+
+      <audio id="vo" src="assets/voix.mp3" data-start="0" data-duration="30.35" data-volume="1"></audio>
+
+      <!-- Accroche 0 → 5.4 -->
+      <div id="hook" class="clip" data-start="0" data-duration="5.8" data-track-index="1">
+        <div id="h-top" class="hook-line">Ton plein te coûte</div>
+        <div id="h-q" class="hook-line">Mais l'essence elle-même&nbsp;?</div>
+        <div id="h-price"><span id="h-num">124</span>&nbsp;€</div>
+        <div id="h-strike"></div>
+        <div id="h-stamp"><span>Même pas la moitié</span></div>
+      </div>
+
+      <!-- Décomposition 5.2 → 28 -->
+      <div id="main" class="clip" data-start="5.2" data-duration="22.8" data-track-index="2">
+        <div id="pump">
+          <div class="col">
+            <div class="lbl">SP95 · France</div>
+            <div class="mid"><span id="p-l">0,00</span>&nbsp;L</div>
+          </div>
+          <div class="col r">
+            <div class="lbl">À payer</div>
+            <div class="big"><span id="p-e">0,00</span>&nbsp;€</div>
+          </div>
+        </div>
+
+        <div id="tank">
+          <div id="seg-fuel" class="seg"><div class="pct">50&nbsp;%</div></div>
+          <div id="seg-acc" class="seg"><div class="pct">33&nbsp;%</div></div>
+          <div id="seg-tva" class="seg"><div class="pct">17&nbsp;%</div></div>
+        </div>
+        <div id="tank-cap">Un plein de 60&nbsp;L</div>
+        <div id="main-src">Prix moyens France · 24 août 2026</div>
+
+        <div id="l-fuel" class="label">
+          <div class="name">Le carburant</div>
+          <div class="val"><span id="v-fuel">0,00</span>&nbsp;€</div>
+          <div class="chips">
+            <span class="chip">pétrole</span><span class="chip">raffinage</span>
+            <span class="chip">transport</span><span class="chip">station</span>
+          </div>
+        </div>
+
+        <div id="l-acc" class="label">
+          <div class="name">L'accise</div>
+          <div class="sub">la taxe sur les carburants</div>
+          <div class="val"><span id="v-acc">0,00</span>&nbsp;€</div>
+        </div>
+
+        <div id="l-tva" class="label">
+          <div class="name">La TVA</div>
+          <div class="val"><span id="v-tva">0,00</span>&nbsp;€</div>
+        </div>
+        <div id="tva-note">Calculée <b>aussi sur la taxe</b>. Une taxe sur une taxe.</div>
+
+        <div id="bilan">
+          <div class="k">Bilan</div>
+          <div class="one"><em>1&nbsp;€</em><br />sur 2</div>
+          <div class="etat">part à <span>l'État</span></div>
+          <div class="pct">62,04&nbsp;€ de taxes sur 123,78&nbsp;€</div>
+        </div>
+      </div>
+
+      <!-- Fin 27.8 → 30.4 -->
+      <div id="cta" class="clip" data-start="27.8" data-duration="3.8" data-track-index="3">
+        <div id="cta-main">Combien ça<br />coûte <span>vraiment</span>&nbsp;?</div>
+        <div id="cta-btn"><span>Abonne-toi</span></div>
+        <div id="src">Source : Commission européenne,<br />prix moyens France au 24/08/2026</div>
+      </div>
+
+      <div id="tag" class="clip" data-start="0" data-duration="31.6" data-track-index="0"><span>COMBIEN ÇA COÛTE VRAIMENT&nbsp;?</span></div>
+    </div>
+
+    <script>
+      const fr = (v, d) => v.toFixed(d).replace(".", ",");
+      const tl = gsap.timeline({ paused: true });
+      const count = (id, to, at, dur, d = 2) => {
+        const o = { v: 0 };
+        const el = document.getElementById(id);
+        tl.to(o, { v: to, duration: dur, ease: "power2.out", onUpdate: () => (el.textContent = fr(o.v, d)) }, at);
+      };
+      const pop = (sel, at, extra = {}) =>
+        tl.fromTo(sel, { opacity: 0, y: 40, scale: 0.96 }, { opacity: 1, y: 0, scale: 1, duration: 0.35, ease: "back.out(1.6)", ...extra }, at);
+      const out = (sel, at, dur = 0.25) => tl.to(sel, { opacity: 0, duration: dur, ease: "power1.in" }, at);
+
+      // état initial
+
+      // ---- accroche
+      tl.fromTo("#h-price", { scale: 1 }, { scale: 1.08, duration: 0.25, yoyo: true, repeat: 1, ease: "power2.inOut" }, 0.6);
+      tl.fromTo("#h-num", { color: "#ffb01f" }, { color: "#ff5236", duration: 0.5 }, 1.3);
+      out("#h-top", 2.45, 0.18);
+      pop("#h-q", 2.6);
+      tl.fromTo("#h-strike", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power3.out" }, 4.15);
+      tl.to("#h-price", { opacity: 0.45, duration: 0.3 }, 4.15);
+      tl.fromTo("#h-stamp", { opacity: 0, scale: 1.6 }, { opacity: 1, scale: 1, duration: 0.25, ease: "power4.out" }, 4.22);
+      tl.to("#hook", { opacity: 0, y: -80, duration: 0.3, ease: "power2.in" }, 5.4);
+
+      // ---- pompe
+      tl.from("#pump", { opacity: 0, y: 60, duration: 0.4, ease: "power3.out" }, 5.55);
+      tl.from(["#tank", "#tank-cap", "#main-src"], { opacity: 0, y: 80, duration: 0.45, ease: "power3.out" }, 5.65);
+      count("p-l", 60, 5.7, 3.6);
+      count("p-e", 123.78, 5.7, 3.6);
+
+      // ---- carburant
+      tl.fromTo("#seg-fuel", { scaleY: 0 }, { scaleY: 1, duration: 1.0, ease: "power3.out" }, 10.55);
+      pop("#l-fuel", 10.55);
+      count("v-fuel", 61.74, 10.7, 1.2);
+      tl.fromTo(".chip", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.3, stagger: 0.75, ease: "back.out(2)" }, 12.4);
+
+      // ---- accise
+      tl.to("#l-fuel", { opacity: 0.35, duration: 0.3 }, 16.9);
+      tl.fromTo("#seg-acc", { scaleY: 0 }, { scaleY: 1, duration: 0.8, ease: "power3.out" }, 17.1);
+      pop("#l-acc", 17.1);
+      count("v-acc", 41.4, 19.35, 0.9);
+
+      // ---- TVA
+      tl.to("#l-acc", { opacity: 0.35, duration: 0.3 }, 20.7);
+      tl.fromTo("#seg-tva", { scaleY: 0 }, { scaleY: 1, duration: 0.6, ease: "power3.out" }, 20.9);
+      pop("#l-tva", 20.9);
+      count("v-tva", 20.64, 21.0, 0.9);
+      out("#l-acc", 21.75, 0.2);
+      pop("#tva-note", 21.9);
+
+      // ---- bilan
+      out(["#l-fuel", "#l-acc", "#l-tva", "#tva-note"], 25.15, 0.25);
+      tl.to("#seg-fuel", { opacity: 0.18, duration: 0.4 }, 25.3);
+      tl.fromTo(["#seg-acc", "#seg-tva"], { scaleX: 1 }, { scaleX: 1.04, duration: 0.18, yoyo: true, repeat: 1, ease: "power1.inOut" }, 26.1);
+      pop("#bilan", 25.35);
+      tl.to("#main", { opacity: 0, duration: 0.3 }, 27.7);
+
+      // ---- fin
+      tl.from("#cta-main", { opacity: 0, y: 50, duration: 0.4, ease: "power3.out" }, 27.85);
+      tl.from("#cta-btn", { opacity: 0, scale: 0.7, duration: 0.35, ease: "back.out(2)" }, 28.05);
+      tl.to("#cta-btn span", { scale: 1.06, duration: 0.35, yoyo: true, repeat: 3, ease: "sine.inOut" }, 28.6);
+      tl.from("#src", { opacity: 0, duration: 0.4 }, 28.1);
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

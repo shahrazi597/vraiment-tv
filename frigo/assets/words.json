@@ -1,0 +1,717 @@
+[
+{
+"text": "Ton",
+"start": 0.0,
+"end": 0.16
+},
+{
+"text": "frigo",
+"start": 0.16,
+"end": 0.44
+},
+{
+"text": "ne",
+"start": 0.44,
+"end": 0.6
+},
+{
+"text": "fabrique",
+"start": 0.6,
+"end": 0.84
+},
+{
+"text": "pas",
+"start": 0.84,
+"end": 1.08
+},
+{
+"text": "de",
+"start": 1.08,
+"end": 1.22
+},
+{
+"text": "froid.",
+"start": 1.22,
+"end": 1.46
+},
+{
+"text": "Jamais,",
+"start": 1.84,
+"end": 2.2
+},
+{
+"text": "il",
+"start": 2.42,
+"end": 2.56
+},
+{
+"text": "déplace",
+"start": 2.56,
+"end": 3.06
+},
+{
+"text": "la",
+"start": 3.06,
+"end": 3.24
+},
+{
+"text": "chaleur.",
+"start": 3.24,
+"end": 3.6
+},
+{
+"text": "Pose",
+"start": 3.8,
+"end": 3.9
+},
+{
+"text": "ta",
+"start": 3.9,
+"end": 4.08
+},
+{
+"text": "main",
+"start": 4.08,
+"end": 4.16
+},
+{
+"text": "sur",
+"start": 4.16,
+"end": 4.34
+},
+{
+"text": "l",
+"start": 4.34,
+"end": 4.46
+},
+{
+"text": "'arrière",
+"start": 4.46,
+"end": 4.66
+},
+{
+"text": "ou",
+"start": 4.66,
+"end": 4.8
+},
+{
+"text": "les",
+"start": 4.8,
+"end": 4.92
+},
+{
+"text": "côtés",
+"start": 4.92,
+"end": 5.16
+},
+{
+"text": "de",
+"start": 5.16,
+"end": 5.22
+},
+{
+"text": "ton",
+"start": 5.22,
+"end": 5.3
+},
+{
+"text": "frigo.",
+"start": 5.3,
+"end": 5.54
+},
+{
+"text": "C",
+"start": 5.8,
+"end": 5.88
+},
+{
+"text": "'est",
+"start": 5.88,
+"end": 5.92
+},
+{
+"text": "tiède.",
+"start": 5.92,
+"end": 6.24
+},
+{
+"text": "C",
+"start": 6.48,
+"end": 6.66
+},
+{
+"text": "'est",
+"start": 6.66,
+"end": 6.72
+},
+{
+"text": "là",
+"start": 6.72,
+"end": 6.9
+},
+{
+"text": "que",
+"start": 6.9,
+"end": 7.06
+},
+{
+"text": "part",
+"start": 7.06,
+"end": 7.22
+},
+{
+"text": "la",
+"start": 7.22,
+"end": 7.36
+},
+{
+"text": "chaleur",
+"start": 7.36,
+"end": 7.56
+},
+{
+"text": "de",
+"start": 7.56,
+"end": 7.66
+},
+{
+"text": "ta",
+"start": 7.66,
+"end": 7.74
+},
+{
+"text": "nourriture.",
+"start": 7.74,
+"end": 8.16
+},
+{
+"text": "Le",
+"start": 8.34,
+"end": 8.4
+},
+{
+"text": "secret",
+"start": 8.4,
+"end": 8.6
+},
+{
+"text": "?",
+"start": 8.6,
+"end": 8.96
+},
+{
+"text": "Un",
+"start": 8.96,
+"end": 9.06
+},
+{
+"text": "gaz,",
+"start": 9.06,
+"end": 9.38
+},
+{
+"text": "l",
+"start": 9.56,
+"end": 9.72
+},
+{
+"text": "'isobutane,",
+"start": 9.72,
+"end": 10.22
+},
+{
+"text": "qui",
+"start": 10.4,
+"end": 10.46
+},
+{
+"text": "bout",
+"start": 10.46,
+"end": 10.62
+},
+{
+"text": "à",
+"start": 10.62,
+"end": 10.84
+},
+{
+"text": "moins",
+"start": 10.84,
+"end": 10.98
+},
+{
+"text": "12",
+"start": 10.98,
+"end": 11.28
+},
+{
+"text": "degrés.",
+"start": 11.28,
+"end": 11.66
+},
+{
+"text": "Étape",
+"start": 11.88,
+"end": 12.06
+},
+{
+"text": "1.",
+"start": 12.06,
+"end": 12.24
+},
+{
+"text": "Dans",
+"start": 12.5,
+"end": 12.58
+},
+{
+"text": "le",
+"start": 12.58,
+"end": 12.68
+},
+{
+"text": "frigo,",
+"start": 12.68,
+"end": 12.92
+},
+{
+"text": "il",
+"start": 13.14,
+"end": 13.22
+},
+{
+"text": "s",
+"start": 13.22,
+"end": 13.38
+},
+{
+"text": "'évapore",
+"start": 13.38,
+"end": 13.6
+},
+{
+"text": "et",
+"start": 13.6,
+"end": 13.92
+},
+{
+"text": "aspire",
+"start": 13.92,
+"end": 14.28
+},
+{
+"text": "la",
+"start": 14.28,
+"end": 14.5
+},
+{
+"text": "chaleur",
+"start": 14.5,
+"end": 14.74
+},
+{
+"text": "des",
+"start": 14.74,
+"end": 14.84
+},
+{
+"text": "aliments.",
+"start": 14.84,
+"end": 15.12
+},
+{
+"text": "Comme",
+"start": 15.3,
+"end": 15.42
+},
+{
+"text": "la",
+"start": 15.42,
+"end": 15.58
+},
+{
+"text": "sueur",
+"start": 15.58,
+"end": 15.78
+},
+{
+"text": "qui",
+"start": 15.78,
+"end": 15.9
+},
+{
+"text": "te",
+"start": 15.9,
+"end": 16.0
+},
+{
+"text": "rafraîchit.",
+"start": 16.0,
+"end": 16.3
+},
+{
+"text": "Étape",
+"start": 16.5,
+"end": 16.8
+},
+{
+"text": "2.",
+"start": 16.8,
+"end": 16.98
+},
+{
+"text": "Le",
+"start": 17.26,
+"end": 17.28
+},
+{
+"text": "compresseur",
+"start": 17.28,
+"end": 17.86
+},
+{
+"text": "l",
+"start": 17.86,
+"end": 18.04
+},
+{
+"text": "'écrase.",
+"start": 18.04,
+"end": 18.4
+},
+{
+"text": "Plus",
+"start": 18.6,
+"end": 18.72
+},
+{
+"text": "il",
+"start": 18.72,
+"end": 18.84
+},
+{
+"text": "est",
+"start": 18.84,
+"end": 18.92
+},
+{
+"text": "comprimé,",
+"start": 18.92,
+"end": 19.32
+},
+{
+"text": "plus",
+"start": 19.56,
+"end": 19.66
+},
+{
+"text": "il",
+"start": 19.66,
+"end": 19.78
+},
+{
+"text": "chauffe.",
+"start": 19.78,
+"end": 20.14
+},
+{
+"text": "Étape",
+"start": 20.26,
+"end": 20.52
+},
+{
+"text": "3.",
+"start": 20.52,
+"end": 20.78
+},
+{
+"text": "À",
+"start": 21.06,
+"end": 21.14
+},
+{
+"text": "l",
+"start": 21.14,
+"end": 21.28
+},
+{
+"text": "'extérieur",
+"start": 21.28,
+"end": 21.56
+},
+{
+"text": "du",
+"start": 21.56,
+"end": 21.74
+},
+{
+"text": "frigo,",
+"start": 21.74,
+"end": 22.0
+},
+{
+"text": "il",
+"start": 22.2,
+"end": 22.28
+},
+{
+"text": "relâche",
+"start": 22.28,
+"end": 22.68
+},
+{
+"text": "cette",
+"start": 22.68,
+"end": 22.82
+},
+{
+"text": "chaleur",
+"start": 22.82,
+"end": 23.1
+},
+{
+"text": "dans",
+"start": 23.1,
+"end": 23.18
+},
+{
+"text": "ta",
+"start": 23.18,
+"end": 23.3
+},
+{
+"text": "cuisine",
+"start": 23.3,
+"end": 23.56
+},
+{
+"text": "et",
+"start": 23.56,
+"end": 23.94
+},
+{
+"text": "redevient",
+"start": 23.94,
+"end": 24.32
+},
+{
+"text": "liquide.",
+"start": 24.32,
+"end": 24.66
+},
+{
+"text": "Étape",
+"start": 24.82,
+"end": 25.12
+},
+{
+"text": "4.",
+"start": 25.12,
+"end": 25.34
+},
+{
+"text": "Il",
+"start": 25.34,
+"end": 25.74
+},
+{
+"text": "passe",
+"start": 25.74,
+"end": 25.94
+},
+{
+"text": "dans",
+"start": 25.94,
+"end": 26.08
+},
+{
+"text": "un",
+"start": 26.08,
+"end": 26.22
+},
+{
+"text": "tube",
+"start": 26.22,
+"end": 26.44
+},
+{
+"text": "minuscule,",
+"start": 26.44,
+"end": 27.08
+},
+{
+"text": "sa",
+"start": 27.24,
+"end": 27.34
+},
+{
+"text": "pression",
+"start": 27.34,
+"end": 27.7
+},
+{
+"text": "chute",
+"start": 27.7,
+"end": 28.06
+},
+{
+"text": "et",
+"start": 28.06,
+"end": 28.34
+},
+{
+"text": "il",
+"start": 28.34,
+"end": 28.42
+},
+{
+"text": "redevient",
+"start": 28.42,
+"end": 28.76
+},
+{
+"text": "glacé.",
+"start": 28.76,
+"end": 29.12
+},
+{
+"text": "Et",
+"start": 29.3,
+"end": 29.34
+},
+{
+"text": "ça",
+"start": 29.34,
+"end": 29.46
+},
+{
+"text": "tourne",
+"start": 29.46,
+"end": 29.7
+},
+{
+"text": "en",
+"start": 29.7,
+"end": 29.76
+},
+{
+"text": "boucle",
+"start": 29.76,
+"end": 30.06
+},
+{
+"text": "jour",
+"start": 30.06,
+"end": 30.4
+},
+{
+"text": "et",
+"start": 30.4,
+"end": 30.54
+},
+{
+"text": "nuit.",
+"start": 30.54,
+"end": 30.7
+},
+{
+"text": "Alors",
+"start": 30.94,
+"end": 31.12
+},
+{
+"text": "ouvrir",
+"start": 31.12,
+"end": 31.48
+},
+{
+"text": "le",
+"start": 31.48,
+"end": 31.58
+},
+{
+"text": "frigo",
+"start": 31.58,
+"end": 31.84
+},
+{
+"text": "pour",
+"start": 31.84,
+"end": 32.02
+},
+{
+"text": "rafraîcher",
+"start": 32.02,
+"end": 32.34
+},
+{
+"text": "la",
+"start": 32.34,
+"end": 32.42
+},
+{
+"text": "cuisine,",
+"start": 32.42,
+"end": 32.64
+},
+{
+"text": "ça",
+"start": 32.98,
+"end": 33.22
+},
+{
+"text": "la",
+"start": 33.22,
+"end": 33.32
+},
+{
+"text": "réchauffe",
+"start": 33.32,
+"end": 33.98
+},
+{
+"text": "!",
+"start": 34.58,
+"end": 34.6
+},
+{
+"text": "Abonne",
+"start": 34.6,
+"end": 34.88
+},
+{
+"text": "-toi",
+"start": 34.88,
+"end": 35.06
+},
+{
+"text": "pour",
+"start": 35.06,
+"end": 35.22
+},
+{
+"text": "savoir",
+"start": 35.22,
+"end": 35.44
+},
+{
+"text": "comment",
+"start": 35.44,
+"end": 35.66
+},
+{
+"text": "ça",
+"start": 35.66,
+"end": 35.82
+},
+{
+"text": "marche",
+"start": 35.82,
+"end": 36.0
+},
+{
+"text": "vraiment.",
+"start": 36.0,
+"end": 36.22
+}
+]
