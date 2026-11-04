@@ -54,7 +54,7 @@ Une seule identité pour toutes les séries : **Combien ça coûte vraiment ?**,
 - 3 vidéos par jour, chacune sur TikTok, Instagram Reels et YouTube Shorts.
 - Horaires (heure de Bruxelles) : **9 h 00** et **19 h 00** → « Comment ça marche vraiment ? » ; **12 h 00** → « Combien ça coûte vraiment ? ».
 - Les 3 vidéos sont produites la veille au soir (voir `PRODUCTION.md`), puis programmées : TikTok et YouTube via Zernio, Instagram via l'API officielle (une tâche publie le Reel à l'heure).
-- Chaque publication a sa description et ses hashtags propres à la plateforme, avec la mention « 🤖 Voix et visuels générés par IA ».
+- Chaque publication a sa description et ses hashtags propres à la plateforme, sans mention « généré par IA » dans le texte (le label IA officiel de TikTok et YouTube reste activé).
 - Budget ElevenLabs (121 000 crédits/mois) : scripts de 30 à 35 s, image IA seulement quand elle apporte vraiment (environ 1 vidéo sur 3), bruitages réutilisés depuis la bibliothèque.
 
 ## Fond
