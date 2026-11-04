@@ -1,14 +1,14 @@
 # Banque de sujets — Vraiment.TV
 
-Règle : on alterne les deux séries, un sujet par jour. Chaque fait est revérifié et sourcé au moment de produire l'épisode : si une accroche ne tient pas, on la reformule ou on passe au sujet suivant.
+Règle : 3 vidéos par jour — 9 h et 19 h « Comment ça marche vraiment ? », 12 h « Combien ça coûte vraiment ? ». Chaque fait est revérifié et sourcé au moment de produire l'épisode : si une accroche ne tient pas, on la reformule ou on passe au sujet suivant.
 
-Statut : ✅ publié · 🎬 prêt · ⏳ à faire
+Statut : ✅ publié · 📅 programmé · 🎬 prêt · ⏳ à faire
 
 ## Comment ça marche vraiment ?
 
 | # | Sujet | Accroche (à vérifier) | Statut |
 |---|---|---|---|
-| 1 | Le frigo | « Ton frigo ne fabrique pas de froid. Il déplace la chaleur. » | 🎬 |
+| 1 | Le frigo | « Ton frigo ne fabrique pas de froid. Il déplace la chaleur. » | 📅 04/11 19h |
 | 2 | Une IA comme ChatGPT | « Elle ne comprend pas un mot de ce que tu dis. Elle devine le mot suivant. » | ⏳ |
 | 3 | Le paiement sans contact | « Ta carte bancaire n'a pas de batterie. D'où vient son énergie ? » | ⏳ |
 | 4 | Le GPS | « Ton téléphone ne sait pas où il est. Il chronomètre des satellites. » | ⏳ |
@@ -28,7 +28,7 @@ Statut : ✅ publié · 🎬 prêt · ⏳ à faire
 
 | # | Sujet | Ce qu'on décompose (source officielle à trouver) | Statut |
 |---|---|---|---|
-| 1 | Le plein d'essence | Carburant, accise, TVA (Commission européenne) | 🎬 |
+| 1 | Le plein d'essence | Carburant, accise, TVA (Commission européenne) | 📅 04/11 12h |
 | 2 | Un paquet de cigarettes | Part des taxes dans le prix (douanes, ministère) | ⏳ |
 | 3 | La facture d'électricité | Énergie, réseau, taxes (régulateur de l'énergie) | ⏳ |
 | 4 | Un livre à 20 € | Auteur, éditeur, imprimeur, diffuseur, libraire | ⏳ |
