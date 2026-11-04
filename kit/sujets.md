@@ -8,9 +8,9 @@ Statut : ✅ publié · 📅 programmé · 🎬 prêt · ⏳ à faire
 
 | # | Sujet | Accroche (à vérifier) | Statut |
 |---|---|---|---|
-| 1 | Le frigo | « Ton frigo ne fabrique pas de froid. Il déplace la chaleur. » | 📅 04/11 19h |
-| 2 | Une IA comme ChatGPT | « ChatGPT ne connaît pas sa réponse à l'avance. Il la devine, mot par mot. » (reformulée) | 📅 05/11 9h |
-| 3 | Le paiement sans contact | « Ta carte bancaire n'a pas de batterie. D'où vient son énergie ? » | 📅 05/11 19h |
+| 1 | Le frigo | « Ton frigo ne fabrique pas de froid. Il déplace la chaleur. » | 📅 05/11 9h |
+| 2 | Une IA comme ChatGPT | « ChatGPT ne connaît pas sa réponse à l'avance. Il la devine, mot par mot. » (reformulée) | 📅 05/11 19h |
+| 3 | Le paiement sans contact | « Ta carte bancaire n'a pas de batterie. D'où vient son énergie ? » | 📅 06/11 9h |
 | 4 | Le GPS | « Ton téléphone ne sait pas où il est. Il chronomètre des satellites. » | ⏳ |
 | 5 | Le casque à réduction de bruit | « Pour faire le silence, il ajoute du bruit. » | ⏳ |
 | 6 | Le micro-ondes | « Il ne chauffe pas ton assiette. Il agite l'eau qu'il y a dedans. » | ⏳ |

@@ -49,7 +49,7 @@ Source : Commission européenne (Weekly Oil Bulletin), prix moyens France au 24/
 
 ---
 
-## Publication 3 — Comment ça marche vraiment ? #2 · Une IA comme ChatGPT (05/11/2026 09h00)
+## Publication 3 — Comment ça marche vraiment ? #2 · Une IA comme ChatGPT (05/11/2026 19h00)
 Fichier : `ia_FR.mp4`
 
 **TikTok**
@@ -98,7 +98,7 @@ Sources : Douane française, « La fiscalité appliquée aux tabacs manufacturé
 
 ---
 
-## Publication 5 — Comment ça marche vraiment ? #3 · Le paiement sans contact (05/11/2026 19h00)
+## Publication 5 — Comment ça marche vraiment ? #3 · Le paiement sans contact (06/11/2026 09h00)
 Fichier : `sanscontact_FR.mp4`
 
 **TikTok**

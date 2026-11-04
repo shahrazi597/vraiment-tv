@@ -9,7 +9,7 @@ Ce fichier est le mode d'emploi suivi chaque soir par la tâche planifiée. Il p
 | 12:00 | Combien ça coûte vraiment ? |
 | 19:00 | Comment ça marche vraiment ? |
 
-Priorité à « Comment ça marche vraiment ? » (2 vidéos sur 3). Un sujet n'est jamais publié deux fois : vérifier `kit/sujets.md` et `queue/`.
+Priorité à « Comment ça marche vraiment ? » (2 vidéos sur 3). Un sujet n'est jamais publié deux fois : vérifier `kit/sujets.md` et `queue/`. Un créneau déjà occupé par un fichier `queue/AAAA-MM-JJ-HHMM-*.json` (vidéo décalée ou d'avance) n'est pas reproduit : ne produire que les créneaux libres.
 
 ## 0. Préparer la machine
 ```bash
