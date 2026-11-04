@@ -1,0 +1,40 @@
+### 1
+CMD: pwd; ls /home/claude; git --version
+EXIT: 0
+OUT: /home/claude/vraiment-tv
+vraiment-tv
+git version 2.43.0
+
+### 2
+CMD: git clone https://github.com/shahrazi597/vraiment-tv /home/claude/video
+EXIT: 0
+OUT: Cloning into '/home/claude/video'...
+
+### 3
+CMD: cd /home/claude/video && mkdir -p .secrets && printf '%s' '<passphrase masquée>' > .secrets/passphrase && openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass file:.secrets/passphrase -in secrets.enc | tar -C .secrets -xf - && ls .secrets
+EXIT: 0
+OUT: instagram_token
+passphrase
+zernio_key
+
+### 4
+CMD: cd /home/claude/video && curl -s -o /dev/null -w "%{http_code}" "https://graph.facebook.com/v21.0/17841432756244727?fields=username&access_token=$(cat .secrets/instagram_token)"
+EXIT: 0
+OUT: 200
+
+### 5
+CMD: cd /home/claude/video && curl -s -o /dev/null -w "%{http_code}" -H "Authorization: Bearer $(cat .secrets/zernio_key)" https://zernio.com/api/v1/accounts
+EXIT: 0
+OUT: 200
+
+### 6
+CMD: python3 -c "import urllib.request;print(urllib.request.urlopen('https://zernio.com').status)"
+EXIT: 0
+OUT: 200
+
+### 7
+CMD: inspection des outils MCP (nom contenant ElevenLabs)
+EXIT: 0
+OUT: oui (mcp__ElevenLabs__* disponibles, ex. creative_generate_speech, creative_list_voices)
+
+Note: passphrase masquée dans ce journal ; .secrets/ non commité.
