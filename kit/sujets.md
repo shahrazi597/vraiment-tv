@@ -84,7 +84,7 @@ Choisis pour faire s'arrêter quelqu'un qui scrolle. Accroches à vérifier : si
 | 8 | Une bouteille d'eau | Eau en bouteille contre eau du robinet, prix au litre | ⏳ |
 | 9 | Une consultation chez le médecin | Qui paie quoi : patient, Sécu, mutuelle | ⏳ |
 | 10 | Un péage d'autoroute | Où va l'argent du péage | ⏳ |
-| 11 | ~~Une bouteille de vin~~ | Écarté : produit réglementé (risque TikTok) | ✖ |
+| 11 | ~~Une bouteille de vin~~ | Écarté : pas d'alcool (consigne de Razi) | ✖ |
 | 12 | Un abonnement de streaming musical | Ce qui revient vraiment aux artistes | ⏳ |
 | 13 | Un timbre | Le vrai coût d'acheminer une lettre | ⏳ |
 | 14 | Un café en terrasse | Café, loyer, salaire, TVA | ⏳ |
