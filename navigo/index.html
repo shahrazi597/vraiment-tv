@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/gsap.min.js"></script>
+    <script src="assets/da.js"></script>
+    <link rel="stylesheet" href="assets/da.css" />
+    <style>
+      /* ---------- accroche ---------- */
+      #h-t1 { top: 320px; font-size: 100px; }
+      #h-pass { position: absolute; left: 290px; top: 540px; width: 500px; height: 316px; border-radius: 34px;
+        background: linear-gradient(135deg, #2b2f3a 0%, #15161c 100%); border: 4px solid var(--cream); box-shadow: 0 30px 90px rgba(0,0,0,.5); }
+      #h-pass .chipc { position: absolute; left: 44px; top: 106px; width: 84px; height: 64px; border-radius: 14px;
+        background: linear-gradient(135deg, #ffe08a, #c98d12); }
+      #h-pass .nm { position: absolute; left: 44px; top: 36px; font-size: 40px; font-weight: 900; letter-spacing: .02em; color: var(--cream); }
+      #h-pass .ln { position: absolute; left: 44px; height: 16px; border-radius: 8px; background: rgba(236,230,214,.22); }
+      #h-pass .pz { position: absolute; right: 40px; bottom: 30px; font-size: 92px; font-weight: 900; letter-spacing: -.045em; color: var(--amber); white-space: nowrap; }
+      #h-kick { position: absolute; left: 0; right: 0; top: 900px; text-align: center; font-size: 50px; font-weight: 800; color: var(--cream); }
+      #h-real { position: absolute; left: 0; right: 0; top: 860px; text-align: center; font-size: 230px; font-weight: 900;
+        letter-spacing: -.05em; line-height: 1; color: var(--red); white-space: nowrap; opacity: 0; }
+      #h-stamp { top: 1100px; }
+      #h-costs { position: absolute; left: 60px; right: 60px; top: 1080px; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+      #h-costs .chip { position: relative; }
+      .chip i { display: block; width: 22px; height: 22px; border-radius: 50%; }
+
+      /* ---------- la barre « vrai prix » ---------- */
+      #ptag { position: absolute; left: 90px; top: 318px; width: 330px; height: 112px; border-radius: 28px; background: var(--panel);
+        border: 3px solid var(--line); display: flex; align-items: center; justify-content: center; opacity: 0;
+        font-size: 72px; font-weight: 900; letter-spacing: -.04em; color: var(--red); white-space: nowrap; }
+      #pack { position: absolute; left: 90px; top: 456px; width: 330px; height: 670px; border-radius: 36px;
+        border: 5px solid var(--cream); background: #111115; overflow: hidden; opacity: 0; }
+      .layer { position: absolute; left: 0; width: 320px; overflow: hidden; }
+      #ly-toi { bottom: 0; height: 214px; z-index: 4; background: linear-gradient(180deg, #7fd6ff, #2ea9e8); }
+      #ly-col { bottom: 214px; height: 79px; z-index: 3; background: linear-gradient(180deg, #f4efe2, #d8d0bb); }
+      #ly-aut { bottom: 293px; height: 47px; z-index: 2; background: linear-gradient(180deg, #ffc451, #f39a00); }
+      #ly-ent { bottom: 340px; height: 320px; z-index: 1; background: linear-gradient(180deg, #ff6c4e, #e43a1f); }
+      #half { position: absolute; left: 0; right: 0; top: 0; height: 107px; opacity: 0;
+        background: repeating-linear-gradient(-45deg, rgba(11,11,14,.55) 0 14px, rgba(11,11,14,0) 14px 28px); border-bottom: 4px dashed rgba(11,11,14,.7); }
+      .pct { position: absolute; left: 0; right: 0; top: 50%; margin-top: -32px; text-align: center; font-size: 58px; font-weight: 900;
+        letter-spacing: -.03em; color: rgba(11,11,14,.85); opacity: 0; }
+
+      .label { position: absolute; left: 470px; width: 560px; opacity: 0; }
+      .label .name { display: flex; align-items: center; gap: 14px; font-size: 34px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; white-space: nowrap; }
+      .label .name i { display: block; width: 22px; height: 22px; border-radius: 6px; }
+      .label .sub { font-size: 30px; font-weight: 600; color: var(--muted); margin-top: 4px; white-space: nowrap; }
+      .label .val { font-size: 84px; font-weight: 900; letter-spacing: -.045em; line-height: 1.04; margin-top: 2px; white-space: nowrap; opacity: 0; }
+      #l-ent { top: 300px; }  #l-ent .val { color: var(--red); font-size: 100px; }
+      #l-aut { top: 620px; }  #l-aut .val { color: var(--amber); }
+      #l-col { top: 750px; }  #l-col .val { color: var(--cream); }
+      #l-toi { top: 930px; }  #l-toi .val { color: var(--cold); }
+      .chips { position: absolute; left: 470px; width: 580px; display: flex; flex-wrap: wrap; gap: 12px; }
+      .chips .chip { position: relative; font-size: 30px; padding: 10px 20px; }
+      #ch-ent { top: 470px; }
+      #ch-toi { top: 1070px; }
+
+      /* ---------- bilan ---------- */
+      #b-title { position: absolute; top: 300px; left: 0; right: 0; text-align: center; font-size: 130px; font-weight: 900;
+        letter-spacing: -.05em; line-height: 1; text-transform: uppercase; white-space: nowrap; }
+      #b-title span { display: inline-block; opacity: 0; }
+      #b-title .a { color: var(--amber); }
+      #b-sub { position: absolute; top: 470px; left: 0; right: 0; text-align: center; font-size: 40px; font-weight: 800; color: var(--muted); opacity: 0; }
+      #coins { position: absolute; left: 115px; top: 590px; width: 850px; height: 380px; }
+      .coin { position: absolute; width: 180px; height: 180px; border-radius: 50%; opacity: 0;
+        background: radial-gradient(circle at 40% 35%, #ffe08a 0%, #e3a920 55%, #9c6a06 100%); box-shadow: 0 12px 30px rgba(0,0,0,.45); }
+      .coin::before { content: ""; position: absolute; left: 30px; top: 30px; width: 120px; height: 120px; border-radius: 50%;
+        background: radial-gradient(circle at 40% 35%, #ffffff 0%, #c9cad1 60%, #8a8c94 100%); }
+      .coin b { position: absolute; left: 0; right: 0; top: 54px; text-align: center; font-size: 60px; font-weight: 900; color: #3c3d44; letter-spacing: -.04em; }
+      .coin .rd { position: absolute; inset: 0; border-radius: 50%; mix-blend-mode: multiply; opacity: 0; background: #ff4a2c; }
+      .coin.me .rd { background: #4cc4ff; mix-blend-mode: normal; }
+      .blab { position: absolute; top: 990px; width: 420px; text-align: center; opacity: 0; }
+      .blab .k { font-size: 32px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+      .blab .v { font-size: 80px; font-weight: 900; letter-spacing: -.04em; line-height: 1.05; white-space: nowrap; }
+      #bl-l { left: 100px; }  #bl-l .v { color: var(--cold); }
+      #bl-r { left: 560px; }  #bl-r .v { color: var(--red); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="45.15" data-width="1080" data-height="1920">
+      <audio id="vo" src="assets/voix.mp3" data-start="0" data-duration="42.005" data-volume="1"></audio>
+      <audio id="sfx0" src="assets/sfx/kaching.mp3" data-start="0.68" data-duration="1.2" data-volume="0.28" data-fade-out="0.20"></audio>
+      <audio id="sfx1" src="assets/sfx/ticker.mp3" data-start="2.567" data-duration="1.0" data-volume="0.24" data-fade-out="0.20"></audio>
+      <audio id="sfx2" src="assets/sfx/stamp.mp3" data-start="4.429" data-duration="0.7" data-volume="0.4" data-fade-out="0.20"></audio>
+      <audio id="sfx3" src="assets/sfx/whoosh-short.mp3" data-start="8.701" data-duration="0.575" data-volume="0.22" data-fade-out="0.19"></audio>
+      <audio id="sfx4" src="assets/sfx/pour.mp3" data-start="10.945" data-duration="0.9" data-volume="0.2" data-fade-out="0.20"></audio>
+      <audio id="sfx5" src="assets/sfx/click-soft.mp3" data-start="13.862" data-duration="0.366" data-volume="0.2" data-fade-out="0.12"></audio>
+      <audio id="sfx6" src="assets/sfx/pour.mp3" data-start="18.045" data-duration="0.8" data-volume="0.18" data-fade-out="0.20"></audio>
+      <audio id="sfx7" src="assets/sfx/pop.mp3" data-start="22.098" data-duration="0.72" data-volume="0.24" data-fade-out="0.20"></audio>
+      <audio id="sfx8" src="assets/sfx/impact-bass-1.mp3" data-start="26.521" data-duration="0.6" data-volume="0.24" data-fade-out="0.20"></audio>
+      <audio id="sfx9" src="assets/sfx/ticker.mp3" data-start="27.597" data-duration="1.0" data-volume="0.24" data-fade-out="0.20"></audio>
+      <audio id="sfx10" src="assets/sfx/stamp2.mp3" data-start="38.204" data-duration="0.7" data-volume="0.42" data-fade-out="0.20"></audio>
+      <audio id="sfx11" src="assets/sfx/pop.mp3" data-start="40.238" data-duration="0.72" data-volume="0.28" data-fade-out="0.20"></audio>
+
+      <div id="bg" class="clip" data-start="0" data-duration="45.15" data-track-index="0" data-track-kind="graphics">
+        <div id="grid"></div>
+        <div id="gl-cream" class="glow"></div>
+        <div id="gl-red" class="glow"></div>
+        <div id="gl-amber" class="glow"></div>
+        <div id="gl-cold" class="glow"></div>
+        <div id="vign"></div>
+      </div>
+
+      <div id="cam">
+        <!-- 1. Accroche -->
+        <div id="s-hook" class="clip" data-start="0" data-duration="9.050" data-track-index="1" data-track-kind="graphics">
+          <div id="h-t1" class="hl">Ton passe<br />Navigo&nbsp;?</div>
+          <div id="h-pass">
+            <div class="nm">PASSE MENSUEL</div>
+            <div class="chipc"></div>
+            <div class="ln" style="top:206px;width:200px"></div>
+            <div class="ln" style="top:236px;width:130px"></div>
+            <div class="pz"><span id="h-num">90,80</span>&nbsp;€</div>
+          </div>
+          <div id="h-kick">Et son <span style="color:var(--red)">vrai</span> prix&nbsp;?</div>
+          <div id="h-real"><span id="h-rnum">90</span>&nbsp;€</div>
+          <div id="h-stamp" class="stamp"><span>Chaque mois&nbsp;!</span></div>
+          <div id="h-costs">
+            <span id="hc1" class="chip"><i style="background:var(--cream)"></i>Trains</span>
+            <span id="hc2" class="chip"><i style="background:var(--cream)"></i>Bus</span>
+            <span id="hc3" class="chip"><i style="background:var(--cream)"></i>Conducteurs</span>
+            <span id="hc4" class="chip"><i style="background:var(--amber)"></i>Électricité</span>
+          </div>
+        </div>
+
+        <!-- 2. Le vrai prix découpé -->
+        <div id="s-main" class="clip" data-start="8.700" data-duration="27.860" data-track-index="2" data-track-kind="graphics">
+          <div id="ptag">280&nbsp;€</div>
+          <div id="pack" data-layout-allow-overflow>
+            <div id="ly-ent" class="layer"><div id="pc-ent" class="pct">49&nbsp;%</div></div>
+            <div id="ly-aut" class="layer"></div>
+            <div id="ly-col" class="layer"></div>
+            <div id="ly-toi" class="layer"><div id="half"></div><div id="pc-toi" class="pct" style="margin-top:6px">32&nbsp;%</div></div>
+          </div>
+
+          <div id="l-ent" class="label"><div class="name"><i style="background:var(--red)"></i>Les entreprises</div><div class="val"><span id="v-ent">0,00</span>&nbsp;€</div></div>
+          <div id="ch-ent" class="chips"><span id="ce1" class="chip">Versement mobilité</span><span id="ce2" class="chip">même sans métro</span></div>
+          <div id="l-aut" class="label"><div class="name"><i style="background:var(--amber)"></i>Pub, amendes, taxes</div><div class="val"><span id="v-aut">0,00</span>&nbsp;€</div></div>
+          <div id="l-col" class="label"><div class="name"><i style="background:var(--cream)"></i>Les collectivités</div><div class="sub">Région, Paris, départements</div><div class="val"><span id="v-col">0,00</span>&nbsp;€</div></div>
+          <div id="l-toi" class="label"><div class="name"><i style="background:var(--cold)"></i>Toi</div><div class="val"><span id="v-toi">0,00</span>&nbsp;€</div></div>
+          <div id="ch-toi" class="chips"><span id="ct1" class="chip">Employeur&nbsp;: −50&nbsp;%</span></div>
+        </div>
+
+        <!-- 3. Bilan -->
+        <div id="s-bilan" class="clip" data-start="36.410" data-duration="3.660" data-track-index="3" data-track-kind="graphics">
+          <div id="b-title"><span>Moins</span> <span>de</span> <span class="a">1&nbsp;€</span><br /><span>sur</span> <span class="a">6</span></div>
+          <div id="coins"></div>
+          <div id="bl-l" class="blab"><div class="k">Toi, remboursé</div><div class="v">45,40&nbsp;€</div></div>
+          <div id="bl-r" class="blab"><div class="k">Payé par les autres</div><div class="v">234,67&nbsp;€</div></div>
+        </div>
+
+        <!-- 4. Carte de fin -->
+        <div id="s-cta" class="clip" data-start="39.870" data-duration="5.280" data-track-index="4" data-track-kind="graphics">
+          <div id="c-title"><div>Combien ça</div><div>coûte</div><div class="a">vraiment&nbsp;?</div></div>
+          <div id="c-btn"><span>Abonne-toi</span></div>
+          <div id="c-ep">Épisode 3 · Le passe Navigo</div>
+          <div id="c-src">Sources : Île-de-France Mobilités (tarifs 2026, compte administratif 2025) · passe mensuel toutes zones</div>
+        </div>
+      </div>
+
+      <div id="caps" class="clip" data-start="5.460" data-duration="39.690" data-track-index="5" data-track-kind="captions">
+        <div id="g0" class="cap"><span class="in"><span id="w0_0" class="wd">trains</span></span></div>
+        <div id="g1" class="cap"><span class="in"><span id="w1_0" class="wd">les</span> <span id="w1_1" class="wd">bus</span></span></div>
+        <div id="g2" class="cap"><span class="in"><span id="w2_0" class="wd">les</span> <span id="w2_1" class="wd">conducteurs</span></span></div>
+        <div id="g3" class="cap"><span class="in"><span id="w3_0" class="wd">l'électricité…</span></span></div>
+        <div id="g4" class="cap"><span class="in"><span id="w4_0" class="wd">ça</span> <span id="w4_1" class="wd">coûte</span> <span id="w4_2" class="wd em">cher.</span></span></div>
+        <div id="g5" class="cap"><span class="in"><span id="w5_0" class="wd">Alors</span> <span id="w5_1" class="wd">regarde</span> <span id="w5_2" class="wd">qui</span></span></div>
+        <div id="g6" class="cap"><span class="in"><span id="w6_0" class="wd">paie</span> <span id="w6_1" class="wd">le</span> <span id="w6_2" class="wd">reste.</span></span></div>
+        <div id="g7" class="cap"><span class="in"><span id="w7_0" class="wd">D'abord</span></span></div>
+        <div id="g8" class="cap"><span class="in"><span id="w8_0" class="wd">toi :</span></span></div>
+        <div id="g9" class="cap"><span class="in"><span id="w9_0" class="wd em">90,80 €.</span></span></div>
+        <div id="g10" class="cap"><span class="in"><span id="w10_0" class="wd">Et</span> <span id="w10_1" class="wd">si</span> <span id="w10_2" class="wd">ton</span></span></div>
+        <div id="g11" class="cap"><span class="in"><span id="w11_0" class="wd">employeur</span> <span id="w11_1" class="wd">te</span> <span id="w11_2" class="wd">rembourse</span></span></div>
+        <div id="g12" class="cap"><span class="in"><span id="w12_0" class="wd">la</span> <span id="w12_1" class="wd em">moitié</span></span></div>
+        <div id="g13" class="cap"><span class="in"><span id="w13_0" class="wd">comme</span> <span id="w13_1" class="wd">la</span> <span id="w13_2" class="wd">loi</span></span></div>
+        <div id="g14" class="cap"><span class="in"><span id="w14_0" class="wd">l'y</span> <span id="w14_1" class="wd">oblige</span></span></div>
+        <div id="g15" class="cap"><span class="in"><span id="w15_0" class="wd">il</span> <span id="w15_1" class="wd">ne</span> <span id="w15_2" class="wd">te</span></span></div>
+        <div id="g16" class="cap"><span class="in"><span id="w16_0" class="wd">reste</span> <span id="w16_1" class="wd">que</span> <span id="w16_2" class="wd em">45,40 €.</span></span></div>
+        <div id="g17" class="cap"><span class="in"><span id="w17_0" class="wd">Ensuite</span></span></div>
+        <div id="g18" class="cap"><span class="in"><span id="w18_0" class="wd">les</span> <span id="w18_1" class="wd">collectivités :</span></span></div>
+        <div id="g19" class="cap"><span class="in"><span id="w19_0" class="wd">la</span> <span id="w19_1" class="wd">Région</span></span></div>
+        <div id="g20" class="cap"><span class="in"><span id="w20_0" class="wd">Paris</span> <span id="w20_1" class="wd">et</span> <span id="w20_2" class="wd">les</span></span></div>
+        <div id="g21" class="cap"><span class="in"><span id="w21_0" class="wd">départements.</span></span></div>
+        <div id="g22" class="cap"><span class="in"><span id="w22_0" class="wd em">33,10 €.</span></span></div>
+        <div id="g23" class="cap"><span class="in"><span id="w23_0" class="wd">Puis</span> <span id="w23_1" class="wd">la</span> <span id="w23_2" class="wd">pub</span></span></div>
+        <div id="g24" class="cap"><span class="in"><span id="w24_0" class="wd">les</span> <span id="w24_1" class="wd">amendes</span> <span id="w24_2" class="wd">et</span></span></div>
+        <div id="g25" class="cap"><span class="in"><span id="w25_0" class="wd">quelques</span> <span id="w25_1" class="wd">taxes :</span></span></div>
+        <div id="g26" class="cap"><span class="in"><span id="w26_0" class="wd em">19,47 €.</span></span></div>
+        <div id="g27" class="cap"><span class="in"><span id="w27_0" class="wd">Et</span> <span id="w27_1" class="wd">le</span> <span id="w27_2" class="wd">plus</span></span></div>
+        <div id="g28" class="cap"><span class="in"><span id="w28_0" class="wd">gros</span> <span id="w28_1" class="wd">payeur ?</span></span></div>
+        <div id="g29" class="cap"><span class="in"><span id="w29_0" class="wd">Les</span> <span id="w29_1" class="wd em">entreprises</span> <span id="w29_2" class="wd">d'Île-de-France :</span></span></div>
+        <div id="g30" class="cap"><span class="in"><span id="w30_0" class="wd em">136,69 € !</span></span></div>
+        <div id="g31" class="cap"><span class="in"><span id="w31_0" class="wd">Presque</span> <span id="w31_1" class="wd">la</span> <span id="w31_2" class="wd em">moitié !</span></span></div>
+        <div id="g32" class="cap"><span class="in"><span id="w32_0" class="wd">Avec</span> <span id="w32_1" class="wd">une</span> <span id="w32_2" class="wd">taxe</span></span></div>
+        <div id="g33" class="cap"><span class="in"><span id="w33_0" class="wd">sur</span> <span id="w33_1" class="wd">les</span> <span id="w33_2" class="wd">salaires :</span></span></div>
+        <div id="g34" class="cap"><span class="in"><span id="w34_0" class="wd">le</span> <span id="w34_1" class="wd em">versement</span> <span id="w34_2" class="wd em">mobilité.</span></span></div>
+        <div id="g35" class="cap"><span class="in"><span id="w35_0" class="wd">Même</span> <span id="w35_1" class="wd">une</span> <span id="w35_2" class="wd">entreprise</span></span></div>
+        <div id="g36" class="cap"><span class="in"><span id="w36_0" class="wd">dont</span> <span id="w36_1" class="wd">aucun</span> <span id="w36_2" class="wd">salarié</span></span></div>
+        <div id="g37" class="cap"><span class="in"><span id="w37_0" class="wd">ne</span> <span id="w37_1" class="wd">prend</span> <span id="w37_2" class="wd">le</span></span></div>
+        <div id="g38" class="cap"><span class="in"><span id="w38_0" class="wd em">métro</span> <span id="w38_1" class="wd">la</span> <span id="w38_2" class="wd">paie.</span></span></div>
+        <div id="g39" class="cap"><span class="in"><span id="w39_0" class="wd">Résultat :</span></span></div>
+        <div id="g40" class="cap"><span class="in"><span id="w40_0" class="wd">avec</span> <span id="w40_1" class="wd">le</span> <span id="w40_2" class="wd">remboursement</span></span></div>
+        <div id="g41" class="cap"><span class="in"><span id="w41_0" class="wd">tu</span> <span id="w41_1" class="wd">paies</span> <span id="w41_2" class="wd">moins</span></span></div>
+        <div id="g42" class="cap"><span class="in"><span id="w42_0" class="wd">d'1</span> <span id="w42_1" class="wd">euro</span> <span id="w42_2" class="wd">sur</span></span></div>
+        <div id="g43" class="cap"><span class="in"><span id="w43_0" class="wd em">6</span> <span id="w43_1" class="wd">du</span> <span id="w43_2" class="wd">vrai</span></span></div>
+        <div id="g44" class="cap"><span class="in"><span id="w44_0" class="wd">prix.</span></span></div>
+        <div id="g45" class="cap"><span class="in"><span id="w45_0" class="wd">Abonne-toi</span> <span id="w45_1" class="wd">pour</span> <span id="w45_2" class="wd">savoir</span></span></div>
+        <div id="g46" class="cap"><span class="in"><span id="w46_0" class="wd">combien</span> <span id="w46_1" class="wd">ça</span> <span id="w46_2" class="wd">coûte</span></span></div>
+        <div id="g47" class="cap"><span class="in"><span id="w47_0" class="wd em">vraiment.</span></span></div>
+      </div>
+
+      <div id="tag" class="clip" data-start="0" data-duration="45.15" data-track-index="6" data-track-kind="graphics">
+        <span class="pill">COMBIEN ÇA COÛTE VRAIMENT&nbsp;?</span><span class="pill num">#3</span>
+      </div>
+
+      <div id="fx" class="clip" data-start="0" data-duration="45.15" data-track-index="7" data-track-kind="graphics">
+        <div id="flash"></div>
+      </div>
+    </div>
+
+    <script>
+      const C = {"p9080": 0.86, "vrai": 2.32, "p280": 3.08, "chaque": 4.42, "trains": 5.52, "bus": 6.0, "conducteurs": 6.42, "elec": 7.0, "cher": 8.26, "alors": 8.88, "regarde": 9.0, "dabord": 10.42, "toi": 10.94, "employeur": 12.94, "moitie": 13.88, "v4540": 16.04, "collectivites": 18.04, "region": 18.94, "paris": 19.5, "departements": 20.02, "v3310": 20.64, "pub": 22.18, "amendes": 22.74, "taxes": 23.48, "v1947": 24.08, "gros": 25.64, "entreprises": 26.54, "v13669": 27.86, "presque": 29.6, "taxe": 31.18, "versement": 32.36, "meme": 33.48, "metro": 35.56, "resultat": 36.46, "moins": 38.24, "six": 39.1, "abonne": 40.02, "vraiment": 41.56, "toi9080": 11.62, "voEnd": 41.955, "end": 45.15};
+      const CAP = [{"id": "g0", "start": 5.46, "end": 5.88, "w": [{"id": "w0_0", "t": 5.52}]}, {"id": "g1", "start": 5.88, "end": 6.28, "w": [{"id": "w1_0", "t": 5.94}, {"id": "w1_1", "t": 6.0}]}, {"id": "g2", "start": 6.28, "end": 6.94, "w": [{"id": "w2_0", "t": 6.34}, {"id": "w2_1", "t": 6.42}]}, {"id": "g3", "start": 6.94, "end": 7.94, "w": [{"id": "w3_0", "t": 7.0}]}, {"id": "g4", "start": 7.94, "end": 8.82, "w": [{"id": "w4_0", "t": 8.0}, {"id": "w4_1", "t": 8.1}, {"id": "w4_2", "t": 8.26}]}, {"id": "g5", "start": 8.82, "end": 9.71, "w": [{"id": "w5_0", "t": 8.88}, {"id": "w5_1", "t": 9.0}, {"id": "w5_2", "t": 9.42}]}, {"id": "g6", "start": 9.71, "end": 10.36, "w": [{"id": "w6_0", "t": 9.66}, {"id": "w6_1", "t": 9.86}, {"id": "w6_2", "t": 9.94}]}, {"id": "g7", "start": 10.36, "end": 10.88, "w": [{"id": "w7_0", "t": 10.42}]}, {"id": "g8", "start": 10.88, "end": 11.56, "w": [{"id": "w8_0", "t": 10.94}]}, {"id": "g9", "start": 11.56, "end": 12.52, "w": [{"id": "w9_0", "t": 11.62}]}, {"id": "g10", "start": 12.52, "end": 12.99, "w": [{"id": "w10_0", "t": 12.58}, {"id": "w10_1", "t": 12.68}, {"id": "w10_2", "t": 12.84}]}, {"id": "g11", "start": 12.99, "end": 13.77, "w": [{"id": "w11_0", "t": 12.94}, {"id": "w11_1", "t": 13.32}, {"id": "w11_2", "t": 13.44}]}, {"id": "g12", "start": 13.77, "end": 14.26, "w": [{"id": "w12_0", "t": 13.72}, {"id": "w12_1", "t": 13.88}]}, {"id": "g13", "start": 14.26, "end": 14.73, "w": [{"id": "w13_0", "t": 14.32}, {"id": "w13_1", "t": 14.46}, {"id": "w13_2", "t": 14.58}]}, {"id": "g14", "start": 14.73, "end": 15.36, "w": [{"id": "w14_0", "t": 14.68}, {"id": "w14_1", "t": 14.8}]}, {"id": "g15", "start": 15.36, "end": 15.71, "w": [{"id": "w15_0", "t": 15.42}, {"id": "w15_1", "t": 15.5}, {"id": "w15_2", "t": 15.6}]}, {"id": "g16", "start": 15.71, "end": 17.32, "w": [{"id": "w16_0", "t": 15.66}, {"id": "w16_1", "t": 15.84}, {"id": "w16_2", "t": 16.04}]}, {"id": "g17", "start": 17.32, "end": 17.92, "w": [{"id": "w17_0", "t": 17.38}]}, {"id": "g18", "start": 17.92, "end": 18.8, "w": [{"id": "w18_0", "t": 17.98}, {"id": "w18_1", "t": 18.04}]}, {"id": "g19", "start": 18.8, "end": 19.44, "w": [{"id": "w19_0", "t": 18.86}, {"id": "w19_1", "t": 18.94}]}, {"id": "g20", "start": 19.44, "end": 20.07, "w": [{"id": "w20_0", "t": 19.5}, {"id": "w20_1", "t": 19.68}, {"id": "w20_2", "t": 19.94}]}, {"id": "g21", "start": 20.07, "end": 20.58, "w": [{"id": "w21_0", "t": 20.02}]}, {"id": "g22", "start": 20.58, "end": 21.68, "w": [{"id": "w22_0", "t": 20.64}]}, {"id": "g23", "start": 21.68, "end": 22.6, "w": [{"id": "w23_0", "t": 21.74}, {"id": "w23_1", "t": 21.92}, {"id": "w23_2", "t": 22.18}]}, {"id": "g24", "start": 22.6, "end": 23.35, "w": [{"id": "w24_0", "t": 22.66}, {"id": "w24_1", "t": 22.74}, {"id": "w24_2", "t": 23.16}]}, {"id": "g25", "start": 23.35, "end": 24.02, "w": [{"id": "w25_0", "t": 23.3}, {"id": "w25_1", "t": 23.48}]}, {"id": "g26", "start": 24.02, "end": 25.24, "w": [{"id": "w26_0", "t": 24.08}]}, {"id": "g27", "start": 25.24, "end": 25.69, "w": [{"id": "w27_0", "t": 25.3}, {"id": "w27_1", "t": 25.44}, {"id": "w27_2", "t": 25.54}]}, {"id": "g28", "start": 25.69, "end": 26.45, "w": [{"id": "w28_0", "t": 25.64}, {"id": "w28_1", "t": 25.78}]}, {"id": "g29", "start": 26.45, "end": 27.8, "w": [{"id": "w29_0", "t": 26.4}, {"id": "w29_1", "t": 26.54}, {"id": "w29_2", "t": 27.0}]}, {"id": "g30", "start": 27.8, "end": 29.54, "w": [{"id": "w30_0", "t": 27.86}]}, {"id": "g31", "start": 29.54, "end": 30.87, "w": [{"id": "w31_0", "t": 29.6}, {"id": "w31_1", "t": 29.86}, {"id": "w31_2", "t": 30.08}]}, {"id": "g32", "start": 30.87, "end": 31.53, "w": [{"id": "w32_0", "t": 30.82}, {"id": "w32_1", "t": 31.0}, {"id": "w32_2", "t": 31.18}]}, {"id": "g33", "start": 31.53, "end": 32.2, "w": [{"id": "w33_0", "t": 31.48}, {"id": "w33_1", "t": 31.6}, {"id": "w33_2", "t": 31.7}]}, {"id": "g34", "start": 32.2, "end": 33.42, "w": [{"id": "w34_0", "t": 32.26}, {"id": "w34_1", "t": 32.36}, {"id": "w34_2", "t": 32.8}]}, {"id": "g35", "start": 33.42, "end": 34.29, "w": [{"id": "w35_0", "t": 33.48}, {"id": "w35_1", "t": 33.7}, {"id": "w35_2", "t": 33.84}]}, {"id": "g36", "start": 34.29, "end": 35.33, "w": [{"id": "w36_0", "t": 34.24}, {"id": "w36_1", "t": 34.38}, {"id": "w36_2", "t": 34.86}]}, {"id": "g37", "start": 35.33, "end": 35.61, "w": [{"id": "w37_0", "t": 35.28}, {"id": "w37_1", "t": 35.36}, {"id": "w37_2", "t": 35.52}]}, {"id": "g38", "start": 35.61, "end": 36.4, "w": [{"id": "w38_0", "t": 35.56}, {"id": "w38_1", "t": 35.92}, {"id": "w38_2", "t": 36.0}]}, {"id": "g39", "start": 36.4, "end": 36.96, "w": [{"id": "w39_0", "t": 36.46}]}, {"id": "g40", "start": 36.96, "end": 37.9, "w": [{"id": "w40_0", "t": 37.02}, {"id": "w40_1", "t": 37.18}, {"id": "w40_2", "t": 37.34}]}, {"id": "g41", "start": 37.9, "end": 38.45, "w": [{"id": "w41_0", "t": 37.96}, {"id": "w41_1", "t": 38.0}, {"id": "w41_2", "t": 38.24}]}, {"id": "g42", "start": 38.45, "end": 39.15, "w": [{"id": "w42_0", "t": 38.4}, {"id": "w42_1", "t": 38.88}, {"id": "w42_2", "t": 38.88}]}, {"id": "g43", "start": 39.15, "end": 39.73, "w": [{"id": "w43_0", "t": 39.1}, {"id": "w43_1", "t": 39.34}, {"id": "w43_2", "t": 39.52}]}, {"id": "g44", "start": 39.73, "end": 39.96, "w": [{"id": "w44_0", "t": 39.68}]}, {"id": "g45", "start": 39.96, "end": 40.81, "w": [{"id": "w45_0", "t": 40.02}, {"id": "w45_1", "t": 40.42}, {"id": "w45_2", "t": 40.58}]}, {"id": "g46", "start": 40.81, "end": 41.61, "w": [{"id": "w46_0", "t": 40.76}, {"id": "w46_1", "t": 41.14}, {"id": "w46_2", "t": 41.36}]}, {"id": "g47", "start": 41.61, "end": 42.54, "w": [{"id": "w47_0", "t": 41.56}]}];
+      DA.fitCaptions(CAP);
+      const tl = gsap.timeline({ paused: true });
+      const D = DA(tl);
+      D.drift(C.end);
+
+      // ================= 1. ACCROCHE =================
+      D.glow("amber", 0, 0.55, 0.01);
+      tl.fromTo("#h-pass", { rotation: -4, y: 0 }, { rotation: 2, y: -10, duration: C.vrai, ease: "sine.inOut" }, 0);
+      tl.fromTo("#h-pass .pz", { scale: 1 }, { keyframes: [{ scale: 1.14, duration: 0.09, ease: "power2.out" }, { scale: 1, duration: 0.4, ease: "expo.out" }] }, C.p9080 - 0.05);
+      // le vrai prix monte
+      D.blurOut("#h-kick", C.p280 - 0.5, 0.14);
+      tl.to("#h-pass", { opacity: 0.4, scale: 0.86, duration: 0.3 }, C.p280 - 0.5);
+      tl.fromTo("#h-real", { opacity: 0, scale: 0.7, y: 0 }, { opacity: 1, scale: 1, duration: 0.25, ease: "expo.out" }, C.p280 - 0.5);
+      D.count("h-rnum", 90.8, 280, C.p280 - 0.45, 1.1, 0);
+      D.glow("amber", C.p280, 0, 0.4); D.glow("red", C.p280, 0.65, 0.3);
+      tl.fromTo("#h-real", { scale: 1 }, { keyframes: [{ scale: 1.12, duration: 0.08 }, { scale: 1, duration: 0.4, ease: "expo.out" }] }, C.p280 + 0.65);
+      D.shake(C.p280 + 0.67, 10);
+      D.stamp("#h-stamp span", C.chaque, -5);
+      D.flash(C.chaque + 0.02, 0.18);
+      // ce que ça paie
+      D.blurOut("#h-stamp span", C.trains - 0.25, 0.14);
+      D.popIn("#hc1", C.trains - 0.05, 0.5);
+      D.popIn("#hc2", C.bus - 0.05, 0.5);
+      D.popIn("#hc3", C.conducteurs - 0.05, 0.5);
+      D.popIn("#hc4", C.elec - 0.05, 0.5);
+      tl.to("#h-costs .chip", { y: -10, duration: 0.15, yoyo: true, repeat: 1, stagger: 0.05 }, C.cher - 0.05);
+      D.blurOut(["#h-t1", "#h-pass", "#h-costs"], C.regarde - 0.4, 0.15);
+      // le vrai prix devient l'étiquette de la barre
+      tl.to("#h-real", { scale: 0.32, x: -285, y: -601, duration: 0.32, ease: "power3.inOut" }, C.regarde - 0.3);
+      D.glow("red", C.regarde - 0.2, 0, 0.4); D.glow("cream", C.regarde - 0.2, 0.5, 0.4);
+
+      // ================= 2. QUI PAIE ? =================
+      tl.set("#ptag", { opacity: 1 }, C.regarde + 0.0);
+      tl.fromTo("#pack", { opacity: 0, y: 120, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, C.regarde - 0.05);
+
+      // toi
+      D.glow("cream", C.toi - 0.3, 0, 0.4); D.glow("cold", C.toi - 0.3, 0.6, 0.4);
+      tl.fromTo("#ly-toi", { y: 220 }, { y: 0, duration: 1.0, ease: "power2.out" }, C.toi - 0.1);
+      D.blurIn("#l-toi", C.toi - 0.1);
+      D.blurIn("#l-toi .val", C.toi9080 - 0.12, 0.16);
+      D.count("v-toi", 0, 90.8, C.toi9080 - 0.1, 0.8);
+      tl.to("#pc-toi", { opacity: 1, duration: 0.25 }, C.toi9080 + 0.3);
+      D.popIn("#ct1", C.employeur - 0.05, 0.5);
+      tl.to("#half", { opacity: 1, duration: 0.35 }, C.moitie - 0.05);
+      tl.to("#pc-toi", { opacity: 0, duration: 0.2 }, C.moitie - 0.05);
+      D.count("v-toi", 90.8, 45.4, C.v4540 - 0.2, 1.0);
+      tl.fromTo("#l-toi .val", { scale: 1, transformOrigin: "0% 50%" }, { keyframes: [{ scale: 1.12, duration: 0.09 }, { scale: 1, duration: 0.4, ease: "expo.out" }] }, C.v4540 + 0.8);
+
+      // les collectivités
+      tl.to(["#l-toi", "#ch-toi"], { opacity: 0.32, duration: 0.3 }, C.collectivites - 0.3);
+      D.glow("cold", C.collectivites - 0.2, 0.15, 0.4); D.glow("cream", C.collectivites - 0.2, 0.55, 0.4);
+      tl.fromTo("#ly-col", { y: 320 }, { y: 0, duration: 0.8, ease: "power2.out" }, C.collectivites - 0.1);
+      D.blurIn("#l-col", C.collectivites - 0.1);
+      D.blurIn("#l-col .val", C.v3310 - 0.12, 0.16);
+      D.count("v-col", 0, 33.1, C.v3310 - 0.1, 0.8);
+
+      // pub, amendes, taxes
+      tl.to("#l-col", { opacity: 0.32, duration: 0.3 }, C.pub - 0.3);
+      D.glow("cream", C.pub - 0.2, 0.1, 0.4); D.glow("amber", C.pub - 0.2, 0.55, 0.4);
+      tl.fromTo("#ly-aut", { y: 360 }, { y: 0, duration: 0.7, ease: "power2.out" }, C.pub - 0.1);
+      D.blurIn("#l-aut", C.pub - 0.1);
+      D.blurIn("#l-aut .val", C.v1947 - 0.12, 0.16);
+      D.count("v-aut", 0, 19.47, C.v1947 - 0.1, 0.8);
+
+      // les entreprises : le gros morceau
+      tl.to("#l-aut", { opacity: 0.32, duration: 0.3 }, C.gros - 0.3);
+      D.glow("amber", C.gros - 0.2, 0, 0.4); D.glow("red", C.gros - 0.2, 0.7, 0.4);
+      tl.fromTo("#ly-ent", { y: 680 }, { y: 0, duration: 1.2, ease: "power2.out" }, C.entreprises - 0.15);
+      D.blurIn("#l-ent", C.entreprises - 0.1);
+      D.blurIn("#l-ent .val", C.v13669 - 0.12, 0.16);
+      D.count("v-ent", 0, 136.69, C.v13669 - 0.1, 1.2);
+      tl.to("#pc-ent", { opacity: 1, duration: 0.25 }, C.presque - 0.1);
+      tl.fromTo("#ly-ent", { filter: "brightness(1)" }, { keyframes: [{ filter: "brightness(1.5)", duration: 0.15 }, { filter: "brightness(1)", duration: 0.4 }], repeat: 1 }, C.presque);
+      D.shake(C.presque + 0.02, 8);
+      D.popIn("#ce1", C.versement - 0.05, 0.5);
+      D.popIn("#ce2", C.metro - 0.3, 0.5);
+      // tout se rallume
+      tl.to(["#l-toi", "#ch-toi", "#l-col", "#l-aut"], { opacity: 1, duration: 0.3 }, C.metro - 0.2);
+      tl.to("#s-main", { scale: 1.3, opacity: 0, filter: "blur(16px)", duration: 0.32, ease: "power3.in" }, C.resultat - 0.3);
+
+      // ================= 3. BILAN : MOINS D'1 € SUR 6 =================
+      D.glow("red", C.resultat - 0.2, 0, 0.4); D.glow("cold", C.resultat - 0.1, 0.5, 0.4);
+      { const box = document.getElementById("coins"), coins = [];
+        for (let j = 0; j < 6; j++) { const c = document.createElement("div"); c.className = "coin" + (j === 0 ? " me" : "");
+          c.style.left = (j % 3) * 335 + "px"; c.style.top = Math.floor(j / 3) * 200 + "px";
+          c.innerHTML = `<b>1€</b><div class="rd"></div>`; box.appendChild(c); coins.push(c); }
+        coins.forEach((c, j) => tl.fromTo(c, { opacity: 0, scale: 0.3, rotation: -40 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.35, ease: "back.out(2)" }, C.resultat + 0.1 + j * 0.07));
+        tl.to(coins[0].querySelector(".rd"), { opacity: 0.75, duration: 0.15 }, C.moins);
+        coins.slice(1).forEach((c, j) => tl.to(c.querySelector(".rd"), { opacity: 0.7, duration: 0.12 }, C.six + 0.05 + j * 0.06));
+        tl.fromTo(coins[0], { scale: 1 }, { keyframes: [{ scale: 1.15, duration: 0.1 }, { scale: 1, duration: 0.4, ease: "expo.out" }] }, C.moins); }
+      tl.fromTo("#b-title span", { opacity: 0, filter: "blur(10px)", y: 30 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.16, stagger: 0.1, ease: "power3.out" }, C.moins - 0.15);
+      D.flash(C.six, 0.14, "#ffb21f");
+      D.shake(C.six + 0.02, 12);
+      tl.fromTo("#bl-l", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, C.resultat + 0.6);
+      tl.fromTo("#bl-r", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, C.resultat + 0.75);
+      tl.to("#s-bilan", { x: -460, opacity: 0, filter: "blur(14px)", duration: 0.26, ease: "power3.in" }, C.abonne - 0.25);
+
+      // ================= 4. CARTE DE FIN =================
+      D.glow("cold", C.abonne - 0.2, 0, 0.4); D.glow("amber", C.abonne - 0.2, 0.6, 0.4);
+      D.endCard(C.abonne - 0.05, C.vraiment);
+
+      D.captions(CAP);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
