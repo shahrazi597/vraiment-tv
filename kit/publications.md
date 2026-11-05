@@ -119,3 +119,52 @@ Paiement sans contact : la carte n'a pas de batterie. Le terminal crée un champ
 Comment ça marche vraiment ? Épisode 3. Abonne-toi pour les prochains épisodes !
 Sources : IEEE (Near Field Communication) ; EMVCo (EMV Contactless Chip).
 #shorts #sanscontact #nfc #tech #lesaviezvous
+
+---
+
+## Publication 6 — Combien ça coûte vraiment ? #3 · Le passe Navigo (06/11/2026 12h00)
+Fichier : `navigo_FR.mp4`
+
+**TikTok**
+Ton passe Navigo coûte 90,80 €… mais son vrai prix, c'est 280 € par mois 🚇🤯 Le plus gros payeur, ce n'est pas toi.
+Tu aurais deviné qui ? 👇
+#navigo #metro #paris #transports #lesaviezvous #argent #pourtoi
+
+**Instagram Reels**
+Ton passe Navigo à 90,80 € ? Son vrai prix : 280 € par mois 🚇
+Toi, tu paies 90,80 € (45,40 € si ton employeur rembourse la moitié). Les collectivités 33,10 €, la pub, les amendes et quelques taxes 19,47 €… et les entreprises d'Île-de-France 136,69 €, via le versement mobilité 🤯
+Tu le savais ? Dis-le en commentaire 👇 et abonne-toi pour la suite de « Combien ça coûte vraiment ? »
+Passe mensuel toutes zones, tarifs 2026 (Île-de-France Mobilités).
+#navigo #metro #ratp #paris #iledefrance #transports #argent #lesaviezvous #culturegenerale #reelsfrance
+
+**YouTube Shorts**
+Titre : Ton passe Navigo ? Son vrai prix, c'est 280 € 🚇 #shorts
+Description :
+Passe Navigo mensuel toutes zones 2026 : 90,80 € pour toi, mais un coût réel de 280,07 € par mois. Le reste : 136,69 € payés par les entreprises d'Île-de-France (versement mobilité, dû par les employeurs de 11 salariés et plus), 33,10 € par les collectivités (Région, Ville de Paris, départements) et 19,47 € par la pub, les amendes et diverses taxes. Avec le remboursement de 50 % par l'employeur, tu paies 45,40 € : moins d'1 € sur 6.
+Combien ça coûte vraiment ? Épisode 3. Abonne-toi pour les prochains épisodes !
+Sources : Île-de-France Mobilités, grille tarifaire 2026 et décomposition du coût réel du passe ; Île-de-France Mobilités, compte administratif 2025.
+#shorts #navigo #paris #transports #lesaviezvous
+
+---
+
+## Publication 7 — Comment ça marche vraiment ? #4 · Shazam (06/11/2026 19h00)
+Fichier : `shazam_FR.mp4`
+
+**TikTok**
+Shazam n'écoute pas ta chanson 🎧 Il relève ses empreintes… comme la police 🕵️ Et 1 ou 2 % suffisent pour la trouver 🤯
+Tu l'utilises souvent ? 👇
+#shazam #musique #tech #science #lesaviezvous #apprendresurtiktok #pourtoi
+
+**Instagram Reels**
+Shazam n'écoute pas ta chanson. Il relève ses empreintes 🎧🕵️
+Il transforme quelques secondes de son en carte, ne garde que les points les plus forts (une constellation), les relie deux par deux pour fabriquer des codes… puis cherche la chanson où ces codes tombent dans le même ordre, au même rythme. Même s'il ne reste que 1 ou 2 % des codes dans le bruit, ça suffit 🤯
+Tu le savais ? Dis-le en commentaire 👇 et abonne-toi pour la suite de « Comment ça marche vraiment ? »
+#shazam #musique #tech #science #lesaviezvous #culturegenerale #vulgarisation #algorithme #reelsfrance
+
+**YouTube Shorts**
+Titre : Shazam n'écoute pas ta chanson : il relève ses empreintes 🎧 #shorts
+Description :
+Comment Shazam reconnaît une chanson : il transforme quelques secondes de son en spectrogramme (temps × fréquence), garde seulement les pics les plus forts (une « constellation »), les associe deux par deux (deux fréquences + l'écart de temps = un code) et cherche dans sa base la chanson où ces codes s'alignent avec le même décalage. Même quand seulement 1 à 2 % des codes survivent au bruit, la correspondance tient. Une version live, elle, n'a pas la même empreinte.
+Comment ça marche vraiment ? Épisode 4. Abonne-toi pour les prochains épisodes !
+Sources : Avery Li-Chun Wang (cofondateur de Shazam), « An Industrial-Strength Audio Search Algorithm », ISMIR 2003 ; Dan Ellis, LabROSA, Université Columbia (Robust Landmark-Based Audio Fingerprinting).
+#shorts #shazam #musique #tech #lesaviezvous

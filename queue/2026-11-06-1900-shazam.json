@@ -1,0 +1,14 @@
+{
+ "video": "shazam_FR.mp4",
+ "when": "2026-11-06T19:00:00",
+ "series": "Comment ça marche vraiment ?",
+ "ep": 4,
+ "tiktok": "Shazam n'écoute pas ta chanson 🎧 Il relève ses empreintes… comme la police 🕵️ Et 1 ou 2 % suffisent pour la trouver 🤯\nTu l'utilises souvent ? 👇\n#shazam #musique #tech #science #lesaviezvous #apprendresurtiktok #pourtoi",
+ "instagram": "Shazam n'écoute pas ta chanson. Il relève ses empreintes 🎧🕵️\nIl transforme quelques secondes de son en carte, ne garde que les points les plus forts (une constellation), les relie deux par deux pour fabriquer des codes… puis cherche la chanson où ces codes tombent dans le même ordre, au même rythme. Même s'il ne reste que 1 ou 2 % des codes dans le bruit, ça suffit 🤯\nTu le savais ? Dis-le en commentaire 👇 et abonne-toi pour la suite de « Comment ça marche vraiment ? »\n#shazam #musique #tech #science #lesaviezvous #culturegenerale #vulgarisation #algorithme #reelsfrance",
+ "yt_title": "Shazam n'écoute pas ta chanson : il relève ses empreintes 🎧 #shorts",
+ "yt_desc": "Comment Shazam reconnaît une chanson : il transforme quelques secondes de son en spectrogramme (temps × fréquence), garde seulement les pics les plus forts (une « constellation »), les associe deux par deux (deux fréquences + l'écart de temps = un code) et cherche dans sa base la chanson où ces codes s'alignent avec le même décalage. Même quand seulement 1 à 2 % des codes survivent au bruit, la correspondance tient. Une version live, elle, n'a pas la même empreinte.\nComment ça marche vraiment ? Épisode 4. Abonne-toi pour les prochains épisodes !\nSources : Avery Li-Chun Wang (cofondateur de Shazam), « An Industrial-Strength Audio Search Algorithm », ISMIR 2003 ; Dan Ellis, LabROSA, Université Columbia (Robust Landmark-Based Audio Fingerprinting).\n#shorts #shazam #musique #tech #lesaviezvous",
+ "video_url": "https://media.zernio.com/temp/1793884372892_72be63321b42282a_shazam_FR.mp4",
+ "zernio_post": "6aec80d9c687aa0d0d1ca4a3",
+ "ig_container": "18117750416091875",
+ "ig_container_at": 1793884424
+}

@@ -14,7 +14,7 @@ Choisis pour faire s'arrêter quelqu'un qui scrolle. Accroches à vérifier : si
 |---|---|---|
 | L'algorithme TikTok | « TikTok ne sait pas ce que tu aimes. Il mesure combien de temps tu hésites. » | ⏳ |
 | Face ID | « Ton iPhone projette plus de 30 000 points invisibles sur ton visage. » | ⏳ |
-| Shazam | « Shazam n'écoute pas la musique. Il cherche une empreinte, comme la police. » | ⏳ |
+| Shazam | « Shazam n'écoute pas ta chanson. Il relève ses empreintes, comme la police. » | 📅 06/11 19h |
 | Google Maps et les bouchons | « Google sait qu'il y a un bouchon… parce que tu es dedans. » | ⏳ |
 | Ton mot de passe | « Le site où tu te connectes ne connaît pas ton mot de passe. » | ⏳ |
 | Le GPS | « Ton téléphone ne sait pas où il est. Il chronomètre des satellites… et Einstein s'en mêle. » | ⏳ |
@@ -80,7 +80,7 @@ Choisis pour faire s'arrêter quelqu'un qui scrolle. Accroches à vérifier : si
 | 4 | Un livre à 20 € | Auteur, éditeur, imprimeur, diffuseur, libraire | ⏳ |
 | 5 | Une brique de lait | Éleveur, laiterie, magasin (observatoire des prix et des marges) | ⏳ |
 | 6 | Une place de cinéma | Taxe, distributeur, exploitant (CNC) | ⏳ |
-| 7 | Un ticket de métro | Ce que paie le voyageur contre le coût réel du trajet (autorité des transports) | ⏳ |
+| 7 | Le passe Navigo (ex-« ticket de métro ») | 90,80 € payés contre 280,07 € de coût réel ; qui paie le reste (Île-de-France Mobilités) | 📅 06/11 12h |
 | 8 | Une bouteille d'eau | Eau en bouteille contre eau du robinet, prix au litre | ⏳ |
 | 9 | Une consultation chez le médecin | Qui paie quoi : patient, Sécu, mutuelle | ⏳ |
 | 10 | Un péage d'autoroute | Où va l'argent du péage | ⏳ |

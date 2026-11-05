@@ -1,0 +1,857 @@
+[
+{
+"text": "Chazam",
+"start": 0.0,
+"end": 0.42
+},
+{
+"text": "n",
+"start": 0.42,
+"end": 0.54
+},
+{
+"text": "'écoute",
+"start": 0.54,
+"end": 0.68
+},
+{
+"text": "pas",
+"start": 0.68,
+"end": 0.86
+},
+{
+"text": "ta",
+"start": 0.86,
+"end": 0.96
+},
+{
+"text": "chanson",
+"start": 0.96,
+"end": 1.26
+},
+{
+"text": "!",
+"start": 1.26,
+"end": 1.54
+},
+{
+"text": "Jamais",
+"start": 1.54,
+"end": 2.04
+},
+{
+"text": "!",
+"start": 2.04,
+"end": 2.36
+},
+{
+"text": "Il",
+"start": 2.36,
+"end": 2.44
+},
+{
+"text": "relève",
+"start": 2.44,
+"end": 2.68
+},
+{
+"text": "ses",
+"start": 2.68,
+"end": 2.82
+},
+{
+"text": "empreintes",
+"start": 2.82,
+"end": 3.3
+},
+{
+"text": "comme",
+"start": 3.3,
+"end": 3.58
+},
+{
+"text": "la",
+"start": 3.58,
+"end": 3.72
+},
+{
+"text": "police",
+"start": 3.72,
+"end": 3.94
+},
+{
+"text": "!",
+"start": 3.94,
+"end": 4.24
+},
+{
+"text": "Comment",
+"start": 4.24,
+"end": 4.44
+},
+{
+"text": "?",
+"start": 4.44,
+"end": 4.72
+},
+{
+"text": "Étape",
+"start": 4.72,
+"end": 5.02
+},
+{
+"text": "1.",
+"start": 5.02,
+"end": 5.18
+},
+{
+"text": "Il",
+"start": 5.38,
+"end": 5.46
+},
+{
+"text": "transforme",
+"start": 5.46,
+"end": 5.94
+},
+{
+"text": "quelques",
+"start": 5.94,
+"end": 6.06
+},
+{
+"text": "secondes",
+"start": 6.06,
+"end": 6.46
+},
+{
+"text": "de",
+"start": 6.46,
+"end": 6.58
+},
+{
+"text": "son",
+"start": 6.58,
+"end": 6.8
+},
+{
+"text": "en",
+"start": 6.8,
+"end": 7.0
+},
+{
+"text": "cartes.",
+"start": 7.0,
+"end": 7.44
+},
+{
+"text": "Le",
+"start": 7.6,
+"end": 7.68
+},
+{
+"text": "temps",
+"start": 7.68,
+"end": 7.82
+},
+{
+"text": "d",
+"start": 7.82,
+"end": 7.9
+},
+{
+"text": "'un",
+"start": 7.9,
+"end": 7.94
+},
+{
+"text": "côté,",
+"start": 7.94,
+"end": 8.18
+},
+{
+"text": "les",
+"start": 8.46,
+"end": 8.6
+},
+{
+"text": "graves",
+"start": 8.6,
+"end": 8.82
+},
+{
+"text": "et",
+"start": 8.82,
+"end": 9.1
+},
+{
+"text": "les",
+"start": 9.1,
+"end": 9.24
+},
+{
+"text": "aigus",
+"start": 9.24,
+"end": 9.42
+},
+{
+"text": "de",
+"start": 9.42,
+"end": 9.5
+},
+{
+"text": "l",
+"start": 9.5,
+"end": 9.58
+},
+{
+"text": "'autre.",
+"start": 9.58,
+"end": 9.72
+},
+{
+"text": "Étape",
+"start": 9.94,
+"end": 10.22
+},
+{
+"text": "2.",
+"start": 10.22,
+"end": 10.38
+},
+{
+"text": "Il",
+"start": 10.64,
+"end": 10.68
+},
+{
+"text": "ne",
+"start": 10.68,
+"end": 10.8
+},
+{
+"text": "garde",
+"start": 10.8,
+"end": 11.02
+},
+{
+"text": "que",
+"start": 11.02,
+"end": 11.24
+},
+{
+"text": "les",
+"start": 11.24,
+"end": 11.4
+},
+{
+"text": "points",
+"start": 11.4,
+"end": 11.54
+},
+{
+"text": "les",
+"start": 11.54,
+"end": 11.66
+},
+{
+"text": "plus",
+"start": 11.66,
+"end": 11.78
+},
+{
+"text": "forts.",
+"start": 11.78,
+"end": 12.02
+},
+{
+"text": "Il",
+"start": 12.3,
+"end": 12.36
+},
+{
+"text": "reste",
+"start": 12.36,
+"end": 12.6
+},
+{
+"text": "un",
+"start": 12.6,
+"end": 12.74
+},
+{
+"text": "ciel",
+"start": 12.74,
+"end": 12.92
+},
+{
+"text": "d",
+"start": 12.92,
+"end": 13.08
+},
+{
+"text": "'étoiles,",
+"start": 13.08,
+"end": 13.36
+},
+{
+"text": "une",
+"start": 13.58,
+"end": 13.7
+},
+{
+"text": "constellation.",
+"start": 13.7,
+"end": 14.12
+},
+{
+"text": "Les",
+"start": 14.56,
+"end": 14.66
+},
+{
+"text": "voix",
+"start": 14.66,
+"end": 14.84
+},
+{
+"text": "et",
+"start": 14.84,
+"end": 14.96
+},
+{
+"text": "le",
+"start": 14.96,
+"end": 15.08
+},
+{
+"text": "bruit",
+"start": 15.08,
+"end": 15.16
+},
+{
+"text": "du",
+"start": 15.16,
+"end": 15.26
+},
+{
+"text": "bar,",
+"start": 15.26,
+"end": 15.42
+},
+{
+"text": "presque",
+"start": 15.68,
+"end": 15.86
+},
+{
+"text": "effacés.",
+"start": 15.86,
+"end": 16.28
+},
+{
+"text": "Étape",
+"start": 16.46,
+"end": 16.74
+},
+{
+"text": "3.",
+"start": 16.74,
+"end": 16.96
+},
+{
+"text": "Il",
+"start": 17.2,
+"end": 17.3
+},
+{
+"text": "relit",
+"start": 17.3,
+"end": 17.58
+},
+{
+"text": "les",
+"start": 17.58,
+"end": 17.72
+},
+{
+"text": "étoiles",
+"start": 17.72,
+"end": 18.08
+},
+{
+"text": "2",
+"start": 18.08,
+"end": 18.28
+},
+{
+"text": "par",
+"start": 18.28,
+"end": 18.46
+},
+{
+"text": "2.",
+"start": 18.46,
+"end": 18.66
+},
+{
+"text": "2",
+"start": 18.86,
+"end": 19.02
+},
+{
+"text": "notes,",
+"start": 19.02,
+"end": 19.22
+},
+{
+"text": "plus",
+"start": 19.38,
+"end": 19.52
+},
+{
+"text": "l",
+"start": 19.52,
+"end": 19.68
+},
+{
+"text": "'écart",
+"start": 19.68,
+"end": 19.8
+},
+{
+"text": "de",
+"start": 19.8,
+"end": 19.94
+},
+{
+"text": "temps",
+"start": 19.94,
+"end": 20.06
+},
+{
+"text": "entre",
+"start": 20.06,
+"end": 20.26
+},
+{
+"text": "elles,",
+"start": 20.26,
+"end": 20.46
+},
+{
+"text": "ça",
+"start": 20.66,
+"end": 20.82
+},
+{
+"text": "donne",
+"start": 20.82,
+"end": 20.98
+},
+{
+"text": "un",
+"start": 20.98,
+"end": 21.12
+},
+{
+"text": "code.",
+"start": 21.12,
+"end": 21.34
+},
+{
+"text": "Des",
+"start": 21.62,
+"end": 21.7
+},
+{
+"text": "centaines",
+"start": 21.7,
+"end": 22.16
+},
+{
+"text": "de",
+"start": 22.16,
+"end": 22.32
+},
+{
+"text": "codes,",
+"start": 22.32,
+"end": 22.56
+},
+{
+"text": "c",
+"start": 22.76,
+"end": 22.98
+},
+{
+"text": "'est",
+"start": 22.98,
+"end": 23.0
+},
+{
+"text": "l",
+"start": 23.0,
+"end": 23.12
+},
+{
+"text": "'empreinte.",
+"start": 23.12,
+"end": 23.5
+},
+{
+"text": "Étape",
+"start": 23.66,
+"end": 23.94
+},
+{
+"text": "4.",
+"start": 23.94,
+"end": 24.1
+},
+{
+"text": "Il",
+"start": 24.4,
+"end": 24.52
+},
+{
+"text": "cherche",
+"start": 24.52,
+"end": 24.78
+},
+{
+"text": "ses",
+"start": 24.78,
+"end": 25.02
+},
+{
+"text": "codes",
+"start": 25.02,
+"end": 25.2
+},
+{
+"text": "dans",
+"start": 25.2,
+"end": 25.38
+},
+{
+"text": "sa",
+"start": 25.38,
+"end": 25.52
+},
+{
+"text": "base.",
+"start": 25.52,
+"end": 25.76
+},
+{
+"text": "La",
+"start": 25.98,
+"end": 26.08
+},
+{
+"text": "bonne",
+"start": 26.08,
+"end": 26.24
+},
+{
+"text": "chanson,",
+"start": 26.24,
+"end": 26.58
+},
+{
+"text": "c",
+"start": 26.78,
+"end": 26.82
+},
+{
+"text": "'est",
+"start": 26.82,
+"end": 26.86
+},
+{
+"text": "celle",
+"start": 26.86,
+"end": 27.0
+},
+{
+"text": "où",
+"start": 27.0,
+"end": 27.08
+},
+{
+"text": "il",
+"start": 27.08,
+"end": 27.16
+},
+{
+"text": "tombe",
+"start": 27.16,
+"end": 27.36
+},
+{
+"text": "dans",
+"start": 27.36,
+"end": 27.48
+},
+{
+"text": "le",
+"start": 27.48,
+"end": 27.58
+},
+{
+"text": "même",
+"start": 27.58,
+"end": 27.8
+},
+{
+"text": "ordre",
+"start": 27.8,
+"end": 28.14
+},
+{
+"text": "au",
+"start": 28.14,
+"end": 28.28
+},
+{
+"text": "même",
+"start": 28.28,
+"end": 28.46
+},
+{
+"text": "rythme.",
+"start": 28.46,
+"end": 28.78
+},
+{
+"text": "Le",
+"start": 28.78,
+"end": 29.04
+},
+{
+"text": "plus",
+"start": 29.04,
+"end": 29.18
+},
+{
+"text": "fou,",
+"start": 29.18,
+"end": 29.36
+},
+{
+"text": "même",
+"start": 29.56,
+"end": 29.72
+},
+{
+"text": "s",
+"start": 29.72,
+"end": 29.86
+},
+{
+"text": "'il",
+"start": 29.86,
+"end": 29.92
+},
+{
+"text": "ne",
+"start": 29.92,
+"end": 30.02
+},
+{
+"text": "reste",
+"start": 30.02,
+"end": 30.18
+},
+{
+"text": "que",
+"start": 30.18,
+"end": 30.32
+},
+{
+"text": "1",
+"start": 30.32,
+"end": 30.58
+},
+{
+"text": "ou",
+"start": 30.58,
+"end": 30.66
+},
+{
+"text": "2",
+"start": 30.66,
+"end": 30.86
+},
+{
+"text": "%",
+"start": 30.86,
+"end": 31.12
+},
+{
+"text": "des",
+"start": 31.12,
+"end": 31.28
+},
+{
+"text": "codes",
+"start": 31.28,
+"end": 31.42
+},
+{
+"text": "au",
+"start": 31.42,
+"end": 31.52
+},
+{
+"text": "milieu",
+"start": 31.52,
+"end": 31.68
+},
+{
+"text": "du",
+"start": 31.68,
+"end": 31.82
+},
+{
+"text": "bruit,",
+"start": 31.82,
+"end": 32.1
+},
+{
+"text": "ça",
+"start": 32.26,
+"end": 32.36
+},
+{
+"text": "suffit.",
+"start": 32.36,
+"end": 32.72
+},
+{
+"text": "Mais",
+"start": 32.86,
+"end": 32.96
+},
+{
+"text": "en",
+"start": 32.96,
+"end": 33.06
+},
+{
+"text": "concert,",
+"start": 33.06,
+"end": 33.36
+},
+{
+"text": "il",
+"start": 33.66,
+"end": 33.76
+},
+{
+"text": "peut",
+"start": 33.76,
+"end": 33.88
+},
+{
+"text": "rester",
+"start": 33.88,
+"end": 34.08
+},
+{
+"text": "muet.",
+"start": 34.08,
+"end": 34.42
+},
+{
+"text": "La",
+"start": 34.58,
+"end": 34.72
+},
+{
+"text": "version",
+"start": 34.72,
+"end": 34.98
+},
+{
+"text": "live",
+"start": 34.98,
+"end": 35.2
+},
+{
+"text": "n",
+"start": 35.2,
+"end": 35.36
+},
+{
+"text": "'a",
+"start": 35.36,
+"end": 35.44
+},
+{
+"text": "pas",
+"start": 35.44,
+"end": 35.56
+},
+{
+"text": "la",
+"start": 35.56,
+"end": 35.64
+},
+{
+"text": "même",
+"start": 35.64,
+"end": 35.74
+},
+{
+"text": "empreinte.",
+"start": 35.74,
+"end": 36.2
+},
+{
+"text": "Abonne",
+"start": 36.32,
+"end": 36.6
+},
+{
+"text": "-toi",
+"start": 36.6,
+"end": 36.76
+},
+{
+"text": "pour",
+"start": 36.76,
+"end": 36.92
+},
+{
+"text": "savoir",
+"start": 36.92,
+"end": 37.14
+},
+{
+"text": "comment",
+"start": 37.14,
+"end": 37.36
+},
+{
+"text": "ça",
+"start": 37.36,
+"end": 37.52
+},
+{
+"text": "marche",
+"start": 37.52,
+"end": 37.7
+},
+{
+"text": "vraiment",
+"start": 37.7,
+"end": 37.94
+},
+{
+"text": "!",
+"start": 37.94,
+"end": 38.06
+}
+]
