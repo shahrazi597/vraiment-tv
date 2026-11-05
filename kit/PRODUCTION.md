@@ -28,7 +28,14 @@ Lire `kit/DA.md` (identité, à respecter à la lettre), `kit/kit.py`, et deux �
 - un objet ou un geste du quotidien que tout le monde utilise sans savoir ce qui se passe vraiment (Face ID, Shazam, Google Maps, un mot de passe, l'algorithme TikTok…) ;
 - un chiffre qui choque (« Combien ça coûte vraiment ? » : ce que touche vraiment le fabricant, l'artiste, le chauffeur, l'État) ;
 - une idée reçue que la vidéo démonte, avec une chute qu'on a envie d'envoyer à un ami.
-Éviter les sujets trop scolaires ou vus partout. Préférer les sujets de la partie « À faire en priorité » de `kit/sujets.md`, puis le reste ; en ajouter de nouveaux si un meilleur sujet se présente (tendance de la semaine, saison, actu non polémique). Pas de sujet politique ou religieux sans demande explicite de Razi.
+Éviter les sujets trop scolaires ou vus partout.
+
+**Règles TikTok (fil « Pour toi »)** — la vidéo IA du 05/11 a été jugée non éligible (motif « Règles de la communauté », détection automatique). Pour ne pas perdre de vidéo :
+- pas de sujet centré sur un **produit réglementé** (tabac, alcool, médicaments, jeux d'argent, armes, cannabis) ni sur la **santé mentale / comportementale** (régimes, addictions, troubles) ;
+- ne jamais **imiter l'interface d'une vraie marque** (écran ChatGPT, appli Shazam, logo) : dessiner une interface générique, sans logo ni nom de marque à l'image ;
+- citer une marque dans la voix ou la description, oui ; en faire le visuel principal, non ;
+- chiffres et faits toujours sourcés, aucune affirmation qui pourrait passer pour une fausse info.
+ Préférer les sujets de la partie « À faire en priorité » de `kit/sujets.md`, puis le reste ; en ajouter de nouveaux si un meilleur sujet se présente (tendance de la semaine, saison, actu non polémique). Pas de sujet politique ou religieux sans demande explicite de Razi.
 - Vérifier chaque fait avec WebSearch/WebFetch sur au moins 2 sources fiables (organisme officiel, université, régulateur). Pour « Combien ça coûte », utiliser les **chiffres les plus récents** et écrire la date des prix.
 - Si une accroche ne tient pas, la reformuler ou changer de sujet.
 
