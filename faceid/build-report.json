@@ -1,0 +1,1019 @@
+{
+ "cues": {
+  "bombarde": 1.88,
+  "n30": 3.28,
+  "invisibles": 4.58,
+  "comment": 5.6,
+  "haut": 7.16,
+  "projecteur": 8.36,
+  "envoie": 8.84,
+  "infrarouge": 9.68,
+  "voient": 10.78,
+  "camera": 12.02,
+  "filme": 12.92,
+  "decalent": 14.9,
+  "relief": 17.3,
+  "transforme": 19.5,
+  "modele": 20.48,
+  "chiffres": 22.54,
+  "enregistre": 25.02,
+  "chiffre": 25.84,
+  "zone": 26.4,
+  "securisee": 27.06,
+  "colle": 28.32,
+  "deverrouille": 28.88,
+  "fou": 29.82,
+  "noir": 30.82,
+  "eclaire": 31.74,
+  "inconnu": 34.34,
+  "million": 35.92,
+  "mais2": 36.78,
+  "jumeau": 37.28,
+  "chances": 38.66,
+  "abonne": 39.22,
+  "vraiment": 40.52,
+  "e1": 6.48,
+  "e2": 11.38,
+  "e3": 18.4,
+  "e4": 23.18,
+  "sur": 35.48,
+  "voEnd": 41.01449,
+  "end": 44.01
+ },
+ "sfx": [
+  [
+   "hiss",
+   1.906,
+   1.0,
+   0.16
+  ],
+  [
+   "stamp",
+   4.589,
+   0.7,
+   0.4
+  ],
+  [
+   "whoosh-short",
+   5.301,
+   0.575,
+   0.22
+  ],
+  [
+   "click-soft",
+   6.462,
+   0.366,
+   0.16
+  ],
+  [
+   "click-soft",
+   11.362,
+   0.366,
+   0.16
+  ],
+  [
+   "click-soft",
+   18.382,
+   0.366,
+   0.16
+  ],
+  [
+   "click-soft",
+   23.162,
+   0.366,
+   0.16
+  ],
+  [
+   "ticker",
+   19.437,
+   1.0,
+   0.2
+  ],
+  [
+   "kaching2",
+   28.824,
+   1.0,
+   0.26
+  ],
+  [
+   "ticker",
+   35.317,
+   1.0,
+   0.2
+  ],
+  [
+   "stamp2",
+   38.624,
+   0.7,
+   0.42
+  ],
+  [
+   "pop",
+   39.438,
+   0.72,
+   0.28
+  ]
+ ],
+ "tokens": [
+  {
+   "text": "Chaque",
+   "key": "chaque",
+   "start": 0.0,
+   "end": 0.38
+  },
+  {
+   "text": "fois",
+   "key": "fois",
+   "start": 0.38,
+   "end": 0.5
+  },
+  {
+   "text": "que",
+   "key": "que",
+   "start": 0.5,
+   "end": 0.62
+  },
+  {
+   "text": "tu",
+   "key": "tu",
+   "start": 0.62,
+   "end": 0.74
+  },
+  {
+   "text": "déverrouilles",
+   "key": "deverrouilles",
+   "start": 0.74,
+   "end": 1.18
+  },
+  {
+   "text": "ton",
+   "key": "ton",
+   "start": 1.18,
+   "end": 1.28
+  },
+  {
+   "text": "iPhone,",
+   "key": "iphone",
+   "start": 1.28,
+   "end": 1.56
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 1.8,
+   "end": 1.88
+  },
+  {
+   "text": "bombarde",
+   "key": "bombarde",
+   "start": 1.88,
+   "end": 2.44
+  },
+  {
+   "text": "ton",
+   "key": "ton",
+   "start": 2.44,
+   "end": 2.58
+  },
+  {
+   "text": "visage",
+   "key": "visage",
+   "start": 2.58,
+   "end": 2.9
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 2.9,
+   "end": 3.02
+  },
+  {
+   "text": "plus",
+   "key": "plus",
+   "start": 3.02,
+   "end": 3.14
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 3.14,
+   "end": 3.28
+  },
+  {
+   "text": "30",
+   "key": "30",
+   "start": 3.28,
+   "end": 3.58
+  },
+  {
+   "text": "000",
+   "key": "000",
+   "start": 3.58,
+   "end": 3.72
+  },
+  {
+   "text": "points.",
+   "key": "points",
+   "start": 3.72,
+   "end": 3.94
+  },
+  {
+   "text": "Des",
+   "key": "des",
+   "start": 4.24,
+   "end": 4.4
+  },
+  {
+   "text": "points",
+   "key": "points",
+   "start": 4.4,
+   "end": 4.58
+  },
+  {
+   "text": "INVISIBLES !",
+   "key": "invisibles",
+   "start": 4.58,
+   "end": 5.6
+  },
+  {
+   "text": "Comment",
+   "key": "comment",
+   "start": 5.6,
+   "end": 5.76
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 5.76,
+   "end": 5.94
+  },
+  {
+   "text": "marche ?",
+   "key": "marche",
+   "start": 5.94,
+   "end": 6.48
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 6.48,
+   "end": 6.74
+  },
+  {
+   "text": "1 :",
+   "key": "1",
+   "start": 6.74,
+   "end": 6.9
+  },
+  {
+   "text": "en",
+   "key": "en",
+   "start": 6.9,
+   "end": 7.16
+  },
+  {
+   "text": "haut",
+   "key": "haut",
+   "start": 7.16,
+   "end": 7.3
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 7.3,
+   "end": 7.38
+  },
+  {
+   "text": "l'écran,",
+   "key": "lecran",
+   "start": 7.38,
+   "end": 7.64
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 7.78,
+   "end": 7.9
+  },
+  {
+   "text": "minuscule",
+   "key": "minuscule",
+   "start": 7.9,
+   "end": 8.36
+  },
+  {
+   "text": "projecteur",
+   "key": "projecteur",
+   "start": 8.36,
+   "end": 8.84
+  },
+  {
+   "text": "envoie",
+   "key": "envoie",
+   "start": 8.84,
+   "end": 9.12
+  },
+  {
+   "text": "ces",
+   "key": "ces",
+   "start": 9.12,
+   "end": 9.3
+  },
+  {
+   "text": "points",
+   "key": "points",
+   "start": 9.3,
+   "end": 9.46
+  },
+  {
+   "text": "en",
+   "key": "en",
+   "start": 9.46,
+   "end": 9.68
+  },
+  {
+   "text": "infrarouge.",
+   "key": "infrarouge",
+   "start": 9.68,
+   "end": 10.26
+  },
+  {
+   "text": "Tes",
+   "key": "tes",
+   "start": 10.44,
+   "end": 10.5
+  },
+  {
+   "text": "yeux",
+   "key": "yeux",
+   "start": 10.5,
+   "end": 10.68
+  },
+  {
+   "text": "ne",
+   "key": "ne",
+   "start": 10.68,
+   "end": 10.78
+  },
+  {
+   "text": "voient",
+   "key": "voient",
+   "start": 10.78,
+   "end": 10.96
+  },
+  {
+   "text": "rien.",
+   "key": "rien",
+   "start": 10.96,
+   "end": 11.16
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 11.38,
+   "end": 11.58
+  },
+  {
+   "text": "2 :",
+   "key": "2",
+   "start": 11.58,
+   "end": 11.78
+  },
+  {
+   "text": "une",
+   "key": "une",
+   "start": 11.78,
+   "end": 12.02
+  },
+  {
+   "text": "caméra",
+   "key": "camera",
+   "start": 12.02,
+   "end": 12.32
+  },
+  {
+   "text": "infrarouge",
+   "key": "infrarouge",
+   "start": 12.32,
+   "end": 12.8
+  },
+  {
+   "text": "les",
+   "key": "les",
+   "start": 12.8,
+   "end": 12.92
+  },
+  {
+   "text": "filme.",
+   "key": "filme",
+   "start": 12.92,
+   "end": 13.22
+  },
+  {
+   "text": "Ton",
+   "key": "ton",
+   "start": 13.4,
+   "end": 13.54
+  },
+  {
+   "text": "nez,",
+   "key": "nez",
+   "start": 13.54,
+   "end": 13.82
+  },
+  {
+   "text": "tes",
+   "key": "tes",
+   "start": 13.96,
+   "end": 14.06
+  },
+  {
+   "text": "joues,",
+   "key": "joues",
+   "start": 14.06,
+   "end": 14.42
+  },
+  {
+   "text": "tes",
+   "key": "tes",
+   "start": 14.5,
+   "end": 14.6
+  },
+  {
+   "text": "yeux",
+   "key": "yeux",
+   "start": 14.6,
+   "end": 14.8
+  },
+  {
+   "text": "les",
+   "key": "les",
+   "start": 14.8,
+   "end": 14.9
+  },
+  {
+   "text": "décalent,",
+   "key": "decalent",
+   "start": 14.9,
+   "end": 15.36
+  },
+  {
+   "text": "chacun",
+   "key": "chacun",
+   "start": 15.5,
+   "end": 15.7
+  },
+  {
+   "text": "à",
+   "key": "a",
+   "start": 15.7,
+   "end": 15.86
+  },
+  {
+   "text": "sa",
+   "key": "sa",
+   "start": 15.86,
+   "end": 15.94
+  },
+  {
+   "text": "façon.",
+   "key": "facon",
+   "start": 15.94,
+   "end": 16.24
+  },
+  {
+   "text": "Ça",
+   "key": "ca",
+   "start": 16.6,
+   "end": 16.72
+  },
+  {
+   "text": "donne",
+   "key": "donne",
+   "start": 16.72,
+   "end": 16.84
+  },
+  {
+   "text": "une",
+   "key": "une",
+   "start": 16.84,
+   "end": 16.96
+  },
+  {
+   "text": "carte",
+   "key": "carte",
+   "start": 16.96,
+   "end": 17.16
+  },
+  {
+   "text": "en",
+   "key": "en",
+   "start": 17.16,
+   "end": 17.3
+  },
+  {
+   "text": "relief",
+   "key": "relief",
+   "start": 17.3,
+   "end": 17.54
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 17.54,
+   "end": 17.76
+  },
+  {
+   "text": "ton",
+   "key": "ton",
+   "start": 17.76,
+   "end": 17.86
+  },
+  {
+   "text": "visage.",
+   "key": "visage",
+   "start": 17.86,
+   "end": 18.26
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 18.4,
+   "end": 18.68
+  },
+  {
+   "text": "3 :",
+   "key": "3",
+   "start": 18.68,
+   "end": 18.9
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 18.9,
+   "end": 19.24
+  },
+  {
+   "text": "puce",
+   "key": "puce",
+   "start": 19.24,
+   "end": 19.5
+  },
+  {
+   "text": "transforme",
+   "key": "transforme",
+   "start": 19.5,
+   "end": 19.94
+  },
+  {
+   "text": "cette",
+   "key": "cette",
+   "start": 19.94,
+   "end": 20.04
+  },
+  {
+   "text": "carte",
+   "key": "carte",
+   "start": 20.04,
+   "end": 20.3
+  },
+  {
+   "text": "en",
+   "key": "en",
+   "start": 20.3,
+   "end": 20.48
+  },
+  {
+   "text": "modèle",
+   "key": "modele",
+   "start": 20.48,
+   "end": 20.76
+  },
+  {
+   "text": "mathématique.",
+   "key": "mathematique",
+   "start": 20.76,
+   "end": 21.3
+  },
+  {
+   "text": "Ton",
+   "key": "ton",
+   "start": 21.48,
+   "end": 21.62
+  },
+  {
+   "text": "visage…",
+   "key": "visage",
+   "start": 21.62,
+   "end": 22.1
+  },
+  {
+   "text": "version",
+   "key": "version",
+   "start": 22.28,
+   "end": 22.54
+  },
+  {
+   "text": "chiffres.",
+   "key": "chiffres",
+   "start": 22.54,
+   "end": 23.02
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 23.18,
+   "end": 23.42
+  },
+  {
+   "text": "4 :",
+   "key": "4",
+   "start": 23.42,
+   "end": 23.7
+  },
+  {
+   "text": "elle",
+   "key": "elle",
+   "start": 23.7,
+   "end": 23.98
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 23.98,
+   "end": 24.12
+  },
+  {
+   "text": "compare",
+   "key": "compare",
+   "start": 24.12,
+   "end": 24.36
+  },
+  {
+   "text": "à",
+   "key": "a",
+   "start": 24.36,
+   "end": 24.5
+  },
+  {
+   "text": "celui",
+   "key": "celui",
+   "start": 24.5,
+   "end": 24.66
+  },
+  {
+   "text": "que",
+   "key": "que",
+   "start": 24.66,
+   "end": 24.82
+  },
+  {
+   "text": "tu",
+   "key": "tu",
+   "start": 24.82,
+   "end": 24.92
+  },
+  {
+   "text": "as",
+   "key": "as",
+   "start": 24.92,
+   "end": 25.02
+  },
+  {
+   "text": "enregistré,",
+   "key": "enregistre",
+   "start": 25.02,
+   "end": 25.62
+  },
+  {
+   "text": "chiffré",
+   "key": "chiffre",
+   "start": 25.84,
+   "end": 26.12
+  },
+  {
+   "text": "dans",
+   "key": "dans",
+   "start": 26.12,
+   "end": 26.24
+  },
+  {
+   "text": "une",
+   "key": "une",
+   "start": 26.24,
+   "end": 26.4
+  },
+  {
+   "text": "zone",
+   "key": "zone",
+   "start": 26.4,
+   "end": 26.64
+  },
+  {
+   "text": "ultra",
+   "key": "ultra",
+   "start": 26.64,
+   "end": 27.06
+  },
+  {
+   "text": "sécurisée",
+   "key": "securisee",
+   "start": 27.06,
+   "end": 27.54
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 27.54,
+   "end": 27.66
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 27.66,
+   "end": 27.76
+  },
+  {
+   "text": "puce.",
+   "key": "puce",
+   "start": 27.76,
+   "end": 28.06
+  },
+  {
+   "text": "Ça",
+   "key": "ca",
+   "start": 28.18,
+   "end": 28.32
+  },
+  {
+   "text": "colle ?",
+   "key": "colle",
+   "start": 28.32,
+   "end": 28.88
+  },
+  {
+   "text": "Déverrouillé !",
+   "key": "deverrouille",
+   "start": 28.88,
+   "end": 29.32
+  },
+  {
+   "text": "Le",
+   "key": "le",
+   "start": 29.32,
+   "end": 29.68
+  },
+  {
+   "text": "plus",
+   "key": "plus",
+   "start": 29.68,
+   "end": 29.82
+  },
+  {
+   "text": "fou ?",
+   "key": "fou",
+   "start": 29.82,
+   "end": 30.02
+  },
+  {
+   "text": "Ça",
+   "key": "ca",
+   "start": 30.2,
+   "end": 30.38
+  },
+  {
+   "text": "marche",
+   "key": "marche",
+   "start": 30.38,
+   "end": 30.6
+  },
+  {
+   "text": "dans",
+   "key": "dans",
+   "start": 30.6,
+   "end": 30.72
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 30.72,
+   "end": 30.82
+  },
+  {
+   "text": "noir",
+   "key": "noir",
+   "start": 30.82,
+   "end": 31.02
+  },
+  {
+   "text": "complet :",
+   "key": "complet",
+   "start": 31.02,
+   "end": 31.44
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 31.68,
+   "end": 31.74
+  },
+  {
+   "text": "éclaire",
+   "key": "eclaire",
+   "start": 31.74,
+   "end": 32.08
+  },
+  {
+   "text": "lui-même",
+   "key": "luimeme",
+   "start": 32.08,
+   "end": 32.46
+  },
+  {
+   "text": "ton",
+   "key": "ton",
+   "start": 32.46,
+   "end": 32.6
+  },
+  {
+   "text": "visage,",
+   "key": "visage",
+   "start": 32.6,
+   "end": 33.04
+  },
+  {
+   "text": "en",
+   "key": "en",
+   "start": 33.04,
+   "end": 33.24
+  },
+  {
+   "text": "infrarouge.",
+   "key": "infrarouge",
+   "start": 33.24,
+   "end": 33.86
+  },
+  {
+   "text": "Et",
+   "key": "et",
+   "start": 34.06,
+   "end": 34.24
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 34.24,
+   "end": 34.34
+  },
+  {
+   "text": "inconnu",
+   "key": "inconnu",
+   "start": 34.34,
+   "end": 34.66
+  },
+  {
+   "text": "a",
+   "key": "a",
+   "start": 34.66,
+   "end": 34.8
+  },
+  {
+   "text": "moins",
+   "key": "moins",
+   "start": 34.8,
+   "end": 34.92
+  },
+  {
+   "text": "d'1",
+   "key": "d1",
+   "start": 34.92,
+   "end": 35.2
+  },
+  {
+   "text": "chance",
+   "key": "chance",
+   "start": 35.2,
+   "end": 35.48
+  },
+  {
+   "text": "sur",
+   "key": "sur",
+   "start": 35.48,
+   "end": 35.66
+  },
+  {
+   "text": "1",
+   "key": "1",
+   "start": 35.66,
+   "end": 35.92
+  },
+  {
+   "text": "million",
+   "key": "million",
+   "start": 35.92,
+   "end": 36.18
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 36.18,
+   "end": 36.3
+  },
+  {
+   "text": "l'ouvrir.",
+   "key": "louvrir",
+   "start": 36.3,
+   "end": 36.62
+  },
+  {
+   "text": "Mais",
+   "key": "mais",
+   "start": 36.78,
+   "end": 37.06
+  },
+  {
+   "text": "ton",
+   "key": "ton",
+   "start": 37.06,
+   "end": 37.28
+  },
+  {
+   "text": "jumeau ?",
+   "key": "jumeau",
+   "start": 37.28,
+   "end": 37.7
+  },
+  {
+   "text": "Lui,",
+   "key": "lui",
+   "start": 37.86,
+   "end": 38.1
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 38.34,
+   "end": 38.46
+  },
+  {
+   "text": "a",
+   "key": "a",
+   "start": 38.46,
+   "end": 38.56
+  },
+  {
+   "text": "ses",
+   "key": "ses",
+   "start": 38.56,
+   "end": 38.66
+  },
+  {
+   "text": "chances.",
+   "key": "chances",
+   "start": 38.66,
+   "end": 38.9
+  },
+  {
+   "text": "Abonne-toi",
+   "key": "abonnetoi",
+   "start": 39.22,
+   "end": 39.62
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 39.62,
+   "end": 39.76
+  },
+  {
+   "text": "savoir",
+   "key": "savoir",
+   "start": 39.76,
+   "end": 39.98
+  },
+  {
+   "text": "comment",
+   "key": "comment",
+   "start": 39.98,
+   "end": 40.2
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 40.2,
+   "end": 40.36
+  },
+  {
+   "text": "marche",
+   "key": "marche",
+   "start": 40.36,
+   "end": 40.52
+  },
+  {
+   "text": "vraiment.",
+   "key": "vraiment",
+   "start": 40.52,
+   "end": 40.74
+  }
+ ]
+}

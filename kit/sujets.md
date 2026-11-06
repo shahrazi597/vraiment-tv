@@ -13,13 +13,13 @@ Choisis pour faire s'arrêter quelqu'un qui scrolle. Accroches à vérifier : si
 | Sujet | Accroche (à vérifier) | Statut |
 |---|---|---|
 | L'algorithme TikTok | « TikTok ne sait pas ce que tu aimes. Il mesure combien de temps tu hésites. » | ⏳ |
-| Face ID | « Ton iPhone projette plus de 30 000 points invisibles sur ton visage. » | ⏳ |
+| Face ID | « Ton iPhone projette plus de 30 000 points invisibles sur ton visage. » | 📅 07/11 19h |
 | Shazam | « Shazam n'écoute pas ta chanson. Il relève ses empreintes, comme la police. » | 📅 06/11 19h |
 | Google Maps et les bouchons | « Google sait qu'il y a un bouchon… parce que tu es dedans. » | ⏳ |
 | Ton mot de passe | « Le site où tu te connectes ne connaît pas ton mot de passe. » | ⏳ |
 | Le GPS | « Ton téléphone ne sait pas où il est. Il chronomètre des satellites… et Einstein s'en mêle. » | ⏳ |
 | Les satellites | « Un satellite ne flotte pas. Il tombe en permanence… et rate la Terre. » | ⏳ |
-| Le casque à réduction de bruit | « Pour faire le silence, il ajoute du bruit. » | ⏳ |
+| Le casque à réduction de bruit | « Pour faire le silence, il ajoute du bruit. » | 📅 07/11 9h |
 | L'airbag | « Ton airbag, c'est une petite explosion : 30 millisecondes pour te sauver. » | ⏳ |
 | Une centrale nucléaire | « Une centrale nucléaire, c'est une bouilloire géante. » | ⏳ |
 | Ce que voient tes yeux | « Tu as un trou dans ta vision… et ton cerveau le remplit en inventant. » | ⏳ |
@@ -58,7 +58,7 @@ Choisis pour faire s'arrêter quelqu'un qui scrolle. Accroches à vérifier : si
 | 2 | Une IA comme ChatGPT | « ChatGPT ne connaît pas sa réponse à l'avance. Il la devine, mot par mot. » (reformulée) | 📅 05/11 19h |
 | 3 | Le paiement sans contact | « Ta carte bancaire n'a pas de batterie. D'où vient son énergie ? » | 📅 06/11 9h |
 | 4 | Le GPS | « Ton téléphone ne sait pas où il est. Il chronomètre des satellites. » | ⏳ |
-| 5 | Le casque à réduction de bruit | « Pour faire le silence, il ajoute du bruit. » | ⏳ |
+| 5 | Le casque à réduction de bruit | « Pour faire le silence, il ajoute du bruit. » | 📅 07/11 9h |
 | 6 | Le micro-ondes | « Il ne chauffe pas ton assiette. Il agite l'eau qu'il y a dedans. » | ⏳ |
 | 7 | Les câbles sous-marins | « Tes vidéos passent par des câbles au fond de l'océan. » | ⏳ |
 | 8 | L'aile d'avion | « Un avion ne flotte pas sur l'air. Il le pousse vers le bas. » | ⏳ |
@@ -79,7 +79,7 @@ Choisis pour faire s'arrêter quelqu'un qui scrolle. Accroches à vérifier : si
 | 3 | La facture d'électricité | Énergie, réseau, taxes (régulateur de l'énergie) | ⏳ |
 | 4 | Un livre à 20 € | Auteur, éditeur, imprimeur, diffuseur, libraire | ⏳ |
 | 5 | Une brique de lait | Éleveur, laiterie, magasin (observatoire des prix et des marges) | ⏳ |
-| 6 | Une place de cinéma | Taxe, distributeur, exploitant (CNC) | ⏳ |
+| 6 | Une place de cinéma | 7,42 € (prix moyen 2025) : TVA, taxe CNC, Sacem, salle, distributeur (CNC, Sénat) | 📅 07/11 12h |
 | 7 | Le passe Navigo (ex-« ticket de métro ») | 90,80 € payés contre 280,07 € de coût réel ; qui paie le reste (Île-de-France Mobilités) | 📅 06/11 12h |
 | 8 | Une bouteille d'eau | Eau en bouteille contre eau du robinet, prix au litre | ⏳ |
 | 9 | Une consultation chez le médecin | Qui paie quoi : patient, Sécu, mutuelle | ⏳ |

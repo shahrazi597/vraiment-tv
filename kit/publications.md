@@ -168,3 +168,76 @@ Comment Shazam reconnaît une chanson : il transforme quelques secondes de son e
 Comment ça marche vraiment ? Épisode 4. Abonne-toi pour les prochains épisodes !
 Sources : Avery Li-Chun Wang (cofondateur de Shazam), « An Industrial-Strength Audio Search Algorithm », ISMIR 2003 ; Dan Ellis, LabROSA, Université Columbia (Robust Landmark-Based Audio Fingerprinting).
 #shorts #shazam #musique #tech #lesaviezvous
+
+---
+
+## Publication 8 — Comment ça marche vraiment ? #5 · Le casque anti-bruit (07/11/2026 09h00)
+Fichier : `casque_FR.mp4`
+
+**TikTok**
+Pour faire le silence, ton casque AJOUTE du bruit 🎧🤯 Un anti-bruit qui efface le moteur de l'avion… mais pas la voix de ton voisin.
+Tu l'avais remarqué ? 👇
+#casque #reductiondebruit #science #tech #lesaviezvous #apprendresurtiktok #pourtoi
+
+**Instagram Reels**
+Ton casque à réduction de bruit ne bloque pas le bruit… il en AJOUTE 🎧
+Un micro écoute le moteur, une puce dessine l'onde inverse, le haut-parleur la joue : les deux ondes s'annulent. Ça marche sur les sons graves et réguliers, beaucoup moins sur les voix. Et l'idée a été brevetée… en 1936 🤯
+Tu le savais ? Dis-le en commentaire 👇 et abonne-toi pour la suite de « Comment ça marche vraiment ? »
+#casque #reductiondebruit #science #physique #tech #lesaviezvous #culturegenerale #vulgarisation #reelsfrance
+
+**YouTube Shorts**
+Titre : Pour faire le silence, ton casque ajoute du bruit 🎧 #shorts
+Description :
+Comment marche la réduction de bruit active : un micro sur l'écouteur capte le bruit ambiant, une puce calcule l'onde inverse (en opposition de phase), et le haut-parleur la joue avec ta musique. Les deux ondes s'additionnent et s'annulent : c'est l'interférence destructive. Sur beaucoup de casques, un second micro côté oreille mesure ce qui reste et corrige en continu. Ça marche surtout sur les sons graves et réguliers (moteur, métro) ; les voix, plus aiguës et imprévisibles, passent davantage. Le premier brevet date de 1936 (Paul Lueg).
+Comment ça marche vraiment ? Épisode 5. Abonne-toi pour les prochains épisodes !
+Sources : brevet US 2 043 416 (Paul Lueg, 1936) ; Bose, histoire de la réduction de bruit active ; BBC Science Focus.
+#shorts #casque #reductiondebruit #science #lesaviezvous
+
+---
+
+## Publication 9 — Combien ça coûte vraiment ? #4 · La place de cinéma (07/11/2026 12h00)
+Fichier : `cinema_FR.mp4`
+
+**TikTok**
+Ta place de ciné coûte 7,42 € en moyenne… et le film n'en touche même pas la moitié 🎬🍿 Le pop-corn, lui, ne se partage pas.
+Tu aurais deviné qui garde le plus ? 👇
+#cinema #argent #film #popcorn #lesaviezvous #pourtoi
+
+**Instagram Reels**
+Ta place de ciné à 7,42 € : où va vraiment ton argent ? 🎬
+TVA 0,39 €, taxe CNC 0,75 €, Sacem 0,10 €… puis la salle garde 3,22 € et le distributeur 2,96 €, avec lesquels il doit encore payer la pub et le producteur. Et tes 75 centimes de taxe aident à financer les films français, même devant un blockbuster américain 🤯
+Tu le savais ? Dis-le en commentaire 👇 et abonne-toi pour la suite de « Combien ça coûte vraiment ? »
+Prix moyen 2025 en France (CNC), partage selon le taux de location moyen.
+#cinema #film #argent #popcorn #cinemafrancais #lesaviezvous #culturegenerale #economie #reelsfrance
+
+**YouTube Shorts**
+Titre : Ta place de ciné à 7,42 € : qui touche quoi ? 🎬🍿 #shorts
+Description :
+Prix moyen d'une place de cinéma en France en 2025 : 7,42 € (CNC). Sur ce billet : 0,39 € de TVA (5,5 %), 0,75 € de taxe sur les entrées (10,72 % du prix hors TVA, affectée au CNC qui soutient notamment le cinéma français), 0,10 € pour la Sacem. Les 6,18 € restants se partagent entre la salle (environ 3,22 €) et le distributeur (environ 2,96 €, avec un taux de location moyen de 47,1 %), qui paie ensuite la promotion du film et le producteur. Le pop-corn, lui, reste à la salle. Montants arrondis, calculés à partir des taux publics.
+Combien ça coûte vraiment ? Épisode 4. Abonne-toi pour les prochains épisodes !
+Sources : CNC, bilan 2025 et taxe sur les entrées en salles (TSA) ; Sénat, rapport n° 701 (2022-2023) sur les taux de location.
+#shorts #cinema #argent #film #lesaviezvous
+
+---
+
+## Publication 10 — Comment ça marche vraiment ? #6 · Face ID (07/11/2026 19h00)
+Fichier : `faceid_FR.mp4`
+
+**TikTok**
+À chaque déverrouillage, ton iPhone projette plus de 30 000 points invisibles sur ton visage 📱👀 Et ça marche même dans le noir.
+Ton jumeau pourrait l'ouvrir ? 👇
+#faceid #iphone #tech #science #lesaviezvous #apprendresurtiktok #pourtoi
+
+**Instagram Reels**
+Face ID : ton iPhone te bombarde de plus de 30 000 points invisibles 📱
+Un projecteur infrarouge envoie les points, une caméra infrarouge voit comment ton nez et tes joues les décalent, la puce en tire un modèle mathématique de ton visage et le compare à celui enregistré, chiffré dans une zone sécurisée. Moins d'1 chance sur 1 million qu'un inconnu l'ouvre… mais un jumeau, c'est une autre histoire 👯
+Tu le savais ? Dis-le en commentaire 👇 et abonne-toi pour la suite de « Comment ça marche vraiment ? »
+#faceid #iphone #tech #science #technologie #lesaviezvous #culturegenerale #vulgarisation #reelsfrance
+
+**YouTube Shorts**
+Titre : Face ID : 30 000 points invisibles sur ton visage 📱👀 #shorts
+Description :
+Comment marche Face ID : un projecteur projette plus de 30 000 points infrarouges invisibles sur ton visage, une caméra infrarouge les filme et le relief les décale, ce qui donne une carte de profondeur. La puce la transforme en modèle mathématique et le compare aux données enregistrées, chiffrées et protégées par une clé accessible seulement à la Secure Enclave. Il fonctionne même dans le noir complet grâce à son propre éclairage infrarouge. Probabilité qu'un inconnu le déverrouille : moins d'1 sur 1 000 000 ; elle est plus élevée pour les jumeaux et les frères et sœurs qui se ressemblent.
+Comment ça marche vraiment ? Épisode 6. Abonne-toi pour les prochains épisodes !
+Sources : Apple, « À propos de la technologie avancée de Face ID » (support Apple) ; Apple, présentation de l'iPhone X (2017).
+#shorts #faceid #iphone #tech #lesaviezvous

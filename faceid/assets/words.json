@@ -1,0 +1,792 @@
+[
+{
+"text": "Chaque",
+"start": 0.0,
+"end": 0.38
+},
+{
+"text": "fois",
+"start": 0.38,
+"end": 0.5
+},
+{
+"text": "que",
+"start": 0.5,
+"end": 0.62
+},
+{
+"text": "tu",
+"start": 0.62,
+"end": 0.74
+},
+{
+"text": "dédérouilles",
+"start": 0.74,
+"end": 1.18
+},
+{
+"text": "ton",
+"start": 1.18,
+"end": 1.28
+},
+{
+"text": "iPhone,",
+"start": 1.28,
+"end": 1.56
+},
+{
+"text": "il",
+"start": 1.8,
+"end": 1.88
+},
+{
+"text": "bombarde",
+"start": 1.88,
+"end": 2.44
+},
+{
+"text": "ton",
+"start": 2.44,
+"end": 2.58
+},
+{
+"text": "visage",
+"start": 2.58,
+"end": 2.9
+},
+{
+"text": "de",
+"start": 2.9,
+"end": 3.02
+},
+{
+"text": "plus",
+"start": 3.02,
+"end": 3.14
+},
+{
+"text": "de",
+"start": 3.14,
+"end": 3.28
+},
+{
+"text": "30",
+"start": 3.28,
+"end": 3.58
+},
+{
+"text": "000",
+"start": 3.58,
+"end": 3.72
+},
+{
+"text": "points.",
+"start": 3.72,
+"end": 3.94
+},
+{
+"text": "Des",
+"start": 4.24,
+"end": 4.4
+},
+{
+"text": "points",
+"start": 4.4,
+"end": 4.58
+},
+{
+"text": "invisibles",
+"start": 4.58,
+"end": 5.36
+},
+{
+"text": "!",
+"start": 5.36,
+"end": 5.6
+},
+{
+"text": "Comment",
+"start": 5.6,
+"end": 5.76
+},
+{
+"text": "ça",
+"start": 5.76,
+"end": 5.94
+},
+{
+"text": "marche",
+"start": 5.94,
+"end": 6.2
+},
+{
+"text": "?",
+"start": 6.2,
+"end": 6.48
+},
+{
+"text": "Étape",
+"start": 6.48,
+"end": 6.74
+},
+{
+"text": "1",
+"start": 6.74,
+"end": 6.9
+},
+{
+"text": "En",
+"start": 6.9,
+"end": 7.16
+},
+{
+"text": "haut",
+"start": 7.16,
+"end": 7.3
+},
+{
+"text": "de",
+"start": 7.3,
+"end": 7.38
+},
+{
+"text": "l",
+"start": 7.38,
+"end": 7.42
+},
+{
+"text": "'écran,",
+"start": 7.42,
+"end": 7.64
+},
+{
+"text": "un",
+"start": 7.78,
+"end": 7.9
+},
+{
+"text": "minuscule",
+"start": 7.9,
+"end": 8.36
+},
+{
+"text": "projecteur",
+"start": 8.36,
+"end": 8.84
+},
+{
+"text": "envoie",
+"start": 8.84,
+"end": 9.12
+},
+{
+"text": "ses",
+"start": 9.12,
+"end": 9.3
+},
+{
+"text": "points",
+"start": 9.3,
+"end": 9.46
+},
+{
+"text": "en",
+"start": 9.46,
+"end": 9.68
+},
+{
+"text": "infrarouge.",
+"start": 9.68,
+"end": 10.26
+},
+{
+"text": "Tes",
+"start": 10.44,
+"end": 10.5
+},
+{
+"text": "yeux",
+"start": 10.5,
+"end": 10.68
+},
+{
+"text": "ne",
+"start": 10.68,
+"end": 10.78
+},
+{
+"text": "voient",
+"start": 10.78,
+"end": 10.96
+},
+{
+"text": "rien.",
+"start": 10.96,
+"end": 11.16
+},
+{
+"text": "Étape",
+"start": 11.38,
+"end": 11.58
+},
+{
+"text": "2",
+"start": 11.58,
+"end": 11.78
+},
+{
+"text": "Une",
+"start": 11.78,
+"end": 12.02
+},
+{
+"text": "caméra",
+"start": 12.02,
+"end": 12.32
+},
+{
+"text": "infrarouge",
+"start": 12.32,
+"end": 12.8
+},
+{
+"text": "les",
+"start": 12.8,
+"end": 12.92
+},
+{
+"text": "filme.",
+"start": 12.92,
+"end": 13.22
+},
+{
+"text": "Ton",
+"start": 13.4,
+"end": 13.54
+},
+{
+"text": "nez,",
+"start": 13.54,
+"end": 13.82
+},
+{
+"text": "tes",
+"start": 13.96,
+"end": 14.06
+},
+{
+"text": "joues,",
+"start": 14.06,
+"end": 14.42
+},
+{
+"text": "tes",
+"start": 14.5,
+"end": 14.6
+},
+{
+"text": "yeux",
+"start": 14.6,
+"end": 14.8
+},
+{
+"text": "les",
+"start": 14.8,
+"end": 14.9
+},
+{
+"text": "décalent,",
+"start": 14.9,
+"end": 15.36
+},
+{
+"text": "chacun",
+"start": 15.5,
+"end": 15.7
+},
+{
+"text": "à",
+"start": 15.7,
+"end": 15.86
+},
+{
+"text": "sa",
+"start": 15.86,
+"end": 15.94
+},
+{
+"text": "façon.",
+"start": 15.94,
+"end": 16.24
+},
+{
+"text": "Ça",
+"start": 16.6,
+"end": 16.72
+},
+{
+"text": "donne",
+"start": 16.72,
+"end": 16.84
+},
+{
+"text": "une",
+"start": 16.84,
+"end": 16.96
+},
+{
+"text": "carte",
+"start": 16.96,
+"end": 17.16
+},
+{
+"text": "en",
+"start": 17.16,
+"end": 17.3
+},
+{
+"text": "relief",
+"start": 17.3,
+"end": 17.54
+},
+{
+"text": "de",
+"start": 17.54,
+"end": 17.76
+},
+{
+"text": "ton",
+"start": 17.76,
+"end": 17.86
+},
+{
+"text": "visage.",
+"start": 17.86,
+"end": 18.26
+},
+{
+"text": "Étape",
+"start": 18.4,
+"end": 18.68
+},
+{
+"text": "3",
+"start": 18.68,
+"end": 18.9
+},
+{
+"text": "La",
+"start": 18.9,
+"end": 19.24
+},
+{
+"text": "puce",
+"start": 19.24,
+"end": 19.5
+},
+{
+"text": "transforme",
+"start": 19.5,
+"end": 19.94
+},
+{
+"text": "cette",
+"start": 19.94,
+"end": 20.04
+},
+{
+"text": "carte",
+"start": 20.04,
+"end": 20.3
+},
+{
+"text": "en",
+"start": 20.3,
+"end": 20.48
+},
+{
+"text": "modèle",
+"start": 20.48,
+"end": 20.76
+},
+{
+"text": "mathématique.",
+"start": 20.76,
+"end": 21.3
+},
+{
+"text": "Ton",
+"start": 21.48,
+"end": 21.62
+},
+{
+"text": "visage,",
+"start": 21.62,
+"end": 22.1
+},
+{
+"text": "version",
+"start": 22.28,
+"end": 22.54
+},
+{
+"text": "chiffre.",
+"start": 22.54,
+"end": 23.02
+},
+{
+"text": "Étape",
+"start": 23.18,
+"end": 23.42
+},
+{
+"text": "4",
+"start": 23.42,
+"end": 23.7
+},
+{
+"text": "Elle",
+"start": 23.7,
+"end": 23.98
+},
+{
+"text": "le",
+"start": 23.98,
+"end": 24.12
+},
+{
+"text": "compare",
+"start": 24.12,
+"end": 24.36
+},
+{
+"text": "à",
+"start": 24.36,
+"end": 24.5
+},
+{
+"text": "celui",
+"start": 24.5,
+"end": 24.66
+},
+{
+"text": "que",
+"start": 24.66,
+"end": 24.82
+},
+{
+"text": "tu",
+"start": 24.82,
+"end": 24.92
+},
+{
+"text": "as",
+"start": 24.92,
+"end": 25.02
+},
+{
+"text": "enregistré,",
+"start": 25.02,
+"end": 25.62
+},
+{
+"text": "chiffré",
+"start": 25.84,
+"end": 26.12
+},
+{
+"text": "dans",
+"start": 26.12,
+"end": 26.24
+},
+{
+"text": "une",
+"start": 26.24,
+"end": 26.4
+},
+{
+"text": "zone",
+"start": 26.4,
+"end": 26.64
+},
+{
+"text": "ultra",
+"start": 26.64,
+"end": 27.06
+},
+{
+"text": "sécurisée",
+"start": 27.06,
+"end": 27.54
+},
+{
+"text": "de",
+"start": 27.54,
+"end": 27.66
+},
+{
+"text": "la",
+"start": 27.66,
+"end": 27.76
+},
+{
+"text": "puce.",
+"start": 27.76,
+"end": 28.06
+},
+{
+"text": "Ça",
+"start": 28.18,
+"end": 28.32
+},
+{
+"text": "colle",
+"start": 28.32,
+"end": 28.54
+},
+{
+"text": "?",
+"start": 28.54,
+"end": 28.88
+},
+{
+"text": "Dévérouiller.",
+"start": 28.88,
+"end": 29.32
+},
+{
+"text": "Le",
+"start": 29.32,
+"end": 29.68
+},
+{
+"text": "plus",
+"start": 29.68,
+"end": 29.82
+},
+{
+"text": "fou,",
+"start": 29.82,
+"end": 30.02
+},
+{
+"text": "ça",
+"start": 30.2,
+"end": 30.38
+},
+{
+"text": "marche",
+"start": 30.38,
+"end": 30.6
+},
+{
+"text": "dans",
+"start": 30.6,
+"end": 30.72
+},
+{
+"text": "le",
+"start": 30.72,
+"end": 30.82
+},
+{
+"text": "noir",
+"start": 30.82,
+"end": 31.02
+},
+{
+"text": "complet.",
+"start": 31.02,
+"end": 31.44
+},
+{
+"text": "Il",
+"start": 31.68,
+"end": 31.74
+},
+{
+"text": "éclaire",
+"start": 31.74,
+"end": 32.08
+},
+{
+"text": "lui",
+"start": 32.08,
+"end": 32.26
+},
+{
+"text": "-même",
+"start": 32.26,
+"end": 32.46
+},
+{
+"text": "ton",
+"start": 32.46,
+"end": 32.6
+},
+{
+"text": "visage",
+"start": 32.6,
+"end": 33.04
+},
+{
+"text": "en",
+"start": 33.04,
+"end": 33.24
+},
+{
+"text": "infrarouge.",
+"start": 33.24,
+"end": 33.86
+},
+{
+"text": "Et",
+"start": 34.06,
+"end": 34.24
+},
+{
+"text": "un",
+"start": 34.24,
+"end": 34.34
+},
+{
+"text": "inconnu",
+"start": 34.34,
+"end": 34.66
+},
+{
+"text": "à",
+"start": 34.66,
+"end": 34.8
+},
+{
+"text": "moins",
+"start": 34.8,
+"end": 34.92
+},
+{
+"text": "d",
+"start": 34.92,
+"end": 35.1
+},
+{
+"text": "'une",
+"start": 35.1,
+"end": 35.2
+},
+{
+"text": "chance",
+"start": 35.2,
+"end": 35.48
+},
+{
+"text": "sur",
+"start": 35.48,
+"end": 35.66
+},
+{
+"text": "un",
+"start": 35.66,
+"end": 35.92
+},
+{
+"text": "million",
+"start": 35.92,
+"end": 36.18
+},
+{
+"text": "de",
+"start": 36.18,
+"end": 36.3
+},
+{
+"text": "l",
+"start": 36.3,
+"end": 36.34
+},
+{
+"text": "'ouvrir.",
+"start": 36.34,
+"end": 36.62
+},
+{
+"text": "Mais",
+"start": 36.78,
+"end": 37.06
+},
+{
+"text": "ton",
+"start": 37.06,
+"end": 37.28
+},
+{
+"text": "jumeau,",
+"start": 37.28,
+"end": 37.7
+},
+{
+"text": "lui,",
+"start": 37.86,
+"end": 38.1
+},
+{
+"text": "il",
+"start": 38.34,
+"end": 38.46
+},
+{
+"text": "a",
+"start": 38.46,
+"end": 38.56
+},
+{
+"text": "ses",
+"start": 38.56,
+"end": 38.66
+},
+{
+"text": "chances.",
+"start": 38.66,
+"end": 38.9
+},
+{
+"text": "Abonne",
+"start": 39.22,
+"end": 39.46
+},
+{
+"text": "-toi",
+"start": 39.46,
+"end": 39.62
+},
+{
+"text": "pour",
+"start": 39.62,
+"end": 39.76
+},
+{
+"text": "savoir",
+"start": 39.76,
+"end": 39.98
+},
+{
+"text": "comment",
+"start": 39.98,
+"end": 40.2
+},
+{
+"text": "ça",
+"start": 40.2,
+"end": 40.36
+},
+{
+"text": "marche",
+"start": 40.36,
+"end": 40.52
+},
+{
+"text": "vraiment.",
+"start": 40.52,
+"end": 40.74
+}
+]

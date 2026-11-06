@@ -1,0 +1,92 @@
+/* =====================================================================
+   DA « … VRAIMENT ? » — feuille commune à toutes les vidéos du compte
+   Ne pas modifier dans un épisode : changer ici, puis reconstruire.
+   ===================================================================== */
+@font-face { font-family: "Inter Display"; font-weight: 600; src: url("fonts/InterDisplay-SemiBold.otf"); }
+@font-face { font-family: "Inter Display"; font-weight: 700; src: url("fonts/InterDisplay-Bold.otf"); }
+@font-face { font-family: "Inter Display"; font-weight: 800; src: url("fonts/InterDisplay-ExtraBold.otf"); }
+@font-face { font-family: "Inter Display"; font-weight: 900; src: url("fonts/InterDisplay-Black.otf"); }
+
+:root {
+  /* fond et texte */
+  --ground: #0b0b0e;
+  --panel: #16161b;
+  --line: #2a2a32;
+  --ink: #f6f4ee;
+  --muted: #8e8c95;
+  --dim: #75737c;
+  /* accents : chacun a un sens, toujours le même */
+  --amber: #ffb21f;   /* le mot ou le chiffre à retenir */
+  --red: #ff5236;     /* l'alerte, le chaud, l'appel à l'action */
+  --cream: #ece6d6;   /* la donnée neutre, la matière */
+  --cold: #4cc4ff;    /* le froid, l'air, l'énergie qui part */
+  --font: "Inter Display", sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--ground); }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden;
+  font-family: var(--font); color: var(--ink); font-variant-numeric: tabular-nums; }
+.clip { position: absolute; inset: 0; }
+#cam { position: absolute; inset: 0; transform-origin: 540px 760px; }
+
+/* ---------- décor commun ---------- */
+#grid { position: absolute; left: -100px; top: -240px; width: 1280px; height: 2480px;
+  background-image: linear-gradient(rgba(255,255,255,.045) 2px, transparent 2px),
+                    linear-gradient(90deg, rgba(255,255,255,.045) 2px, transparent 2px);
+  background-size: 80px 80px; }
+.glow { position: absolute; left: -210px; top: 60px; width: 1500px; height: 1500px; opacity: 0; }
+#gl-cream { background: radial-gradient(circle, rgba(236,230,214,.30) 0%, rgba(236,230,214,0) 58%); }
+#gl-red   { background: radial-gradient(circle, rgba(255,82,54,.42) 0%, rgba(255,82,54,0) 58%); }
+#gl-amber { background: radial-gradient(circle, rgba(255,178,31,.34) 0%, rgba(255,178,31,0) 56%); }
+#gl-cold  { background: radial-gradient(circle, rgba(76,196,255,.36) 0%, rgba(76,196,255,0) 58%); }
+#vign { position: absolute; inset: 0; background: radial-gradient(ellipse 75% 60% at 50% 42%, rgba(0,0,0,0) 55%, rgba(0,0,0,.6) 100%); }
+#flash { position: absolute; inset: 0; opacity: 0; mix-blend-mode: screen; background: var(--red); }
+
+/* ---------- pastille de série (haut d'écran, hors zone UI) ---------- */
+#tag { position: absolute; top: 192px; left: 0; right: 0; bottom: auto; height: 64px;
+  display: flex; justify-content: center; gap: 12px; }
+#tag .pill { font-size: 30px; font-weight: 800; letter-spacing: .04em; padding: 14px 28px; border-radius: 999px;
+  background: var(--ink); color: var(--ground); white-space: nowrap; }
+#tag .num { background: var(--red); }
+
+/* ---------- titres ---------- */
+.hl { position: absolute; left: 0; right: 0; text-align: center; font-weight: 900; text-transform: uppercase;
+  letter-spacing: -.03em; line-height: .98; font-size: 104px; }
+.hl .a { color: var(--amber); }
+.hl .c { color: var(--cold); }
+.hl .r { color: var(--red); }
+.wsp { display: inline-block; }
+
+/* tampon : la phrase qui claque, toujours rouge et penchée */
+.stamp { position: absolute; left: 0; right: 0; display: flex; justify-content: center; }
+.stamp span { display: block; font-size: 82px; font-weight: 900; text-transform: uppercase; letter-spacing: -.02em;
+  color: var(--ground); background: var(--red); padding: 18px 40px; border-radius: 22px; white-space: nowrap; opacity: 0; }
+
+/* étiquettes */
+.chip { position: absolute; display: flex; align-items: center; gap: 14px; padding: 14px 24px; border-radius: 999px;
+  background: var(--panel); border: 3px solid var(--line); font-size: 32px; font-weight: 800; white-space: nowrap; opacity: 0; }
+.chip b { display: flex; align-items: center; justify-content: center; width: 46px; height: 46px; border-radius: 50%;
+  background: var(--ink); color: var(--ground); font-size: 28px; font-weight: 900; }
+.chip.cold b { background: var(--cold); }
+.chip.hot b { background: var(--red); }
+.chip.amb b { background: var(--amber); }
+
+/* ---------- sous-titres karaoké (bas de la zone utile) ---------- */
+#caps { position: absolute; left: 0; right: 0; top: 1180px; bottom: auto; height: 150px; }
+.cap { position: absolute; left: 0; right: 0; top: 0; text-align: center; font-size: 66px; font-weight: 900;
+  letter-spacing: -.02em; white-space: nowrap; opacity: 0; color: var(--dim); }
+.cap .in { display: inline-block; }
+.cap .wd { display: inline-block; margin: 0 .07em; }
+
+/* ---------- carte de fin ---------- */
+#c-title { position: absolute; top: 380px; left: 0; right: 0; text-align: center; font-size: 126px; font-weight: 900;
+  letter-spacing: -.045em; line-height: 1.0; text-transform: uppercase; }
+#c-title div { opacity: 0; }
+#c-title .a { color: var(--amber); }
+#c-btn { position: absolute; top: 820px; left: 0; right: 0; display: flex; justify-content: center; }
+#c-btn span { display: block; font-size: 66px; font-weight: 900; padding: 30px 74px; border-radius: 999px;
+  background: var(--red); color: var(--ground); opacity: 0; box-shadow: 0 20px 60px rgba(255,82,54,.35); }
+#c-ep { position: absolute; top: 990px; left: 0; right: 0; text-align: center; font-size: 36px; font-weight: 800; opacity: 0; }
+#c-src { position: absolute; top: 1060px; left: 140px; right: 140px; text-align: center; font-size: 29px; font-weight: 600;
+  color: var(--muted); line-height: 1.35; opacity: 0; }

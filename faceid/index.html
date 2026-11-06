@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/gsap.min.js"></script>
+    <script src="assets/da.js"></script>
+    <link rel="stylesheet" href="assets/da.css" />
+    <style>
+      /* ---------- accroche ---------- */
+      #h-t1 { top: 300px; font-size: 96px; }
+      #h-stamp { top: 1095px; }
+      #face { position: absolute; left: 0; top: 0; }
+      #dark { position: absolute; inset: 0; background: #000; opacity: 0; }
+
+      /* ---------- schéma ---------- */
+      .row { position: absolute; left: 0; right: 0; display: flex; justify-content: center; }
+      .row .chip { position: absolute; }
+      .chip i { display: block; width: 22px; height: 22px; border-radius: 50%; }
+      #steps { top: 290px; height: 80px; }
+      #infos { top: 384px; height: 80px; }
+      #nums { position: absolute; left: 230px; top: 590px; width: 620px; height: 470px; border-radius: 30px; background: var(--panel);
+        border: 3px solid var(--line); opacity: 0; display: grid; grid-template-columns: repeat(5, 1fr); align-content: center; row-gap: 10px; }
+      #nums span { text-align: center; font-size: 40px; font-weight: 800; color: var(--cream); opacity: 0; }
+      #nums span.k { color: var(--amber); }
+      .card { position: absolute; top: 560px; width: 400px; height: 330px; border-radius: 30px; background: var(--panel); border: 4px solid var(--line); opacity: 0; }
+      .card .t { position: absolute; left: 0; right: 0; top: 24px; text-align: center; font-size: 30px; font-weight: 800; letter-spacing: .08em; color: var(--muted); }
+      .card .g { position: absolute; left: 30px; right: 30px; top: 86px; display: grid; grid-template-columns: repeat(3, 1fr); row-gap: 10px; }
+      .card .g span { text-align: center; font-size: 40px; font-weight: 800; color: var(--cream); }
+      .card .ok { position: absolute; left: 0; right: 0; bottom: 18px; text-align: center; font-size: 34px; font-weight: 900; color: var(--amber); opacity: 0; }
+      #cd-a { left: 90px; } #cd-b { left: 590px; }
+      #eq { position: absolute; left: 490px; width: 100px; top: 670px; text-align: center; font-size: 90px; font-weight: 900; color: var(--amber); opacity: 0; }
+      #lock { position: absolute; left: 0; top: 0; opacity: 0; }
+      #odds { position: absolute; left: 0; right: 0; top: 520px; text-align: center; opacity: 0; }
+      #odds .s { font-size: 64px; font-weight: 900; text-transform: uppercase; color: var(--cream); }
+      #odds .b { font-size: 132px; font-weight: 900; letter-spacing: -.045em; line-height: 1.02; text-transform: uppercase; color: var(--amber); white-space: nowrap; }
+      #tw-title { top: 300px; font-size: 100px; }
+      #tw-title .wsp { opacity: 0; }
+      #twins { position: absolute; left: 0; top: 0; opacity: 0; }
+      #tw-stamp { top: 1040px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="44.01" data-width="1080" data-height="1920">
+      <audio id="vo" src="assets/voix.mp3" data-start="0" data-duration="41.064" data-volume="1"></audio>
+      <audio id="sfx0" src="assets/sfx/hiss.mp3" data-start="1.906" data-duration="1.0" data-volume="0.16" data-fade-out="0.20"></audio>
+      <audio id="sfx1" src="assets/sfx/stamp.mp3" data-start="4.589" data-duration="0.7" data-volume="0.4" data-fade-out="0.20"></audio>
+      <audio id="sfx2" src="assets/sfx/whoosh-short.mp3" data-start="5.301" data-duration="0.575" data-volume="0.22" data-fade-out="0.19"></audio>
+      <audio id="sfx3" src="assets/sfx/click-soft.mp3" data-start="6.462" data-duration="0.366" data-volume="0.16" data-fade-out="0.12"></audio>
+      <audio id="sfx4" src="assets/sfx/click-soft.mp3" data-start="11.362" data-duration="0.366" data-volume="0.16" data-fade-out="0.12"></audio>
+      <audio id="sfx5" src="assets/sfx/click-soft.mp3" data-start="18.382" data-duration="0.366" data-volume="0.16" data-fade-out="0.12"></audio>
+      <audio id="sfx6" src="assets/sfx/click-soft.mp3" data-start="23.162" data-duration="0.366" data-volume="0.16" data-fade-out="0.12"></audio>
+      <audio id="sfx7" src="assets/sfx/ticker.mp3" data-start="19.437" data-duration="1.0" data-volume="0.2" data-fade-out="0.20"></audio>
+      <audio id="sfx8" src="assets/sfx/kaching2.mp3" data-start="28.824" data-duration="1.0" data-volume="0.26" data-fade-out="0.20"></audio>
+      <audio id="sfx9" src="assets/sfx/ticker.mp3" data-start="35.317" data-duration="1.0" data-volume="0.2" data-fade-out="0.20"></audio>
+      <audio id="sfx10" src="assets/sfx/stamp2.mp3" data-start="38.624" data-duration="0.7" data-volume="0.42" data-fade-out="0.20"></audio>
+      <audio id="sfx11" src="assets/sfx/pop.mp3" data-start="39.438" data-duration="0.72" data-volume="0.28" data-fade-out="0.20"></audio>
+
+      <div id="bg" class="clip" data-start="0" data-duration="44.01" data-track-index="0" data-track-kind="graphics">
+        <div id="grid"></div>
+        <div id="gl-cream" class="glow"></div>
+        <div id="gl-red" class="glow"></div>
+        <div id="gl-amber" class="glow"></div>
+        <div id="gl-cold" class="glow"></div>
+        <div id="vign"></div>
+        <div id="dark"></div>
+      </div>
+
+      <div id="cam">
+        <!-- le visage en points (accroche, étapes 1-2, bonus) -->
+        <div id="s-face" class="clip" data-start="0" data-duration="34.840" data-track-index="1" data-track-kind="graphics">
+          <svg id="face" width="1080" height="1920" viewBox="0 0 1080 1920" aria-hidden="true">
+            <defs>
+              <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff5236" stop-opacity=".45" /><stop offset="1" stop-color="#ff5236" stop-opacity="0" /></linearGradient>
+              <filter id="dglw" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="16" /></filter>
+            </defs>
+            <ellipse id="halo" cx="540" cy="840" rx="230" ry="260" fill="#ff5236" opacity="0" filter="url(#dglw)" />
+            <path id="beam" d="M508 512 L300 1030 L780 1030 Z" fill="url(#cone)" opacity="0" />
+            <ellipse id="outline" cx="540" cy="840" rx="212" ry="248" fill="none" stroke="#ece6d6" stroke-width="5" stroke-dasharray="3 14" stroke-linecap="round" opacity=".35" />
+            <g id="dots"></g>
+            <g id="island" opacity="0">
+              <rect x="420" y="482" width="240" height="56" rx="28" fill="#16161b" stroke="#ece6d6" stroke-width="4" />
+              <circle id="proj" cx="508" cy="510" r="13" fill="#ff5236" />
+              <circle id="lens" cx="610" cy="510" r="14" fill="#0b0b0e" stroke="#4cc4ff" stroke-width="5" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- 1. Accroche -->
+        <div id="s-hook" class="clip" data-start="0" data-duration="5.750" data-track-index="2" data-track-kind="graphics">
+          <div id="h-t1" class="hl">Ton iPhone<br />te bombarde de<br /><span class="a">+30&nbsp;000</span> points</div>
+          <div id="h-stamp" class="stamp"><span>Invisibles&nbsp;!</span></div>
+        </div>
+
+        <!-- 2. Les étapes -->
+        <div id="s-main" class="clip" data-start="5.350" data-duration="33.870" data-track-index="3" data-track-kind="graphics">
+          <div id="nums"></div>
+          <div id="cd-a" class="card"><div class="t">ENREGISTRÉ</div><div class="g"></div><div class="ok">✓</div></div>
+          <div id="cd-b" class="card"><div class="t">MAINTENANT</div><div class="g"></div><div class="ok">✓</div></div>
+          <div id="eq">=</div>
+          <svg id="lock" width="1080" height="1920" viewBox="0 0 1080 1920" aria-hidden="true">
+            <path id="shackle" d="M495 990 V950 a45 45 0 0 1 90 0 V990" fill="none" stroke="#ece6d6" stroke-width="16" stroke-linecap="round" />
+            <rect id="lbody" x="465" y="985" width="150" height="120" rx="26" fill="#ffb21f" />
+            <circle cx="540" cy="1038" r="13" fill="#0b0b0e" /><rect x="533" y="1040" width="14" height="34" rx="7" fill="#0b0b0e" />
+          </svg>
+          <div id="odds"><div class="s">Moins d'1 chance sur</div><div class="b"><span id="od">1</span></div></div>
+
+          <div id="steps" class="row">
+            <div id="st1" class="chip hot"><b>1</b>LE PROJECTEUR</div>
+            <div id="st2" class="chip cold"><b>2</b>LA CAMÉRA</div>
+            <div id="st3" class="chip amb"><b>3</b>LE MODÈLE</div>
+            <div id="st4" class="chip amb"><b>4</b>LA COMPARAISON</div>
+          </div>
+          <div id="infos" class="row">
+            <div id="in1" class="chip"><i style="background:var(--red)"></i>Points infrarouges</div>
+            <div id="in2" class="chip"><i style="background:var(--cold)"></i>Le relief décale les points</div>
+            <div id="in3" class="chip"><i style="background:var(--amber)"></i>Ton visage en chiffres</div>
+            <div id="in4" class="chip"><i style="background:var(--amber)"></i>Chiffré dans une zone sécurisée</div>
+            <div id="in5" class="chip"><i style="background:var(--red)"></i>Il s'éclaire lui-même</div>
+          </div>
+
+          <div id="tw-title" class="hl"><span class="wsp">Et</span> <span class="wsp">ton</span><br /><span class="wsp a">jumeau&nbsp;?</span></div>
+          <svg id="twins" width="1080" height="1920" viewBox="0 0 1080 1920" aria-hidden="true">
+            <g id="tw-a" fill="none" stroke="#ece6d6" stroke-width="7" stroke-linecap="round">
+              <ellipse cx="330" cy="790" rx="135" ry="170" /><circle cx="285" cy="760" r="10" fill="#ece6d6" /><circle cx="375" cy="760" r="10" fill="#ece6d6" />
+              <path d="M330 775 V830 h-18" /><path d="M285 870 q45 28 90 0" />
+            </g>
+            <g id="tw-b" fill="none" stroke="#ffb21f" stroke-width="7" stroke-linecap="round">
+              <ellipse cx="750" cy="790" rx="135" ry="170" /><circle cx="705" cy="760" r="10" fill="#ffb21f" /><circle cx="795" cy="760" r="10" fill="#ffb21f" />
+              <path d="M750 775 V830 h-18" /><path d="M705 870 q45 28 90 0" />
+            </g>
+            <text x="540" y="820" text-anchor="middle" font-family="Inter Display" font-weight="900" font-size="90" fill="#ff5236">≈</text>
+          </svg>
+          <div id="tw-stamp" class="stamp"><span>Ses chances&nbsp;!</span></div>
+        </div>
+
+        <!-- 3. Carte de fin -->
+        <div id="s-cta" class="clip" data-start="39.070" data-duration="4.940" data-track-index="4" data-track-kind="graphics">
+          <div id="c-title"><div>Comment ça</div><div>marche</div><div class="a">vraiment&nbsp;?</div></div>
+          <div id="c-btn"><span>Abonne-toi</span></div>
+          <div id="c-ep">Épisode 6 · Face&nbsp;ID</div>
+          <div id="c-src">Sources : Apple, « À propos de la technologie avancée de Face&nbsp;ID » · Apple, présentation de l'iPhone&nbsp;X (2017)</div>
+        </div>
+      </div>
+
+      <div id="caps" class="clip" data-start="5.540" data-duration="38.470" data-track-index="5" data-track-kind="captions">
+        <div id="g0" class="cap"><span class="in"><span id="w0_0" class="wd">Comment</span> <span id="w0_1" class="wd">ça</span> <span id="w0_2" class="wd">marche ?</span></span></div>
+        <div id="g1" class="cap"><span class="in"><span id="w1_0" class="wd">Étape</span> <span id="w1_1" class="wd">1 :</span></span></div>
+        <div id="g2" class="cap"><span class="in"><span id="w2_0" class="wd">en</span> <span id="w2_1" class="wd">haut</span> <span id="w2_2" class="wd">de</span></span></div>
+        <div id="g3" class="cap"><span class="in"><span id="w3_0" class="wd">l'écran</span></span></div>
+        <div id="g4" class="cap"><span class="in"><span id="w4_0" class="wd">un</span> <span id="w4_1" class="wd">minuscule</span> <span id="w4_2" class="wd">projecteur</span></span></div>
+        <div id="g5" class="cap"><span class="in"><span id="w5_0" class="wd">envoie</span> <span id="w5_1" class="wd">ces</span> <span id="w5_2" class="wd">points</span></span></div>
+        <div id="g6" class="cap"><span class="in"><span id="w6_0" class="wd">en</span> <span id="w6_1" class="wd em">infrarouge.</span></span></div>
+        <div id="g7" class="cap"><span class="in"><span id="w7_0" class="wd">Tes</span> <span id="w7_1" class="wd">yeux</span> <span id="w7_2" class="wd">ne</span></span></div>
+        <div id="g8" class="cap"><span class="in"><span id="w8_0" class="wd">voient</span> <span id="w8_1" class="wd">rien.</span></span></div>
+        <div id="g9" class="cap"><span class="in"><span id="w9_0" class="wd">Étape</span> <span id="w9_1" class="wd">2 :</span></span></div>
+        <div id="g10" class="cap"><span class="in"><span id="w10_0" class="wd">une</span> <span id="w10_1" class="wd">caméra</span> <span id="w10_2" class="wd em">infrarouge</span></span></div>
+        <div id="g11" class="cap"><span class="in"><span id="w11_0" class="wd">les</span> <span id="w11_1" class="wd">filme.</span></span></div>
+        <div id="g12" class="cap"><span class="in"><span id="w12_0" class="wd">Ton</span> <span id="w12_1" class="wd">nez</span></span></div>
+        <div id="g13" class="cap"><span class="in"><span id="w13_0" class="wd">tes</span> <span id="w13_1" class="wd">joues</span></span></div>
+        <div id="g14" class="cap"><span class="in"><span id="w14_0" class="wd">tes</span> <span id="w14_1" class="wd">yeux</span> <span id="w14_2" class="wd">les</span></span></div>
+        <div id="g15" class="cap"><span class="in"><span id="w15_0" class="wd">décalent</span></span></div>
+        <div id="g16" class="cap"><span class="in"><span id="w16_0" class="wd">chacun</span> <span id="w16_1" class="wd">à</span> <span id="w16_2" class="wd">sa</span></span></div>
+        <div id="g17" class="cap"><span class="in"><span id="w17_0" class="wd">façon.</span></span></div>
+        <div id="g18" class="cap"><span class="in"><span id="w18_0" class="wd">Ça</span> <span id="w18_1" class="wd">donne</span> <span id="w18_2" class="wd">une</span></span></div>
+        <div id="g19" class="cap"><span class="in"><span id="w19_0" class="wd">carte</span> <span id="w19_1" class="wd">en</span> <span id="w19_2" class="wd em">relief</span></span></div>
+        <div id="g20" class="cap"><span class="in"><span id="w20_0" class="wd">de</span> <span id="w20_1" class="wd">ton</span> <span id="w20_2" class="wd">visage.</span></span></div>
+        <div id="g21" class="cap"><span class="in"><span id="w21_0" class="wd">Étape</span> <span id="w21_1" class="wd">3 :</span></span></div>
+        <div id="g22" class="cap"><span class="in"><span id="w22_0" class="wd">la</span> <span id="w22_1" class="wd">puce</span> <span id="w22_2" class="wd">transforme</span></span></div>
+        <div id="g23" class="cap"><span class="in"><span id="w23_0" class="wd">cette</span> <span id="w23_1" class="wd">carte</span> <span id="w23_2" class="wd">en</span></span></div>
+        <div id="g24" class="cap"><span class="in"><span id="w24_0" class="wd">modèle</span> <span id="w24_1" class="wd em">mathématique.</span></span></div>
+        <div id="g25" class="cap"><span class="in"><span id="w25_0" class="wd">Ton</span> <span id="w25_1" class="wd">visage…</span></span></div>
+        <div id="g26" class="cap"><span class="in"><span id="w26_0" class="wd">version</span> <span id="w26_1" class="wd em">chiffres.</span></span></div>
+        <div id="g27" class="cap"><span class="in"><span id="w27_0" class="wd">Étape</span> <span id="w27_1" class="wd">4 :</span></span></div>
+        <div id="g28" class="cap"><span class="in"><span id="w28_0" class="wd">elle</span> <span id="w28_1" class="wd">le</span> <span id="w28_2" class="wd">compare</span></span></div>
+        <div id="g29" class="cap"><span class="in"><span id="w29_0" class="wd">à</span> <span id="w29_1" class="wd">celui</span> <span id="w29_2" class="wd">que</span></span></div>
+        <div id="g30" class="cap"><span class="in"><span id="w30_0" class="wd">tu</span> <span id="w30_1" class="wd">as</span> <span id="w30_2" class="wd">enregistré</span></span></div>
+        <div id="g31" class="cap"><span class="in"><span id="w31_0" class="wd">chiffré</span> <span id="w31_1" class="wd">dans</span> <span id="w31_2" class="wd">une</span></span></div>
+        <div id="g32" class="cap"><span class="in"><span id="w32_0" class="wd">zone</span> <span id="w32_1" class="wd">ultra</span> <span id="w32_2" class="wd">sécurisée</span></span></div>
+        <div id="g33" class="cap"><span class="in"><span id="w33_0" class="wd">de</span> <span id="w33_1" class="wd">la</span> <span id="w33_2" class="wd">puce.</span></span></div>
+        <div id="g34" class="cap"><span class="in"><span id="w34_0" class="wd">Ça</span> <span id="w34_1" class="wd">colle ?</span></span></div>
+        <div id="g35" class="cap"><span class="in"><span id="w35_0" class="wd em">Déverrouillé !</span></span></div>
+        <div id="g36" class="cap"><span class="in"><span id="w36_0" class="wd">Le</span> <span id="w36_1" class="wd">plus</span> <span id="w36_2" class="wd">fou ?</span></span></div>
+        <div id="g37" class="cap"><span class="in"><span id="w37_0" class="wd">Ça</span> <span id="w37_1" class="wd">marche</span> <span id="w37_2" class="wd">dans</span></span></div>
+        <div id="g38" class="cap"><span class="in"><span id="w38_0" class="wd">le</span> <span id="w38_1" class="wd em">noir</span> <span id="w38_2" class="wd">complet :</span></span></div>
+        <div id="g39" class="cap"><span class="in"><span id="w39_0" class="wd">il</span> <span id="w39_1" class="wd">éclaire</span> <span id="w39_2" class="wd">lui-même</span></span></div>
+        <div id="g40" class="cap"><span class="in"><span id="w40_0" class="wd">ton</span> <span id="w40_1" class="wd">visage</span></span></div>
+        <div id="g41" class="cap"><span class="in"><span id="w41_0" class="wd">en</span> <span id="w41_1" class="wd em">infrarouge.</span></span></div>
+        <div id="g42" class="cap"><span class="in"><span id="w42_0" class="wd">Et</span> <span id="w42_1" class="wd">un</span> <span id="w42_2" class="wd">inconnu</span></span></div>
+        <div id="g43" class="cap"><span class="in"><span id="w43_0" class="wd">a</span> <span id="w43_1" class="wd">moins</span> <span id="w43_2" class="wd">d'1</span></span></div>
+        <div id="g44" class="cap"><span class="in"><span id="w44_0" class="wd">chance</span> <span id="w44_1" class="wd">sur</span> <span id="w44_2" class="wd">1</span></span></div>
+        <div id="g45" class="cap"><span class="in"><span id="w45_0" class="wd em">million</span> <span id="w45_1" class="wd">de</span> <span id="w45_2" class="wd">l'ouvrir.</span></span></div>
+        <div id="g46" class="cap"><span class="in"><span id="w46_0" class="wd">Mais</span> <span id="w46_1" class="wd">ton</span> <span id="w46_2" class="wd em">jumeau ?</span></span></div>
+        <div id="g47" class="cap"><span class="in"><span id="w47_0" class="wd">Lui</span></span></div>
+        <div id="g48" class="cap"><span class="in"><span id="w48_0" class="wd">il</span> <span id="w48_1" class="wd">a</span> <span id="w48_2" class="wd">ses</span></span></div>
+        <div id="g49" class="cap"><span class="in"><span id="w49_0" class="wd em">chances.</span></span></div>
+        <div id="g50" class="cap"><span class="in"><span id="w50_0" class="wd">Abonne-toi</span> <span id="w50_1" class="wd">pour</span> <span id="w50_2" class="wd">savoir</span></span></div>
+        <div id="g51" class="cap"><span class="in"><span id="w51_0" class="wd">comment</span> <span id="w51_1" class="wd">ça</span> <span id="w51_2" class="wd">marche</span></span></div>
+        <div id="g52" class="cap"><span class="in"><span id="w52_0" class="wd em">vraiment.</span></span></div>
+      </div>
+
+      <div id="tag" class="clip" data-start="0" data-duration="44.01" data-track-index="6" data-track-kind="graphics">
+        <span class="pill">COMMENT ÇA MARCHE VRAIMENT&nbsp;?</span><span class="pill num">#6</span>
+      </div>
+
+      <div id="fx" class="clip" data-start="0" data-duration="44.01" data-track-index="7" data-track-kind="graphics">
+        <div id="flash"></div>
+      </div>
+    </div>
+
+    <script>
+      const C = {"bombarde": 1.88, "n30": 3.28, "invisibles": 4.58, "comment": 5.6, "haut": 7.16, "projecteur": 8.36, "envoie": 8.84, "infrarouge": 9.68, "voient": 10.78, "camera": 12.02, "filme": 12.92, "decalent": 14.9, "relief": 17.3, "transforme": 19.5, "modele": 20.48, "chiffres": 22.54, "enregistre": 25.02, "chiffre": 25.84, "zone": 26.4, "securisee": 27.06, "colle": 28.32, "deverrouille": 28.88, "fou": 29.82, "noir": 30.82, "eclaire": 31.74, "inconnu": 34.34, "million": 35.92, "mais2": 36.78, "jumeau": 37.28, "chances": 38.66, "abonne": 39.22, "vraiment": 40.52, "e1": 6.48, "e2": 11.38, "e3": 18.4, "e4": 23.18, "sur": 35.48, "voEnd": 41.014, "end": 44.01};
+      const CAP = [{"id": "g0", "start": 5.54, "end": 6.53, "w": [{"id": "w0_0", "t": 5.6}, {"id": "w0_1", "t": 5.76}, {"id": "w0_2", "t": 5.94}]}, {"id": "g1", "start": 6.53, "end": 6.95, "w": [{"id": "w1_0", "t": 6.48}, {"id": "w1_1", "t": 6.74}]}, {"id": "g2", "start": 6.95, "end": 7.43, "w": [{"id": "w2_0", "t": 6.9}, {"id": "w2_1", "t": 7.16}, {"id": "w2_2", "t": 7.3}]}, {"id": "g3", "start": 7.43, "end": 7.72, "w": [{"id": "w3_0", "t": 7.38}]}, {"id": "g4", "start": 7.72, "end": 8.89, "w": [{"id": "w4_0", "t": 7.78}, {"id": "w4_1", "t": 7.9}, {"id": "w4_2", "t": 8.36}]}, {"id": "g5", "start": 8.89, "end": 9.51, "w": [{"id": "w5_0", "t": 8.84}, {"id": "w5_1", "t": 9.12}, {"id": "w5_2", "t": 9.3}]}, {"id": "g6", "start": 9.51, "end": 10.38, "w": [{"id": "w6_0", "t": 9.46}, {"id": "w6_1", "t": 9.68}]}, {"id": "g7", "start": 10.38, "end": 10.83, "w": [{"id": "w7_0", "t": 10.44}, {"id": "w7_1", "t": 10.5}, {"id": "w7_2", "t": 10.68}]}, {"id": "g8", "start": 10.83, "end": 11.32, "w": [{"id": "w8_0", "t": 10.78}, {"id": "w8_1", "t": 10.96}]}, {"id": "g9", "start": 11.32, "end": 11.83, "w": [{"id": "w9_0", "t": 11.38}, {"id": "w9_1", "t": 11.58}]}, {"id": "g10", "start": 11.83, "end": 12.85, "w": [{"id": "w10_0", "t": 11.78}, {"id": "w10_1", "t": 12.02}, {"id": "w10_2", "t": 12.32}]}, {"id": "g11", "start": 12.85, "end": 13.34, "w": [{"id": "w11_0", "t": 12.8}, {"id": "w11_1", "t": 12.92}]}, {"id": "g12", "start": 13.34, "end": 13.9, "w": [{"id": "w12_0", "t": 13.4}, {"id": "w12_1", "t": 13.54}]}, {"id": "g13", "start": 13.9, "end": 14.47, "w": [{"id": "w13_0", "t": 13.96}, {"id": "w13_1", "t": 14.06}]}, {"id": "g14", "start": 14.47, "end": 14.95, "w": [{"id": "w14_0", "t": 14.5}, {"id": "w14_1", "t": 14.6}, {"id": "w14_2", "t": 14.8}]}, {"id": "g15", "start": 14.95, "end": 15.44, "w": [{"id": "w15_0", "t": 14.9}]}, {"id": "g16", "start": 15.44, "end": 15.99, "w": [{"id": "w16_0", "t": 15.5}, {"id": "w16_1", "t": 15.7}, {"id": "w16_2", "t": 15.86}]}, {"id": "g17", "start": 15.99, "end": 16.54, "w": [{"id": "w17_0", "t": 15.94}]}, {"id": "g18", "start": 16.54, "end": 17.01, "w": [{"id": "w18_0", "t": 16.6}, {"id": "w18_1", "t": 16.72}, {"id": "w18_2", "t": 16.84}]}, {"id": "g19", "start": 17.01, "end": 17.59, "w": [{"id": "w19_0", "t": 16.96}, {"id": "w19_1", "t": 17.16}, {"id": "w19_2", "t": 17.3}]}, {"id": "g20", "start": 17.59, "end": 18.34, "w": [{"id": "w20_0", "t": 17.54}, {"id": "w20_1", "t": 17.76}, {"id": "w20_2", "t": 17.86}]}, {"id": "g21", "start": 18.34, "end": 18.95, "w": [{"id": "w21_0", "t": 18.4}, {"id": "w21_1", "t": 18.68}]}, {"id": "g22", "start": 18.95, "end": 19.99, "w": [{"id": "w22_0", "t": 18.9}, {"id": "w22_1", "t": 19.24}, {"id": "w22_2", "t": 19.5}]}, {"id": "g23", "start": 19.99, "end": 20.53, "w": [{"id": "w23_0", "t": 19.94}, {"id": "w23_1", "t": 20.04}, {"id": "w23_2", "t": 20.3}]}, {"id": "g24", "start": 20.53, "end": 21.42, "w": [{"id": "w24_0", "t": 20.48}, {"id": "w24_1", "t": 20.76}]}, {"id": "g25", "start": 21.42, "end": 22.22, "w": [{"id": "w25_0", "t": 21.48}, {"id": "w25_1", "t": 21.62}]}, {"id": "g26", "start": 22.22, "end": 23.12, "w": [{"id": "w26_0", "t": 22.28}, {"id": "w26_1", "t": 22.54}]}, {"id": "g27", "start": 23.12, "end": 23.75, "w": [{"id": "w27_0", "t": 23.18}, {"id": "w27_1", "t": 23.42}]}, {"id": "g28", "start": 23.75, "end": 24.41, "w": [{"id": "w28_0", "t": 23.7}, {"id": "w28_1", "t": 23.98}, {"id": "w28_2", "t": 24.12}]}, {"id": "g29", "start": 24.41, "end": 24.87, "w": [{"id": "w29_0", "t": 24.36}, {"id": "w29_1", "t": 24.5}, {"id": "w29_2", "t": 24.66}]}, {"id": "g30", "start": 24.87, "end": 25.78, "w": [{"id": "w30_0", "t": 24.82}, {"id": "w30_1", "t": 24.92}, {"id": "w30_2", "t": 25.02}]}, {"id": "g31", "start": 25.78, "end": 26.45, "w": [{"id": "w31_0", "t": 25.84}, {"id": "w31_1", "t": 26.12}, {"id": "w31_2", "t": 26.24}]}, {"id": "g32", "start": 26.45, "end": 27.59, "w": [{"id": "w32_0", "t": 26.4}, {"id": "w32_1", "t": 26.64}, {"id": "w32_2", "t": 27.06}]}, {"id": "g33", "start": 27.59, "end": 28.12, "w": [{"id": "w33_0", "t": 27.54}, {"id": "w33_1", "t": 27.66}, {"id": "w33_2", "t": 27.76}]}, {"id": "g34", "start": 28.12, "end": 28.93, "w": [{"id": "w34_0", "t": 28.18}, {"id": "w34_1", "t": 28.32}]}, {"id": "g35", "start": 28.93, "end": 29.37, "w": [{"id": "w35_0", "t": 28.88}]}, {"id": "g36", "start": 29.37, "end": 30.14, "w": [{"id": "w36_0", "t": 29.32}, {"id": "w36_1", "t": 29.68}, {"id": "w36_2", "t": 29.82}]}, {"id": "g37", "start": 30.14, "end": 30.77, "w": [{"id": "w37_0", "t": 30.2}, {"id": "w37_1", "t": 30.38}, {"id": "w37_2", "t": 30.6}]}, {"id": "g38", "start": 30.77, "end": 31.62, "w": [{"id": "w38_0", "t": 30.72}, {"id": "w38_1", "t": 30.82}, {"id": "w38_2", "t": 31.02}]}, {"id": "g39", "start": 31.62, "end": 32.51, "w": [{"id": "w39_0", "t": 31.68}, {"id": "w39_1", "t": 31.74}, {"id": "w39_2", "t": 32.08}]}, {"id": "g40", "start": 32.51, "end": 33.09, "w": [{"id": "w40_0", "t": 32.46}, {"id": "w40_1", "t": 32.6}]}, {"id": "g41", "start": 33.09, "end": 34.0, "w": [{"id": "w41_0", "t": 33.04}, {"id": "w41_1", "t": 33.24}]}, {"id": "g42", "start": 34.0, "end": 34.71, "w": [{"id": "w42_0", "t": 34.06}, {"id": "w42_1", "t": 34.24}, {"id": "w42_2", "t": 34.34}]}, {"id": "g43", "start": 34.71, "end": 35.25, "w": [{"id": "w43_0", "t": 34.66}, {"id": "w43_1", "t": 34.8}, {"id": "w43_2", "t": 34.92}]}, {"id": "g44", "start": 35.25, "end": 35.97, "w": [{"id": "w44_0", "t": 35.2}, {"id": "w44_1", "t": 35.48}, {"id": "w44_2", "t": 35.66}]}, {"id": "g45", "start": 35.97, "end": 36.72, "w": [{"id": "w45_0", "t": 35.92}, {"id": "w45_1", "t": 36.18}, {"id": "w45_2", "t": 36.3}]}, {"id": "g46", "start": 36.72, "end": 37.8, "w": [{"id": "w46_0", "t": 36.78}, {"id": "w46_1", "t": 37.06}, {"id": "w46_2", "t": 37.28}]}, {"id": "g47", "start": 37.8, "end": 38.28, "w": [{"id": "w47_0", "t": 37.86}]}, {"id": "g48", "start": 38.28, "end": 38.71, "w": [{"id": "w48_0", "t": 38.34}, {"id": "w48_1", "t": 38.46}, {"id": "w48_2", "t": 38.56}]}, {"id": "g49", "start": 38.71, "end": 39.16, "w": [{"id": "w49_0", "t": 38.66}]}, {"id": "g50", "start": 39.16, "end": 40.03, "w": [{"id": "w50_0", "t": 39.22}, {"id": "w50_1", "t": 39.62}, {"id": "w50_2", "t": 39.76}]}, {"id": "g51", "start": 40.03, "end": 40.57, "w": [{"id": "w51_0", "t": 39.98}, {"id": "w51_1", "t": 40.2}, {"id": "w51_2", "t": 40.36}]}, {"id": "g52", "start": 40.57, "end": 41.34, "w": [{"id": "w52_0", "t": 40.52}]}];
+      const NS = "http://www.w3.org/2000/svg";
+      const mk = (parent, tag, attrs) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); parent.appendChild(e); return e; };
+      DA.fitCaptions(CAP);
+      const tl = gsap.timeline({ paused: true });
+      const D = DA(tl);
+      D.drift(C.end);
+      let seed = 11; const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
+
+      // ---------- le visage : grille de points dans une ellipse, relief h(x, y) ----------
+      const CX = 540, CY = 840, RX = 200, RY = 236, STEP = 21;
+      const ease = (x) => (x <= 0 ? 0 : x >= 1 ? 1 : x * x * (3 - 2 * x));
+      const R = (t, t0, d, a, b) => a + (b - a) * ease((t - t0) / d);
+      const depth = (u, v) => { const b = Math.sqrt(Math.max(0, 1 - u * u - v * v));
+        const nose = 0.55 * Math.exp(-(u * u / 0.018 + (v - 0.08) ** 2 / 0.06));
+        const eyes = -0.3 * Math.exp(-(((Math.abs(u) - 0.4) ** 2) / 0.02 + (v + 0.2) ** 2 / 0.012));
+        const mouth = 0.08 * Math.exp(-(u * u / 0.08 + (v - 0.5) ** 2 / 0.006));
+        return Math.max(0, 0.65 * b + nose + eyes + mouth); };
+      const DOTS = [], dg = document.getElementById("dots");
+      for (let y = CY - RY; y <= CY + RY; y += STEP) for (let x = CX - RX; x <= CX + RX; x += STEP) {
+        const u = (x - CX) / RX, v = (y - CY) / RY; if (u * u + v * v > 1) continue;
+        DOTS.push({ x, y, h: depth(u, v), r: rnd(), e: mk(dg, "circle", { cx: x, cy: y, r: 5, fill: "#ff5236", opacity: 0 }) }); }
+      const mix = (a, b, f) => a.map((x, i) => Math.round(x + (b[i] - x) * f));
+      const RED = [255, 82, 54], COLD = [76, 196, 255], AMB = [255, 178, 31];
+      const drawFace = (t) => {
+        const vis = R(t, C.voient - 0.1, 0.4, 1, 0.22) + R(t, C.camera - 0.2, 0.4, 0, 0.78);      // invisible pour tes yeux, vu par la caméra
+        const dfm = R(t, C.decalent - 0.25, 0.9, 0, 1);
+        const col = R(t, C.relief - 0.2, 0.6, 0, 1) - R(t, C.noir - 0.2, 0.5, 0, 1);
+        const out = R(t, C.transforme - 0.2, 0.5, 1, 0) + R(t, C.noir - 0.2, 0.6, 0, 1) - R(t, C.inconnu - 0.3, 0.3, 0, 1);
+        DOTS.forEach((d, i) => {
+          const ap = ease((t - (C.bombarde - 0.1 + 0.9 * d.r)) / 0.15);
+          const o = ap * vis * out;
+          const x = d.x + 34 * d.h * dfm, rr = 4 + (2.5 * d.h) * (0.4 + 0.6 * col);
+          const c = mix(RED, d.h > 0.5 ? mix(COLD, AMB, (d.h - 0.5) / 0.5) : mix([60, 80, 120], COLD, d.h / 0.5), Math.max(0, col));
+          d.e.setAttribute("cx", x.toFixed(1)); d.e.setAttribute("r", rr.toFixed(2));
+          d.e.setAttribute("opacity", o.toFixed(3)); d.e.setAttribute("fill", `rgb(${c.join(",")})`);
+        });
+      };
+      const clock = { t: 0 };
+      tl.to(clock, { t: C.end, duration: C.end, ease: "none", onUpdate: () => drawFace(clock.t) }, 0);
+
+      // ---------- les chiffres ----------
+      const nums = document.getElementById("nums"), NUMS = [];
+      for (let k = 0; k < 35; k++) { const s = document.createElement("span"); s.textContent = (rnd() * 0.98 + 0.01).toFixed(2).replace(".", ","); if (k % 7 === 3) s.className = "k"; nums.appendChild(s); NUMS.push(s); }
+      const fill = (sel) => { const g = document.querySelector(sel + " .g"); let s2 = 3; const r2 = () => ((s2 = (s2 * 48271) % 2147483647) / 2147483647);
+        for (let k = 0; k < 9; k++) { const s = document.createElement("span"); s.textContent = (r2() * 0.98 + 0.01).toFixed(2).replace(".", ","); g.appendChild(s); } };
+      fill("#cd-a"); fill("#cd-b");
+
+      // ================= 1. ACCROCHE =================
+      D.glow("red", 0, 0.4, 0.01);
+      tl.to("#halo", { opacity: 0.18, duration: 0.4 }, C.bombarde);
+      D.shake(C.bombarde + 0.05, 9);
+      tl.fromTo("#h-t1 .a", { scale: 1 }, { keyframes: [{ scale: 1.12, duration: 0.08 }, { scale: 1, duration: 0.3, ease: "expo.out" }] }, C.n30);
+      D.stamp("#h-stamp span", C.invisibles, -5);
+      D.flash(C.invisibles + 0.02, 0.14);
+      const T1 = C.comment - 0.2;
+      D.blurOut(["#h-t1", "#h-stamp span"], T1 - 0.1, 0.16);
+      tl.to("#halo", { opacity: 0, duration: 0.3 }, T1);
+      D.glow("red", T1, 0.15, 0.4); D.glow("cream", T1, 0.3, 0.4);
+
+      const step = (n, t) => { if (n > 1) D.blurOut("#st" + (n - 1), t - 0.1, 0.12); D.popIn("#st" + n, t, 0.6); };
+      const info = (n, t, out) => { D.popIn("#in" + n, t, 0.5); if (out) D.blurOut("#in" + n, out, 0.15); };
+
+      // ================= ÉTAPE 1 : le projecteur =================
+      step(1, C.e1);
+      tl.fromTo("#island", { opacity: 0, y: -40 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(2)" }, C.haut - 0.1);
+      tl.fromTo("#proj", { scale: 1 }, { keyframes: [{ scale: 1.6, duration: 0.12 }, { scale: 1, duration: 0.3 }], svgOrigin: "508 510" }, C.projecteur);
+      tl.to("#beam", { opacity: 1, duration: 0.3 }, C.envoie - 0.1);
+      info(1, C.infrarouge - 0.1, C.e2 - 0.2);
+      D.glow("red", C.envoie, 0.35, 0.4);
+      tl.to("#beam", { opacity: 0.15, duration: 0.4 }, C.voient - 0.1);
+      tl.to("#outline", { opacity: 0.6, duration: 0.3 }, C.voient - 0.1);
+
+      // ================= ÉTAPE 2 : la caméra =================
+      step(2, C.e2);
+      tl.to("#beam", { opacity: 0, duration: 0.3 }, C.e2);
+      tl.fromTo("#lens", { scale: 1 }, { keyframes: [{ scale: 1.6, duration: 0.12 }, { scale: 1, duration: 0.3 }, { scale: 1.4, duration: 0.1 }, { scale: 1, duration: 0.3 }], svgOrigin: "610 510" }, C.camera);
+      D.glow("cold", C.camera, 0.35, 0.4); D.glow("red", C.camera, 0.15, 0.4);
+      tl.to("#outline", { opacity: 0.2, duration: 0.3 }, C.filme);
+      info(2, C.decalent - 0.2, C.e3 - 0.2);
+      D.glow("amber", C.relief, 0.45, 0.4); D.glow("cold", C.relief, 0.25, 0.4);
+      tl.fromTo("#face", { scale: 1 }, { keyframes: [{ scale: 1.04, duration: 0.12 }, { scale: 1, duration: 0.35 }], transformOrigin: "540px 840px" }, C.relief);
+
+      // ================= ÉTAPE 3 : le modèle mathématique =================
+      step(3, C.e3);
+      tl.to(["#island", "#outline"], { opacity: 0, duration: 0.3 }, C.transforme - 0.2);
+      tl.fromTo("#nums", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.4, ease: "expo.out" }, C.transforme);
+      NUMS.forEach((s, k) => tl.to(s, { opacity: 1, duration: 0.12 }, C.transforme + 0.1 + (k % 7) * 0.05 + Math.floor(k / 7) * 0.08));
+      info(3, C.modele - 0.1, C.e4 - 0.2);
+      D.glow("amber", C.chiffres, 0.6, 0.3); D.glow("cold", C.chiffres, 0, 0.4);
+      tl.fromTo("#nums", { scale: 1 }, { keyframes: [{ scale: 1.04, duration: 0.1 }, { scale: 1, duration: 0.3 }] }, C.chiffres);
+
+      // ================= ÉTAPE 4 : la comparaison =================
+      step(4, C.e4);
+      tl.to("#nums", { x: 260, scale: 0.65, opacity: 0, duration: 0.4, ease: "power3.in" }, C.e4 - 0.1);
+      tl.fromTo("#cd-b", { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.35, ease: "expo.out" }, C.e4 + 0.2);
+      tl.fromTo("#cd-a", { opacity: 0, x: -60 }, { opacity: 1, x: 0, duration: 0.35, ease: "expo.out" }, C.enregistre - 0.2);
+      tl.to("#cd-a", { borderColor: "#4cc4ff", duration: 0.25 }, C.chiffre - 0.1);
+      info(4, C.zone - 0.1, C.fou - 0.3);
+      D.glow("amber", C.e4, 0.3, 0.4);
+      tl.fromTo("#lock", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(2)" }, C.securisee - 0.2);
+      tl.to("#eq", { opacity: 1, duration: 0.2 }, C.colle - 0.15);
+      tl.to(["#cd-a .ok", "#cd-b .ok"], { opacity: 1, duration: 0.15 }, C.colle);
+      tl.to(["#cd-a", "#cd-b"], { borderColor: "#ffb21f", duration: 0.2 }, C.colle);
+      tl.to("#shackle", { y: -36, duration: 0.25, ease: "back.out(2.5)" }, C.deverrouille - 0.05);
+      tl.to("#shackle", { rotation: 28, svgOrigin: "585 990", duration: 0.25, ease: "power2.out" }, C.deverrouille + 0.15);
+      D.flash(C.deverrouille, 0.16, "#ffb21f");
+      D.shake(C.deverrouille + 0.02, 8);
+
+      // ================= BONUS : dans le noir, 1 chance sur 1 million =================
+      D.blurOut("#st4", C.fou - 0.3, 0.15);
+      tl.to(["#cd-a", "#cd-b", "#eq", "#lock"], { opacity: 0, filter: "blur(10px)", duration: 0.3 }, C.fou - 0.3);
+      D.glow("amber", C.fou, 0, 0.4); D.glow("cream", C.fou, 0, 0.4); D.glow("cold", C.fou, 0, 0.4);
+      tl.to("#dark", { opacity: 0.75, duration: 0.5 }, C.noir - 0.3);
+      tl.to("#halo", { opacity: 0.5, duration: 0.5 }, C.eclaire - 0.1);
+      D.glow("red", C.eclaire, 0.5, 0.5);
+      info(5, C.eclaire - 0.1, C.inconnu - 0.3);
+      tl.to("#dark", { opacity: 0, duration: 0.4 }, C.inconnu - 0.3);
+      tl.to("#halo", { opacity: 0, duration: 0.3 }, C.inconnu - 0.3);
+      D.glow("red", C.inconnu, 0, 0.4); D.glow("amber", C.inconnu, 0.5, 0.4);
+      D.blurIn("#odds", C.inconnu - 0.05);
+      { const el = document.getElementById("od"); const o = { v: 1 };
+        tl.to(o, { v: 1000000, duration: C.million - C.sur + 0.25, ease: "power2.out", onUpdate: () => (el.textContent = Math.round(o.v).toLocaleString("fr-FR").replace(/\s/g, " ")) }, C.sur - 0.05); }
+      tl.fromTo("#odds .b", { scale: 1 }, { keyframes: [{ scale: 1.08, duration: 0.1 }, { scale: 1, duration: 0.3, ease: "expo.out" }] }, C.million + 0.25);
+
+      // ================= LA CHUTE : le jumeau =================
+      tl.to("#odds", { opacity: 0, filter: "blur(10px)", duration: 0.2 }, C.mais2 - 0.25);
+      tl.fromTo("#tw-title .wsp", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.14, stagger: 0.08, ease: "power2.out" }, C.mais2 - 0.15);
+      tl.fromTo("#twins", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(1.8)" }, C.jumeau - 0.1);
+      D.glow("amber", C.jumeau, 0.3, 0.4);
+      D.stamp("#tw-stamp span", C.chances, -5);
+      D.glow("red", C.chances, 0.5, 0.3);
+      tl.to("#s-main", { scale: 1.3, opacity: 0, filter: "blur(16px)", duration: 0.3, ease: "power3.in" }, C.abonne - 0.32);
+
+      // ================= CARTE DE FIN =================
+      D.glow("red", C.abonne - 0.2, 0, 0.4); D.glow("amber", C.abonne - 0.2, 0, 0.4); D.glow("cold", C.abonne - 0.2, 0, 0.4);
+      D.glow("cream", C.abonne - 0.2, 0.5, 0.4);
+      D.endCard(C.abonne - 0.05, C.vraiment);
+
+      D.captions(CAP);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
