@@ -9,6 +9,8 @@
  "yt_desc": "Comment Shazam reconnaît une chanson : il transforme quelques secondes de son en spectrogramme (temps × fréquence), garde seulement les pics les plus forts (une « constellation »), les associe deux par deux (deux fréquences + l'écart de temps = un code) et cherche dans sa base la chanson où ces codes s'alignent avec le même décalage. Même quand seulement 1 à 2 % des codes survivent au bruit, la correspondance tient. Une version live, elle, n'a pas la même empreinte.\nComment ça marche vraiment ? Épisode 4. Abonne-toi pour les prochains épisodes !\nSources : Avery Li-Chun Wang (cofondateur de Shazam), « An Industrial-Strength Audio Search Algorithm », ISMIR 2003 ; Dan Ellis, LabROSA, Université Columbia (Robust Landmark-Based Audio Fingerprinting).\n#shorts #shazam #musique #tech #lesaviezvous",
  "video_url": "https://media.zernio.com/temp/1793884372892_72be63321b42282a_shazam_FR.mp4",
  "zernio_post": "6aec80d9c687aa0d0d1ca4a3",
- "ig_container": "18117750416091875",
- "ig_container_at": 1793884424
+ "ig_container": "18117992936091875",
+ "ig_container_at": 1793988128,
+ "ig_media": "18103331135424118",
+ "ig_permalink": "https://www.instagram.com/reel/DfaM_aKDtYO/"
 }
