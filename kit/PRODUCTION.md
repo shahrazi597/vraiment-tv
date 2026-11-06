@@ -24,15 +24,15 @@ which ffmpeg || (apt-get install -y ffmpeg || pip install --break-system-package
 Lire `kit/DA.md` (identité, à respecter à la lettre), `kit/kit.py`, et deux épisodes modèles complets : `frigo/` et `midterms/` (episode.py, script.txt, src/scene.tpl). Charger les skills `hyperframes` et `hyperframes-cli` avant d'animer.
 
 ## 1. Choisir les sujets
-**Le critère n°1 : est-ce que quelqu'un qui scrolle s'arrête ?** On veut des sujets « je ne savais pas ça et ça me retourne le cerveau » :
-- un objet ou un geste du quotidien que tout le monde utilise sans savoir ce qui se passe vraiment (Face ID, Shazam, Google Maps, un mot de passe, l'algorithme TikTok…) ;
-- un chiffre qui choque (« Combien ça coûte vraiment ? » : ce que touche vraiment le fabricant, l'artiste, le chauffeur, l'État) ;
-- une idée reçue que la vidéo démonte, avec une chute qu'on a envie d'envoyer à un ami.
-Éviter les sujets trop scolaires ou vus partout.
+**Lire d'abord la « Ligne éditoriale » en tête de `kit/sujets.md`** (consigne de Razi, à partir du 08/11/2026). En résumé : les gens se fichent de savoir comment marche un frigo. Ils veulent **apprendre de vraies choses**, plus cultivantes, qu'ils retrouvent dans leur vie : leur argent (impôts, banque, crédit, prix, salaire), leur cerveau, leur corps, leur société, leur monde. Chaque sujet doit passer trois tests :
+- **je le retrouve dans ma vie** ;
+- **j'apprends un truc que je vais répéter à table** (idée reçue démontée, chiffre qui choque, mécanisme caché) ;
+- **ça change quelque chose pour moi** : finir, quand c'est possible, sur ce que ça change concrètement pour celui qui regarde.
+« Comment ça marche vraiment ? » explique surtout des **systèmes** (impôts, création monétaire, prix, cerveau, sommeil…), plus des objets techniques. Prendre les sujets des sections « Priorité » de `kit/sujets.md` ; la « Réserve » seulement si rien d'autre ne tient. On peut ajouter un sujet encore meilleur (tendance de la semaine, saison), en respectant les trois tests.
 
-**Seul sujet interdit : l'alcool** (consigne de Razi). Pour le reste, viser la vidéo la plus forte et les visuels les plus beaux possibles.
- Préférer les sujets de la partie « À faire en priorité » de `kit/sujets.md`, puis le reste ; en ajouter de nouveaux si un meilleur sujet se présente (tendance de la semaine, saison, actu non polémique). Pas de sujet politique ou religieux sans demande explicite de Razi.
-- Vérifier chaque fait avec WebSearch/WebFetch sur au moins 2 sources fiables (organisme officiel, université, régulateur). Pour « Combien ça coûte », utiliser les **chiffres les plus récents** et écrire la date des prix.
+**Seul sujet interdit : l'alcool** (consigne de Razi). Pas de sujet politique ou religieux sans demande explicite de Razi. Pour le reste, viser la vidéo la plus forte et les visuels les plus beaux possibles.
+- Vérifier chaque fait avec WebSearch/WebFetch sur au moins 2 sources fiables (organisme officiel, université, régulateur, étude publiée). Pour l'argent et les prix, utiliser les **chiffres les plus récents**, préciser le pays (France par défaut) et écrire la date des chiffres.
+- Pour la santé et l'argent : informer, jamais conseiller (pas de « fais ceci avec ton argent / prends ce médicament »).
 - Si une accroche ne tient pas, la reformuler ou changer de sujet.
 
 ## 2. Pour chaque vidéo (dossier `<slug>/`, sur le modèle de `frigo/`)
