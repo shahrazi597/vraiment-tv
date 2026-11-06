@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/gsap.min.js"></script>
+    <script src="assets/da.js"></script>
+    <link rel="stylesheet" href="assets/da.css" />
+    <style>
+      /* ---------- accroche ---------- */
+      #h-t1 { top: 310px; font-size: 100px; }
+      #hk { position: absolute; left: 0; top: 0; }
+      #h-kick { position: absolute; left: 0; right: 0; top: 960px; text-align: center; font-size: 54px; font-weight: 800; color: var(--cream); opacity: 0; }
+      #h-stamp { top: 1070px; }
+
+      /* ---------- la barre ---------- */
+      #ptag { position: absolute; left: 90px; top: 300px; width: 330px; height: 104px; border-radius: 28px; background: var(--panel);
+        border: 3px solid var(--line); display: flex; align-items: center; justify-content: center; opacity: 0;
+        font-size: 68px; font-weight: 900; letter-spacing: -.04em; color: var(--amber); white-space: nowrap; }
+      #bar { position: absolute; left: 90px; top: 420px; width: 330px; height: 710px; border-radius: 34px; border: 5px solid var(--cream);
+        background: #111115; overflow: hidden; opacity: 0; }
+      .sl { position: absolute; left: 0; right: 0; background: #2a2a32; border-bottom: 2px solid #0b0b0e; }
+      #sl-tva { top: 0; height: 37px; }
+      #sl-cnc { top: 37px; height: 72px; }
+      #sl-sac { top: 109px; height: 10px; }
+      #sl-dis { top: 119px; height: 283px; }
+      #sl-sal { top: 402px; height: 308px; border-bottom: 0; }
+      .sl .pct { position: absolute; left: 0; right: 0; top: 50%; margin-top: -34px; text-align: center; font-size: 60px; font-weight: 900;
+        letter-spacing: -.03em; color: rgba(11,11,14,.85); opacity: 0; }
+
+      .label { position: absolute; left: 470px; width: 580px; opacity: 0; }
+      .label .name { display: flex; align-items: center; gap: 14px; font-size: 34px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; white-space: nowrap; }
+      .label .name i { display: block; width: 22px; height: 22px; border-radius: 6px; }
+      .label .sub { font-size: 30px; font-weight: 600; color: var(--muted); margin-top: 4px; white-space: nowrap; }
+      .label .val { font-size: 84px; font-weight: 900; letter-spacing: -.045em; line-height: 1.04; margin-top: 2px; white-space: nowrap; opacity: 0; }
+      #l-tva { top: 410px; } #l-tva .val { color: var(--cream); }
+      #l-cnc { top: 600px; } #l-cnc .val { color: var(--cold); }
+      #l-sac { top: 520px; } #l-sac .val { color: var(--cream); }
+      #l-dis { top: 470px; } #l-dis .val { color: var(--amber); }
+      #l-sal { top: 860px; } #l-sal .val { color: var(--red); }
+      .chips { position: absolute; left: 470px; width: 580px; display: flex; flex-wrap: wrap; gap: 12px; }
+      .chips .chip { position: relative; font-size: 30px; padding: 10px 20px; }
+      .chip i { display: block; width: 20px; height: 20px; border-radius: 50%; }
+      #ch-dis { top: 680px; }
+
+      /* ---------- bonus ---------- */
+      #b-num { position: absolute; left: 0; right: 0; top: 330px; text-align: center; font-size: 200px; font-weight: 900; letter-spacing: -.05em;
+        color: var(--cold); line-height: 1; opacity: 0; white-space: nowrap; }
+      #b-sub { position: absolute; left: 0; right: 0; top: 545px; text-align: center; font-size: 40px; font-weight: 800; color: var(--muted); opacity: 0; }
+      #b-arrow { position: absolute; left: 0; top: 0; }
+      #b-card { position: absolute; left: 190px; top: 760px; width: 700px; height: 190px; border-radius: 30px; background: var(--panel);
+        border: 4px solid var(--cold); opacity: 0; display: flex; align-items: center; gap: 30px; padding: 0 40px; }
+      #b-card .flag { display: flex; width: 120px; height: 84px; border-radius: 10px; overflow: hidden; flex: none; }
+      #b-card .flag i { flex: 1; }
+      #b-card .t { font-size: 58px; font-weight: 900; letter-spacing: -.03em; text-transform: uppercase; line-height: 1; white-space: nowrap; }
+      #b-chip { position: absolute; left: 0; right: 0; top: 1000px; display: flex; justify-content: center; }
+      #b-chip .chip { position: relative; }
+
+      /* ---------- chute : le pop-corn ---------- */
+      #tw-title { top: 300px; font-size: 100px; }
+      #tw-title .wsp { opacity: 0; }
+      #pop { position: absolute; left: 0; top: 0; opacity: 0; }
+      #tw-stamp { top: 1000px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="39.21" data-width="1080" data-height="1920">
+      <audio id="vo" src="assets/voix.mp3" data-start="0" data-duration="36.258" data-volume="1"></audio>
+      <audio id="sfx0" src="assets/sfx/kaching.mp3" data-start="0.78" data-duration="1.2" data-volume="0.26" data-fade-out="0.20"></audio>
+      <audio id="sfx1" src="assets/sfx/stamp.mp3" data-start="4.389" data-duration="0.7" data-volume="0.4" data-fade-out="0.20"></audio>
+      <audio id="sfx2" src="assets/sfx/whoosh-short.mp3" data-start="4.671" data-duration="0.575" data-volume="0.22" data-fade-out="0.19"></audio>
+      <audio id="sfx3" src="assets/sfx/click-soft.mp3" data-start="6.762" data-duration="0.366" data-volume="0.18" data-fade-out="0.12"></audio>
+      <audio id="sfx4" src="assets/sfx/click-soft.mp3" data-start="8.722" data-duration="0.366" data-volume="0.18" data-fade-out="0.12"></audio>
+      <audio id="sfx5" src="assets/sfx/ticker.mp3" data-start="12.377" data-duration="1.0" data-volume="0.22" data-fade-out="0.20"></audio>
+      <audio id="sfx6" src="assets/sfx/click-soft.mp3" data-start="13.922" data-duration="0.366" data-volume="0.18" data-fade-out="0.12"></audio>
+      <audio id="sfx7" src="assets/sfx/kaching2.mp3" data-start="21.204" data-duration="1.0" data-volume="0.24" data-fade-out="0.20"></audio>
+      <audio id="sfx8" src="assets/sfx/pop.mp3" data-start="24.228" data-duration="0.72" data-volume="0.22" data-fade-out="0.20"></audio>
+      <audio id="sfx9" src="assets/sfx/impact-bass-1.mp3" data-start="26.381" data-duration="0.8" data-volume="0.26" data-fade-out="0.20"></audio>
+      <audio id="sfx10" src="assets/sfx/stamp2.mp3" data-start="33.144" data-duration="0.7" data-volume="0.42" data-fade-out="0.20"></audio>
+      <audio id="sfx11" src="assets/sfx/pop.mp3" data-start="34.698" data-duration="0.72" data-volume="0.28" data-fade-out="0.20"></audio>
+
+      <div id="bg" class="clip" data-start="0" data-duration="39.21" data-track-index="0" data-track-kind="graphics">
+        <div id="grid"></div>
+        <div id="gl-cream" class="glow"></div>
+        <div id="gl-red" class="glow"></div>
+        <div id="gl-amber" class="glow"></div>
+        <div id="gl-cold" class="glow"></div>
+        <div id="vign"></div>
+      </div>
+
+      <div id="cam">
+        <!-- 1. Accroche -->
+        <div id="s-hook" class="clip" data-start="0" data-duration="5.320" data-track-index="1" data-track-kind="graphics">
+          <div id="h-t1" class="hl">Ta place<br />de <span class="a">ciné&nbsp;?</span></div>
+          <svg id="hk" width="1080" height="1920" viewBox="0 0 1080 1920" aria-hidden="true">
+            <g id="ticket">
+              <path d="M210 590 H870 a0 0 0 0 1 0 0 V665 a36 36 0 0 0 0 72 V810 H210 V737 a36 36 0 0 0 0 -72 Z" fill="#16161b" stroke="#ece6d6" stroke-width="6" stroke-linejoin="round" />
+              <line x1="690" y1="604" x2="690" y2="796" stroke="#ece6d6" stroke-width="5" stroke-dasharray="12 12" opacity=".6" />
+              <text x="270" y="660" font-family="Inter Display" font-weight="800" font-size="34" letter-spacing="4" fill="#8e8c95">CINÉMA · ENTRÉE</text>
+              <text x="266" y="770" font-family="Inter Display" font-weight="900" font-size="112" letter-spacing="-4" fill="#ffb21f"><tspan id="h-num">7,42</tspan> €</text>
+              <g fill="#ece6d6" opacity=".85"><rect x="738" y="640" width="104" height="26" rx="6" /><rect x="738" y="688" width="104" height="26" rx="6" /><rect x="738" y="736" width="104" height="26" rx="6" /></g>
+            </g>
+          </svg>
+          <div id="h-kick">Et le <span style="color:var(--red)">film</span>, lui&nbsp;?</div>
+          <div id="h-stamp" class="stamp"><span>Pas la moitié&nbsp;!</span></div>
+        </div>
+
+        <!-- 2. Qui prend quoi -->
+        <div id="s-main" class="clip" data-start="4.870" data-duration="29.610" data-track-index="2" data-track-kind="graphics">
+          <div id="ptag"><span id="p-num">7,42</span>&nbsp;€</div>
+          <div id="bar" data-layout-allow-overflow>
+            <div id="sl-tva" class="sl"></div>
+            <div id="sl-cnc" class="sl"></div>
+            <div id="sl-sac" class="sl"></div>
+            <div id="sl-dis" class="sl"><div id="pc-dis" class="pct">40&nbsp;%</div></div>
+            <div id="sl-sal" class="sl"><div id="pc-sal" class="pct">43&nbsp;%</div></div>
+          </div>
+          <div id="l-tva" class="label"><div class="name"><i style="background:var(--cream)"></i>L'État · TVA</div><div class="val"><span id="v-tva">0,00</span>&nbsp;€</div></div>
+          <div id="l-cnc" class="label"><div class="name"><i style="background:var(--cold)"></i>Taxe CNC</div><div class="sub">Centre national du cinéma</div><div class="val"><span id="v-cnc">0,00</span>&nbsp;€</div></div>
+          <div id="l-sac" class="label"><div class="name"><i style="background:var(--cream)"></i>La Sacem</div><div class="sub">La musique du film</div><div class="val"><span id="v-sac">0,00</span>&nbsp;€</div></div>
+          <div id="l-dis" class="label"><div class="name"><i style="background:var(--amber)"></i>Le distributeur</div><div class="val"><span id="v-dis">0,00</span>&nbsp;€</div></div>
+          <div id="ch-dis" class="chips"><span id="cd1" class="chip"><i style="background:var(--amber)"></i>La pub du film</span><span id="cd2" class="chip"><i style="background:var(--amber)"></i>Le producteur</span></div>
+          <div id="l-sal" class="label"><div class="name"><i style="background:var(--red)"></i>La salle</div><div class="val"><span id="v-sal">0,00</span>&nbsp;€</div></div>
+
+          <!-- bonus -->
+          <div id="b-num">0,75&nbsp;€</div>
+          <div id="b-sub">de taxe sur chaque place</div>
+          <svg id="b-arrow" width="1080" height="1920" viewBox="0 0 1080 1920" aria-hidden="true">
+            <path id="b-line" d="M540 620 V735" fill="none" stroke="#4cc4ff" stroke-width="8" stroke-linecap="round" />
+            <path id="b-head" d="M518 712 L540 738 L562 712" fill="none" stroke="#4cc4ff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+          </svg>
+          <div id="b-card"><div class="flag"><i style="background:#2f5bd3"></i><i style="background:#f6f4ee"></i><i style="background:#ff5236"></i></div><div class="t">Les films<br /><span style="color:var(--cold)">français</span></div></div>
+          <div id="b-chip"><span id="bc1" class="chip"><i style="background:var(--red)"></i>Même pour un blockbuster américain</span></div>
+
+          <!-- chute -->
+          <div id="tw-title" class="hl"><span class="wsp">Et</span> <span class="wsp">le</span><br /><span class="wsp a">pop-corn&nbsp;?</span></div>
+          <svg id="pop" width="1080" height="1920" viewBox="0 20 1080 1920" aria-hidden="true">
+            <g id="kern" fill="#ece6d6">
+              <circle cx="430" cy="640" r="46" /><circle cx="500" cy="608" r="52" /><circle cx="580" cy="612" r="50" /><circle cx="650" cy="645" r="44" />
+              <circle cx="465" cy="580" r="40" /><circle cx="545" cy="560" r="46" /><circle cx="620" cy="575" r="40" /><circle cx="540" cy="650" r="44" />
+            </g>
+            <g fill="#ffb21f" opacity=".55"><circle cx="490" cy="596" r="12" /><circle cx="600" cy="600" r="10" /><circle cx="540" cy="548" r="10" /></g>
+            <path d="M390 660 H690 L655 1010 H425 Z" fill="#ece6d6" />
+            <path d="M432 660 H478 L486 1010 H452 Z M526 660 H572 L568 1010 H532 Z M620 660 H666 L640 1010 H614 Z" fill="#ff5236" />
+            <rect x="380" y="650" width="320" height="26" rx="10" fill="#ff5236" />
+          </svg>
+          <div id="tw-stamp" class="stamp"><span>100&nbsp;% salle&nbsp;!</span></div>
+        </div>
+
+        <!-- 3. Carte de fin -->
+        <div id="s-cta" class="clip" data-start="34.330" data-duration="4.880" data-track-index="3" data-track-kind="graphics">
+          <div id="c-title"><div>Combien ça</div><div>coûte</div><div class="a">vraiment&nbsp;?</div></div>
+          <div id="c-btn"><span>Abonne-toi</span></div>
+          <div id="c-ep">Épisode 4 · La place de cinéma</div>
+          <div id="c-src">Prix moyen 2025 (7,42&nbsp;€), taux moyen de location de 47,1&nbsp;%. Sources : CNC (bilan 2025, taxe sur les entrées) · Sénat, rapport n° 701 (2023)</div>
+        </div>
+      </div>
+
+      <div id="caps" class="clip" data-start="4.860" data-duration="34.350" data-track-index="5" data-track-kind="captions">
+        <div id="g0" class="cap"><span class="in"><span id="w0_0" class="wd">Alors</span></span></div>
+        <div id="g1" class="cap"><span class="in"><span id="w1_0" class="wd">qui</span> <span id="w1_1" class="wd">prend</span> <span id="w1_2" class="wd">quoi ?</span></span></div>
+        <div id="g2" class="cap"><span class="in"><span id="w2_0" class="wd">D'abord</span></span></div>
+        <div id="g3" class="cap"><span class="in"><span id="w3_0" class="wd">l'État :</span></span></div>
+        <div id="g4" class="cap"><span class="in"><span id="w4_0" class="wd em">39</span> <span id="w4_1" class="wd">centimes</span> <span id="w4_2" class="wd">de</span></span></div>
+        <div id="g5" class="cap"><span class="in"><span id="w5_0" class="wd">TVA.</span></span></div>
+        <div id="g6" class="cap"><span class="in"><span id="w6_0" class="wd">Puis</span> <span id="w6_1" class="wd em">75</span> <span id="w6_2" class="wd">centimes</span></span></div>
+        <div id="g7" class="cap"><span class="in"><span id="w7_0" class="wd">de</span> <span id="w7_1" class="wd">taxe</span> <span id="w7_2" class="wd">pour</span></span></div>
+        <div id="g8" class="cap"><span class="in"><span id="w8_0" class="wd">le</span> <span id="w8_1" class="wd em">CNC</span></span></div>
+        <div id="g9" class="cap"><span class="in"><span id="w9_0" class="wd">le</span> <span id="w9_1" class="wd">Centre</span> <span id="w9_2" class="wd">national</span></span></div>
+        <div id="g10" class="cap"><span class="in"><span id="w10_0" class="wd">du</span> <span id="w10_1" class="wd">cinéma.</span></span></div>
+        <div id="g11" class="cap"><span class="in"><span id="w11_0" class="wd">Il</span> <span id="w11_1" class="wd">reste</span> <span id="w11_2" class="wd em">6,28 €.</span></span></div>
+        <div id="g12" class="cap"><span class="in"><span id="w12_0" class="wd">La</span> <span id="w12_1" class="wd em">Sacem</span> <span id="w12_2" class="wd">prend</span></span></div>
+        <div id="g13" class="cap"><span class="in"><span id="w13_0" class="wd em">10</span> <span id="w13_1" class="wd">centimes</span></span></div>
+        <div id="g14" class="cap"><span class="in"><span id="w14_0" class="wd">pour</span> <span id="w14_1" class="wd">la</span> <span id="w14_2" class="wd">musique.</span></span></div>
+        <div id="g15" class="cap"><span class="in"><span id="w15_0" class="wd">Le</span> <span id="w15_1" class="wd">reste</span> <span id="w15_2" class="wd">se</span></span></div>
+        <div id="g16" class="cap"><span class="in"><span id="w16_0" class="wd">partage</span> <span id="w16_1" class="wd">entre</span> <span id="w16_2" class="wd">la</span></span></div>
+        <div id="g17" class="cap"><span class="in"><span id="w17_0" class="wd em">salle</span> <span id="w17_1" class="wd">et</span> <span id="w17_2" class="wd">le</span></span></div>
+        <div id="g18" class="cap"><span class="in"><span id="w18_0" class="wd">distributeur</span> <span id="w18_1" class="wd">du</span> <span id="w18_2" class="wd">film.</span></span></div>
+        <div id="g19" class="cap"><span class="in"><span id="w19_0" class="wd">La</span> <span id="w19_1" class="wd em">salle</span> <span id="w19_2" class="wd">garde</span></span></div>
+        <div id="g20" class="cap"><span class="in"><span id="w20_0" class="wd em">3,22 €.</span></span></div>
+        <div id="g21" class="cap"><span class="in"><span id="w21_0" class="wd">Le</span> <span id="w21_1" class="wd">distributeur</span></span></div>
+        <div id="g22" class="cap"><span class="in"><span id="w22_0" class="wd em">2,96 €…</span></span></div>
+        <div id="g23" class="cap"><span class="in"><span id="w23_0" class="wd">et</span> <span id="w23_1" class="wd">avec</span> <span id="w23_2" class="wd">ça</span></span></div>
+        <div id="g24" class="cap"><span class="in"><span id="w24_0" class="wd">il</span> <span id="w24_1" class="wd">doit</span> <span id="w24_2" class="wd">encore</span></span></div>
+        <div id="g25" class="cap"><span class="in"><span id="w25_0" class="wd">payer</span> <span id="w25_1" class="wd">la</span> <span id="w25_2" class="wd">pub</span></span></div>
+        <div id="g26" class="cap"><span class="in"><span id="w26_0" class="wd">du</span> <span id="w26_1" class="wd">film</span> <span id="w26_2" class="wd">et</span></span></div>
+        <div id="g27" class="cap"><span class="in"><span id="w27_0" class="wd">le</span> <span id="w27_1" class="wd em">producteur.</span></span></div>
+        <div id="g28" class="cap"><span class="in"><span id="w28_0" class="wd">Le</span> <span id="w28_1" class="wd">plus</span> <span id="w28_2" class="wd">fou ?</span></span></div>
+        <div id="g29" class="cap"><span class="in"><span id="w29_0" class="wd">Tes</span> <span id="w29_1" class="wd em">75</span> <span id="w29_2" class="wd">centimes</span></span></div>
+        <div id="g30" class="cap"><span class="in"><span id="w30_0" class="wd">de</span> <span id="w30_1" class="wd">taxe</span> <span id="w30_2" class="wd">aident</span></span></div>
+        <div id="g31" class="cap"><span class="in"><span id="w31_0" class="wd">à</span> <span id="w31_1" class="wd">financer</span> <span id="w31_2" class="wd">les</span></span></div>
+        <div id="g32" class="cap"><span class="in"><span id="w32_0" class="wd">films</span> <span id="w32_1" class="wd em">français…</span></span></div>
+        <div id="g33" class="cap"><span class="in"><span id="w33_0" class="wd">même</span> <span id="w33_1" class="wd">si</span> <span id="w33_2" class="wd">tu</span></span></div>
+        <div id="g34" class="cap"><span class="in"><span id="w34_0" class="wd">es</span> <span id="w34_1" class="wd">allé</span> <span id="w34_2" class="wd">voir</span></span></div>
+        <div id="g35" class="cap"><span class="in"><span id="w35_0" class="wd">un</span> <span id="w35_1" class="wd">blockbuster</span> <span id="w35_2" class="wd em">américain !</span></span></div>
+        <div id="g36" class="cap"><span class="in"><span id="w36_0" class="wd">Et</span> <span id="w36_1" class="wd">le</span> <span id="w36_2" class="wd">pop-corn ?</span></span></div>
+        <div id="g37" class="cap"><span class="in"><span id="w37_0" class="wd">Lui</span></span></div>
+        <div id="g38" class="cap"><span class="in"><span id="w38_0" class="wd">il</span> <span id="w38_1" class="wd">ne</span> <span id="w38_2" class="wd">se</span></span></div>
+        <div id="g39" class="cap"><span class="in"><span id="w39_0" class="wd">partage</span> <span id="w39_1" class="wd">pas :</span></span></div>
+        <div id="g40" class="cap"><span class="in"><span id="w40_0" class="wd">tout</span> <span id="w40_1" class="wd">va</span> <span id="w40_2" class="wd">à</span></span></div>
+        <div id="g41" class="cap"><span class="in"><span id="w41_0" class="wd">la</span> <span id="w41_1" class="wd em">salle.</span></span></div>
+        <div id="g42" class="cap"><span class="in"><span id="w42_0" class="wd">Abonne-toi</span> <span id="w42_1" class="wd">pour</span> <span id="w42_2" class="wd">savoir</span></span></div>
+        <div id="g43" class="cap"><span class="in"><span id="w43_0" class="wd">combien</span> <span id="w43_1" class="wd">ça</span> <span id="w43_2" class="wd">coûte</span></span></div>
+        <div id="g44" class="cap"><span class="in"><span id="w44_0" class="wd em">vraiment.</span></span></div>
+      </div>
+
+      <div id="tag" class="clip" data-start="0" data-duration="39.21" data-track-index="6" data-track-kind="graphics">
+        <span class="pill">COMBIEN ÇA COÛTE VRAIMENT&nbsp;?</span><span class="pill num">#4</span>
+      </div>
+
+      <div id="fx" class="clip" data-start="0" data-duration="39.21" data-track-index="7" data-track-kind="graphics">
+        <div id="flash"></div>
+      </div>
+    </div>
+
+    <script>
+      const C = {"p742": 0.96, "mais": 2.38, "film": 2.8, "moitie": 4.38, "alors": 4.92, "qui": 5.52, "letat": 6.88, "c39": 7.36, "c75": 8.84, "reste": 12.54, "p628": 12.8, "sacem": 14.04, "c10": 14.58, "salle": 17.24, "distributeur": 17.8, "p322": 19.52, "p296": 21.26, "pub": 24.36, "producteur": 25.22, "fou": 26.08, "financer": 28.02, "films": 28.48, "francais": 28.64, "blockbuster": 30.3, "americain": 30.64, "popcorn": 31.4, "abonne": 34.48, "vraiment": 35.84, "reste2": 16.22, "salle2": 19.0, "distributeur2": 20.64, "c75b": 26.5, "taxe2": 27.42, "et_pop": 31.3, "pas": 33.18, "voEnd": 36.208, "end": 39.21};
+      const CAP = [{"id": "g0", "start": 4.86, "end": 5.46, "w": [{"id": "w0_0", "t": 4.92}]}, {"id": "g1", "start": 5.46, "end": 6.35, "w": [{"id": "w1_0", "t": 5.52}, {"id": "w1_1", "t": 5.6}, {"id": "w1_2", "t": 5.78}]}, {"id": "g2", "start": 6.35, "end": 6.82, "w": [{"id": "w2_0", "t": 6.3}]}, {"id": "g3", "start": 6.82, "end": 7.3, "w": [{"id": "w3_0", "t": 6.88}]}, {"id": "g4", "start": 7.3, "end": 8.19, "w": [{"id": "w4_0", "t": 7.36}, {"id": "w4_1", "t": 7.62}, {"id": "w4_2", "t": 8.0}]}, {"id": "g5", "start": 8.19, "end": 8.6, "w": [{"id": "w5_0", "t": 8.14}]}, {"id": "g6", "start": 8.6, "end": 9.85, "w": [{"id": "w6_0", "t": 8.66}, {"id": "w6_1", "t": 8.84}, {"id": "w6_2", "t": 9.36}]}, {"id": "g7", "start": 9.85, "end": 10.37, "w": [{"id": "w7_0", "t": 9.8}, {"id": "w7_1", "t": 9.92}, {"id": "w7_2", "t": 10.22}]}, {"id": "g8", "start": 10.37, "end": 11.04, "w": [{"id": "w8_0", "t": 10.32}, {"id": "w8_1", "t": 10.44}]}, {"id": "g9", "start": 11.04, "end": 11.79, "w": [{"id": "w9_0", "t": 11.1}, {"id": "w9_1", "t": 11.22}, {"id": "w9_2", "t": 11.4}]}, {"id": "g10", "start": 11.79, "end": 12.4, "w": [{"id": "w10_0", "t": 11.74}, {"id": "w10_1", "t": 11.98}]}, {"id": "g11", "start": 12.4, "end": 13.84, "w": [{"id": "w11_0", "t": 12.46}, {"id": "w11_1", "t": 12.54}, {"id": "w11_2", "t": 12.8}]}, {"id": "g12", "start": 13.84, "end": 14.63, "w": [{"id": "w12_0", "t": 13.9}, {"id": "w12_1", "t": 14.04}, {"id": "w12_2", "t": 14.34}]}, {"id": "g13", "start": 14.63, "end": 15.26, "w": [{"id": "w13_0", "t": 14.58}, {"id": "w13_1", "t": 14.8}]}, {"id": "g14", "start": 15.26, "end": 16.02, "w": [{"id": "w14_0", "t": 15.32}, {"id": "w14_1", "t": 15.42}, {"id": "w14_2", "t": 15.52}]}, {"id": "g15", "start": 16.02, "end": 16.67, "w": [{"id": "w15_0", "t": 16.08}, {"id": "w15_1", "t": 16.22}, {"id": "w15_2", "t": 16.42}]}, {"id": "g16", "start": 16.67, "end": 17.29, "w": [{"id": "w16_0", "t": 16.62}, {"id": "w16_1", "t": 16.94}, {"id": "w16_2", "t": 17.08}]}, {"id": "g17", "start": 17.29, "end": 17.85, "w": [{"id": "w17_0", "t": 17.24}, {"id": "w17_1", "t": 17.52}, {"id": "w17_2", "t": 17.66}]}, {"id": "g18", "start": 17.85, "end": 18.8, "w": [{"id": "w18_0", "t": 17.8}, {"id": "w18_1", "t": 18.3}, {"id": "w18_2", "t": 18.4}]}, {"id": "g19", "start": 18.8, "end": 19.57, "w": [{"id": "w19_0", "t": 18.86}, {"id": "w19_1", "t": 19.0}, {"id": "w19_2", "t": 19.24}]}, {"id": "g20", "start": 19.57, "end": 20.48, "w": [{"id": "w20_0", "t": 19.52}]}, {"id": "g21", "start": 20.48, "end": 21.31, "w": [{"id": "w21_0", "t": 20.54}, {"id": "w21_1", "t": 20.64}]}, {"id": "g22", "start": 21.31, "end": 22.66, "w": [{"id": "w22_0", "t": 21.26}]}, {"id": "g23", "start": 22.66, "end": 23.3, "w": [{"id": "w23_0", "t": 22.72}, {"id": "w23_1", "t": 22.84}, {"id": "w23_2", "t": 22.94}]}, {"id": "g24", "start": 23.3, "end": 23.95, "w": [{"id": "w24_0", "t": 23.36}, {"id": "w24_1", "t": 23.4}, {"id": "w24_2", "t": 23.54}]}, {"id": "g25", "start": 23.95, "end": 24.53, "w": [{"id": "w25_0", "t": 23.9}, {"id": "w25_1", "t": 24.16}, {"id": "w25_2", "t": 24.36}]}, {"id": "g26", "start": 24.53, "end": 25.17, "w": [{"id": "w26_0", "t": 24.48}, {"id": "w26_1", "t": 24.64}, {"id": "w26_2", "t": 24.94}]}, {"id": "g27", "start": 25.17, "end": 25.74, "w": [{"id": "w27_0", "t": 25.12}, {"id": "w27_1", "t": 25.22}]}, {"id": "g28", "start": 25.74, "end": 26.36, "w": [{"id": "w28_0", "t": 25.8}, {"id": "w28_1", "t": 25.94}, {"id": "w28_2", "t": 26.08}]}, {"id": "g29", "start": 26.36, "end": 27.33, "w": [{"id": "w29_0", "t": 26.42}, {"id": "w29_1", "t": 26.5}, {"id": "w29_2", "t": 26.88}]}, {"id": "g30", "start": 27.33, "end": 27.99, "w": [{"id": "w30_0", "t": 27.28}, {"id": "w30_1", "t": 27.42}, {"id": "w30_2", "t": 27.76}]}, {"id": "g31", "start": 27.99, "end": 28.53, "w": [{"id": "w31_0", "t": 27.94}, {"id": "w31_1", "t": 28.02}, {"id": "w31_2", "t": 28.36}]}, {"id": "g32", "start": 28.53, "end": 29.05, "w": [{"id": "w32_0", "t": 28.48}, {"id": "w32_1", "t": 28.64}]}, {"id": "g33", "start": 29.05, "end": 29.91, "w": [{"id": "w33_0", "t": 29.0}, {"id": "w33_1", "t": 29.52}, {"id": "w33_2", "t": 29.78}]}, {"id": "g34", "start": 29.91, "end": 30.21, "w": [{"id": "w34_0", "t": 29.86}, {"id": "w34_1", "t": 29.94}, {"id": "w34_2", "t": 30.06}]}, {"id": "g35", "start": 30.21, "end": 31.24, "w": [{"id": "w35_0", "t": 30.16}, {"id": "w35_1", "t": 30.3}, {"id": "w35_2", "t": 30.64}]}, {"id": "g36", "start": 31.24, "end": 31.96, "w": [{"id": "w36_0", "t": 31.3}, {"id": "w36_1", "t": 31.34}, {"id": "w36_2", "t": 31.4}]}, {"id": "g37", "start": 31.96, "end": 32.44, "w": [{"id": "w37_0", "t": 32.02}]}, {"id": "g38", "start": 32.44, "end": 32.85, "w": [{"id": "w38_0", "t": 32.5}, {"id": "w38_1", "t": 32.58}, {"id": "w38_2", "t": 32.68}]}, {"id": "g39", "start": 32.85, "end": 33.46, "w": [{"id": "w39_0", "t": 32.8}, {"id": "w39_1", "t": 33.18}]}, {"id": "g40", "start": 33.46, "end": 34.01, "w": [{"id": "w40_0", "t": 33.52}, {"id": "w40_1", "t": 33.64}, {"id": "w40_2", "t": 33.86}]}, {"id": "g41", "start": 34.01, "end": 34.42, "w": [{"id": "w41_0", "t": 33.96}, {"id": "w41_1", "t": 34.02}]}, {"id": "g42", "start": 34.42, "end": 35.25, "w": [{"id": "w42_0", "t": 34.48}, {"id": "w42_1", "t": 34.86}, {"id": "w42_2", "t": 35.02}]}, {"id": "g43", "start": 35.25, "end": 35.89, "w": [{"id": "w43_0", "t": 35.2}, {"id": "w43_1", "t": 35.42}, {"id": "w43_2", "t": 35.64}]}, {"id": "g44", "start": 35.89, "end": 36.78, "w": [{"id": "w44_0", "t": 35.84}]}];
+      DA.fitCaptions(CAP);
+      const tl = gsap.timeline({ paused: true });
+      const D = DA(tl);
+      D.drift(C.end);
+
+      // ================= 1. ACCROCHE =================
+      D.glow("amber", 0, 0.55, 0.01);
+      tl.fromTo("#ticket", { rotation: -4, y: 0 }, { rotation: 2, y: -10, svgOrigin: "540 700", duration: C.alors, ease: "sine.inOut" }, 0);
+      tl.fromTo("#ticket", { scale: 1 }, { keyframes: [{ scale: 1.07, duration: 0.09 }, { scale: 1, duration: 0.35, ease: "expo.out" }], svgOrigin: "540 700" }, C.p742 - 0.05);
+      D.blurIn("#h-kick", C.mais - 0.05);
+      D.glow("amber", C.film, 0.2, 0.4); D.glow("red", C.film, 0.5, 0.4);
+      D.stamp("#h-stamp span", C.moitie, -5);
+      D.shake(C.moitie + 0.02, 10);
+      D.flash(C.moitie + 0.02, 0.16);
+      // le billet devient la barre
+      D.blurOut(["#h-t1", "#h-kick", "#h-stamp span"], C.alors - 0.1, 0.15);
+      tl.to("#ticket", { x: -285, y: 120, scale: 0.5, opacity: 0, svgOrigin: "540 700", duration: 0.4, ease: "power3.inOut" }, C.alors - 0.1);
+      D.glow("red", C.alors, 0, 0.4); D.glow("amber", C.alors, 0.15, 0.4); D.glow("cream", C.alors, 0.45, 0.4);
+
+      // ================= 2. QUI PREND QUOI =================
+      tl.fromTo("#ptag", { opacity: 0, y: 60, scale: 0.8 }, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "expo.out" }, C.alors + 0.15);
+      tl.fromTo("#bar", { opacity: 0, y: 140, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, C.alors + 0.1);
+      tl.fromTo("#bar .sl", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: 0.3, stagger: 0.06, ease: "power3.out" }, C.qui);
+
+      // l'État : TVA
+      tl.to("#sl-tva", { backgroundColor: "#ece6d6", duration: 0.25 }, C.letat - 0.1);
+      tl.fromTo("#sl-tva", { x: 0 }, { keyframes: [{ x: 26, duration: 0.15 }, { x: 0, duration: 0.3, ease: "expo.out" }] }, C.letat - 0.1);
+      D.blurIn("#l-tva", C.letat - 0.1);
+      D.blurIn("#l-tva .val", C.c39 - 0.12, 0.16);
+      D.count("v-tva", 0, 0.39, C.c39 - 0.1, 0.8);
+      // la taxe CNC
+      tl.to("#sl-cnc", { backgroundColor: "#4cc4ff", duration: 0.25 }, C.c75 - 0.1);
+      tl.fromTo("#sl-cnc", { x: 0 }, { keyframes: [{ x: 26, duration: 0.15 }, { x: 0, duration: 0.3, ease: "expo.out" }] }, C.c75 - 0.1);
+      D.glow("cold", C.c75, 0.4, 0.4);
+      D.blurIn("#l-cnc", C.c75 - 0.1);
+      D.blurIn("#l-cnc .val", C.c75 - 0.05, 0.16);
+      D.count("v-cnc", 0, 0.75, C.c75, 0.8);
+      // il reste 6,28 €
+      tl.to(["#l-tva", "#l-cnc"], { opacity: 0, filter: "blur(8px)", duration: 0.25 }, C.reste - 0.25);
+      tl.to(["#sl-tva", "#sl-cnc"], { opacity: 0.35, duration: 0.3 }, C.reste - 0.1);
+      D.count("p-num", 7.42, 6.28, C.reste, C.p628 - C.reste + 0.5);
+      tl.fromTo("#ptag", { scale: 1 }, { keyframes: [{ scale: 1.1, duration: 0.09 }, { scale: 1, duration: 0.35, ease: "expo.out" }] }, C.p628 + 0.4);
+      // la Sacem
+      tl.to("#sl-sac", { backgroundColor: "#ece6d6", duration: 0.25 }, C.sacem - 0.1);
+      tl.fromTo("#sl-sac", { x: 0 }, { keyframes: [{ x: 26, duration: 0.15 }, { x: 0, duration: 0.3, ease: "expo.out" }] }, C.sacem - 0.1);
+      D.blurIn("#l-sac", C.sacem - 0.1);
+      D.blurIn("#l-sac .val", C.c10 - 0.12, 0.16);
+      D.count("v-sac", 0, 0.1, C.c10 - 0.1, 0.6);
+      D.count("p-num", 6.28, 6.18, C.c10, 0.6);
+      tl.to("#l-sac", { opacity: 0, filter: "blur(8px)", duration: 0.25 }, C.reste2 - 0.2);
+      tl.to("#sl-sac", { opacity: 0.35, duration: 0.3 }, C.reste2 - 0.1);
+      // le partage : salle et distributeur
+      D.glow("cold", C.reste2, 0, 0.4);
+      tl.to("#sl-sal", { backgroundColor: "#ff5236", duration: 0.3 }, C.salle - 0.1);
+      tl.to("#sl-dis", { backgroundColor: "#ffb21f", duration: 0.3 }, C.distributeur - 0.1);
+      tl.fromTo("#sl-dis", { y: 0 }, { keyframes: [{ y: -12, duration: 0.12 }, { y: 0, duration: 0.3 }] }, C.distributeur - 0.1);
+      tl.fromTo("#sl-sal", { y: 0 }, { keyframes: [{ y: 12, duration: 0.12 }, { y: 0, duration: 0.3 }] }, C.salle - 0.1);
+      D.glow("red", C.salle2, 0.45, 0.4);
+      D.blurIn("#l-sal", C.salle2 - 0.1);
+      D.blurIn("#l-sal .val", C.p322 - 0.12, 0.16);
+      D.count("v-sal", 0, 3.22, C.p322 - 0.1, 1.0);
+      tl.to("#pc-sal", { opacity: 1, duration: 0.25 }, C.p322 + 0.8);
+      D.glow("amber", C.distributeur2, 0.5, 0.4);
+      D.blurIn("#l-dis", C.distributeur2 - 0.1);
+      D.blurIn("#l-dis .val", C.p296 - 0.12, 0.16);
+      D.count("v-dis", 0, 2.96, C.p296 - 0.1, 1.0);
+      tl.to("#pc-dis", { opacity: 1, duration: 0.25 }, C.p296 + 0.8);
+      D.popIn("#cd1", C.pub - 0.05, 0.5);
+      D.popIn("#cd2", C.producteur - 0.05, 0.5);
+      tl.fromTo("#l-dis .val", { scale: 1, transformOrigin: "0% 50%" }, { keyframes: [{ scale: 0.92, duration: 0.12 }, { scale: 1, duration: 0.35 }] }, C.producteur + 0.2);
+
+      // ================= BONUS : la taxe finance les films français =================
+      tl.to(["#ptag", "#bar", ".label", "#ch-dis"], { opacity: 0, filter: "blur(10px)", duration: 0.3 }, C.fou - 0.3);
+      D.glow("red", C.fou, 0, 0.4); D.glow("amber", C.fou, 0, 0.4); D.glow("cold", C.fou, 0.55, 0.4);
+      D.blurIn("#b-num", C.c75b - 0.1);
+      tl.fromTo("#b-num", { scale: 0.7 }, { scale: 1, duration: 0.35, ease: "back.out(2)" }, C.c75b - 0.1);
+      D.blurIn("#b-sub", C.taxe2 - 0.1);
+      { const ln = document.getElementById("b-line"); ln.style.strokeDasharray = 120; ln.style.strokeDashoffset = 120; }
+      tl.to("#b-line", { strokeDashoffset: 0, duration: 0.35, ease: "power2.out" }, C.financer - 0.1);
+      tl.to("#b-head", { opacity: 1, duration: 0.1 }, C.financer + 0.2);
+      tl.fromTo("#b-card", { opacity: 0, y: 40, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "back.out(2)" }, C.films - 0.1);
+      D.flash(C.francais, 0.12, "#4cc4ff");
+      D.popIn("#bc1", C.blockbuster - 0.1, 0.5);
+      D.glow("red", C.americain, 0.3, 0.4);
+
+      // ================= CHUTE : le pop-corn =================
+      tl.to(["#b-num", "#b-sub", "#b-arrow", "#b-card", "#b-chip"], { opacity: 0, filter: "blur(10px)", duration: 0.25 }, C.popcorn - 0.35);
+      D.glow("cold", C.popcorn - 0.2, 0, 0.4); D.glow("cream", C.popcorn - 0.2, 0.2, 0.4); D.glow("amber", C.popcorn - 0.2, 0.5, 0.4);
+      tl.fromTo("#tw-title .wsp", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.14, stagger: 0.08, ease: "power2.out" }, C.et_pop - 0.1);
+      tl.fromTo("#pop", { opacity: 0, y: 120 }, { opacity: 1, y: 0, duration: 0.45, ease: "back.out(1.8)" }, C.popcorn - 0.05);
+      tl.fromTo("#kern circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, stagger: 0.04, ease: "back.out(3)" }, C.popcorn + 0.15);
+      D.stamp("#tw-stamp span", C.pas, -5);
+      D.shake(C.pas + 0.02, 12);
+      D.glow("red", C.pas, 0.55, 0.3);
+      tl.to("#s-main", { scale: 1.3, opacity: 0, filter: "blur(16px)", duration: 0.3, ease: "power3.in" }, C.abonne - 0.32);
+
+      // ================= CARTE DE FIN =================
+      D.glow("red", C.abonne - 0.2, 0, 0.4); D.glow("amber", C.abonne - 0.2, 0, 0.4); D.glow("cold", C.abonne - 0.2, 0, 0.4);
+      D.glow("cream", C.abonne - 0.2, 0.5, 0.4);
+      D.endCard(C.abonne - 0.05, C.vraiment);
+
+      D.captions(CAP);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,891 @@
+{
+ "cues": {
+  "p742": 0.96,
+  "mais": 2.38,
+  "film": 2.8,
+  "moitie": 4.38,
+  "alors": 4.92,
+  "qui": 5.52,
+  "letat": 6.88,
+  "c39": 7.36,
+  "c75": 8.84,
+  "reste": 12.54,
+  "p628": 12.8,
+  "sacem": 14.04,
+  "c10": 14.58,
+  "salle": 17.24,
+  "distributeur": 17.8,
+  "p322": 19.52,
+  "p296": 21.26,
+  "pub": 24.36,
+  "producteur": 25.22,
+  "fou": 26.08,
+  "financer": 28.02,
+  "films": 28.48,
+  "francais": 28.64,
+  "blockbuster": 30.3,
+  "americain": 30.64,
+  "popcorn": 31.4,
+  "abonne": 34.48,
+  "vraiment": 35.84,
+  "reste2": 16.22,
+  "salle2": 19.0,
+  "distributeur2": 20.64,
+  "c75b": 26.5,
+  "taxe2": 27.42,
+  "et_pop": 31.3,
+  "pas": 33.18,
+  "voEnd": 36.207959,
+  "end": 39.21
+ },
+ "sfx": [
+  [
+   "kaching",
+   0.78,
+   1.2,
+   0.26
+  ],
+  [
+   "stamp",
+   4.389,
+   0.7,
+   0.4
+  ],
+  [
+   "whoosh-short",
+   4.671,
+   0.575,
+   0.22
+  ],
+  [
+   "click-soft",
+   6.762,
+   0.366,
+   0.18
+  ],
+  [
+   "click-soft",
+   8.722,
+   0.366,
+   0.18
+  ],
+  [
+   "ticker",
+   12.377,
+   1.0,
+   0.22
+  ],
+  [
+   "click-soft",
+   13.922,
+   0.366,
+   0.18
+  ],
+  [
+   "kaching2",
+   21.204,
+   1.0,
+   0.24
+  ],
+  [
+   "pop",
+   24.228,
+   0.72,
+   0.22
+  ],
+  [
+   "impact-bass-1",
+   26.381,
+   0.8,
+   0.26
+  ],
+  [
+   "stamp2",
+   33.144,
+   0.7,
+   0.42
+  ],
+  [
+   "pop",
+   34.698,
+   0.72,
+   0.28
+  ]
+ ],
+ "tokens": [
+  {
+   "text": "Ta",
+   "key": "ta",
+   "start": 0.0,
+   "end": 0.12
+  },
+  {
+   "text": "place",
+   "key": "place",
+   "start": 0.12,
+   "end": 0.3
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 0.3,
+   "end": 0.46
+  },
+  {
+   "text": "ciné",
+   "key": "cine",
+   "start": 0.46,
+   "end": 0.72
+  },
+  {
+   "text": "coûte",
+   "key": "coute",
+   "start": 0.72,
+   "end": 0.96
+  },
+  {
+   "text": "7,42 €",
+   "key": "742",
+   "start": 0.96,
+   "end": 1.84
+  },
+  {
+   "text": "en",
+   "key": "en",
+   "start": 1.84,
+   "end": 1.9
+  },
+  {
+   "text": "moyenne.",
+   "key": "moyenne",
+   "start": 1.9,
+   "end": 2.38
+  },
+  {
+   "text": "Mais",
+   "key": "mais",
+   "start": 2.38,
+   "end": 2.7
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 2.7,
+   "end": 2.8
+  },
+  {
+   "text": "film,",
+   "key": "film",
+   "start": 2.8,
+   "end": 3.08
+  },
+  {
+   "text": "lui,",
+   "key": "lui",
+   "start": 3.16,
+   "end": 3.34
+  },
+  {
+   "text": "n'en",
+   "key": "nen",
+   "start": 3.58,
+   "end": 3.68
+  },
+  {
+   "text": "touche",
+   "key": "touche",
+   "start": 3.68,
+   "end": 3.88
+  },
+  {
+   "text": "même",
+   "key": "meme",
+   "start": 3.88,
+   "end": 4.08
+  },
+  {
+   "text": "pas",
+   "key": "pas",
+   "start": 4.08,
+   "end": 4.28
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 4.28,
+   "end": 4.38
+  },
+  {
+   "text": "moitié !",
+   "key": "moitie",
+   "start": 4.38,
+   "end": 4.92
+  },
+  {
+   "text": "Alors,",
+   "key": "alors",
+   "start": 4.92,
+   "end": 5.12
+  },
+  {
+   "text": "qui",
+   "key": "qui",
+   "start": 5.52,
+   "end": 5.6
+  },
+  {
+   "text": "prend",
+   "key": "prend",
+   "start": 5.6,
+   "end": 5.78
+  },
+  {
+   "text": "quoi ?",
+   "key": "quoi",
+   "start": 5.78,
+   "end": 6.3
+  },
+  {
+   "text": "D'abord,",
+   "key": "dabord",
+   "start": 6.3,
+   "end": 6.6
+  },
+  {
+   "text": "l'État :",
+   "key": "letat",
+   "start": 6.88,
+   "end": 7.08
+  },
+  {
+   "text": "39",
+   "key": "39",
+   "start": 7.36,
+   "end": 7.62
+  },
+  {
+   "text": "centimes",
+   "key": "centimes",
+   "start": 7.62,
+   "end": 8.0
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 8.0,
+   "end": 8.14
+  },
+  {
+   "text": "TVA.",
+   "key": "tva",
+   "start": 8.14,
+   "end": 8.54
+  },
+  {
+   "text": "Puis",
+   "key": "puis",
+   "start": 8.66,
+   "end": 8.84
+  },
+  {
+   "text": "75",
+   "key": "75",
+   "start": 8.84,
+   "end": 9.36
+  },
+  {
+   "text": "centimes",
+   "key": "centimes",
+   "start": 9.36,
+   "end": 9.8
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 9.8,
+   "end": 9.92
+  },
+  {
+   "text": "taxe",
+   "key": "taxe",
+   "start": 9.92,
+   "end": 10.22
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 10.22,
+   "end": 10.32
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 10.32,
+   "end": 10.44
+  },
+  {
+   "text": "CNC,",
+   "key": "cnc",
+   "start": 10.44,
+   "end": 10.68
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 11.1,
+   "end": 11.22
+  },
+  {
+   "text": "Centre",
+   "key": "centre",
+   "start": 11.22,
+   "end": 11.4
+  },
+  {
+   "text": "national",
+   "key": "national",
+   "start": 11.4,
+   "end": 11.74
+  },
+  {
+   "text": "du",
+   "key": "du",
+   "start": 11.74,
+   "end": 11.98
+  },
+  {
+   "text": "cinéma.",
+   "key": "cinema",
+   "start": 11.98,
+   "end": 12.26
+  },
+  {
+   "text": "Il",
+   "key": "il",
+   "start": 12.46,
+   "end": 12.54
+  },
+  {
+   "text": "reste",
+   "key": "reste",
+   "start": 12.54,
+   "end": 12.8
+  },
+  {
+   "text": "6,28 €.",
+   "key": "628",
+   "start": 12.8,
+   "end": 13.4
+  },
+  {
+   "text": "La",
+   "key": "la",
+   "start": 13.9,
+   "end": 14.04
+  },
+  {
+   "text": "Sacem",
+   "key": "sacem",
+   "start": 14.04,
+   "end": 14.34
+  },
+  {
+   "text": "prend",
+   "key": "prend",
+   "start": 14.34,
+   "end": 14.58
+  },
+  {
+   "text": "10",
+   "key": "10",
+   "start": 14.58,
+   "end": 14.8
+  },
+  {
+   "text": "centimes,",
+   "key": "centimes",
+   "start": 14.8,
+   "end": 15.18
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 15.32,
+   "end": 15.42
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 15.42,
+   "end": 15.52
+  },
+  {
+   "text": "musique.",
+   "key": "musique",
+   "start": 15.52,
+   "end": 15.72
+  },
+  {
+   "text": "Le",
+   "key": "le",
+   "start": 16.08,
+   "end": 16.22
+  },
+  {
+   "text": "reste",
+   "key": "reste",
+   "start": 16.22,
+   "end": 16.42
+  },
+  {
+   "text": "se",
+   "key": "se",
+   "start": 16.42,
+   "end": 16.62
+  },
+  {
+   "text": "partage",
+   "key": "partage",
+   "start": 16.62,
+   "end": 16.94
+  },
+  {
+   "text": "entre",
+   "key": "entre",
+   "start": 16.94,
+   "end": 17.08
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 17.08,
+   "end": 17.24
+  },
+  {
+   "text": "salle",
+   "key": "salle",
+   "start": 17.24,
+   "end": 17.52
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 17.52,
+   "end": 17.66
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 17.66,
+   "end": 17.8
+  },
+  {
+   "text": "distributeur",
+   "key": "distributeur",
+   "start": 17.8,
+   "end": 18.3
+  },
+  {
+   "text": "du",
+   "key": "du",
+   "start": 18.3,
+   "end": 18.4
+  },
+  {
+   "text": "film.",
+   "key": "film",
+   "start": 18.4,
+   "end": 18.62
+  },
+  {
+   "text": "La",
+   "key": "la",
+   "start": 18.86,
+   "end": 19.0
+  },
+  {
+   "text": "salle",
+   "key": "salle",
+   "start": 19.0,
+   "end": 19.24
+  },
+  {
+   "text": "garde",
+   "key": "garde",
+   "start": 19.24,
+   "end": 19.52
+  },
+  {
+   "text": "3,22 €.",
+   "key": "322",
+   "start": 19.52,
+   "end": 20.4
+  },
+  {
+   "text": "Le",
+   "key": "le",
+   "start": 20.54,
+   "end": 20.64
+  },
+  {
+   "text": "distributeur,",
+   "key": "distributeur",
+   "start": 20.64,
+   "end": 21.26
+  },
+  {
+   "text": "2,96 €…",
+   "key": "296",
+   "start": 21.26,
+   "end": 22.3
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 22.72,
+   "end": 22.84
+  },
+  {
+   "text": "avec",
+   "key": "avec",
+   "start": 22.84,
+   "end": 22.94
+  },
+  {
+   "text": "ça,",
+   "key": "ca",
+   "start": 22.94,
+   "end": 23.18
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 23.36,
+   "end": 23.4
+  },
+  {
+   "text": "doit",
+   "key": "doit",
+   "start": 23.4,
+   "end": 23.54
+  },
+  {
+   "text": "encore",
+   "key": "encore",
+   "start": 23.54,
+   "end": 23.9
+  },
+  {
+   "text": "payer",
+   "key": "payer",
+   "start": 23.9,
+   "end": 24.16
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 24.16,
+   "end": 24.36
+  },
+  {
+   "text": "pub",
+   "key": "pub",
+   "start": 24.36,
+   "end": 24.48
+  },
+  {
+   "text": "du",
+   "key": "du",
+   "start": 24.48,
+   "end": 24.64
+  },
+  {
+   "text": "film",
+   "key": "film",
+   "start": 24.64,
+   "end": 24.94
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 24.94,
+   "end": 25.12
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 25.12,
+   "end": 25.22
+  },
+  {
+   "text": "producteur.",
+   "key": "producteur",
+   "start": 25.22,
+   "end": 25.62
+  },
+  {
+   "text": "Le",
+   "key": "le",
+   "start": 25.8,
+   "end": 25.94
+  },
+  {
+   "text": "plus",
+   "key": "plus",
+   "start": 25.94,
+   "end": 26.08
+  },
+  {
+   "text": "fou ?",
+   "key": "fou",
+   "start": 26.08,
+   "end": 26.24
+  },
+  {
+   "text": "Tes",
+   "key": "tes",
+   "start": 26.42,
+   "end": 26.5
+  },
+  {
+   "text": "75",
+   "key": "75",
+   "start": 26.5,
+   "end": 26.88
+  },
+  {
+   "text": "centimes",
+   "key": "centimes",
+   "start": 26.88,
+   "end": 27.28
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 27.28,
+   "end": 27.42
+  },
+  {
+   "text": "taxe",
+   "key": "taxe",
+   "start": 27.42,
+   "end": 27.76
+  },
+  {
+   "text": "aident",
+   "key": "aident",
+   "start": 27.76,
+   "end": 27.94
+  },
+  {
+   "text": "à",
+   "key": "a",
+   "start": 27.94,
+   "end": 28.02
+  },
+  {
+   "text": "financer",
+   "key": "financer",
+   "start": 28.02,
+   "end": 28.36
+  },
+  {
+   "text": "les",
+   "key": "les",
+   "start": 28.36,
+   "end": 28.48
+  },
+  {
+   "text": "films",
+   "key": "films",
+   "start": 28.48,
+   "end": 28.64
+  },
+  {
+   "text": "français…",
+   "key": "francais",
+   "start": 28.64,
+   "end": 29.0
+  },
+  {
+   "text": "même",
+   "key": "meme",
+   "start": 29.0,
+   "end": 29.52
+  },
+  {
+   "text": "si",
+   "key": "si",
+   "start": 29.52,
+   "end": 29.78
+  },
+  {
+   "text": "tu",
+   "key": "tu",
+   "start": 29.78,
+   "end": 29.86
+  },
+  {
+   "text": "es",
+   "key": "es",
+   "start": 29.86,
+   "end": 29.94
+  },
+  {
+   "text": "allé",
+   "key": "alle",
+   "start": 29.94,
+   "end": 30.06
+  },
+  {
+   "text": "voir",
+   "key": "voir",
+   "start": 30.06,
+   "end": 30.16
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 30.16,
+   "end": 30.3
+  },
+  {
+   "text": "blockbuster",
+   "key": "blockbuster",
+   "start": 30.3,
+   "end": 30.64
+  },
+  {
+   "text": "américain !",
+   "key": "americain",
+   "start": 30.64,
+   "end": 31.12
+  },
+  {
+   "text": "Et",
+   "key": "et",
+   "start": 31.3,
+   "end": 31.34
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 31.34,
+   "end": 31.4
+  },
+  {
+   "text": "pop-corn ?",
+   "key": "popcorn",
+   "start": 31.4,
+   "end": 31.62
+  },
+  {
+   "text": "Lui,",
+   "key": "lui",
+   "start": 32.02,
+   "end": 32.24
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 32.5,
+   "end": 32.58
+  },
+  {
+   "text": "ne",
+   "key": "ne",
+   "start": 32.58,
+   "end": 32.68
+  },
+  {
+   "text": "se",
+   "key": "se",
+   "start": 32.68,
+   "end": 32.8
+  },
+  {
+   "text": "partage",
+   "key": "partage",
+   "start": 32.8,
+   "end": 33.18
+  },
+  {
+   "text": "pas :",
+   "key": "pas",
+   "start": 33.18,
+   "end": 33.32
+  },
+  {
+   "text": "tout",
+   "key": "tout",
+   "start": 33.52,
+   "end": 33.64
+  },
+  {
+   "text": "va",
+   "key": "va",
+   "start": 33.64,
+   "end": 33.86
+  },
+  {
+   "text": "à",
+   "key": "a",
+   "start": 33.86,
+   "end": 33.96
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 33.96,
+   "end": 34.02
+  },
+  {
+   "text": "salle.",
+   "key": "salle",
+   "start": 34.02,
+   "end": 34.3
+  },
+  {
+   "text": "Abonne-toi",
+   "key": "abonnetoi",
+   "start": 34.48,
+   "end": 34.86
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 34.86,
+   "end": 35.02
+  },
+  {
+   "text": "savoir",
+   "key": "savoir",
+   "start": 35.02,
+   "end": 35.2
+  },
+  {
+   "text": "combien",
+   "key": "combien",
+   "start": 35.2,
+   "end": 35.42
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 35.42,
+   "end": 35.64
+  },
+  {
+   "text": "coûte",
+   "key": "coute",
+   "start": 35.64,
+   "end": 35.84
+  },
+  {
+   "text": "vraiment.",
+   "key": "vraiment",
+   "start": 35.84,
+   "end": 36.18
+  }
+ ]
+}

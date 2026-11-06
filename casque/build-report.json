@@ -1,0 +1,1003 @@
+{
+ "cues": {
+  "silence": 0.42,
+  "ajoute": 1.5,
+  "bruit": 2.04,
+  "antibruit": 3.58,
+  "comment": 4.3,
+  "micro": 5.44,
+  "ecoute": 6.62,
+  "moteur1": 8.2,
+  "metro": 9.24,
+  "puce": 10.6,
+  "dessine": 10.96,
+  "londe": 11.4,
+  "quand1": 12.28,
+  "monte1": 12.64,
+  "descend1": 13.26,
+  "joue": 16.48,
+  "sadditionnent": 19.32,
+  "sannulent": 20.2,
+  "deuxieme": 23.34,
+  "reste": 25.52,
+  "corrige": 26.04,
+  "fou": 27.26,
+  "graves": 28.84,
+  "reguliers": 29.34,
+  "voix": 31.08,
+  "passent": 32.62,
+  "voisin": 34.38,
+  "lidee": 34.94,
+  "y1936": 36.16,
+  "lenvers": 39.38,
+  "abonne": 40.0,
+  "vraiment": 41.34,
+  "e1": 4.74,
+  "e2": 9.88,
+  "e3": 15.14,
+  "e4": 21.58,
+  "bruit1": 7.2,
+  "descend2": 13.98,
+  "monte2": 14.62,
+  "silence2": 20.82,
+  "micro2": 23.68,
+  "ecoute2": 25.02,
+  "moteur": 30.14,
+  "silenceC": 37.52,
+  "bruitC": 38.8,
+  "voEnd": 41.693673000000004,
+  "end": 44.69
+ },
+ "sfx": [
+  [
+   "impact-bass-1",
+   1.481,
+   0.9,
+   0.3
+  ],
+  [
+   "stamp",
+   3.589,
+   0.7,
+   0.4
+  ],
+  [
+   "whoosh-short",
+   4.001,
+   0.575,
+   0.22
+  ],
+  [
+   "click-soft",
+   4.722,
+   0.366,
+   0.16
+  ],
+  [
+   "click-soft",
+   9.862,
+   0.366,
+   0.16
+  ],
+  [
+   "click-soft",
+   15.122,
+   0.366,
+   0.16
+  ],
+  [
+   "click-soft",
+   21.562,
+   0.366,
+   0.16
+  ],
+  [
+   "pop",
+   5.308,
+   0.72,
+   0.22
+  ],
+  [
+   "whoosh",
+   20.001,
+   0.575,
+   0.16
+  ],
+  [
+   "ticker",
+   34.827,
+   1.0,
+   0.2
+  ],
+  [
+   "stamp2",
+   39.344,
+   0.7,
+   0.42
+  ],
+  [
+   "pop",
+   40.218,
+   0.72,
+   0.28
+  ]
+ ],
+ "tokens": [
+  {
+   "text": "Pour",
+   "key": "pour",
+   "start": 0.0,
+   "end": 0.12
+  },
+  {
+   "text": "faire",
+   "key": "faire",
+   "start": 0.12,
+   "end": 0.3
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 0.3,
+   "end": 0.42
+  },
+  {
+   "text": "silence,",
+   "key": "silence",
+   "start": 0.42,
+   "end": 0.66
+  },
+  {
+   "text": "ton",
+   "key": "ton",
+   "start": 1.02,
+   "end": 1.14
+  },
+  {
+   "text": "casque",
+   "key": "casque",
+   "start": 1.14,
+   "end": 1.5
+  },
+  {
+   "text": "AJOUTE",
+   "key": "ajoute",
+   "start": 1.5,
+   "end": 1.84
+  },
+  {
+   "text": "du",
+   "key": "du",
+   "start": 1.84,
+   "end": 2.04
+  },
+  {
+   "text": "bruit !",
+   "key": "bruit",
+   "start": 2.04,
+   "end": 2.26
+  },
+  {
+   "text": "Oui :",
+   "key": "oui",
+   "start": 2.48,
+   "end": 2.64
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 2.94,
+   "end": 3.04
+  },
+  {
+   "text": "fabrique",
+   "key": "fabrique",
+   "start": 3.04,
+   "end": 3.42
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 3.42,
+   "end": 3.58
+  },
+  {
+   "text": "anti-bruit.",
+   "key": "antibruit",
+   "start": 3.58,
+   "end": 4.12
+  },
+  {
+   "text": "Comment ?",
+   "key": "comment",
+   "start": 4.3,
+   "end": 4.74
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 4.74,
+   "end": 5.0
+  },
+  {
+   "text": "1 :",
+   "key": "1",
+   "start": 5.0,
+   "end": 5.16
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 5.4,
+   "end": 5.44
+  },
+  {
+   "text": "micro,",
+   "key": "micro",
+   "start": 5.44,
+   "end": 5.7
+  },
+  {
+   "text": "sur",
+   "key": "sur",
+   "start": 5.7,
+   "end": 6.1
+  },
+  {
+   "text": "l'écouteur,",
+   "key": "lecouteur",
+   "start": 6.1,
+   "end": 6.62
+  },
+  {
+   "text": "écoute",
+   "key": "ecoute",
+   "start": 6.62,
+   "end": 7.04
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 7.04,
+   "end": 7.2
+  },
+  {
+   "text": "bruit",
+   "key": "bruit",
+   "start": 7.2,
+   "end": 7.4
+  },
+  {
+   "text": "autour",
+   "key": "autour",
+   "start": 7.4,
+   "end": 7.58
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 7.58,
+   "end": 7.72
+  },
+  {
+   "text": "toi.",
+   "key": "toi",
+   "start": 7.72,
+   "end": 7.88
+  },
+  {
+   "text": "Le",
+   "key": "le",
+   "start": 8.12,
+   "end": 8.2
+  },
+  {
+   "text": "moteur",
+   "key": "moteur",
+   "start": 8.2,
+   "end": 8.44
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 8.44,
+   "end": 8.52
+  },
+  {
+   "text": "l'avion,",
+   "key": "lavion",
+   "start": 8.52,
+   "end": 8.84
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 9.18,
+   "end": 9.24
+  },
+  {
+   "text": "métro.",
+   "key": "metro",
+   "start": 9.24,
+   "end": 9.5
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 9.88,
+   "end": 10.12
+  },
+  {
+   "text": "2 :",
+   "key": "2",
+   "start": 10.12,
+   "end": 10.3
+  },
+  {
+   "text": "une",
+   "key": "une",
+   "start": 10.46,
+   "end": 10.6
+  },
+  {
+   "text": "puce",
+   "key": "puce",
+   "start": 10.6,
+   "end": 10.96
+  },
+  {
+   "text": "dessine",
+   "key": "dessine",
+   "start": 10.96,
+   "end": 11.4
+  },
+  {
+   "text": "l'onde",
+   "key": "londe",
+   "start": 11.4,
+   "end": 11.64
+  },
+  {
+   "text": "inverse.",
+   "key": "inverse",
+   "start": 11.64,
+   "end": 11.96
+  },
+  {
+   "text": "Quand",
+   "key": "quand",
+   "start": 12.28,
+   "end": 12.36
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 12.36,
+   "end": 12.5
+  },
+  {
+   "text": "bruit",
+   "key": "bruit",
+   "start": 12.5,
+   "end": 12.64
+  },
+  {
+   "text": "monte,",
+   "key": "monte",
+   "start": 12.64,
+   "end": 12.92
+  },
+  {
+   "text": "elle",
+   "key": "elle",
+   "start": 13.2,
+   "end": 13.26
+  },
+  {
+   "text": "descend.",
+   "key": "descend",
+   "start": 13.26,
+   "end": 13.54
+  },
+  {
+   "text": "Quand",
+   "key": "quand",
+   "start": 13.74,
+   "end": 13.82
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 13.82,
+   "end": 13.98
+  },
+  {
+   "text": "descend,",
+   "key": "descend",
+   "start": 13.98,
+   "end": 14.24
+  },
+  {
+   "text": "elle",
+   "key": "elle",
+   "start": 14.56,
+   "end": 14.62
+  },
+  {
+   "text": "monte.",
+   "key": "monte",
+   "start": 14.62,
+   "end": 14.84
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 15.14,
+   "end": 15.4
+  },
+  {
+   "text": "3 :",
+   "key": "3",
+   "start": 15.4,
+   "end": 15.58
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 15.92,
+   "end": 15.92
+  },
+  {
+   "text": "haut-parleur",
+   "key": "hautparleur",
+   "start": 15.92,
+   "end": 16.48
+  },
+  {
+   "text": "joue",
+   "key": "joue",
+   "start": 16.48,
+   "end": 16.74
+  },
+  {
+   "text": "cet",
+   "key": "cet",
+   "start": 16.74,
+   "end": 16.92
+  },
+  {
+   "text": "anti-bruit",
+   "key": "antibruit",
+   "start": 16.92,
+   "end": 17.34
+  },
+  {
+   "text": "en",
+   "key": "en",
+   "start": 17.34,
+   "end": 17.54
+  },
+  {
+   "text": "même",
+   "key": "meme",
+   "start": 17.54,
+   "end": 17.78
+  },
+  {
+   "text": "temps",
+   "key": "temps",
+   "start": 17.78,
+   "end": 17.98
+  },
+  {
+   "text": "que",
+   "key": "que",
+   "start": 17.98,
+   "end": 18.06
+  },
+  {
+   "text": "ta",
+   "key": "ta",
+   "start": 18.06,
+   "end": 18.16
+  },
+  {
+   "text": "musique.",
+   "key": "musique",
+   "start": 18.16,
+   "end": 18.4
+  },
+  {
+   "text": "Les",
+   "key": "les",
+   "start": 18.82,
+   "end": 18.92
+  },
+  {
+   "text": "deux",
+   "key": "deux",
+   "start": 18.92,
+   "end": 19.12
+  },
+  {
+   "text": "ondes",
+   "key": "ondes",
+   "start": 19.12,
+   "end": 19.32
+  },
+  {
+   "text": "s'additionnent…",
+   "key": "sadditionnent",
+   "start": 19.32,
+   "end": 19.94
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 19.94,
+   "end": 20.2
+  },
+  {
+   "text": "s'annulent.",
+   "key": "sannulent",
+   "start": 20.2,
+   "end": 20.52
+  },
+  {
+   "text": "Silence.",
+   "key": "silence",
+   "start": 20.82,
+   "end": 21.04
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 21.58,
+   "end": 21.78
+  },
+  {
+   "text": "4 :",
+   "key": "4",
+   "start": 21.78,
+   "end": 21.98
+  },
+  {
+   "text": "sur",
+   "key": "sur",
+   "start": 22.34,
+   "end": 22.46
+  },
+  {
+   "text": "beaucoup",
+   "key": "beaucoup",
+   "start": 22.46,
+   "end": 22.7
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 22.7,
+   "end": 22.84
+  },
+  {
+   "text": "casques,",
+   "key": "casques",
+   "start": 22.84,
+   "end": 23.14
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 23.24,
+   "end": 23.34
+  },
+  {
+   "text": "deuxième",
+   "key": "deuxieme",
+   "start": 23.34,
+   "end": 23.68
+  },
+  {
+   "text": "micro,",
+   "key": "micro",
+   "start": 23.68,
+   "end": 24.08
+  },
+  {
+   "text": "côté",
+   "key": "cote",
+   "start": 24.28,
+   "end": 24.4
+  },
+  {
+   "text": "oreille,",
+   "key": "oreille",
+   "start": 24.4,
+   "end": 24.8
+  },
+  {
+   "text": "écoute",
+   "key": "ecoute",
+   "start": 25.02,
+   "end": 25.26
+  },
+  {
+   "text": "ce",
+   "key": "ce",
+   "start": 25.26,
+   "end": 25.4
+  },
+  {
+   "text": "qui",
+   "key": "qui",
+   "start": 25.4,
+   "end": 25.52
+  },
+  {
+   "text": "reste",
+   "key": "reste",
+   "start": 25.52,
+   "end": 25.8
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 25.8,
+   "end": 26.04
+  },
+  {
+   "text": "corrige",
+   "key": "corrige",
+   "start": 26.04,
+   "end": 26.36
+  },
+  {
+   "text": "en",
+   "key": "en",
+   "start": 26.36,
+   "end": 26.46
+  },
+  {
+   "text": "continu.",
+   "key": "continu",
+   "start": 26.46,
+   "end": 26.74
+  },
+  {
+   "text": "Le",
+   "key": "le",
+   "start": 27.0,
+   "end": 27.12
+  },
+  {
+   "text": "plus",
+   "key": "plus",
+   "start": 27.12,
+   "end": 27.26
+  },
+  {
+   "text": "fou ?",
+   "key": "fou",
+   "start": 27.26,
+   "end": 27.42
+  },
+  {
+   "text": "Ça",
+   "key": "ca",
+   "start": 27.64,
+   "end": 27.78
+  },
+  {
+   "text": "marche",
+   "key": "marche",
+   "start": 27.78,
+   "end": 28.0
+  },
+  {
+   "text": "surtout",
+   "key": "surtout",
+   "start": 28.0,
+   "end": 28.38
+  },
+  {
+   "text": "sur",
+   "key": "sur",
+   "start": 28.38,
+   "end": 28.6
+  },
+  {
+   "text": "les",
+   "key": "les",
+   "start": 28.6,
+   "end": 28.7
+  },
+  {
+   "text": "sons",
+   "key": "sons",
+   "start": 28.7,
+   "end": 28.84
+  },
+  {
+   "text": "graves",
+   "key": "graves",
+   "start": 28.84,
+   "end": 29.14
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 29.14,
+   "end": 29.34
+  },
+  {
+   "text": "réguliers,",
+   "key": "reguliers",
+   "start": 29.34,
+   "end": 29.74
+  },
+  {
+   "text": "comme",
+   "key": "comme",
+   "start": 29.74,
+   "end": 30.02
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 30.02,
+   "end": 30.14
+  },
+  {
+   "text": "moteur.",
+   "key": "moteur",
+   "start": 30.14,
+   "end": 30.54
+  },
+  {
+   "text": "Les",
+   "key": "les",
+   "start": 30.9,
+   "end": 31.08
+  },
+  {
+   "text": "voix,",
+   "key": "voix",
+   "start": 31.08,
+   "end": 31.3
+  },
+  {
+   "text": "plus",
+   "key": "plus",
+   "start": 31.3,
+   "end": 31.62
+  },
+  {
+   "text": "aiguës",
+   "key": "aigues",
+   "start": 31.62,
+   "end": 31.94
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 31.94,
+   "end": 32.06
+  },
+  {
+   "text": "imprévisibles,",
+   "key": "imprevisibles",
+   "start": 32.06,
+   "end": 32.62
+  },
+  {
+   "text": "passent",
+   "key": "passent",
+   "start": 32.62,
+   "end": 32.94
+  },
+  {
+   "text": "mieux :",
+   "key": "mieux",
+   "start": 32.94,
+   "end": 33.06
+  },
+  {
+   "text": "c'est",
+   "key": "cest",
+   "start": 33.32,
+   "end": 33.42
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 33.42,
+   "end": 33.54
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 33.54,
+   "end": 33.72
+  },
+  {
+   "text": "que",
+   "key": "que",
+   "start": 33.72,
+   "end": 33.78
+  },
+  {
+   "text": "tu",
+   "key": "tu",
+   "start": 33.78,
+   "end": 33.86
+  },
+  {
+   "text": "entends",
+   "key": "entends",
+   "start": 33.86,
+   "end": 34.08
+  },
+  {
+   "text": "encore",
+   "key": "encore",
+   "start": 34.08,
+   "end": 34.2
+  },
+  {
+   "text": "ton",
+   "key": "ton",
+   "start": 34.2,
+   "end": 34.38
+  },
+  {
+   "text": "voisin !",
+   "key": "voisin",
+   "start": 34.38,
+   "end": 34.72
+  },
+  {
+   "text": "Et",
+   "key": "et",
+   "start": 34.88,
+   "end": 34.94
+  },
+  {
+   "text": "l'idée",
+   "key": "lidee",
+   "start": 34.94,
+   "end": 35.24
+  },
+  {
+   "text": "a",
+   "key": "a",
+   "start": 35.24,
+   "end": 35.42
+  },
+  {
+   "text": "été",
+   "key": "ete",
+   "start": 35.42,
+   "end": 35.56
+  },
+  {
+   "text": "brevetée",
+   "key": "brevetee",
+   "start": 35.56,
+   "end": 36.0
+  },
+  {
+   "text": "en",
+   "key": "en",
+   "start": 36.0,
+   "end": 36.16
+  },
+  {
+   "text": "1936.",
+   "key": "1936",
+   "start": 36.16,
+   "end": 37.02
+  },
+  {
+   "text": "Le",
+   "key": "le",
+   "start": 37.4,
+   "end": 37.52
+  },
+  {
+   "text": "silence",
+   "key": "silence",
+   "start": 37.52,
+   "end": 37.74
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 37.74,
+   "end": 37.9
+  },
+  {
+   "text": "ton",
+   "key": "ton",
+   "start": 37.9,
+   "end": 38.0
+  },
+  {
+   "text": "casque ?",
+   "key": "casque",
+   "start": 38.0,
+   "end": 38.38
+  },
+  {
+   "text": "C'est",
+   "key": "cest",
+   "start": 38.48,
+   "end": 38.7
+  },
+  {
+   "text": "du",
+   "key": "du",
+   "start": 38.7,
+   "end": 38.8
+  },
+  {
+   "text": "bruit…",
+   "key": "bruit",
+   "start": 38.8,
+   "end": 39.12
+  },
+  {
+   "text": "à",
+   "key": "a",
+   "start": 39.12,
+   "end": 39.38
+  },
+  {
+   "text": "l'envers.",
+   "key": "lenvers",
+   "start": 39.38,
+   "end": 39.7
+  },
+  {
+   "text": "Abonne-toi",
+   "key": "abonnetoi",
+   "start": 40.0,
+   "end": 40.42
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 40.42,
+   "end": 40.6
+  },
+  {
+   "text": "savoir",
+   "key": "savoir",
+   "start": 40.6,
+   "end": 40.78
+  },
+  {
+   "text": "comment",
+   "key": "comment",
+   "start": 40.78,
+   "end": 41.02
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 41.02,
+   "end": 41.18
+  },
+  {
+   "text": "marche",
+   "key": "marche",
+   "start": 41.18,
+   "end": 41.34
+  },
+  {
+   "text": "vraiment.",
+   "key": "vraiment",
+   "start": 41.34,
+   "end": 41.58
+  }
+ ]
+}

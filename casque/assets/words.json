@@ -1,0 +1,802 @@
+[
+{
+"text": "Pour",
+"start": 0.0,
+"end": 0.12
+},
+{
+"text": "faire",
+"start": 0.12,
+"end": 0.3
+},
+{
+"text": "le",
+"start": 0.3,
+"end": 0.42
+},
+{
+"text": "silence,",
+"start": 0.42,
+"end": 0.66
+},
+{
+"text": "ton",
+"start": 1.02,
+"end": 1.14
+},
+{
+"text": "casque",
+"start": 1.14,
+"end": 1.5
+},
+{
+"text": "ajoute",
+"start": 1.5,
+"end": 1.84
+},
+{
+"text": "du",
+"start": 1.84,
+"end": 2.04
+},
+{
+"text": "bruit.",
+"start": 2.04,
+"end": 2.26
+},
+{
+"text": "Oui,",
+"start": 2.48,
+"end": 2.64
+},
+{
+"text": "il",
+"start": 2.94,
+"end": 3.04
+},
+{
+"text": "fabrique",
+"start": 3.04,
+"end": 3.42
+},
+{
+"text": "un",
+"start": 3.42,
+"end": 3.58
+},
+{
+"text": "anti",
+"start": 3.58,
+"end": 3.88
+},
+{
+"text": "-bruit.",
+"start": 3.88,
+"end": 4.12
+},
+{
+"text": "Comment",
+"start": 4.3,
+"end": 4.44
+},
+{
+"text": "?",
+"start": 4.44,
+"end": 4.74
+},
+{
+"text": "Étape",
+"start": 4.74,
+"end": 5.0
+},
+{
+"text": "1.",
+"start": 5.0,
+"end": 5.16
+},
+{
+"text": "Un",
+"start": 5.4,
+"end": 5.44
+},
+{
+"text": "micro",
+"start": 5.44,
+"end": 5.7
+},
+{
+"text": "sur",
+"start": 5.7,
+"end": 6.1
+},
+{
+"text": "l",
+"start": 6.1,
+"end": 6.2
+},
+{
+"text": "'écouteur",
+"start": 6.2,
+"end": 6.62
+},
+{
+"text": "écoute",
+"start": 6.62,
+"end": 7.04
+},
+{
+"text": "le",
+"start": 7.04,
+"end": 7.2
+},
+{
+"text": "bruit",
+"start": 7.2,
+"end": 7.4
+},
+{
+"text": "autour",
+"start": 7.4,
+"end": 7.58
+},
+{
+"text": "de",
+"start": 7.58,
+"end": 7.72
+},
+{
+"text": "toi.",
+"start": 7.72,
+"end": 7.88
+},
+{
+"text": "Le",
+"start": 8.12,
+"end": 8.2
+},
+{
+"text": "moteur",
+"start": 8.2,
+"end": 8.44
+},
+{
+"text": "de",
+"start": 8.44,
+"end": 8.52
+},
+{
+"text": "l",
+"start": 8.52,
+"end": 8.62
+},
+{
+"text": "'avion,",
+"start": 8.62,
+"end": 8.84
+},
+{
+"text": "le",
+"start": 9.18,
+"end": 9.24
+},
+{
+"text": "métro.",
+"start": 9.24,
+"end": 9.5
+},
+{
+"text": "Étape",
+"start": 9.88,
+"end": 10.12
+},
+{
+"text": "2.",
+"start": 10.12,
+"end": 10.3
+},
+{
+"text": "Une",
+"start": 10.46,
+"end": 10.6
+},
+{
+"text": "puce",
+"start": 10.6,
+"end": 10.96
+},
+{
+"text": "dessine",
+"start": 10.96,
+"end": 11.4
+},
+{
+"text": "long",
+"start": 11.4,
+"end": 11.6
+},
+{
+"text": "d",
+"start": 11.6,
+"end": 11.7
+},
+{
+"text": "'inverse.",
+"start": 11.7,
+"end": 11.96
+},
+{
+"text": "Quand",
+"start": 12.28,
+"end": 12.36
+},
+{
+"text": "le",
+"start": 12.36,
+"end": 12.5
+},
+{
+"text": "bruit",
+"start": 12.5,
+"end": 12.64
+},
+{
+"text": "monte,",
+"start": 12.64,
+"end": 12.92
+},
+{
+"text": "elle",
+"start": 13.2,
+"end": 13.26
+},
+{
+"text": "descend.",
+"start": 13.26,
+"end": 13.54
+},
+{
+"text": "Quand",
+"start": 13.74,
+"end": 13.82
+},
+{
+"text": "il",
+"start": 13.82,
+"end": 13.98
+},
+{
+"text": "descend,",
+"start": 13.98,
+"end": 14.24
+},
+{
+"text": "elle",
+"start": 14.56,
+"end": 14.62
+},
+{
+"text": "monte.",
+"start": 14.62,
+"end": 14.84
+},
+{
+"text": "Étape",
+"start": 15.14,
+"end": 15.4
+},
+{
+"text": "3.",
+"start": 15.4,
+"end": 15.58
+},
+{
+"text": "Le",
+"start": 15.92,
+"end": 15.92
+},
+{
+"text": "haut",
+"start": 15.92,
+"end": 16.14
+},
+{
+"text": "-parleur",
+"start": 16.14,
+"end": 16.48
+},
+{
+"text": "joue",
+"start": 16.48,
+"end": 16.74
+},
+{
+"text": "cet",
+"start": 16.74,
+"end": 16.92
+},
+{
+"text": "anti",
+"start": 16.92,
+"end": 17.1
+},
+{
+"text": "-bruit",
+"start": 17.1,
+"end": 17.34
+},
+{
+"text": "en",
+"start": 17.34,
+"end": 17.54
+},
+{
+"text": "même",
+"start": 17.54,
+"end": 17.78
+},
+{
+"text": "temps",
+"start": 17.78,
+"end": 17.98
+},
+{
+"text": "que",
+"start": 17.98,
+"end": 18.06
+},
+{
+"text": "ta",
+"start": 18.06,
+"end": 18.16
+},
+{
+"text": "musique.",
+"start": 18.16,
+"end": 18.4
+},
+{
+"text": "Les",
+"start": 18.82,
+"end": 18.92
+},
+{
+"text": "deux",
+"start": 18.92,
+"end": 19.12
+},
+{
+"text": "ondes",
+"start": 19.12,
+"end": 19.32
+},
+{
+"text": "s",
+"start": 19.32,
+"end": 19.44
+},
+{
+"text": "'additionnent",
+"start": 19.44,
+"end": 19.94
+},
+{
+"text": "et",
+"start": 19.94,
+"end": 20.2
+},
+{
+"text": "s",
+"start": 20.2,
+"end": 20.34
+},
+{
+"text": "'annulent.",
+"start": 20.34,
+"end": 20.52
+},
+{
+"text": "Silence.",
+"start": 20.82,
+"end": 21.04
+},
+{
+"text": "Étape",
+"start": 21.58,
+"end": 21.78
+},
+{
+"text": "4.",
+"start": 21.78,
+"end": 21.98
+},
+{
+"text": "Sur",
+"start": 22.34,
+"end": 22.46
+},
+{
+"text": "beaucoup",
+"start": 22.46,
+"end": 22.7
+},
+{
+"text": "de",
+"start": 22.7,
+"end": 22.84
+},
+{
+"text": "casques,",
+"start": 22.84,
+"end": 23.14
+},
+{
+"text": "un",
+"start": 23.24,
+"end": 23.34
+},
+{
+"text": "deuxième",
+"start": 23.34,
+"end": 23.68
+},
+{
+"text": "micro,",
+"start": 23.68,
+"end": 24.08
+},
+{
+"text": "côté",
+"start": 24.28,
+"end": 24.4
+},
+{
+"text": "oreille,",
+"start": 24.4,
+"end": 24.8
+},
+{
+"text": "écoute",
+"start": 25.02,
+"end": 25.26
+},
+{
+"text": "ce",
+"start": 25.26,
+"end": 25.4
+},
+{
+"text": "qui",
+"start": 25.4,
+"end": 25.52
+},
+{
+"text": "reste",
+"start": 25.52,
+"end": 25.8
+},
+{
+"text": "et",
+"start": 25.8,
+"end": 26.04
+},
+{
+"text": "corrige",
+"start": 26.04,
+"end": 26.36
+},
+{
+"text": "en",
+"start": 26.36,
+"end": 26.46
+},
+{
+"text": "continu.",
+"start": 26.46,
+"end": 26.74
+},
+{
+"text": "Le",
+"start": 27.0,
+"end": 27.12
+},
+{
+"text": "plus",
+"start": 27.12,
+"end": 27.26
+},
+{
+"text": "fou,",
+"start": 27.26,
+"end": 27.42
+},
+{
+"text": "ça",
+"start": 27.64,
+"end": 27.78
+},
+{
+"text": "marche",
+"start": 27.78,
+"end": 28.0
+},
+{
+"text": "surtout",
+"start": 28.0,
+"end": 28.38
+},
+{
+"text": "sur",
+"start": 28.38,
+"end": 28.6
+},
+{
+"text": "les",
+"start": 28.6,
+"end": 28.7
+},
+{
+"text": "sons",
+"start": 28.7,
+"end": 28.84
+},
+{
+"text": "graves",
+"start": 28.84,
+"end": 29.14
+},
+{
+"text": "et",
+"start": 29.14,
+"end": 29.34
+},
+{
+"text": "réguliers.",
+"start": 29.34,
+"end": 29.74
+},
+{
+"text": "Comme",
+"start": 29.74,
+"end": 30.02
+},
+{
+"text": "un",
+"start": 30.02,
+"end": 30.14
+},
+{
+"text": "moteur.",
+"start": 30.14,
+"end": 30.54
+},
+{
+"text": "Les",
+"start": 30.9,
+"end": 31.08
+},
+{
+"text": "voix",
+"start": 31.08,
+"end": 31.3
+},
+{
+"text": "plus",
+"start": 31.3,
+"end": 31.62
+},
+{
+"text": "aigus",
+"start": 31.62,
+"end": 31.94
+},
+{
+"text": "et",
+"start": 31.94,
+"end": 32.06
+},
+{
+"text": "imprévisibles",
+"start": 32.06,
+"end": 32.62
+},
+{
+"text": "passent",
+"start": 32.62,
+"end": 32.94
+},
+{
+"text": "mieux.",
+"start": 32.94,
+"end": 33.06
+},
+{
+"text": "C",
+"start": 33.32,
+"end": 33.34
+},
+{
+"text": "'est",
+"start": 33.34,
+"end": 33.42
+},
+{
+"text": "pour",
+"start": 33.42,
+"end": 33.54
+},
+{
+"text": "ça",
+"start": 33.54,
+"end": 33.72
+},
+{
+"text": "que",
+"start": 33.72,
+"end": 33.78
+},
+{
+"text": "tu",
+"start": 33.78,
+"end": 33.86
+},
+{
+"text": "entends",
+"start": 33.86,
+"end": 34.08
+},
+{
+"text": "encore",
+"start": 34.08,
+"end": 34.2
+},
+{
+"text": "ton",
+"start": 34.2,
+"end": 34.38
+},
+{
+"text": "voisin.",
+"start": 34.38,
+"end": 34.72
+},
+{
+"text": "Et",
+"start": 34.88,
+"end": 34.94
+},
+{
+"text": "l",
+"start": 34.94,
+"end": 35.04
+},
+{
+"text": "'idée",
+"start": 35.04,
+"end": 35.24
+},
+{
+"text": "a",
+"start": 35.24,
+"end": 35.42
+},
+{
+"text": "été",
+"start": 35.42,
+"end": 35.56
+},
+{
+"text": "brevetée",
+"start": 35.56,
+"end": 36.0
+},
+{
+"text": "en",
+"start": 36.0,
+"end": 36.16
+},
+{
+"text": "1936.",
+"start": 36.16,
+"end": 37.02
+},
+{
+"text": "Le",
+"start": 37.4,
+"end": 37.52
+},
+{
+"text": "silence",
+"start": 37.52,
+"end": 37.74
+},
+{
+"text": "de",
+"start": 37.74,
+"end": 37.9
+},
+{
+"text": "ton",
+"start": 37.9,
+"end": 38.0
+},
+{
+"text": "casque,",
+"start": 38.0,
+"end": 38.38
+},
+{
+"text": "c",
+"start": 38.48,
+"end": 38.64
+},
+{
+"text": "'est",
+"start": 38.64,
+"end": 38.7
+},
+{
+"text": "du",
+"start": 38.7,
+"end": 38.8
+},
+{
+"text": "bruit",
+"start": 38.8,
+"end": 39.12
+},
+{
+"text": "à",
+"start": 39.12,
+"end": 39.38
+},
+{
+"text": "l",
+"start": 39.38,
+"end": 39.44
+},
+{
+"text": "'envers.",
+"start": 39.44,
+"end": 39.7
+},
+{
+"text": "Abonne",
+"start": 40.0,
+"end": 40.26
+},
+{
+"text": "-toi",
+"start": 40.26,
+"end": 40.42
+},
+{
+"text": "pour",
+"start": 40.42,
+"end": 40.6
+},
+{
+"text": "savoir",
+"start": 40.6,
+"end": 40.78
+},
+{
+"text": "comment",
+"start": 40.78,
+"end": 41.02
+},
+{
+"text": "ça",
+"start": 41.02,
+"end": 41.18
+},
+{
+"text": "marche",
+"start": 41.18,
+"end": 41.34
+},
+{
+"text": "vraiment.",
+"start": 41.34,
+"end": 41.58
+}
+]
