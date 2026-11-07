@@ -1,0 +1,887 @@
+[
+{
+"text": "Quand",
+"start": 0.0,
+"end": 0.12
+},
+{
+"text": "ta",
+"start": 0.12,
+"end": 0.28
+},
+{
+"text": "banque",
+"start": 0.28,
+"end": 0.46
+},
+{
+"text": "te",
+"start": 0.46,
+"end": 0.58
+},
+{
+"text": "prête",
+"start": 0.58,
+"end": 0.78
+},
+{
+"text": "10",
+"start": 0.78,
+"end": 1.02
+},
+{
+"text": "000",
+"start": 1.02,
+"end": 1.14
+},
+{
+"text": "euros,",
+"start": 1.14,
+"end": 1.36
+},
+{
+"text": "elle",
+"start": 1.54,
+"end": 1.62
+},
+{
+"text": "ne",
+"start": 1.62,
+"end": 1.76
+},
+{
+"text": "prend",
+"start": 1.76,
+"end": 1.86
+},
+{
+"text": "pas",
+"start": 1.86,
+"end": 2.1
+},
+{
+"text": "l",
+"start": 2.1,
+"end": 2.22
+},
+{
+"text": "'argent",
+"start": 2.22,
+"end": 2.36
+},
+{
+"text": "des",
+"start": 2.36,
+"end": 2.5
+},
+{
+"text": "autres",
+"start": 2.5,
+"end": 2.66
+},
+{
+"text": "clients",
+"start": 2.66,
+"end": 2.98
+},
+{
+"text": "!",
+"start": 2.98,
+"end": 3.32
+},
+{
+"text": "Elle",
+"start": 3.32,
+"end": 3.5
+},
+{
+"text": "le",
+"start": 3.5,
+"end": 3.72
+},
+{
+"text": "crée",
+"start": 3.72,
+"end": 3.98
+},
+{
+"text": "!",
+"start": 3.98,
+"end": 4.2
+},
+{
+"text": "Comment",
+"start": 4.2,
+"end": 4.38
+},
+{
+"text": "ça",
+"start": 4.38,
+"end": 4.58
+},
+{
+"text": "marche",
+"start": 4.58,
+"end": 4.8
+},
+{
+"text": "vraiment",
+"start": 4.8,
+"end": 5.1
+},
+{
+"text": "?",
+"start": 5.1,
+"end": 5.38
+},
+{
+"text": "Étape",
+"start": 5.38,
+"end": 5.68
+},
+{
+"text": "1.",
+"start": 5.68,
+"end": 5.84
+},
+{
+"text": "Tu",
+"start": 6.06,
+"end": 6.14
+},
+{
+"text": "signes",
+"start": 6.14,
+"end": 6.4
+},
+{
+"text": "ton",
+"start": 6.4,
+"end": 6.5
+},
+{
+"text": "crédit.",
+"start": 6.5,
+"end": 6.84
+},
+{
+"text": "La",
+"start": 7.1,
+"end": 7.2
+},
+{
+"text": "banque",
+"start": 7.2,
+"end": 7.46
+},
+{
+"text": "tape",
+"start": 7.46,
+"end": 7.64
+},
+{
+"text": "10",
+"start": 7.64,
+"end": 7.92
+},
+{
+"text": "000",
+"start": 7.92,
+"end": 8.02
+},
+{
+"text": "euros",
+"start": 8.02,
+"end": 8.2
+},
+{
+"text": "sur",
+"start": 8.2,
+"end": 8.36
+},
+{
+"text": "ton",
+"start": 8.36,
+"end": 8.48
+},
+{
+"text": "compte.",
+"start": 8.48,
+"end": 8.74
+},
+{
+"text": "Ces",
+"start": 8.98,
+"end": 9.12
+},
+{
+"text": "euros",
+"start": 9.12,
+"end": 9.32
+},
+{
+"text": "n",
+"start": 9.32,
+"end": 9.46
+},
+{
+"text": "'existaient",
+"start": 9.46,
+"end": 9.72
+},
+{
+"text": "pas",
+"start": 9.72,
+"end": 9.96
+},
+{
+"text": "une",
+"start": 9.96,
+"end": 10.22
+},
+{
+"text": "seconde",
+"start": 10.22,
+"end": 10.6
+},
+{
+"text": "avant.",
+"start": 10.6,
+"end": 10.74
+},
+{
+"text": "La",
+"start": 10.96,
+"end": 11.06
+},
+{
+"text": "banque",
+"start": 11.06,
+"end": 11.18
+},
+{
+"text": "de",
+"start": 11.18,
+"end": 11.3
+},
+{
+"text": "France",
+"start": 11.3,
+"end": 11.46
+},
+{
+"text": "le",
+"start": 11.46,
+"end": 11.66
+},
+{
+"text": "dit",
+"start": 11.66,
+"end": 11.76
+},
+{
+"text": "elle",
+"start": 11.76,
+"end": 11.96
+},
+{
+"text": "-même.",
+"start": 11.96,
+"end": 12.18
+},
+{
+"text": "Les",
+"start": 12.42,
+"end": 12.52
+},
+{
+"text": "crédits",
+"start": 12.52,
+"end": 12.96
+},
+{
+"text": "font",
+"start": 12.96,
+"end": 13.26
+},
+{
+"text": "les",
+"start": 13.26,
+"end": 13.4
+},
+{
+"text": "dépôts.",
+"start": 13.4,
+"end": 13.8
+},
+{
+"text": "Étape",
+"start": 13.92,
+"end": 14.2
+},
+{
+"text": "2.",
+"start": 14.2,
+"end": 14.34
+},
+{
+"text": "Tu",
+"start": 14.56,
+"end": 14.64
+},
+{
+"text": "achètes",
+"start": 14.64,
+"end": 14.86
+},
+{
+"text": "ta",
+"start": 14.86,
+"end": 15.0
+},
+{
+"text": "voiture.",
+"start": 15.0,
+"end": 15.22
+},
+{
+"text": "L",
+"start": 15.6,
+"end": 15.7
+},
+{
+"text": "'argent",
+"start": 15.7,
+"end": 15.86
+},
+{
+"text": "part",
+"start": 15.86,
+"end": 16.12
+},
+{
+"text": "chez",
+"start": 16.12,
+"end": 16.28
+},
+{
+"text": "le",
+"start": 16.28,
+"end": 16.38
+},
+{
+"text": "vendeur,",
+"start": 16.38,
+"end": 16.76
+},
+{
+"text": "puis",
+"start": 16.96,
+"end": 17.02
+},
+{
+"text": "chez",
+"start": 17.02,
+"end": 17.18
+},
+{
+"text": "ses",
+"start": 17.18,
+"end": 17.3
+},
+{
+"text": "fournisseurs.",
+"start": 17.3,
+"end": 17.8
+},
+{
+"text": "Ils",
+"start": 17.96,
+"end": 18.06
+},
+{
+"text": "circulent.",
+"start": 18.06,
+"end": 18.6
+},
+{
+"text": "Étape",
+"start": 18.76,
+"end": 19.0
+},
+{
+"text": "3.",
+"start": 19.0,
+"end": 19.22
+},
+{
+"text": "Tu",
+"start": 19.52,
+"end": 19.6
+},
+{
+"text": "rembourses.",
+"start": 19.6,
+"end": 20.2
+},
+{
+"text": "Et",
+"start": 20.34,
+"end": 20.44
+},
+{
+"text": "là,",
+"start": 20.44,
+"end": 20.58
+},
+{
+"text": "l",
+"start": 20.76,
+"end": 20.84
+},
+{
+"text": "'argent",
+"start": 20.84,
+"end": 20.98
+},
+{
+"text": "remboursé",
+"start": 20.98,
+"end": 21.52
+},
+{
+"text": "est",
+"start": 21.52,
+"end": 21.72
+},
+{
+"text": "détruit.",
+"start": 21.72,
+"end": 22.28
+},
+{
+"text": "Les",
+"start": 22.56,
+"end": 22.68
+},
+{
+"text": "intérêts,",
+"start": 22.68,
+"end": 23.1
+},
+{
+"text": "eux,",
+"start": 23.12,
+"end": 23.28
+},
+{
+"text": "restent",
+"start": 23.48,
+"end": 23.68
+},
+{
+"text": "à",
+"start": 23.68,
+"end": 23.76
+},
+{
+"text": "la",
+"start": 23.76,
+"end": 23.84
+},
+{
+"text": "banque.",
+"start": 23.84,
+"end": 24.14
+},
+{
+"text": "Mais",
+"start": 24.22,
+"end": 24.4
+},
+{
+"text": "elle",
+"start": 24.4,
+"end": 24.48
+},
+{
+"text": "ne",
+"start": 24.48,
+"end": 24.58
+},
+{
+"text": "peut",
+"start": 24.58,
+"end": 24.68
+},
+{
+"text": "pas",
+"start": 24.68,
+"end": 24.84
+},
+{
+"text": "créer",
+"start": 24.84,
+"end": 25.06
+},
+{
+"text": "à",
+"start": 25.06,
+"end": 25.24
+},
+{
+"text": "l",
+"start": 25.24,
+"end": 25.28
+},
+{
+"text": "'infini.",
+"start": 25.28,
+"end": 25.56
+},
+{
+"text": "Il",
+"start": 25.84,
+"end": 25.94
+},
+{
+"text": "lui",
+"start": 25.94,
+"end": 26.04
+},
+{
+"text": "faut",
+"start": 26.04,
+"end": 26.22
+},
+{
+"text": "des",
+"start": 26.22,
+"end": 26.36
+},
+{
+"text": "fonds",
+"start": 26.36,
+"end": 26.58
+},
+{
+"text": "propres,",
+"start": 26.58,
+"end": 26.92
+},
+{
+"text": "des",
+"start": 27.02,
+"end": 27.1
+},
+{
+"text": "réserves",
+"start": 27.1,
+"end": 27.5
+},
+{
+"text": "à",
+"start": 27.5,
+"end": 27.58
+},
+{
+"text": "la",
+"start": 27.58,
+"end": 27.68
+},
+{
+"text": "banque",
+"start": 27.68,
+"end": 27.82
+},
+{
+"text": "centrale,",
+"start": 27.82,
+"end": 28.26
+},
+{
+"text": "et",
+"start": 28.34,
+"end": 28.46
+},
+{
+"text": "vérifier",
+"start": 28.46,
+"end": 28.84
+},
+{
+"text": "que",
+"start": 28.84,
+"end": 28.98
+},
+{
+"text": "tu",
+"start": 28.98,
+"end": 29.1
+},
+{
+"text": "peux",
+"start": 29.1,
+"end": 29.22
+},
+{
+"text": "rembourser.",
+"start": 29.22,
+"end": 29.68
+},
+{
+"text": "Plus",
+"start": 30.0,
+"end": 30.08
+},
+{
+"text": "fous,",
+"start": 30.08,
+"end": 30.3
+},
+{
+"text": "plus",
+"start": 30.48,
+"end": 30.58
+},
+{
+"text": "de",
+"start": 30.58,
+"end": 30.72
+},
+{
+"text": "90",
+"start": 30.72,
+"end": 31.2
+},
+{
+"text": "%",
+"start": 31.2,
+"end": 31.54
+},
+{
+"text": "des",
+"start": 31.54,
+"end": 31.74
+},
+{
+"text": "euros",
+"start": 31.74,
+"end": 31.96
+},
+{
+"text": "en",
+"start": 31.96,
+"end": 32.1
+},
+{
+"text": "circulation",
+"start": 32.1,
+"end": 32.5
+},
+{
+"text": "ne",
+"start": 32.5,
+"end": 32.76
+},
+{
+"text": "sont",
+"start": 32.76,
+"end": 32.92
+},
+{
+"text": "pas",
+"start": 32.92,
+"end": 33.14
+},
+{
+"text": "débillés.",
+"start": 33.14,
+"end": 33.58
+},
+{
+"text": "Juste",
+"start": 33.78,
+"end": 34.16
+},
+{
+"text": "des",
+"start": 34.16,
+"end": 34.26
+},
+{
+"text": "chiffres",
+"start": 34.26,
+"end": 34.56
+},
+{
+"text": "sur",
+"start": 34.56,
+"end": 34.68
+},
+{
+"text": "des",
+"start": 34.68,
+"end": 34.82
+},
+{
+"text": "comptes.",
+"start": 34.82,
+"end": 35.24
+},
+{
+"text": "Alors",
+"start": 35.24,
+"end": 35.44
+},
+{
+"text": "quand",
+"start": 35.44,
+"end": 35.66
+},
+{
+"text": "la",
+"start": 35.66,
+"end": 35.78
+},
+{
+"text": "BCE",
+"start": 35.78,
+"end": 36.06
+},
+{
+"text": "monte",
+"start": 36.06,
+"end": 36.38
+},
+{
+"text": "ces",
+"start": 36.38,
+"end": 36.56
+},
+{
+"text": "taux,",
+"start": 36.56,
+"end": 36.82
+},
+{
+"text": "ton",
+"start": 36.98,
+"end": 37.04
+},
+{
+"text": "crédit",
+"start": 37.04,
+"end": 37.4
+},
+{
+"text": "coûte",
+"start": 37.4,
+"end": 37.56
+},
+{
+"text": "plus",
+"start": 37.56,
+"end": 37.68
+},
+{
+"text": "cher.",
+"start": 37.68,
+"end": 37.92
+},
+{
+"text": "C",
+"start": 38.18,
+"end": 38.28
+},
+{
+"text": "'est",
+"start": 38.28,
+"end": 38.36
+},
+{
+"text": "fait",
+"start": 38.36,
+"end": 38.46
+},
+{
+"text": "exprès",
+"start": 38.46,
+"end": 38.76
+},
+{
+"text": "pour",
+"start": 38.76,
+"end": 39.04
+},
+{
+"text": "freiner",
+"start": 39.04,
+"end": 39.42
+},
+{
+"text": "la",
+"start": 39.42,
+"end": 39.54
+},
+{
+"text": "création",
+"start": 39.54,
+"end": 39.9
+},
+{
+"text": "d",
+"start": 39.9,
+"end": 39.98
+},
+{
+"text": "'argent.",
+"start": 39.98,
+"end": 40.16
+},
+{
+"text": "Abonne",
+"start": 40.32,
+"end": 40.6
+},
+{
+"text": "-toi",
+"start": 40.6,
+"end": 40.78
+},
+{
+"text": "pour",
+"start": 40.78,
+"end": 40.94
+},
+{
+"text": "savoir",
+"start": 40.94,
+"end": 41.16
+},
+{
+"text": "comment",
+"start": 41.16,
+"end": 41.36
+},
+{
+"text": "ça",
+"start": 41.36,
+"end": 41.54
+},
+{
+"text": "marche",
+"start": 41.54,
+"end": 41.7
+},
+{
+"text": "vraiment",
+"start": 41.7,
+"end": 41.92
+},
+{
+"text": "!",
+"start": 41.92,
+"end": 42.04
+}
+]

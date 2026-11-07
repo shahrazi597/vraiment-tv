@@ -1,0 +1,955 @@
+{
+ "cues": {
+  "n988": 1.6,
+  "mais": 3.58,
+  "touche": 4.2,
+  "seulement": 4.44,
+  "n456": 5.2,
+  "alors": 6.2,
+  "n532": 7.18,
+  "dabord": 8.68,
+  "salaire1": 9.28,
+  "brut1": 9.56,
+  "n867": 10.447,
+  "contrat": 12.38,
+  "retire": 13.6,
+  "n411": 13.86,
+  "n180": 15.86,
+  "secu": 18.74,
+  "reste": 19.92,
+  "resultat": 21.3,
+  "cote": 23.9,
+  "ajoute": 24.7,
+  "n121": 24.9,
+  "niveau": 28.22,
+  "n700": 29.62,
+  "fou": 31.06,
+  "n100": 32.42,
+  "n79": 33.9,
+  "n197": 36.04,
+  "reduction": 38.98,
+  "fond": 39.24,
+  "trappe": 41.32,
+  "abonne": 42.72,
+  "n456b": 22.307,
+  "net": 23.24,
+  "seulement2": 26.4,
+  "brut3": 32.8,
+  "toi": 33.34,
+  "lui3": 35.38,
+  "plus_monte": 37.66,
+  "vraiment": 44.16,
+  "voEnd": 44.514898,
+  "end": 47.51
+ },
+ "sfx": [
+  [
+   "kaching",
+   1.42,
+   1.2,
+   0.24
+  ],
+  [
+   "ticker",
+   4.277,
+   1.0,
+   0.2
+  ],
+  [
+   "whoosh-short",
+   8.281,
+   0.575,
+   0.22
+  ],
+  [
+   "ticker",
+   10.184,
+   1.0,
+   0.18
+  ],
+  [
+   "click-soft",
+   13.482,
+   0.366,
+   0.18
+  ],
+  [
+   "kaching2",
+   22.251,
+   1.0,
+   0.22
+  ],
+  [
+   "click-soft",
+   24.582,
+   0.366,
+   0.18
+  ],
+  [
+   "pop",
+   29.488,
+   0.72,
+   0.2
+  ],
+  [
+   "whoosh-short",
+   30.661,
+   0.575,
+   0.2
+  ],
+  [
+   "stamp",
+   36.449,
+   0.7,
+   0.4
+  ],
+  [
+   "stamp2",
+   41.234,
+   0.7,
+   0.42
+  ],
+  [
+   "pop",
+   42.938,
+   0.72,
+   0.28
+  ]
+ ],
+ "tokens": [
+  {
+   "text": "Un",
+   "key": "un",
+   "start": 0.0,
+   "end": 0.12
+  },
+  {
+   "text": "salarié",
+   "key": "salarie",
+   "start": 0.12,
+   "end": 0.52
+  },
+  {
+   "text": "au",
+   "key": "au",
+   "start": 0.52,
+   "end": 0.62
+  },
+  {
+   "text": "SMIC",
+   "key": "smic",
+   "start": 0.62,
+   "end": 0.86
+  },
+  {
+   "text": "coûte",
+   "key": "coute",
+   "start": 0.86,
+   "end": 1.2
+  },
+  {
+   "text": "1",
+   "key": "1",
+   "start": 1.2,
+   "end": 1.6
+  },
+  {
+   "text": "988 €",
+   "key": "988",
+   "start": 1.6,
+   "end": 2.4
+  },
+  {
+   "text": "par",
+   "key": "par",
+   "start": 2.4,
+   "end": 2.56
+  },
+  {
+   "text": "mois",
+   "key": "mois",
+   "start": 2.56,
+   "end": 2.74
+  },
+  {
+   "text": "à",
+   "key": "a",
+   "start": 2.74,
+   "end": 2.86
+  },
+  {
+   "text": "son",
+   "key": "son",
+   "start": 2.86,
+   "end": 2.94
+  },
+  {
+   "text": "patron.",
+   "key": "patron",
+   "start": 2.94,
+   "end": 3.18
+  },
+  {
+   "text": "Mais",
+   "key": "mais",
+   "start": 3.58,
+   "end": 3.7
+  },
+  {
+   "text": "lui,",
+   "key": "lui",
+   "start": 3.7,
+   "end": 3.88
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 3.88,
+   "end": 4.2
+  },
+  {
+   "text": "touche",
+   "key": "touche",
+   "start": 4.2,
+   "end": 4.44
+  },
+  {
+   "text": "seulement",
+   "key": "seulement",
+   "start": 4.44,
+   "end": 4.7
+  },
+  {
+   "text": "1",
+   "key": "1",
+   "start": 4.7,
+   "end": 5.2
+  },
+  {
+   "text": "456 € !",
+   "key": "456",
+   "start": 5.2,
+   "end": 6.2
+  },
+  {
+   "text": "Alors,",
+   "key": "alors",
+   "start": 6.2,
+   "end": 6.38
+  },
+  {
+   "text": "où",
+   "key": "ou",
+   "start": 6.38,
+   "end": 6.8
+  },
+  {
+   "text": "passent",
+   "key": "passent",
+   "start": 6.8,
+   "end": 7.1
+  },
+  {
+   "text": "les",
+   "key": "les",
+   "start": 7.1,
+   "end": 7.18
+  },
+  {
+   "text": "532 €",
+   "key": "532",
+   "start": 7.18,
+   "end": 7.7
+  },
+  {
+   "text": "qui",
+   "key": "qui",
+   "start": 8.0,
+   "end": 8.18
+  },
+  {
+   "text": "manquent ?",
+   "key": "manquent",
+   "start": 8.18,
+   "end": 8.68
+  },
+  {
+   "text": "D'abord,",
+   "key": "dabord",
+   "start": 8.68,
+   "end": 9.0
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 9.0,
+   "end": 9.28
+  },
+  {
+   "text": "salaire",
+   "key": "salaire",
+   "start": 9.28,
+   "end": 9.56
+  },
+  {
+   "text": "brut :",
+   "key": "brut",
+   "start": 9.56,
+   "end": 9.76
+  },
+  {
+   "text": "1",
+   "key": "1",
+   "start": 10.04,
+   "end": 10.447
+  },
+  {
+   "text": "867 €.",
+   "key": "867",
+   "start": 10.447,
+   "end": 11.26
+  },
+  {
+   "text": "C'est",
+   "key": "cest",
+   "start": 11.38,
+   "end": 11.54
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 11.54,
+   "end": 11.64
+  },
+  {
+   "text": "chiffre",
+   "key": "chiffre",
+   "start": 11.64,
+   "end": 11.88
+  },
+  {
+   "text": "écrit",
+   "key": "ecrit",
+   "start": 11.88,
+   "end": 12.14
+  },
+  {
+   "text": "sur",
+   "key": "sur",
+   "start": 12.14,
+   "end": 12.3
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 12.3,
+   "end": 12.38
+  },
+  {
+   "text": "contrat.",
+   "key": "contrat",
+   "start": 12.38,
+   "end": 12.6
+  },
+  {
+   "text": "Sur",
+   "key": "sur",
+   "start": 12.88,
+   "end": 12.98
+  },
+  {
+   "text": "ce",
+   "key": "ce",
+   "start": 12.98,
+   "end": 13.14
+  },
+  {
+   "text": "brut,",
+   "key": "brut",
+   "start": 13.14,
+   "end": 13.32
+  },
+  {
+   "text": "on",
+   "key": "on",
+   "start": 13.32,
+   "end": 13.6
+  },
+  {
+   "text": "retire",
+   "key": "retire",
+   "start": 13.6,
+   "end": 13.86
+  },
+  {
+   "text": "411 €",
+   "key": "411",
+   "start": 13.86,
+   "end": 14.34
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 14.72,
+   "end": 14.84
+  },
+  {
+   "text": "cotisations",
+   "key": "cotisations",
+   "start": 14.84,
+   "end": 15.237
+  },
+  {
+   "text": "salariales.",
+   "key": "salariales",
+   "start": 15.237,
+   "end": 15.6
+  },
+  {
+   "text": "180 €",
+   "key": "180",
+   "start": 15.86,
+   "end": 16.18
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 16.7,
+   "end": 16.88
+  },
+  {
+   "text": "CSG",
+   "key": "csg",
+   "start": 16.88,
+   "end": 17.44
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 17.44,
+   "end": 17.62
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 17.62,
+   "end": 17.72
+  },
+  {
+   "text": "CRDS,",
+   "key": "crds",
+   "start": 17.72,
+   "end": 18.14
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 18.14,
+   "end": 18.62
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 18.62,
+   "end": 18.74
+  },
+  {
+   "text": "Sécu",
+   "key": "secu",
+   "start": 18.74,
+   "end": 19.04
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 19.04,
+   "end": 19.28
+  },
+  {
+   "text": "sa",
+   "key": "sa",
+   "start": 19.28,
+   "end": 19.38
+  },
+  {
+   "text": "dette.",
+   "key": "dette",
+   "start": 19.38,
+   "end": 19.52
+  },
+  {
+   "text": "Le",
+   "key": "le",
+   "start": 19.82,
+   "end": 19.92
+  },
+  {
+   "text": "reste,",
+   "key": "reste",
+   "start": 19.92,
+   "end": 20.14
+  },
+  {
+   "text": "surtout",
+   "key": "surtout",
+   "start": 20.14,
+   "end": 20.54
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 20.54,
+   "end": 20.76
+  },
+  {
+   "text": "ta",
+   "key": "ta",
+   "start": 20.76,
+   "end": 20.845
+  },
+  {
+   "text": "retraite.",
+   "key": "retraite",
+   "start": 20.845,
+   "end": 21.1
+  },
+  {
+   "text": "Résultat :",
+   "key": "resultat",
+   "start": 21.3,
+   "end": 21.84
+  },
+  {
+   "text": "1",
+   "key": "1",
+   "start": 21.84,
+   "end": 22.307
+  },
+  {
+   "text": "456 €",
+   "key": "456",
+   "start": 22.307,
+   "end": 23.24
+  },
+  {
+   "text": "net.",
+   "key": "net",
+   "start": 23.24,
+   "end": 23.54
+  },
+  {
+   "text": "Côté",
+   "key": "cote",
+   "start": 23.9,
+   "end": 24.12
+  },
+  {
+   "text": "patron,",
+   "key": "patron",
+   "start": 24.12,
+   "end": 24.42
+  },
+  {
+   "text": "il",
+   "key": "il",
+   "start": 24.42,
+   "end": 24.7
+  },
+  {
+   "text": "ajoute",
+   "key": "ajoute",
+   "start": 24.7,
+   "end": 24.9
+  },
+  {
+   "text": "121 €",
+   "key": "121",
+   "start": 24.9,
+   "end": 25.5
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 25.7,
+   "end": 25.78
+  },
+  {
+   "text": "cotisations.",
+   "key": "cotisations",
+   "start": 25.78,
+   "end": 26.22
+  },
+  {
+   "text": "Seulement",
+   "key": "seulement",
+   "start": 26.4,
+   "end": 26.78
+  },
+  {
+   "text": "121 ?",
+   "key": "121",
+   "start": 26.78,
+   "end": 27.52
+  },
+  {
+   "text": "Oui !",
+   "key": "oui",
+   "start": 27.52,
+   "end": 28.12
+  },
+  {
+   "text": "Au",
+   "key": "au",
+   "start": 28.12,
+   "end": 28.22
+  },
+  {
+   "text": "niveau",
+   "key": "niveau",
+   "start": 28.22,
+   "end": 28.36
+  },
+  {
+   "text": "du",
+   "key": "du",
+   "start": 28.36,
+   "end": 28.5
+  },
+  {
+   "text": "SMIC,",
+   "key": "smic",
+   "start": 28.5,
+   "end": 28.74
+  },
+  {
+   "text": "l'État",
+   "key": "letat",
+   "start": 28.74,
+   "end": 29.14
+  },
+  {
+   "text": "les",
+   "key": "les",
+   "start": 29.14,
+   "end": 29.26
+  },
+  {
+   "text": "réduit",
+   "key": "reduit",
+   "start": 29.26,
+   "end": 29.54
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 29.54,
+   "end": 29.62
+  },
+  {
+   "text": "700 €",
+   "key": "700",
+   "start": 29.62,
+   "end": 29.96
+  },
+  {
+   "text": "par",
+   "key": "par",
+   "start": 30.24,
+   "end": 30.42
+  },
+  {
+   "text": "mois.",
+   "key": "mois",
+   "start": 30.42,
+   "end": 30.64
+  },
+  {
+   "text": "Le",
+   "key": "le",
+   "start": 30.84,
+   "end": 30.92
+  },
+  {
+   "text": "plus",
+   "key": "plus",
+   "start": 30.92,
+   "end": 31.06
+  },
+  {
+   "text": "fou ?",
+   "key": "fou",
+   "start": 31.06,
+   "end": 31.48
+  },
+  {
+   "text": "Si",
+   "key": "si",
+   "start": 31.48,
+   "end": 31.6
+  },
+  {
+   "text": "ton",
+   "key": "ton",
+   "start": 31.6,
+   "end": 31.7
+  },
+  {
+   "text": "patron",
+   "key": "patron",
+   "start": 31.7,
+   "end": 31.86
+  },
+  {
+   "text": "t'augmente",
+   "key": "taugmente",
+   "start": 31.86,
+   "end": 32.28
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 32.28,
+   "end": 32.42
+  },
+  {
+   "text": "100 €",
+   "key": "100",
+   "start": 32.42,
+   "end": 32.64
+  },
+  {
+   "text": "brut,",
+   "key": "brut",
+   "start": 32.8,
+   "end": 33.02
+  },
+  {
+   "text": "toi",
+   "key": "toi",
+   "start": 33.34,
+   "end": 33.5
+  },
+  {
+   "text": "tu",
+   "key": "tu",
+   "start": 33.5,
+   "end": 33.62
+  },
+  {
+   "text": "gagnes",
+   "key": "gagnes",
+   "start": 33.62,
+   "end": 33.9
+  },
+  {
+   "text": "79 €",
+   "key": "79",
+   "start": 33.9,
+   "end": 34.48
+  },
+  {
+   "text": "net…",
+   "key": "net",
+   "start": 34.74,
+   "end": 34.92
+  },
+  {
+   "text": "mais",
+   "key": "mais",
+   "start": 35.26,
+   "end": 35.38
+  },
+  {
+   "text": "lui",
+   "key": "lui",
+   "start": 35.38,
+   "end": 35.56
+  },
+  {
+   "text": "paie",
+   "key": "paie",
+   "start": 35.56,
+   "end": 36.04
+  },
+  {
+   "text": "197 €",
+   "key": "197",
+   "start": 36.04,
+   "end": 36.32
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 37.04,
+   "end": 37.14
+  },
+  {
+   "text": "plus !",
+   "key": "plus",
+   "start": 37.14,
+   "end": 37.66
+  },
+  {
+   "text": "Plus",
+   "key": "plus",
+   "start": 37.66,
+   "end": 37.8
+  },
+  {
+   "text": "ton",
+   "key": "ton",
+   "start": 37.8,
+   "end": 37.96
+  },
+  {
+   "text": "salaire",
+   "key": "salaire",
+   "start": 37.96,
+   "end": 38.22
+  },
+  {
+   "text": "monte,",
+   "key": "monte",
+   "start": 38.22,
+   "end": 38.42
+  },
+  {
+   "text": "plus",
+   "key": "plus",
+   "start": 38.72,
+   "end": 38.82
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 38.82,
+   "end": 38.98
+  },
+  {
+   "text": "réduction",
+   "key": "reduction",
+   "start": 38.98,
+   "end": 39.24
+  },
+  {
+   "text": "fond.",
+   "key": "fond",
+   "start": 39.24,
+   "end": 39.5
+  },
+  {
+   "text": "Les",
+   "key": "les",
+   "start": 39.68,
+   "end": 39.8
+  },
+  {
+   "text": "économistes",
+   "key": "economistes",
+   "start": 39.8,
+   "end": 40.26
+  },
+  {
+   "text": "ont",
+   "key": "ont",
+   "start": 40.26,
+   "end": 40.38
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 40.38,
+   "end": 40.48
+  },
+  {
+   "text": "nom",
+   "key": "nom",
+   "start": 40.48,
+   "end": 40.64
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 40.64,
+   "end": 40.82
+  },
+  {
+   "text": "ça :",
+   "key": "ca",
+   "start": 40.82,
+   "end": 41.0
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 41.24,
+   "end": 41.32
+  },
+  {
+   "text": "trappe",
+   "key": "trappe",
+   "start": 41.32,
+   "end": 41.82
+  },
+  {
+   "text": "à",
+   "key": "a",
+   "start": 41.82,
+   "end": 41.96
+  },
+  {
+   "text": "bas",
+   "key": "bas",
+   "start": 41.96,
+   "end": 42.12
+  },
+  {
+   "text": "salaires.",
+   "key": "salaires",
+   "start": 42.12,
+   "end": 42.58
+  },
+  {
+   "text": "Abonne-toi",
+   "key": "abonnetoi",
+   "start": 42.72,
+   "end": 43.12
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 43.12,
+   "end": 43.28
+  },
+  {
+   "text": "savoir",
+   "key": "savoir",
+   "start": 43.28,
+   "end": 43.46
+  },
+  {
+   "text": "combien",
+   "key": "combien",
+   "start": 43.46,
+   "end": 43.74
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 43.74,
+   "end": 43.98
+  },
+  {
+   "text": "coûte",
+   "key": "coute",
+   "start": 43.98,
+   "end": 44.16
+  },
+  {
+   "text": "vraiment.",
+   "key": "vraiment",
+   "start": 44.16,
+   "end": 44.5
+  }
+ ]
+}

@@ -1,0 +1,742 @@
+[
+{
+"text": "Passer",
+"start": 0.0,
+"end": 0.34
+},
+{
+"text": "dans",
+"start": 0.34,
+"end": 0.44
+},
+{
+"text": "la",
+"start": 0.44,
+"end": 0.54
+},
+{
+"text": "tranche",
+"start": 0.54,
+"end": 0.82
+},
+{
+"text": "d",
+"start": 0.82,
+"end": 0.9
+},
+{
+"text": "'impôts",
+"start": 0.9,
+"end": 1.08
+},
+{
+"text": "du",
+"start": 1.08,
+"end": 1.18
+},
+{
+"text": "dessus",
+"start": 1.18,
+"end": 1.44
+},
+{
+"text": "ne",
+"start": 1.44,
+"end": 1.56
+},
+{
+"text": "te",
+"start": 1.56,
+"end": 1.66
+},
+{
+"text": "fera",
+"start": 1.66,
+"end": 1.84
+},
+{
+"text": "jamais",
+"start": 1.84,
+"end": 2.4
+},
+{
+"text": "gagner",
+"start": 2.4,
+"end": 2.7
+},
+{
+"text": "moins",
+"start": 2.7,
+"end": 2.92
+},
+{
+"text": "!",
+"start": 2.92,
+"end": 3.26
+},
+{
+"text": "Jamais",
+"start": 3.26,
+"end": 3.62
+},
+{
+"text": "!",
+"start": 3.62,
+"end": 3.82
+},
+{
+"text": "Alors,",
+"start": 3.82,
+"end": 3.96
+},
+{
+"text": "comment",
+"start": 4.3,
+"end": 4.5
+},
+{
+"text": "ça",
+"start": 4.5,
+"end": 4.7
+},
+{
+"text": "marche",
+"start": 4.7,
+"end": 4.9
+},
+{
+"text": "vraiment",
+"start": 4.9,
+"end": 5.2
+},
+{
+"text": "?",
+"start": 5.2,
+"end": 5.46
+},
+{
+"text": "Imagine",
+"start": 5.46,
+"end": 5.66
+},
+{
+"text": "tes",
+"start": 5.66,
+"end": 5.9
+},
+{
+"text": "revenus",
+"start": 5.9,
+"end": 6.18
+},
+{
+"text": "comme",
+"start": 6.18,
+"end": 6.34
+},
+{
+"text": "un",
+"start": 6.34,
+"end": 6.46
+},
+{
+"text": "escalier.",
+"start": 6.46,
+"end": 6.86
+},
+{
+"text": "Marche",
+"start": 7.24,
+"end": 7.34
+},
+{
+"text": "1.",
+"start": 7.34,
+"end": 7.48
+},
+{
+"text": "Jusqu",
+"start": 7.76,
+"end": 7.96
+},
+{
+"text": "'à",
+"start": 7.96,
+"end": 8.04
+},
+{
+"text": "11600",
+"start": 8.04,
+"end": 8.6
+},
+{
+"text": "euros,",
+"start": 8.6,
+"end": 8.9
+},
+{
+"text": "tu",
+"start": 9.16,
+"end": 9.22
+},
+{
+"text": "paies",
+"start": 9.22,
+"end": 9.42
+},
+{
+"text": "0%.",
+"start": 9.42,
+"end": 10.22
+},
+{
+"text": "Marche",
+"start": 10.22,
+"end": 10.58
+},
+{
+"text": "2.",
+"start": 10.58,
+"end": 10.72
+},
+{
+"text": "Jusqu",
+"start": 11.0,
+"end": 11.2
+},
+{
+"text": "'à",
+"start": 11.2,
+"end": 11.28
+},
+{
+"text": "29579",
+"start": 11.28,
+"end": 12.56
+},
+{
+"text": "euros,",
+"start": 12.56,
+"end": 12.9
+},
+{
+"text": "11%.",
+"start": 13.14,
+"end": 13.78
+},
+{
+"text": "Marche",
+"start": 13.78,
+"end": 14.12
+},
+{
+"text": "3.",
+"start": 14.12,
+"end": 14.28
+},
+{
+"text": "Au",
+"start": 14.58,
+"end": 14.68
+},
+{
+"text": "-dessus,",
+"start": 14.68,
+"end": 14.96
+},
+{
+"text": "30%.",
+"start": 15.2,
+"end": 15.84
+},
+{
+"text": "Puis",
+"start": 15.84,
+"end": 16.06
+},
+{
+"text": "41",
+"start": 16.06,
+"end": 16.5
+},
+{
+"text": "et",
+"start": 16.5,
+"end": 16.82
+},
+{
+"text": "45",
+"start": 16.82,
+"end": 17.18
+},
+{
+"text": "%",
+"start": 17.18,
+"end": 17.56
+},
+{
+"text": "pour",
+"start": 17.56,
+"end": 17.74
+},
+{
+"text": "les",
+"start": 17.74,
+"end": 17.9
+},
+{
+"text": "très",
+"start": 17.9,
+"end": 18.18
+},
+{
+"text": "gros",
+"start": 18.18,
+"end": 18.36
+},
+{
+"text": "revenus.",
+"start": 18.36,
+"end": 18.72
+},
+{
+"text": "Le",
+"start": 18.9,
+"end": 19.0
+},
+{
+"text": "secret,",
+"start": 19.0,
+"end": 19.24
+},
+{
+"text": "chaque",
+"start": 19.62,
+"end": 19.9
+},
+{
+"text": "taux",
+"start": 19.9,
+"end": 20.12
+},
+{
+"text": "ne",
+"start": 20.12,
+"end": 20.28
+},
+{
+"text": "touche",
+"start": 20.28,
+"end": 20.58
+},
+{
+"text": "que",
+"start": 20.58,
+"end": 20.84
+},
+{
+"text": "les",
+"start": 20.84,
+"end": 21.12
+},
+{
+"text": "euros",
+"start": 21.12,
+"end": 21.34
+},
+{
+"text": "de",
+"start": 21.34,
+"end": 21.46
+},
+{
+"text": "sa",
+"start": 21.46,
+"end": 21.62
+},
+{
+"text": "marche.",
+"start": 21.62,
+"end": 21.92
+},
+{
+"text": "Exemple,",
+"start": 22.12,
+"end": 22.58
+},
+{
+"text": "tu",
+"start": 22.74,
+"end": 22.86
+},
+{
+"text": "vis",
+"start": 22.86,
+"end": 22.98
+},
+{
+"text": "seul",
+"start": 22.98,
+"end": 23.28
+},
+{
+"text": "avec",
+"start": 23.28,
+"end": 23.52
+},
+{
+"text": "30",
+"start": 23.52,
+"end": 23.8
+},
+{
+"text": "000",
+"start": 23.8,
+"end": 23.94
+},
+{
+"text": "euros",
+"start": 23.94,
+"end": 24.1
+},
+{
+"text": "de",
+"start": 24.1,
+"end": 24.2
+},
+{
+"text": "revenus",
+"start": 24.2,
+"end": 24.48
+},
+{
+"text": "imposables.",
+"start": 24.48,
+"end": 24.92
+},
+{
+"text": "Tes",
+"start": 25.06,
+"end": 25.18
+},
+{
+"text": "11600",
+"start": 25.18,
+"end": 25.76
+},
+{
+"text": "premiers",
+"start": 25.76,
+"end": 26.08
+},
+{
+"text": "euros,",
+"start": 26.08,
+"end": 26.36
+},
+{
+"text": "0.",
+"start": 26.72,
+"end": 26.96
+},
+{
+"text": "Les",
+"start": 26.96,
+"end": 27.3
+},
+{
+"text": "suivants,",
+"start": 27.3,
+"end": 27.7
+},
+{
+"text": "jusqu",
+"start": 27.8,
+"end": 27.9
+},
+{
+"text": "'à",
+"start": 27.9,
+"end": 28.06
+},
+{
+"text": "29579,",
+"start": 28.06,
+"end": 29.34
+},
+{
+"text": "1978",
+"start": 30.08,
+"end": 30.48
+},
+{
+"text": "euros",
+"start": 30.48,
+"end": 30.88
+},
+{
+"text": "d",
+"start": 30.88,
+"end": 30.98
+},
+{
+"text": "'impôts.",
+"start": 30.98,
+"end": 31.36
+},
+{
+"text": "Et",
+"start": 31.4,
+"end": 31.46
+},
+{
+"text": "les",
+"start": 31.46,
+"end": 31.56
+},
+{
+"text": "421",
+"start": 31.56,
+"end": 32.0
+},
+{
+"text": "euros",
+"start": 32.0,
+"end": 32.28
+},
+{
+"text": "du",
+"start": 32.28,
+"end": 32.42
+},
+{
+"text": "dessus,",
+"start": 32.42,
+"end": 32.64
+},
+{
+"text": "126",
+"start": 32.86,
+"end": 33.42
+},
+{
+"text": "euros.",
+"start": 33.42,
+"end": 33.6
+},
+{
+"text": "Total,",
+"start": 33.74,
+"end": 33.98
+},
+{
+"text": "2104",
+"start": 34.32,
+"end": 35.0
+},
+{
+"text": "euros.",
+"start": 35.0,
+"end": 35.24
+},
+{
+"text": "Le",
+"start": 35.42,
+"end": 35.52
+},
+{
+"text": "plus",
+"start": 35.52,
+"end": 35.68
+},
+{
+"text": "fou,",
+"start": 35.68,
+"end": 35.86
+},
+{
+"text": "tu",
+"start": 36.04,
+"end": 36.22
+},
+{
+"text": "es",
+"start": 36.22,
+"end": 36.34
+},
+{
+"text": "dans",
+"start": 36.34,
+"end": 36.62
+},
+{
+"text": "la",
+"start": 36.62,
+"end": 36.76
+},
+{
+"text": "tranche",
+"start": 36.76,
+"end": 37.06
+},
+{
+"text": "à",
+"start": 37.06,
+"end": 37.12
+},
+{
+"text": "30%.",
+"start": 37.12,
+"end": 37.7
+},
+{
+"text": "Mais",
+"start": 37.7,
+"end": 37.98
+},
+{
+"text": "tu",
+"start": 37.98,
+"end": 38.1
+},
+{
+"text": "paies",
+"start": 38.1,
+"end": 38.28
+},
+{
+"text": "seulement",
+"start": 38.28,
+"end": 38.52
+},
+{
+"text": "7",
+"start": 38.52,
+"end": 38.9
+},
+{
+"text": "%",
+"start": 38.9,
+"end": 39.22
+},
+{
+"text": "de",
+"start": 39.22,
+"end": 39.34
+},
+{
+"text": "tes",
+"start": 39.34,
+"end": 39.42
+},
+{
+"text": "revenus.",
+"start": 39.42,
+"end": 39.78
+},
+{
+"text": "Et",
+"start": 39.94,
+"end": 40.0
+},
+{
+"text": "une",
+"start": 40.0,
+"end": 40.12
+},
+{
+"text": "augmentation,",
+"start": 40.12,
+"end": 40.52
+},
+{
+"text": "chaque",
+"start": 40.84,
+"end": 41.12
+},
+{
+"text": "euro",
+"start": 41.12,
+"end": 41.34
+},
+{
+"text": "en",
+"start": 41.34,
+"end": 41.42
+},
+{
+"text": "plus",
+"start": 41.42,
+"end": 41.64
+},
+{
+"text": "te",
+"start": 41.64,
+"end": 41.8
+},
+{
+"text": "laisse",
+"start": 41.8,
+"end": 41.96
+},
+{
+"text": "70",
+"start": 41.96,
+"end": 42.48
+},
+{
+"text": "centimes.",
+"start": 42.48,
+"end": 42.94
+},
+{
+"text": "Jamais",
+"start": 43.14,
+"end": 43.54
+},
+{
+"text": "moins.",
+"start": 43.54,
+"end": 43.68
+},
+{
+"text": "Abonne",
+"start": 43.88,
+"end": 44.14
+},
+{
+"text": "-toi",
+"start": 44.14,
+"end": 44.28
+},
+{
+"text": "pour",
+"start": 44.28,
+"end": 44.44
+},
+{
+"text": "savoir",
+"start": 44.44,
+"end": 44.66
+},
+{
+"text": "comment",
+"start": 44.66,
+"end": 44.9
+},
+{
+"text": "ça",
+"start": 44.9,
+"end": 45.06
+},
+{
+"text": "marche",
+"start": 45.06,
+"end": 45.24
+},
+{
+"text": "vraiment.",
+"start": 45.24,
+"end": 45.46
+}
+]

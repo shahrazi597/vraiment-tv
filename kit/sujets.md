@@ -17,8 +17,8 @@ Les gens se fichent de savoir comment marche un frigo. Ils veulent **apprendre d
 
 | Thème | Sujet | Accroche (à vérifier) | Statut |
 |---|---|---|---|
-| Argent | Les tranches d'impôt | « Passer à la tranche supérieure ne te fera jamais gagner moins. Jamais. » | ⏳ |
-| Argent | La création monétaire | « Quand ta banque te prête de l'argent, elle ne l'a pas. Elle le crée. » | ⏳ |
+| Argent | Les tranches d'impôt | « Passer à la tranche supérieure ne te fera jamais gagner moins. Jamais. » | 📅 08/11 9h |
+| Argent | La création monétaire | « Quand ta banque te prête de l'argent, elle ne l'a pas. Elle le crée. » | 📅 08/11 19h |
 | Argent | L'inflation | « Ton billet de 50 € perd de la valeur… même rangé dans ton tiroir. » | ⏳ |
 | Argent | Les intérêts composés | « 100 € placés à 20 ans peuvent valoir plus que 1 000 € placés à 50 ans. » | ⏳ |
 | Argent | Le crédit immobilier | « Sur 25 ans, ta banque gagne une fortune sur ta maison. Voilà combien. » | ⏳ |
@@ -50,7 +50,7 @@ Les gens se fichent de savoir comment marche un frigo. Ils veulent **apprendre d
 
 | Thème | Sujet | Ce qu'on décompose (source à trouver) | Statut |
 |---|---|---|---|
-| Travail | Un salarié au SMIC | Ce que paie l'employeur, ce que touche le salarié, où part la différence (Urssaf, service-public.fr) | ⏳ |
+| Travail | Un salarié au SMIC | Ce que paie l'employeur, ce que touche le salarié, où part la différence (Urssaf, service-public.fr) | 📅 08/11 12h |
 | Travail | 1 million de vues sur TikTok / YouTube | Ce que gagne vraiment un créateur (programmes officiels, sources sérieuses) | ⏳ |
 | Travail | Le salaire d'un footballeur star | Par mois, par match, par minute (sources presse fiables) | ⏳ |
 | Travail | Le salaire d'un député, d'un président | Brut, net, indemnités (sites officiels) | ⏳ |
@@ -87,10 +87,13 @@ Les gens se fichent de savoir comment marche un frigo. Ils veulent **apprendre d
 | Comment ça marche ? #4 | Shazam | 📅 06/11 19h |
 | Comment ça marche ? #5 | Le casque à réduction de bruit | 📅 07/11 9h |
 | Comment ça marche ? #6 | Face ID | 📅 07/11 19h |
+| Comment ça marche ? #7 | Les tranches d'impôt | 📅 08/11 9h |
+| Comment ça marche ? #8 | La création monétaire | 📅 08/11 19h |
 | Combien ça coûte ? #1 | Le plein d'essence | ✅ 04/11 12h |
 | Combien ça coûte ? #2 | Un paquet de cigarettes | ✅ 05/11 12h |
 | Combien ça coûte ? #3 | Le passe Navigo | ✅ 06/11 12h |
 | Combien ça coûte ? #4 | Une place de cinéma | 📅 07/11 12h |
+| Combien ça coûte ? #5 | Un salarié au SMIC | 📅 08/11 12h |
 
 ## Réserve (priorité basse : objets techniques et sujets moins forts)
 

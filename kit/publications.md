@@ -241,3 +241,77 @@ Comment marche Face ID : un projecteur projette plus de 30 000 points infrarouge
 Comment ça marche vraiment ? Épisode 6. Abonne-toi pour les prochains épisodes !
 Sources : Apple, « À propos de la technologie avancée de Face ID » (support Apple) ; Apple, présentation de l'iPhone X (2017).
 #shorts #faceid #iphone #tech #lesaviezvous
+
+---
+
+## Publication 11 — Comment ça marche vraiment ? #7 · Les tranches d'impôt (08/11/2026 09h00)
+Fichier : `tranches_FR.mp4`
+
+**TikTok**
+Passer dans la tranche d'impôt du dessus ne te fera JAMAIS gagner moins 💶🤯 À 30 000 € imposables, tu es « dans la tranche à 30 % »… mais tu paies 7 % de tes revenus.
+Tu le croyais aussi ? 👇
+#impots #argent #financetok #educationfinanciere #lesaviezvous #apprendresurtiktok #pourtoi
+
+**Instagram Reels**
+« Si je passe dans la tranche du dessus, je vais gagner moins. » FAUX 💶
+L'impôt sur le revenu marche comme un escalier : chaque taux ne touche que les euros de sa marche. Seul, avec 30 000 € de revenu imposable : 0 € sur les 11 600 premiers euros, 1 978 € sur les suivants, 126 € sur les 421 € du dessus. Total : 2 104 €, soit 7 % de tes revenus… alors que tu es « dans la tranche à 30 % » 🤯
+Tu le savais ? Dis-le en commentaire 👇 et abonne-toi pour la suite de « Comment ça marche vraiment ? »
+Barème 2026 (revenus 2025), 1 part, avant décote et réductions.
+#impots #impotsurlerevenu #argent #finances #educationfinanciere #lesaviezvous #culturegenerale #vulgarisation #reelsfrance
+
+**YouTube Shorts**
+Titre : Changer de tranche d'impôt te fait perdre ? Jamais 💶 #shorts
+Description :
+Comment marche l'impôt sur le revenu en France : un barème progressif par tranches. Barème 2026 (revenus 2025), pour 1 part : 0 % jusqu'à 11 600 €, 11 % de 11 601 à 29 579 €, 30 % de 29 580 à 84 577 €, 41 % jusqu'à 181 917 €, 45 % au-delà. Chaque taux ne s'applique qu'à la part du revenu comprise dans sa tranche. Exemple pour une personne seule avec 30 000 € de revenu imposable : 0 € + 1 978 € (11 % de 17 979 €) + 126 € (30 % de 421 €) = 2 104 € d'impôt, soit un taux moyen d'environ 7 %, alors que le taux marginal est de 30 %. Une augmentation reste donc toujours gagnante côté impôt : dans la tranche à 30 %, chaque euro en plus laisse 70 centimes avant prélèvements sociaux. Calcul simplifié, avant décote, réductions et crédits d'impôt.
+Comment ça marche vraiment ? Épisode 7. Abonne-toi pour les prochains épisodes !
+Sources : service-public.gouv.fr, « Impôt sur le revenu : le barème 2026 » (23/02/2026) ; loi de finances pour 2026 (19/02/2026).
+#shorts #impots #argent #financetok #lesaviezvous
+
+---
+
+## Publication 12 — Combien ça coûte vraiment ? #5 · Un salarié au SMIC (08/11/2026 12h00)
+Fichier : `smic_FR.mp4`
+
+**TikTok**
+Un salarié au SMIC coûte 1 988 € par mois à son patron… et touche 1 456 € 💸 Et pour 79 € net d'augmentation, le patron paie 197 € de plus 🤯
+Tu savais ça ? 👇
+#smic #salaire #argent #financetok #lesaviezvous #pourtoi #apprendresurtiktok
+
+**Instagram Reels**
+Un salarié au SMIC : 1 988 € pour le patron, 1 456 € pour le salarié. Où passent les 532 € ? 💸
+Sur 1 867 € brut, 411 € de cotisations salariales (dont 180 € de CSG-CRDS pour la Sécu et sa dette, le reste surtout pour la retraite). Le patron ajoute 121 € de cotisations seulement, parce qu'au niveau du SMIC elles sont réduites d'environ 700 € par mois. Mais cette réduction fond quand le salaire monte : +100 € brut = +79 € net pour toi… et +197 € de coût pour lui 🤯
+Tu le savais ? Dis-le en commentaire 👇 et abonne-toi pour la suite de « Combien ça coûte vraiment ? »
+SMIC au 1er juin 2026, temps plein, entreprise de moins de 50 salariés (simulateur Urssaf, novembre 2026).
+#smic #salaire #argent #travail #cotisations #lesaviezvous #culturegenerale #economie #reelsfrance
+
+**YouTube Shorts**
+Titre : Un salarié au SMIC coûte 1 988 €… il touche 1 456 € 💸 #shorts
+Description :
+Ce que coûte vraiment un salarié payé au SMIC en France (temps plein, SMIC au 1er juin 2026 : 1 867,02 € brut par mois). Côté salarié : environ 411 € de cotisations salariales, dont environ 180 € de CSG et CRDS (financement de la Sécurité sociale et remboursement de sa dette), le reste surtout pour la retraite ; il reste environ 1 456 € net avant impôt. Côté employeur : environ 121 € de cotisations patronales, car la réduction générale dégressive unique (RGDU) les diminue d'environ 700 € par mois au niveau du SMIC. Coût total : environ 1 988 € par mois. Cette réduction diminue quand le salaire augmente : pour +100 € brut, le salarié gagne environ +79 € net et le coût employeur augmente d'environ +197 €. C'est ce qu'on appelle la « trappe à bas salaires ». Calcul pour une entreprise de moins de 50 salariés, hors mutuelle et prévoyance spécifiques ; les montants varient selon l'entreprise.
+Combien ça coûte vraiment ? Épisode 5. Abonne-toi pour les prochains épisodes !
+Sources : simulateur officiel de l'Urssaf (mon-entreprise.urssaf.fr, novembre 2026) ; Code du travail numérique, revalorisation du SMIC au 1er juin 2026.
+#shorts #smic #salaire #argent #lesaviezvous
+
+---
+
+## Publication 13 — Comment ça marche vraiment ? #8 · La création monétaire (08/11/2026 19h00)
+Fichier : `monnaie_FR.mp4`
+
+**TikTok**
+Quand ta banque te prête 10 000 €, elle ne prend pas l'argent des autres clients : elle le CRÉE 🏦🤯 Et quand tu rembourses, il est détruit.
+Tu le savais ? 👇
+#banque #argent #economie #financetok #lesaviezvous #apprendresurtiktok #pourtoi
+
+**Instagram Reels**
+Ta banque ne te prête pas l'argent des autres clients. Elle le crée 🏦
+Quand tu signes un crédit, elle inscrit la somme sur ton compte : ces euros n'existaient pas avant (« les crédits font les dépôts », dit la Banque de France). L'argent circule de compte en compte… et quand tu rembourses, il est détruit. Les limites : fonds propres, réserves à la banque centrale, et ta capacité à rembourser. Plus de 90 % des euros en circulation ne sont même pas des billets 🤯
+Tu le savais ? Dis-le en commentaire 👇 et abonne-toi pour la suite de « Comment ça marche vraiment ? »
+#banque #argent #economie #monnaie #credit #lesaviezvous #culturegenerale #vulgarisation #reelsfrance
+
+**YouTube Shorts**
+Titre : Ta banque ne te prête pas son argent : elle le crée 🏦 #shorts
+Description :
+Comment marche la création monétaire : quand une banque accorde un crédit, elle inscrit le montant sur le compte de l'emprunteur. Cette monnaie n'existait pas avant : « les crédits font les dépôts » (Banque de France). L'argent circule ensuite de compte en compte quand il est dépensé. Quand le crédit est remboursé, la monnaie correspondante est détruite ; les intérêts, eux, sont un revenu pour la banque. Les banques ne peuvent pas créer de la monnaie à l'infini : elles doivent détenir des fonds propres proportionnés à leurs crédits, des réserves auprès de la banque centrale, et évaluer la capacité de remboursement des emprunteurs. La monnaie scripturale (sur les comptes) représente plus de 90 % de la monnaie en circulation dans la zone euro. Quand la BCE relève ses taux directeurs, le crédit devient plus cher, la demande de crédit baisse et la création monétaire est freinée.
+Comment ça marche vraiment ? Épisode 8. Abonne-toi pour les prochains épisodes !
+Sources : Banque de France, « Comment est créée la monnaie ? » (ABC de l'économie) ; Banque de France, « L'éco en bref : la monnaie ».
+#shorts #banque #argent #economie #lesaviezvous

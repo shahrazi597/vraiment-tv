@@ -1,0 +1,941 @@
+{
+ "cues": {
+  "moins": 2.7,
+  "jamais1": 1.84,
+  "alors": 3.82,
+  "imagine": 5.46,
+  "escalier": 6.46,
+  "puis": 15.84,
+  "p41": 16.06,
+  "p45": 16.82,
+  "secret": 19.0,
+  "chaque": 19.62,
+  "touche": 20.28,
+  "exemple": 22.12,
+  "seul": 22.98,
+  "premiers": 25.76,
+  "zero": 26.72,
+  "suivants": 27.3,
+  "n1978": 29.545,
+  "n421": 31.56,
+  "n126": 32.86,
+  "total": 33.74,
+  "n2104": 34.627,
+  "fou": 35.68,
+  "augmentation": 40.12,
+  "laisse": 41.8,
+  "c70": 41.96,
+  "abonne": 43.88,
+  "jamais2": 3.26,
+  "m1": 7.24,
+  "m2": 10.22,
+  "m3": 13.78,
+  "n11a": 8.04,
+  "z0": 9.42,
+  "n29a": 11.28,
+  "p11": 13.14,
+  "dessus1": 14.58,
+  "p30": 15.2,
+  "euros1": 21.12,
+  "sa": 21.46,
+  "marche_sa": 21.62,
+  "n30k": 23.52,
+  "tranche2": 36.76,
+  "mais2": 37.7,
+  "seulement2": 38.28,
+  "p7": 38.52,
+  "revenus2": 39.42,
+  "et3": 39.94,
+  "euro3": 41.12,
+  "jamais3": 43.14,
+  "vraiment": 45.24,
+  "voEnd": 45.585918,
+  "end": 48.59
+ },
+ "sfx": [
+  [
+   "stamp",
+   1.849,
+   0.7,
+   0.4
+  ],
+  [
+   "whoosh-short",
+   3.571,
+   0.575,
+   0.22
+  ],
+  [
+   "click-soft",
+   7.222,
+   0.366,
+   0.18
+  ],
+  [
+   "click-soft",
+   10.202,
+   0.366,
+   0.18
+  ],
+  [
+   "click-soft",
+   13.762,
+   0.366,
+   0.18
+  ],
+  [
+   "pop",
+   16.688,
+   0.72,
+   0.2
+  ],
+  [
+   "ticker",
+   29.282,
+   1.0,
+   0.2
+  ],
+  [
+   "kaching2",
+   34.571,
+   1.0,
+   0.24
+  ],
+  [
+   "impact-bass-1",
+   38.501,
+   0.8,
+   0.26
+  ],
+  [
+   "kaching",
+   41.62,
+   1.0,
+   0.22
+  ],
+  [
+   "stamp2",
+   43.104,
+   0.7,
+   0.42
+  ],
+  [
+   "pop",
+   44.098,
+   0.72,
+   0.28
+  ]
+ ],
+ "tokens": [
+  {
+   "text": "Passer",
+   "key": "passer",
+   "start": 0.0,
+   "end": 0.34
+  },
+  {
+   "text": "dans",
+   "key": "dans",
+   "start": 0.34,
+   "end": 0.44
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 0.44,
+   "end": 0.54
+  },
+  {
+   "text": "tranche",
+   "key": "tranche",
+   "start": 0.54,
+   "end": 0.82
+  },
+  {
+   "text": "d'impôt",
+   "key": "dimpot",
+   "start": 0.82,
+   "end": 1.08
+  },
+  {
+   "text": "du",
+   "key": "du",
+   "start": 1.08,
+   "end": 1.18
+  },
+  {
+   "text": "dessus",
+   "key": "dessus",
+   "start": 1.18,
+   "end": 1.44
+  },
+  {
+   "text": "ne",
+   "key": "ne",
+   "start": 1.44,
+   "end": 1.56
+  },
+  {
+   "text": "te",
+   "key": "te",
+   "start": 1.56,
+   "end": 1.66
+  },
+  {
+   "text": "fera",
+   "key": "fera",
+   "start": 1.66,
+   "end": 1.84
+  },
+  {
+   "text": "JAMAIS",
+   "key": "jamais",
+   "start": 1.84,
+   "end": 2.4
+  },
+  {
+   "text": "gagner",
+   "key": "gagner",
+   "start": 2.4,
+   "end": 2.7
+  },
+  {
+   "text": "moins.",
+   "key": "moins",
+   "start": 2.7,
+   "end": 3.26
+  },
+  {
+   "text": "Jamais !",
+   "key": "jamais",
+   "start": 3.26,
+   "end": 3.82
+  },
+  {
+   "text": "Alors,",
+   "key": "alors",
+   "start": 3.82,
+   "end": 3.96
+  },
+  {
+   "text": "comment",
+   "key": "comment",
+   "start": 4.3,
+   "end": 4.5
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 4.5,
+   "end": 4.7
+  },
+  {
+   "text": "marche",
+   "key": "marche",
+   "start": 4.7,
+   "end": 4.9
+  },
+  {
+   "text": "vraiment ?",
+   "key": "vraiment",
+   "start": 4.9,
+   "end": 5.46
+  },
+  {
+   "text": "Imagine",
+   "key": "imagine",
+   "start": 5.46,
+   "end": 5.66
+  },
+  {
+   "text": "tes",
+   "key": "tes",
+   "start": 5.66,
+   "end": 5.9
+  },
+  {
+   "text": "revenus",
+   "key": "revenus",
+   "start": 5.9,
+   "end": 6.18
+  },
+  {
+   "text": "comme",
+   "key": "comme",
+   "start": 6.18,
+   "end": 6.34
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 6.34,
+   "end": 6.46
+  },
+  {
+   "text": "escalier.",
+   "key": "escalier",
+   "start": 6.46,
+   "end": 6.86
+  },
+  {
+   "text": "Marche",
+   "key": "marche",
+   "start": 7.24,
+   "end": 7.34
+  },
+  {
+   "text": "1 :",
+   "key": "1",
+   "start": 7.34,
+   "end": 7.48
+  },
+  {
+   "text": "jusqu'à",
+   "key": "jusqua",
+   "start": 7.76,
+   "end": 8.04
+  },
+  {
+   "text": "11",
+   "key": "11",
+   "start": 8.04,
+   "end": 8.409
+  },
+  {
+   "text": "600 €,",
+   "key": "600",
+   "start": 8.409,
+   "end": 8.9
+  },
+  {
+   "text": "tu",
+   "key": "tu",
+   "start": 9.16,
+   "end": 9.22
+  },
+  {
+   "text": "paies",
+   "key": "paies",
+   "start": 9.22,
+   "end": 9.42
+  },
+  {
+   "text": "0 %.",
+   "key": "0",
+   "start": 9.42,
+   "end": 10.22
+  },
+  {
+   "text": "Marche",
+   "key": "marche",
+   "start": 10.22,
+   "end": 10.58
+  },
+  {
+   "text": "2 :",
+   "key": "2",
+   "start": 10.58,
+   "end": 10.72
+  },
+  {
+   "text": "jusqu'à",
+   "key": "jusqua",
+   "start": 11.0,
+   "end": 11.28
+  },
+  {
+   "text": "29",
+   "key": "29",
+   "start": 11.28,
+   "end": 11.974
+  },
+  {
+   "text": "579 €,",
+   "key": "579",
+   "start": 11.974,
+   "end": 12.9
+  },
+  {
+   "text": "11 %.",
+   "key": "11",
+   "start": 13.14,
+   "end": 13.78
+  },
+  {
+   "text": "Marche",
+   "key": "marche",
+   "start": 13.78,
+   "end": 14.12
+  },
+  {
+   "text": "3 :",
+   "key": "3",
+   "start": 14.12,
+   "end": 14.28
+  },
+  {
+   "text": "au-dessus,",
+   "key": "audessus",
+   "start": 14.58,
+   "end": 14.96
+  },
+  {
+   "text": "30 %.",
+   "key": "30",
+   "start": 15.2,
+   "end": 15.84
+  },
+  {
+   "text": "Puis",
+   "key": "puis",
+   "start": 15.84,
+   "end": 16.06
+  },
+  {
+   "text": "41",
+   "key": "41",
+   "start": 16.06,
+   "end": 16.5
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 16.5,
+   "end": 16.82
+  },
+  {
+   "text": "45 %",
+   "key": "45",
+   "start": 16.82,
+   "end": 17.56
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 17.56,
+   "end": 17.74
+  },
+  {
+   "text": "les",
+   "key": "les",
+   "start": 17.74,
+   "end": 17.9
+  },
+  {
+   "text": "très",
+   "key": "tres",
+   "start": 17.9,
+   "end": 18.18
+  },
+  {
+   "text": "gros",
+   "key": "gros",
+   "start": 18.18,
+   "end": 18.36
+  },
+  {
+   "text": "revenus.",
+   "key": "revenus",
+   "start": 18.36,
+   "end": 18.72
+  },
+  {
+   "text": "Le",
+   "key": "le",
+   "start": 18.9,
+   "end": 19.0
+  },
+  {
+   "text": "secret :",
+   "key": "secret",
+   "start": 19.0,
+   "end": 19.24
+  },
+  {
+   "text": "chaque",
+   "key": "chaque",
+   "start": 19.62,
+   "end": 19.9
+  },
+  {
+   "text": "taux",
+   "key": "taux",
+   "start": 19.9,
+   "end": 20.12
+  },
+  {
+   "text": "ne",
+   "key": "ne",
+   "start": 20.12,
+   "end": 20.28
+  },
+  {
+   "text": "touche",
+   "key": "touche",
+   "start": 20.28,
+   "end": 20.58
+  },
+  {
+   "text": "QUE",
+   "key": "que",
+   "start": 20.58,
+   "end": 20.84
+  },
+  {
+   "text": "les",
+   "key": "les",
+   "start": 20.84,
+   "end": 21.12
+  },
+  {
+   "text": "euros",
+   "key": "euros",
+   "start": 21.12,
+   "end": 21.34
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 21.34,
+   "end": 21.46
+  },
+  {
+   "text": "sa",
+   "key": "sa",
+   "start": 21.46,
+   "end": 21.62
+  },
+  {
+   "text": "marche.",
+   "key": "marche",
+   "start": 21.62,
+   "end": 21.92
+  },
+  {
+   "text": "Exemple :",
+   "key": "exemple",
+   "start": 22.12,
+   "end": 22.58
+  },
+  {
+   "text": "tu",
+   "key": "tu",
+   "start": 22.74,
+   "end": 22.86
+  },
+  {
+   "text": "vis",
+   "key": "vis",
+   "start": 22.86,
+   "end": 22.98
+  },
+  {
+   "text": "seul,",
+   "key": "seul",
+   "start": 22.98,
+   "end": 23.28
+  },
+  {
+   "text": "avec",
+   "key": "avec",
+   "start": 23.28,
+   "end": 23.52
+  },
+  {
+   "text": "30",
+   "key": "30",
+   "start": 23.52,
+   "end": 23.8
+  },
+  {
+   "text": "000 €",
+   "key": "000",
+   "start": 23.8,
+   "end": 23.94
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 24.1,
+   "end": 24.2
+  },
+  {
+   "text": "revenu",
+   "key": "revenu",
+   "start": 24.2,
+   "end": 24.496
+  },
+  {
+   "text": "imposable.",
+   "key": "imposable",
+   "start": 24.496,
+   "end": 24.92
+  },
+  {
+   "text": "Tes",
+   "key": "tes",
+   "start": 25.06,
+   "end": 25.18
+  },
+  {
+   "text": "11",
+   "key": "11",
+   "start": 25.18,
+   "end": 25.429
+  },
+  {
+   "text": "600",
+   "key": "600",
+   "start": 25.429,
+   "end": 25.76
+  },
+  {
+   "text": "premiers",
+   "key": "premiers",
+   "start": 25.76,
+   "end": 26.08
+  },
+  {
+   "text": "euros :",
+   "key": "euros",
+   "start": 26.08,
+   "end": 26.36
+  },
+  {
+   "text": "zéro.",
+   "key": "zero",
+   "start": 26.72,
+   "end": 26.96
+  },
+  {
+   "text": "Les",
+   "key": "les",
+   "start": 26.96,
+   "end": 27.3
+  },
+  {
+   "text": "suivants,",
+   "key": "suivants",
+   "start": 27.3,
+   "end": 27.7
+  },
+  {
+   "text": "jusqu'à",
+   "key": "jusqua",
+   "start": 27.8,
+   "end": 28.06
+  },
+  {
+   "text": "29",
+   "key": "29",
+   "start": 28.06,
+   "end": 28.555
+  },
+  {
+   "text": "579 :",
+   "key": "579",
+   "start": 28.555,
+   "end": 29.215
+  },
+  {
+   "text": "1",
+   "key": "1",
+   "start": 29.215,
+   "end": 29.545
+  },
+  {
+   "text": "978 €",
+   "key": "978",
+   "start": 29.545,
+   "end": 30.205
+  },
+  {
+   "text": "d'impôt.",
+   "key": "dimpot",
+   "start": 30.205,
+   "end": 31.36
+  },
+  {
+   "text": "Et",
+   "key": "et",
+   "start": 31.4,
+   "end": 31.46
+  },
+  {
+   "text": "les",
+   "key": "les",
+   "start": 31.46,
+   "end": 31.56
+  },
+  {
+   "text": "421 €",
+   "key": "421",
+   "start": 31.56,
+   "end": 32.0
+  },
+  {
+   "text": "du",
+   "key": "du",
+   "start": 32.28,
+   "end": 32.42
+  },
+  {
+   "text": "dessus ?",
+   "key": "dessus",
+   "start": 32.42,
+   "end": 32.64
+  },
+  {
+   "text": "126 €.",
+   "key": "126",
+   "start": 32.86,
+   "end": 33.42
+  },
+  {
+   "text": "Total :",
+   "key": "total",
+   "start": 33.74,
+   "end": 33.98
+  },
+  {
+   "text": "2",
+   "key": "2",
+   "start": 34.32,
+   "end": 34.627
+  },
+  {
+   "text": "104 €.",
+   "key": "104",
+   "start": 34.627,
+   "end": 35.24
+  },
+  {
+   "text": "Le",
+   "key": "le",
+   "start": 35.42,
+   "end": 35.52
+  },
+  {
+   "text": "plus",
+   "key": "plus",
+   "start": 35.52,
+   "end": 35.68
+  },
+  {
+   "text": "fou ?",
+   "key": "fou",
+   "start": 35.68,
+   "end": 35.86
+  },
+  {
+   "text": "Tu",
+   "key": "tu",
+   "start": 36.04,
+   "end": 36.22
+  },
+  {
+   "text": "es «",
+   "key": "es",
+   "start": 36.22,
+   "end": 36.34
+  },
+  {
+   "text": "dans",
+   "key": "dans",
+   "start": 36.34,
+   "end": 36.62
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 36.62,
+   "end": 36.76
+  },
+  {
+   "text": "tranche",
+   "key": "tranche",
+   "start": 36.76,
+   "end": 37.06
+  },
+  {
+   "text": "à",
+   "key": "a",
+   "start": 37.06,
+   "end": 37.12
+  },
+  {
+   "text": "30 % »…",
+   "key": "30",
+   "start": 37.12,
+   "end": 37.7
+  },
+  {
+   "text": "mais",
+   "key": "mais",
+   "start": 37.7,
+   "end": 37.98
+  },
+  {
+   "text": "tu",
+   "key": "tu",
+   "start": 37.98,
+   "end": 38.1
+  },
+  {
+   "text": "paies",
+   "key": "paies",
+   "start": 38.1,
+   "end": 38.28
+  },
+  {
+   "text": "seulement",
+   "key": "seulement",
+   "start": 38.28,
+   "end": 38.52
+  },
+  {
+   "text": "7 %",
+   "key": "7",
+   "start": 38.52,
+   "end": 39.22
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 39.22,
+   "end": 39.34
+  },
+  {
+   "text": "tes",
+   "key": "tes",
+   "start": 39.34,
+   "end": 39.42
+  },
+  {
+   "text": "revenus.",
+   "key": "revenus",
+   "start": 39.42,
+   "end": 39.78
+  },
+  {
+   "text": "Et",
+   "key": "et",
+   "start": 39.94,
+   "end": 40.0
+  },
+  {
+   "text": "une",
+   "key": "une",
+   "start": 40.0,
+   "end": 40.12
+  },
+  {
+   "text": "augmentation ?",
+   "key": "augmentation",
+   "start": 40.12,
+   "end": 40.52
+  },
+  {
+   "text": "Chaque",
+   "key": "chaque",
+   "start": 40.84,
+   "end": 41.12
+  },
+  {
+   "text": "euro",
+   "key": "euro",
+   "start": 41.12,
+   "end": 41.34
+  },
+  {
+   "text": "en",
+   "key": "en",
+   "start": 41.34,
+   "end": 41.42
+  },
+  {
+   "text": "plus",
+   "key": "plus",
+   "start": 41.42,
+   "end": 41.64
+  },
+  {
+   "text": "te",
+   "key": "te",
+   "start": 41.64,
+   "end": 41.8
+  },
+  {
+   "text": "laisse",
+   "key": "laisse",
+   "start": 41.8,
+   "end": 41.96
+  },
+  {
+   "text": "70",
+   "key": "70",
+   "start": 41.96,
+   "end": 42.48
+  },
+  {
+   "text": "centimes.",
+   "key": "centimes",
+   "start": 42.48,
+   "end": 42.94
+  },
+  {
+   "text": "Jamais",
+   "key": "jamais",
+   "start": 43.14,
+   "end": 43.54
+  },
+  {
+   "text": "moins.",
+   "key": "moins",
+   "start": 43.54,
+   "end": 43.68
+  },
+  {
+   "text": "Abonne-toi",
+   "key": "abonnetoi",
+   "start": 43.88,
+   "end": 44.28
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 44.28,
+   "end": 44.44
+  },
+  {
+   "text": "savoir",
+   "key": "savoir",
+   "start": 44.44,
+   "end": 44.66
+  },
+  {
+   "text": "comment",
+   "key": "comment",
+   "start": 44.66,
+   "end": 44.9
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 44.9,
+   "end": 45.06
+  },
+  {
+   "text": "marche",
+   "key": "marche",
+   "start": 45.06,
+   "end": 45.24
+  },
+  {
+   "text": "vraiment.",
+   "key": "vraiment",
+   "start": 45.24,
+   "end": 45.46
+  }
+ ]
+}

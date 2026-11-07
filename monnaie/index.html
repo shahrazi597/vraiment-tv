@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/gsap.min.js"></script>
+    <script src="assets/da.js"></script>
+    <link rel="stylesheet" href="assets/da.css" />
+    <style>
+      /* ---------- accroche ---------- */
+      #h-t1 { top: 300px; font-size: 100px; }
+      #vault { position: absolute; left: 0; top: 0; }
+      #h-stamp { top: 1060px; }
+
+      /* ---------- étapes ---------- */
+      .row { position: absolute; left: 0; right: 0; display: flex; justify-content: center; }
+      .row .chip { position: absolute; }
+      .chip i { display: block; width: 22px; height: 22px; border-radius: 50%; }
+      #steps { top: 300px; height: 80px; }
+      #infos { top: 392px; height: 80px; }
+
+      .acc { position: absolute; top: 520px; width: 430px; height: 290px; border-radius: 32px; background: var(--panel); border: 5px solid var(--line);
+        text-align: center; opacity: 0; }
+      .acc .k { margin-top: 40px; font-size: 34px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+      .acc .v { margin-top: 12px; font-size: 80px; font-weight: 900; letter-spacing: -.045em; line-height: 1.05; white-space: nowrap; }
+      .acc .s { font-size: 30px; font-weight: 700; color: var(--muted); margin-top: 6px; }
+      #ac-a { left: 90px; } #ac-a .v { color: var(--amber); }
+      #ac-b { left: 560px; } #ac-b .v { color: var(--red); }
+      #quote { position: absolute; left: 90px; right: 90px; top: 870px; text-align: center; opacity: 0; }
+      #quote .q { font-size: 64px; font-weight: 900; letter-spacing: -.03em; line-height: 1.05; color: var(--ink); }
+      #quote .q .a { color: var(--amber); }
+      #quote .w { margin-top: 14px; font-size: 32px; font-weight: 800; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+
+      #flow { position: absolute; left: 0; top: 0; }
+
+      #lim-t { top: 420px; font-size: 92px; }
+      #lim-t .wsp { opacity: 0; }
+      .lim { position: absolute; left: 0; right: 0; display: flex; justify-content: center; }
+      .lim .chip { position: relative; font-size: 42px; padding: 20px 34px; gap: 18px; }
+      .lim .chip b { width: 56px; height: 56px; font-size: 32px; }
+      #lm1 { top: 650px; } #lm2 { top: 780px; } #lm3 { top: 910px; }
+
+      /* ---------- bonus : 90 % ---------- */
+      #b-num { position: absolute; left: 0; right: 0; top: 330px; text-align: center; font-size: 200px; font-weight: 900; letter-spacing: -.05em;
+        color: var(--amber); line-height: 1; opacity: 0; white-space: nowrap; }
+      #b-sub { position: absolute; left: 0; right: 0; top: 545px; text-align: center; font-size: 42px; font-weight: 800; color: var(--muted); opacity: 0; }
+      #cells { position: absolute; left: 90px; top: 660px; width: 900px; height: 200px; display: flex; gap: 10px; }
+      #cells .cl { flex: 1; border-radius: 16px; background: #2a2a32; opacity: 0; display: flex; align-items: center; justify-content: center;
+        font-size: 30px; font-weight: 900; color: rgba(11,11,14,.8); writing-mode: vertical-rl; transform: rotate(180deg); letter-spacing: .04em; }
+      #cells .cl.bill { background: #ece6d6; }
+      .cap2 { position: absolute; top: 890px; opacity: 0; white-space: nowrap; }
+      .cap2 .v { font-size: 56px; font-weight: 900; letter-spacing: -.03em; line-height: 1; }
+      .cap2 .s { font-size: 30px; font-weight: 700; color: var(--muted); margin-top: 6px; }
+      #cp-a { left: 90px; } #cp-a .v { color: var(--cream); }
+      #cp-b { right: 90px; text-align: right; } #cp-b .v { color: var(--amber); }
+
+      /* ---------- chute : la BCE ---------- */
+      .ch { position: absolute; left: 140px; width: 800px; height: 150px; border-radius: 30px; background: var(--panel); border: 4px solid var(--line);
+        display: flex; align-items: center; gap: 30px; padding: 0 40px; opacity: 0; }
+      .ch .ar { font-size: 92px; font-weight: 900; line-height: 1; width: 70px; text-align: center; }
+      .ch .t { font-size: 50px; font-weight: 900; letter-spacing: -.02em; text-transform: uppercase; line-height: 1.02; white-space: nowrap; }
+      #ch1 { top: 380px; border-color: var(--red); } #ch1 .ar { color: var(--red); }
+      #ch2 { top: 610px; border-color: var(--red); } #ch2 .ar { color: var(--red); }
+      #ch3 { top: 840px; border-color: var(--cold); } #ch3 .ar { color: var(--cold); }
+      #chain { position: absolute; left: 0; top: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="45.06" data-width="1080" data-height="1920">
+      <audio id="vo" src="assets/voix.mp3" data-start="0" data-duration="42.109" data-volume="1"></audio>
+      <audio id="sfx0" src="assets/sfx/whoosh-short.mp3" data-start="2.461" data-duration="0.575" data-volume="0.18" data-fade-out="0.19"></audio>
+      <audio id="sfx1" src="assets/sfx/stamp.mp3" data-start="3.679" data-duration="0.7" data-volume="0.4" data-fade-out="0.20"></audio>
+      <audio id="sfx2" src="assets/sfx/whoosh-short.mp3" data-start="3.951" data-duration="0.575" data-volume="0.2" data-fade-out="0.19"></audio>
+      <audio id="sfx3" src="assets/sfx/ticker.mp3" data-start="7.377" data-duration="1.0" data-volume="0.2" data-fade-out="0.20"></audio>
+      <audio id="sfx4" src="assets/sfx/kaching.mp3" data-start="8.26" data-duration="1.0" data-volume="0.2" data-fade-out="0.20"></audio>
+      <audio id="sfx5" src="assets/sfx/pop.mp3" data-start="14.458" data-duration="0.72" data-volume="0.2" data-fade-out="0.20"></audio>
+      <audio id="sfx6" src="assets/sfx/whoosh.mp3" data-start="15.711" data-duration="0.575" data-volume="0.16" data-fade-out="0.19"></audio>
+      <audio id="sfx7" src="assets/sfx/stamp2.mp3" data-start="21.684" data-duration="0.7" data-volume="0.42" data-fade-out="0.20"></audio>
+      <audio id="sfx8" src="assets/sfx/click-soft.mp3" data-start="26.242" data-duration="0.366" data-volume="0.18" data-fade-out="0.12"></audio>
+      <audio id="sfx9" src="assets/sfx/click-soft.mp3" data-start="26.982" data-duration="0.366" data-volume="0.18" data-fade-out="0.12"></audio>
+      <audio id="sfx10" src="assets/sfx/impact-bass-1.mp3" data-start="30.601" data-duration="0.8" data-volume="0.24" data-fade-out="0.20"></audio>
+      <audio id="sfx11" src="assets/sfx/pop.mp3" data-start="40.538" data-duration="0.72" data-volume="0.28" data-fade-out="0.20"></audio>
+
+      <div id="bg" class="clip" data-start="0" data-duration="45.06" data-track-index="0" data-track-kind="graphics">
+        <div id="grid"></div>
+        <div id="gl-cream" class="glow"></div>
+        <div id="gl-red" class="glow"></div>
+        <div id="gl-amber" class="glow"></div>
+        <div id="gl-cold" class="glow"></div>
+        <div id="vign"></div>
+      </div>
+
+      <div id="cam">
+        <!-- 1. Accroche -->
+        <div id="s-hook" class="clip" data-start="0" data-duration="4.900" data-track-index="1" data-track-kind="graphics">
+          <div id="h-t1" class="hl">Ta banque<br />te prête<br /><span class="a">10&nbsp;000&nbsp;€</span></div>
+          <svg id="vault" width="1080" height="1920" viewBox="0 -70 1080 1920" aria-hidden="true">
+            <g id="safe">
+              <rect x="350" y="650" width="380" height="320" rx="30" fill="#16161b" stroke="#ece6d6" stroke-width="7" />
+              <circle cx="540" cy="810" r="86" fill="none" stroke="#ece6d6" stroke-width="7" />
+              <circle cx="540" cy="810" r="16" fill="#ece6d6" />
+              <g stroke="#ece6d6" stroke-width="7" stroke-linecap="round"><line x1="540" y1="740" x2="540" y2="770" /><line x1="540" y1="850" x2="540" y2="880" /><line x1="470" y1="810" x2="500" y2="810" /><line x1="580" y1="810" x2="610" y2="810" /></g>
+              <rect x="390" y="970" width="60" height="22" rx="6" fill="#ece6d6" /><rect x="630" y="970" width="60" height="22" rx="6" fill="#ece6d6" />
+              <text x="540" y="630" text-anchor="middle" font-family="Inter Display" font-weight="800" font-size="34" letter-spacing="2" fill="#8e8c95">L'ARGENT DES AUTRES CLIENTS</text>
+            </g>
+            <g id="cross" stroke="#ff5236" stroke-width="22" stroke-linecap="round">
+              <line id="cx1" x1="380" y1="670" x2="700" y2="960" />
+              <line id="cx2" x1="700" y1="670" x2="380" y2="960" />
+            </g>
+          </svg>
+          <div id="h-stamp" class="stamp"><span>Elle le crée&nbsp;!</span></div>
+        </div>
+
+        <!-- 2. Les étapes -->
+        <div id="s-main" class="clip" data-start="4.150" data-duration="36.170" data-track-index="2" data-track-kind="graphics">
+          <div id="steps" class="row">
+            <div id="st1" class="chip amb"><b>1</b>LE CRÉDIT</div>
+            <div id="st2" class="chip"><b>2</b>LA DÉPENSE</div>
+            <div id="st3" class="chip hot"><b>3</b>LE REMBOURSEMENT</div>
+          </div>
+          <div id="infos" class="row">
+            <div id="in1" class="chip"><i style="background:var(--amber)"></i>Ces euros n'existaient pas avant</div>
+            <div id="in2" class="chip"><i style="background:var(--cream)"></i>Il circule de compte en compte</div>
+            <div id="in3" class="chip"><i style="background:var(--amber)"></i>Les intérêts : pour la banque</div>
+          </div>
+
+          <div id="ac-a" class="acc"><div class="k">Ton compte</div><div class="v">+<span id="v-acc">0</span>&nbsp;€</div><div class="s">ce que tu peux dépenser</div></div>
+          <div id="ac-b" class="acc"><div class="k">Ta dette</div><div class="v"><span id="v-debt">0</span>&nbsp;€</div><div class="s">ce que tu dois rendre</div></div>
+          <div id="quote"><div class="q">«&nbsp;Les <span class="a">crédits</span> font<br />les <span class="a">dépôts</span>&nbsp;»</div><div class="w">— Banque de France</div></div>
+
+          <svg id="flow" width="1080" height="1920" viewBox="0 0 1080 1920" aria-hidden="true">
+            <g id="nodes" font-family="Inter Display" font-weight="800" font-size="30" text-anchor="middle" letter-spacing="1">
+              <g id="nd1"><circle cx="190" cy="1010" r="78" fill="#16161b" stroke="#ffb21f" stroke-width="6" /><text x="190" y="1021" fill="#f6f4ee">TOI</text></g>
+              <g id="nd2"><circle cx="540" cy="1010" r="78" fill="#16161b" stroke="#ece6d6" stroke-width="6" /><text x="540" y="1021" fill="#f6f4ee" font-size="26">VENDEUR</text></g>
+              <g id="nd3"><circle cx="890" cy="1010" r="78" fill="#16161b" stroke="#ece6d6" stroke-width="6" /><text x="890" y="1003" fill="#f6f4ee" font-size="24">FOURNIS-</text><text x="890" y="1033" fill="#f6f4ee" font-size="24">SEURS</text></g>
+              <path id="ar1" d="M285 1010 H435" stroke="#ece6d6" stroke-width="6" stroke-linecap="round" fill="none" opacity=".5" />
+              <path id="ar2" d="M635 1010 H785" stroke="#ece6d6" stroke-width="6" stroke-linecap="round" fill="none" opacity=".5" />
+            </g>
+            <g id="coin"><circle cx="190" cy="890" r="34" fill="#ffb21f" /><text x="190" y="904" text-anchor="middle" font-family="Inter Display" font-weight="900" font-size="40" fill="#0b0b0e">€</text></g>
+            <g id="dust" fill="#ffb21f"></g>
+          </svg>
+          <div id="d-stamp" class="stamp" style="top: 870px"><span>Détruit&nbsp;!</span></div>
+
+          <div id="lim-t" class="hl"><span class="wsp">Pas</span> <span class="wsp">à</span> <span class="wsp r">l'infini</span></div>
+          <div id="lm1" class="lim"><span class="chip amb"><b>1</b>Des fonds propres</span></div>
+          <div id="lm2" class="lim"><span class="chip cold"><b>2</b>Des réserves à la banque centrale</span></div>
+          <div id="lm3" class="lim"><span class="chip hot"><b>3</b>Vérifier que tu peux rembourser</span></div>
+
+          <!-- bonus -->
+          <div id="b-num"><span style="font-size:80px;letter-spacing:-.02em">PLUS DE </span><span id="v-90">0</span>&nbsp;%</div>
+          <div id="b-sub">des euros en circulation</div>
+          <div id="cells">
+            <div class="cl bill">BILLETS</div><div class="cl"></div><div class="cl"></div><div class="cl"></div><div class="cl"></div>
+            <div class="cl"></div><div class="cl"></div><div class="cl"></div><div class="cl"></div><div class="cl"></div>
+          </div>
+          <div id="cp-a" class="cap2"><div class="v">Billets et pièces</div><div class="s">moins de 10&nbsp;%</div></div>
+          <div id="cp-b" class="cap2"><div class="v">Sur des comptes</div><div class="s">juste des chiffres</div></div>
+
+          <!-- chute -->
+          <svg id="chain" width="1080" height="1920" viewBox="0 0 1080 1920" aria-hidden="true">
+            <path id="lk1" d="M540 540 V600" stroke="#8e8c95" stroke-width="6" stroke-linecap="round" opacity="0" />
+            <path id="lk2" d="M540 770 V830" stroke="#8e8c95" stroke-width="6" stroke-linecap="round" opacity="0" />
+          </svg>
+          <div id="ch1" class="ch"><div class="ar">↑</div><div class="t">Les taux de la BCE</div></div>
+          <div id="ch2" class="ch"><div class="ar">↑</div><div class="t">Ton crédit coûte<br />plus cher</div></div>
+          <div id="ch3" class="ch"><div class="ar">↓</div><div class="t">Moins d'argent créé</div></div>
+        </div>
+
+        <!-- 3. Carte de fin -->
+        <div id="s-cta" class="clip" data-start="40.170" data-duration="4.890" data-track-index="3" data-track-kind="graphics">
+          <div id="c-title"><div>Comment ça</div><div>marche</div><div class="a">vraiment&nbsp;?</div></div>
+          <div id="c-btn"><span>Abonne-toi</span></div>
+          <div id="c-ep">Épisode 8 · La création monétaire</div>
+          <div id="c-src">Sources : Banque de France, « Comment est créée la monnaie ? » et « La monnaie »</div>
+        </div>
+      </div>
+
+      <div id="caps" class="clip" data-start="4.140" data-duration="40.920" data-track-index="5" data-track-kind="captions">
+        <div id="g0" class="cap"><span class="in"><span id="w0_0" class="wd">Comment</span> <span id="w0_1" class="wd">ça</span> <span id="w0_2" class="wd">marche</span></span></div>
+        <div id="g1" class="cap"><span class="in"><span id="w1_0" class="wd em">vraiment ?</span></span></div>
+        <div id="g2" class="cap"><span class="in"><span id="w2_0" class="wd">Étape</span> <span id="w2_1" class="wd">1 :</span></span></div>
+        <div id="g3" class="cap"><span class="in"><span id="w3_0" class="wd">tu</span> <span id="w3_1" class="wd">signes</span> <span id="w3_2" class="wd">ton</span></span></div>
+        <div id="g4" class="cap"><span class="in"><span id="w4_0" class="wd">crédit.</span></span></div>
+        <div id="g5" class="cap"><span class="in"><span id="w5_0" class="wd">La</span> <span id="w5_1" class="wd">banque</span> <span id="w5_2" class="wd">tape</span></span></div>
+        <div id="g6" class="cap"><span class="in"><span id="w6_0" class="wd em">10</span> <span id="w6_1" class="wd em">000 €</span> <span id="w6_2" class="wd">sur</span></span></div>
+        <div id="g7" class="cap"><span class="in"><span id="w7_0" class="wd">ton</span> <span id="w7_1" class="wd">compte.</span></span></div>
+        <div id="g8" class="cap"><span class="in"><span id="w8_0" class="wd">Ces</span> <span id="w8_1" class="wd">euros</span> <span id="w8_2" class="wd em">n'existaient</span></span></div>
+        <div id="g9" class="cap"><span class="in"><span id="w9_0" class="wd">pas</span> <span id="w9_1" class="wd">une</span> <span id="w9_2" class="wd">seconde</span></span></div>
+        <div id="g10" class="cap"><span class="in"><span id="w10_0" class="wd">avant.</span></span></div>
+        <div id="g11" class="cap"><span class="in"><span id="w11_0" class="wd">La</span> <span id="w11_1" class="wd">Banque</span> <span id="w11_2" class="wd">de</span></span></div>
+        <div id="g12" class="cap"><span class="in"><span id="w12_0" class="wd">France</span> <span id="w12_1" class="wd">le</span> <span id="w12_2" class="wd">dit</span></span></div>
+        <div id="g13" class="cap"><span class="in"><span id="w13_0" class="wd">elle-même : «</span> <span id="w13_1" class="wd">les</span> <span id="w13_2" class="wd em">crédits</span></span></div>
+        <div id="g14" class="cap"><span class="in"><span id="w14_0" class="wd">font</span> <span id="w14_1" class="wd">les</span> <span id="w14_2" class="wd em">dépôts ».</span></span></div>
+        <div id="g15" class="cap"><span class="in"><span id="w15_0" class="wd">Étape</span> <span id="w15_1" class="wd">2 :</span></span></div>
+        <div id="g16" class="cap"><span class="in"><span id="w16_0" class="wd">tu</span> <span id="w16_1" class="wd">achètes</span> <span id="w16_2" class="wd">ta</span></span></div>
+        <div id="g17" class="cap"><span class="in"><span id="w17_0" class="wd">voiture.</span></span></div>
+        <div id="g18" class="cap"><span class="in"><span id="w18_0" class="wd">L'argent</span> <span id="w18_1" class="wd">part</span> <span id="w18_2" class="wd">chez</span></span></div>
+        <div id="g19" class="cap"><span class="in"><span id="w19_0" class="wd">le</span> <span id="w19_1" class="wd">vendeur</span></span></div>
+        <div id="g20" class="cap"><span class="in"><span id="w20_0" class="wd">puis</span> <span id="w20_1" class="wd">chez</span> <span id="w20_2" class="wd">ses</span></span></div>
+        <div id="g21" class="cap"><span class="in"><span id="w21_0" class="wd">fournisseurs :</span></span></div>
+        <div id="g22" class="cap"><span class="in"><span id="w22_0" class="wd">il</span> <span id="w22_1" class="wd em">circule.</span></span></div>
+        <div id="g23" class="cap"><span class="in"><span id="w23_0" class="wd">Étape</span> <span id="w23_1" class="wd">3 :</span></span></div>
+        <div id="g24" class="cap"><span class="in"><span id="w24_0" class="wd">tu</span> <span id="w24_1" class="wd">rembourses.</span></span></div>
+        <div id="g25" class="cap"><span class="in"><span id="w25_0" class="wd">Et</span> <span id="w25_1" class="wd">là</span></span></div>
+        <div id="g26" class="cap"><span class="in"><span id="w26_0" class="wd">l'argent</span> <span id="w26_1" class="wd">remboursé</span> <span id="w26_2" class="wd">est…</span></span></div>
+        <div id="g27" class="cap"><span class="in"><span id="w27_0" class="wd em">détruit !</span></span></div>
+        <div id="g28" class="cap"><span class="in"><span id="w28_0" class="wd">Les</span> <span id="w28_1" class="wd em">intérêts</span></span></div>
+        <div id="g29" class="cap"><span class="in"><span id="w29_0" class="wd">eux</span></span></div>
+        <div id="g30" class="cap"><span class="in"><span id="w30_0" class="wd">restent</span> <span id="w30_1" class="wd">à</span> <span id="w30_2" class="wd">la</span></span></div>
+        <div id="g31" class="cap"><span class="in"><span id="w31_0" class="wd">banque.</span></span></div>
+        <div id="g32" class="cap"><span class="in"><span id="w32_0" class="wd">Mais</span> <span id="w32_1" class="wd">elle</span> <span id="w32_2" class="wd">ne</span></span></div>
+        <div id="g33" class="cap"><span class="in"><span id="w33_0" class="wd">peut</span> <span id="w33_1" class="wd">pas</span> <span id="w33_2" class="wd">créer</span></span></div>
+        <div id="g34" class="cap"><span class="in"><span id="w34_0" class="wd">à</span> <span id="w34_1" class="wd">l'infini :</span></span></div>
+        <div id="g35" class="cap"><span class="in"><span id="w35_0" class="wd">il</span> <span id="w35_1" class="wd">lui</span> <span id="w35_2" class="wd">faut</span></span></div>
+        <div id="g36" class="cap"><span class="in"><span id="w36_0" class="wd">des</span> <span id="w36_1" class="wd em">fonds</span> <span id="w36_2" class="wd em">propres</span></span></div>
+        <div id="g37" class="cap"><span class="in"><span id="w37_0" class="wd">des</span> <span id="w37_1" class="wd em">réserves</span> <span id="w37_2" class="wd">à</span></span></div>
+        <div id="g38" class="cap"><span class="in"><span id="w38_0" class="wd">la</span> <span id="w38_1" class="wd">banque</span> <span id="w38_2" class="wd">centrale</span></span></div>
+        <div id="g39" class="cap"><span class="in"><span id="w39_0" class="wd">et</span> <span id="w39_1" class="wd">vérifier</span> <span id="w39_2" class="wd">que</span></span></div>
+        <div id="g40" class="cap"><span class="in"><span id="w40_0" class="wd">tu</span> <span id="w40_1" class="wd">peux</span> <span id="w40_2" class="wd em">rembourser.</span></span></div>
+        <div id="g41" class="cap"><span class="in"><span id="w41_0" class="wd">Le</span> <span id="w41_1" class="wd">plus</span> <span id="w41_2" class="wd">fou ?</span></span></div>
+        <div id="g42" class="cap"><span class="in"><span id="w42_0" class="wd">Plus</span> <span id="w42_1" class="wd">de</span> <span id="w42_2" class="wd em">90 %</span></span></div>
+        <div id="g43" class="cap"><span class="in"><span id="w43_0" class="wd">des</span> <span id="w43_1" class="wd">euros</span> <span id="w43_2" class="wd">en</span></span></div>
+        <div id="g44" class="cap"><span class="in"><span id="w44_0" class="wd">circulation</span> <span id="w44_1" class="wd">ne</span> <span id="w44_2" class="wd">sont</span></span></div>
+        <div id="g45" class="cap"><span class="in"><span id="w45_0" class="wd">pas</span> <span id="w45_1" class="wd">des</span> <span id="w45_2" class="wd em">billets.</span></span></div>
+        <div id="g46" class="cap"><span class="in"><span id="w46_0" class="wd">Juste</span> <span id="w46_1" class="wd">des</span> <span id="w46_2" class="wd em">chiffres</span></span></div>
+        <div id="g47" class="cap"><span class="in"><span id="w47_0" class="wd">sur</span> <span id="w47_1" class="wd">des</span> <span id="w47_2" class="wd">comptes.</span></span></div>
+        <div id="g48" class="cap"><span class="in"><span id="w48_0" class="wd">Alors</span> <span id="w48_1" class="wd">quand</span> <span id="w48_2" class="wd">la</span></span></div>
+        <div id="g49" class="cap"><span class="in"><span id="w49_0" class="wd em">BCE</span> <span id="w49_1" class="wd">monte</span> <span id="w49_2" class="wd">ses</span></span></div>
+        <div id="g50" class="cap"><span class="in"><span id="w50_0" class="wd em">taux</span></span></div>
+        <div id="g51" class="cap"><span class="in"><span id="w51_0" class="wd">ton</span> <span id="w51_1" class="wd">crédit</span> <span id="w51_2" class="wd">coûte</span></span></div>
+        <div id="g52" class="cap"><span class="in"><span id="w52_0" class="wd">plus</span> <span id="w52_1" class="wd">cher…</span></span></div>
+        <div id="g53" class="cap"><span class="in"><span id="w53_0" class="wd">c'est</span> <span id="w53_1" class="wd">fait</span> <span id="w53_2" class="wd em">exprès</span></span></div>
+        <div id="g54" class="cap"><span class="in"><span id="w54_0" class="wd">pour</span> <span id="w54_1" class="wd em">freiner</span> <span id="w54_2" class="wd">la</span></span></div>
+        <div id="g55" class="cap"><span class="in"><span id="w55_0" class="wd">création</span> <span id="w55_1" class="wd">d'argent.</span></span></div>
+        <div id="g56" class="cap"><span class="in"><span id="w56_0" class="wd">Abonne-toi</span> <span id="w56_1" class="wd">pour</span> <span id="w56_2" class="wd">savoir</span></span></div>
+        <div id="g57" class="cap"><span class="in"><span id="w57_0" class="wd">comment</span> <span id="w57_1" class="wd">ça</span> <span id="w57_2" class="wd">marche</span></span></div>
+        <div id="g58" class="cap"><span class="in"><span id="w58_0" class="wd em">vraiment.</span></span></div>
+      </div>
+
+      <div id="tag" class="clip" data-start="0" data-duration="45.06" data-track-index="6" data-track-kind="graphics">
+        <span class="pill">COMMENT ÇA MARCHE VRAIMENT&nbsp;?</span><span class="pill num">#8</span>
+      </div>
+
+      <div id="fx" class="clip" data-start="0" data-duration="45.06" data-track-index="7" data-track-kind="graphics">
+        <div id="flash"></div>
+      </div>
+    </div>
+
+    <script>
+      const C = {"n10k": 0.78, "prend": 1.76, "clients": 2.66, "cree": 3.72, "comment": 4.2, "credit": 6.5, "tape": 7.46, "nexistaient": 9.32, "seconde": 10.22, "credits": 12.52, "depots": 13.4, "achetes": 14.64, "voiture": 15.0, "part": 15.86, "vendeur": 16.38, "fournisseurs": 17.3, "circule": 18.135, "rembourses": 19.6, "detruit": 21.72, "interets": 22.68, "mais": 24.22, "infini": 25.24, "fonds": 26.36, "reserves": 27.1, "verifier": 28.46, "fou": 30.08, "n90": 30.72, "circulation": 32.1, "billets": 33.287, "chiffres": 34.26, "comptes": 34.82, "alors": 35.24, "bce": 35.78, "monte": 36.06, "cher": 37.68, "expres": 38.46, "freiner": 39.04, "creation": 39.54, "abonne": 40.32, "e1": 5.38, "e2": 13.92, "e3": 18.76, "n10k2": 7.64, "pas2": 24.68, "credit3": 37.04, "vraiment": 41.7, "voEnd": 42.059, "end": 45.06};
+      const CAP = [{"id": "g0", "start": 4.14, "end": 4.85, "w": [{"id": "w0_0", "t": 4.2}, {"id": "w0_1", "t": 4.38}, {"id": "w0_2", "t": 4.58}]}, {"id": "g1", "start": 4.85, "end": 5.43, "w": [{"id": "w1_0", "t": 4.8}]}, {"id": "g2", "start": 5.43, "end": 6.0, "w": [{"id": "w2_0", "t": 5.38}, {"id": "w2_1", "t": 5.68}]}, {"id": "g3", "start": 6.0, "end": 6.55, "w": [{"id": "w3_0", "t": 6.06}, {"id": "w3_1", "t": 6.14}, {"id": "w3_2", "t": 6.4}]}, {"id": "g4", "start": 6.55, "end": 7.04, "w": [{"id": "w4_0", "t": 6.5}]}, {"id": "g5", "start": 7.04, "end": 7.69, "w": [{"id": "w5_0", "t": 7.1}, {"id": "w5_1", "t": 7.2}, {"id": "w5_2", "t": 7.46}]}, {"id": "g6", "start": 7.69, "end": 8.41, "w": [{"id": "w6_0", "t": 7.64}, {"id": "w6_1", "t": 7.92}, {"id": "w6_2", "t": 8.2}]}, {"id": "g7", "start": 8.41, "end": 8.92, "w": [{"id": "w7_0", "t": 8.36}, {"id": "w7_1", "t": 8.48}]}, {"id": "g8", "start": 8.92, "end": 9.77, "w": [{"id": "w8_0", "t": 8.98}, {"id": "w8_1", "t": 9.12}, {"id": "w8_2", "t": 9.32}]}, {"id": "g9", "start": 9.77, "end": 10.65, "w": [{"id": "w9_0", "t": 9.72}, {"id": "w9_1", "t": 9.96}, {"id": "w9_2", "t": 10.22}]}, {"id": "g10", "start": 10.65, "end": 10.9, "w": [{"id": "w10_0", "t": 10.6}]}, {"id": "g11", "start": 10.9, "end": 11.35, "w": [{"id": "w11_0", "t": 10.96}, {"id": "w11_1", "t": 11.06}, {"id": "w11_2", "t": 11.18}]}, {"id": "g12", "start": 11.35, "end": 11.81, "w": [{"id": "w12_0", "t": 11.3}, {"id": "w12_1", "t": 11.46}, {"id": "w12_2", "t": 11.66}]}, {"id": "g13", "start": 11.81, "end": 13.01, "w": [{"id": "w13_0", "t": 11.76}, {"id": "w13_1", "t": 12.42}, {"id": "w13_2", "t": 12.52}]}, {"id": "g14", "start": 13.01, "end": 13.86, "w": [{"id": "w14_0", "t": 12.96}, {"id": "w14_1", "t": 13.26}, {"id": "w14_2", "t": 13.4}]}, {"id": "g15", "start": 13.86, "end": 14.5, "w": [{"id": "w15_0", "t": 13.92}, {"id": "w15_1", "t": 14.2}]}, {"id": "g16", "start": 14.5, "end": 15.05, "w": [{"id": "w16_0", "t": 14.56}, {"id": "w16_1", "t": 14.64}, {"id": "w16_2", "t": 14.86}]}, {"id": "g17", "start": 15.05, "end": 15.54, "w": [{"id": "w17_0", "t": 15.0}]}, {"id": "g18", "start": 15.54, "end": 16.33, "w": [{"id": "w18_0", "t": 15.6}, {"id": "w18_1", "t": 15.86}, {"id": "w18_2", "t": 16.12}]}, {"id": "g19", "start": 16.33, "end": 16.9, "w": [{"id": "w19_0", "t": 16.28}, {"id": "w19_1", "t": 16.38}]}, {"id": "g20", "start": 16.9, "end": 17.35, "w": [{"id": "w20_0", "t": 16.96}, {"id": "w20_1", "t": 17.02}, {"id": "w20_2", "t": 17.18}]}, {"id": "g21", "start": 17.35, "end": 17.9, "w": [{"id": "w21_0", "t": 17.3}]}, {"id": "g22", "start": 17.9, "end": 18.7, "w": [{"id": "w22_0", "t": 17.96}, {"id": "w22_1", "t": 18.135}]}, {"id": "g23", "start": 18.7, "end": 19.46, "w": [{"id": "w23_0", "t": 18.76}, {"id": "w23_1", "t": 19.0}]}, {"id": "g24", "start": 19.46, "end": 20.28, "w": [{"id": "w24_0", "t": 19.52}, {"id": "w24_1", "t": 19.6}]}, {"id": "g25", "start": 20.28, "end": 20.7, "w": [{"id": "w25_0", "t": 20.34}, {"id": "w25_1", "t": 20.44}]}, {"id": "g26", "start": 20.7, "end": 21.77, "w": [{"id": "w26_0", "t": 20.76}, {"id": "w26_1", "t": 20.98}, {"id": "w26_2", "t": 21.52}]}, {"id": "g27", "start": 21.77, "end": 22.5, "w": [{"id": "w27_0", "t": 21.72}]}, {"id": "g28", "start": 22.5, "end": 23.15, "w": [{"id": "w28_0", "t": 22.56}, {"id": "w28_1", "t": 22.68}]}, {"id": "g29", "start": 23.15, "end": 23.42, "w": [{"id": "w29_0", "t": 23.12}]}, {"id": "g30", "start": 23.42, "end": 23.89, "w": [{"id": "w30_0", "t": 23.48}, {"id": "w30_1", "t": 23.68}, {"id": "w30_2", "t": 23.76}]}, {"id": "g31", "start": 23.89, "end": 24.19, "w": [{"id": "w31_0", "t": 23.84}]}, {"id": "g32", "start": 24.19, "end": 24.63, "w": [{"id": "w32_0", "t": 24.22}, {"id": "w32_1", "t": 24.4}, {"id": "w32_2", "t": 24.48}]}, {"id": "g33", "start": 24.63, "end": 25.11, "w": [{"id": "w33_0", "t": 24.58}, {"id": "w33_1", "t": 24.68}, {"id": "w33_2", "t": 24.84}]}, {"id": "g34", "start": 25.11, "end": 25.78, "w": [{"id": "w34_0", "t": 25.06}, {"id": "w34_1", "t": 25.24}]}, {"id": "g35", "start": 25.78, "end": 26.27, "w": [{"id": "w35_0", "t": 25.84}, {"id": "w35_1", "t": 25.94}, {"id": "w35_2", "t": 26.04}]}, {"id": "g36", "start": 26.27, "end": 26.97, "w": [{"id": "w36_0", "t": 26.22}, {"id": "w36_1", "t": 26.36}, {"id": "w36_2", "t": 26.58}]}, {"id": "g37", "start": 26.97, "end": 27.63, "w": [{"id": "w37_0", "t": 27.02}, {"id": "w37_1", "t": 27.1}, {"id": "w37_2", "t": 27.5}]}, {"id": "g38", "start": 27.63, "end": 28.31, "w": [{"id": "w38_0", "t": 27.58}, {"id": "w38_1", "t": 27.68}, {"id": "w38_2", "t": 27.82}]}, {"id": "g39", "start": 28.31, "end": 29.03, "w": [{"id": "w39_0", "t": 28.34}, {"id": "w39_1", "t": 28.46}, {"id": "w39_2", "t": 28.84}]}, {"id": "g40", "start": 29.03, "end": 29.73, "w": [{"id": "w40_0", "t": 28.98}, {"id": "w40_1", "t": 29.1}, {"id": "w40_2", "t": 29.22}]}, {"id": "g41", "start": 29.73, "end": 30.42, "w": [{"id": "w41_0", "t": 29.68}, {"id": "w41_1", "t": 30.0}, {"id": "w41_2", "t": 30.08}]}, {"id": "g42", "start": 30.42, "end": 31.59, "w": [{"id": "w42_0", "t": 30.48}, {"id": "w42_1", "t": 30.58}, {"id": "w42_2", "t": 30.72}]}, {"id": "g43", "start": 31.59, "end": 32.15, "w": [{"id": "w43_0", "t": 31.54}, {"id": "w43_1", "t": 31.74}, {"id": "w43_2", "t": 31.96}]}, {"id": "g44", "start": 32.15, "end": 32.97, "w": [{"id": "w44_0", "t": 32.1}, {"id": "w44_1", "t": 32.5}, {"id": "w44_2", "t": 32.76}]}, {"id": "g45", "start": 32.97, "end": 33.72, "w": [{"id": "w45_0", "t": 32.92}, {"id": "w45_1", "t": 33.14}, {"id": "w45_2", "t": 33.287}]}, {"id": "g46", "start": 33.72, "end": 34.61, "w": [{"id": "w46_0", "t": 33.78}, {"id": "w46_1", "t": 34.16}, {"id": "w46_2", "t": 34.26}]}, {"id": "g47", "start": 34.61, "end": 35.29, "w": [{"id": "w47_0", "t": 34.56}, {"id": "w47_1", "t": 34.68}, {"id": "w47_2", "t": 34.82}]}, {"id": "g48", "start": 35.29, "end": 35.83, "w": [{"id": "w48_0", "t": 35.24}, {"id": "w48_1", "t": 35.44}, {"id": "w48_2", "t": 35.66}]}, {"id": "g49", "start": 35.83, "end": 36.61, "w": [{"id": "w49_0", "t": 35.78}, {"id": "w49_1", "t": 36.06}, {"id": "w49_2", "t": 36.38}]}, {"id": "g50", "start": 36.61, "end": 36.92, "w": [{"id": "w50_0", "t": 36.56}]}, {"id": "g51", "start": 36.92, "end": 37.61, "w": [{"id": "w51_0", "t": 36.98}, {"id": "w51_1", "t": 37.04}, {"id": "w51_2", "t": 37.4}]}, {"id": "g52", "start": 37.61, "end": 38.12, "w": [{"id": "w52_0", "t": 37.56}, {"id": "w52_1", "t": 37.68}]}, {"id": "g53", "start": 38.12, "end": 38.81, "w": [{"id": "w53_0", "t": 38.18}, {"id": "w53_1", "t": 38.36}, {"id": "w53_2", "t": 38.46}]}, {"id": "g54", "start": 38.81, "end": 39.59, "w": [{"id": "w54_0", "t": 38.76}, {"id": "w54_1", "t": 39.04}, {"id": "w54_2", "t": 39.42}]}, {"id": "g55", "start": 39.59, "end": 40.26, "w": [{"id": "w55_0", "t": 39.54}, {"id": "w55_1", "t": 39.9}]}, {"id": "g56", "start": 40.26, "end": 41.21, "w": [{"id": "w56_0", "t": 40.32}, {"id": "w56_1", "t": 40.78}, {"id": "w56_2", "t": 40.94}]}, {"id": "g57", "start": 41.21, "end": 41.75, "w": [{"id": "w57_0", "t": 41.16}, {"id": "w57_1", "t": 41.36}, {"id": "w57_2", "t": 41.54}]}, {"id": "g58", "start": 41.75, "end": 42.64, "w": [{"id": "w58_0", "t": 41.7}]}];
+      const NS = "http://www.w3.org/2000/svg";
+      DA.fitCaptions(CAP);
+      const tl = gsap.timeline({ paused: true });
+      const D = DA(tl);
+      D.drift(C.end);
+      const sp = (v) => Math.round(v).toLocaleString("fr-FR").replace(/ | |,/g, " ");
+      const countInt = (id, a, b, at, d) => { const o = { v: a }, el = document.getElementById(id);
+        tl.to(o, { v: b, duration: d, ease: "power2.out", onUpdate: () => (el.textContent = sp(o.v)) }, at); };
+      const pulse = (sel, at, s = 1.08) => tl.fromTo(sel, { scale: 1 }, { keyframes: [{ scale: s, duration: 0.09 }, { scale: 1, duration: 0.35, ease: "expo.out" }] }, at);
+      let seed = 7; const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
+
+      // ================= 1. ACCROCHE =================
+      D.glow("amber", 0, 0.45, 0.01);
+      pulse("#h-t1 .a", C.n10k - 0.05, 1.1);
+      tl.fromTo("#safe", { opacity: 0.7 }, { opacity: 1, duration: 0.3 }, C.prend - 0.2);
+      { const a = document.getElementById("cx1"), b = document.getElementById("cx2");
+        [a, b].forEach((l) => { const L = 440; l.style.strokeDasharray = L; l.style.strokeDashoffset = L; });
+        tl.set("#cross", { opacity: 1 }, 0);
+        tl.to(a, { strokeDashoffset: 0, duration: 0.18, ease: "power2.out" }, C.clients - 0.1);
+        tl.to(b, { strokeDashoffset: 0, duration: 0.18, ease: "power2.out" }, C.clients + 0.08); }
+      D.glow("red", C.clients, 0.3, 0.3);
+      tl.to("#vault", { opacity: 0.35, duration: 0.25 }, C.cree - 0.15);
+      D.stamp("#h-stamp span", C.cree - 0.05, -5);
+      D.shake(C.cree, 11);
+      D.flash(C.cree, 0.16, "#ffb21f");
+      D.glow("amber", C.cree, 0.6, 0.3); D.glow("red", C.cree, 0.1, 0.4);
+      const T1 = C.comment;
+      D.blurOut(["#h-t1", "#h-stamp span"], T1 + 0.35, 0.16);
+      tl.to("#vault", { opacity: 0, scale: 1.15, filter: "blur(10px)", transformOrigin: "540px 800px", duration: 0.3, ease: "power3.in" }, T1 + 0.3);
+      D.glow("amber", T1, 0.25, 0.4); D.glow("cream", T1, 0.25, 0.4);
+
+      const step = (n, t) => { if (n > 1) D.blurOut("#st" + (n - 1), t - 0.12, 0.12); D.popIn("#st" + n, t, 0.6); };
+      tl.set(["#nodes", "#coin"], { opacity: 0 }, 0);
+
+      // ================= ÉTAPE 1 : le crédit crée l'argent =================
+      step(1, C.e1);
+      tl.fromTo("#ac-b", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.8)" }, C.credit - 0.15);
+      countInt("v-debt", 0, 10000, C.credit, 0.8);
+      tl.fromTo("#ac-a", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.8)" }, C.tape - 0.2);
+      countInt("v-acc", 0, 10000, C.n10k2 - 0.1, 1.0);
+      tl.to("#ac-a", { borderColor: "#ffb21f", duration: 0.25 }, C.n10k2);
+      D.glow("amber", C.n10k2, 0.55, 0.4);
+      D.popIn("#in1", C.nexistaient - 0.1, 0.5);
+      pulse("#ac-a", C.seconde, 1.05);
+      tl.fromTo("#quote", { opacity: 0, y: 30, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.3, ease: "expo.out" }, C.credits - 0.15);
+      pulse("#quote .q", C.depots, 1.05);
+
+      // ================= ÉTAPE 2 : l'argent circule =================
+      step(2, C.e2);
+      D.blurOut("#in1", C.e2 - 0.15, 0.12);
+      tl.to(["#ac-b", "#quote"], { opacity: 0, filter: "blur(10px)", duration: 0.25 }, C.e2 - 0.15);
+      tl.to("#ac-a", { x: 225, duration: 0.45, ease: "power3.inOut" }, C.e2);
+      tl.to("#nodes", { opacity: 1, duration: 0.3 }, C.achetes - 0.1);
+      tl.fromTo(["#nd1", "#nd2", "#nd3"], { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, stagger: 0.08, ease: "expo.out" }, C.achetes - 0.1);
+      tl.to("#coin", { opacity: 1, duration: 0.15 }, C.voiture - 0.1);
+      tl.to("#coin", { x: 350, duration: 0.5, ease: "power2.inOut" }, C.part - 0.05);
+      tl.to("#ar1", { opacity: 1, stroke: "#ffb21f", duration: 0.25 }, C.part);
+      tl.to("#ac-a", { opacity: 0.35, duration: 0.3 }, C.vendeur - 0.1);
+      tl.to("#coin", { x: 700, duration: 0.5, ease: "power2.inOut" }, C.fournisseurs - 0.15);
+      tl.to("#ar2", { opacity: 1, stroke: "#ffb21f", duration: 0.25 }, C.fournisseurs - 0.1);
+      D.popIn("#in2", C.circule - 0.1, 0.5);
+      tl.to("#coin", { x: 0, duration: 0.6, ease: "power2.inOut" }, C.circule + 0.2);
+
+      // ================= ÉTAPE 3 : le remboursement détruit l'argent =================
+      step(3, C.e3);
+      D.blurOut("#in2", C.e3 - 0.15, 0.12);
+      tl.to(["#nodes", "#ac-a"], { opacity: 0, filter: "blur(8px)", duration: 0.25 }, C.e3 - 0.15);
+      tl.set("#ac-a", { x: 0, filter: "blur(0px)" }, C.e3 + 0.15);
+      tl.to("#ac-a", { opacity: 1, duration: 0.3 }, C.e3 + 0.15);
+      tl.to("#ac-b", { opacity: 1, filter: "blur(0px)", duration: 0.3 }, C.e3 + 0.15);
+      tl.to("#coin", { opacity: 0, duration: 0.2 }, C.e3 - 0.1);
+      countInt("v-acc", 10000, 0, C.rembourses, 0.9);
+      countInt("v-debt", 10000, 0, C.rembourses, 0.9);
+      { const dg = document.getElementById("dust"), P = [];
+        for (let k = 0; k < 46; k++) { const c = document.createElementNS(NS, "circle");
+          c.setAttribute("cx", 120 + rnd() * 840); c.setAttribute("cy", 560 + rnd() * 220); c.setAttribute("r", 5 + rnd() * 9); c.setAttribute("opacity", 0); dg.appendChild(c); P.push(c); }
+        P.forEach((c, k) => tl.fromTo(c, { opacity: 0, y: 0 }, { keyframes: [{ opacity: 0.9, duration: 0.08 }, { opacity: 0, y: -120 - rnd() * 160, duration: 0.9, ease: "power2.out" }] }, C.detruit - 0.05 + (k % 9) * 0.03)); }
+      tl.to(["#ac-a", "#ac-b"], { opacity: 0.25, scale: 0.92, duration: 0.3 }, C.detruit);
+      D.stamp("#d-stamp span", C.detruit, -5);
+      D.shake(C.detruit + 0.02, 12);
+      D.flash(C.detruit + 0.02, 0.16);
+      D.glow("red", C.detruit, 0.45, 0.3); D.glow("amber", C.detruit, 0.1, 0.4);
+      D.popIn("#in3", C.interets - 0.1, 0.5);
+      D.glow("amber", C.interets, 0.4, 0.4); D.glow("red", C.interets, 0.1, 0.4);
+
+      // ================= LES LIMITES =================
+      D.blurOut(["#st3", "#in3", "#d-stamp span", "#ac-a", "#ac-b"], C.mais - 0.2, 0.15);
+      tl.fromTo("#lim-t .wsp", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.14, stagger: 0.08, ease: "power2.out" }, C.pas2 - 0.1);
+      D.glow("red", C.infini, 0.35, 0.4); D.glow("amber", C.infini, 0.15, 0.4);
+      D.popIn("#lm1 .chip", C.fonds - 0.1, 0.5);
+      D.popIn("#lm2 .chip", C.reserves - 0.1, 0.5);
+      D.glow("cold", C.reserves, 0.35, 0.4);
+      D.popIn("#lm3 .chip", C.verifier - 0.1, 0.5);
+
+      // ================= BONUS : plus de 90 % =================
+      tl.to(["#lim-t", ".lim"], { opacity: 0, filter: "blur(10px)", duration: 0.25 }, C.fou - 0.35);
+      D.glow("red", C.fou, 0, 0.4); D.glow("cold", C.fou, 0, 0.4); D.glow("amber", C.fou, 0.45, 0.4);
+      tl.fromTo("#b-num", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, C.n90 - 0.2);
+      countInt("v-90", 50, 90, C.n90 - 0.2, 0.7);
+      D.blurIn("#b-sub", C.circulation - 0.1);
+      tl.to("#cells .cl", { opacity: 1, duration: 0.2, stagger: 0.04 }, C.circulation);
+      tl.fromTo("#cells .bill", { scale: 1 }, { keyframes: [{ scale: 1.12, duration: 0.1 }, { scale: 1, duration: 0.3 }] }, C.billets - 0.05);
+      D.blurIn("#cp-a", C.billets - 0.1);
+      tl.to("#cells .cl:not(.bill)", { backgroundColor: "#ffb21f", duration: 0.1, stagger: 0.04 }, C.chiffres - 0.15);
+      D.blurIn("#cp-b", C.chiffres - 0.3);
+      D.flash(C.comptes, 0.12, "#ffb21f");
+
+      // ================= CHUTE : la BCE =================
+      tl.to(["#b-num", "#b-sub", "#cells", ".cap2"], { opacity: 0, filter: "blur(10px)", duration: 0.25 }, C.alors - 0.1);
+      D.glow("amber", C.alors, 0.1, 0.4); D.glow("red", C.alors, 0.3, 0.4);
+      tl.fromTo("#ch1", { opacity: 0, x: -80 }, { opacity: 1, x: 0, duration: 0.35, ease: "expo.out" }, C.bce - 0.15);
+      tl.fromTo("#ch1 .ar", { y: 30 }, { y: 0, duration: 0.4, ease: "back.out(3)" }, C.monte - 0.05);
+      tl.to("#lk1", { opacity: 1, duration: 0.2 }, C.credit3 - 0.2);
+      tl.fromTo("#ch2", { opacity: 0, x: -80 }, { opacity: 1, x: 0, duration: 0.35, ease: "expo.out" }, C.credit3 - 0.1);
+      tl.fromTo("#ch2 .ar", { y: 30 }, { y: 0, duration: 0.4, ease: "back.out(3)" }, C.cher - 0.1);
+      tl.to("#lk2", { opacity: 1, duration: 0.2 }, C.expres);
+      tl.fromTo("#ch3", { opacity: 0, x: -80 }, { opacity: 1, x: 0, duration: 0.35, ease: "expo.out" }, C.freiner - 0.15);
+      tl.fromTo("#ch3 .ar", { y: -30 }, { y: 0, duration: 0.4, ease: "back.out(3)" }, C.freiner);
+      D.glow("cold", C.freiner, 0.45, 0.4); D.glow("red", C.freiner, 0.1, 0.4);
+      D.shake(C.creation, 7);
+      tl.to("#s-main", { scale: 1.3, opacity: 0, filter: "blur(16px)", duration: 0.3, ease: "power3.in" }, C.abonne - 0.32);
+
+      // ================= CARTE DE FIN =================
+      D.glow("red", C.abonne - 0.2, 0, 0.4); D.glow("amber", C.abonne - 0.2, 0, 0.4); D.glow("cold", C.abonne - 0.2, 0, 0.4);
+      D.glow("cream", C.abonne - 0.2, 0.5, 0.4);
+      D.endCard(C.abonne - 0.05, C.vraiment);
+
+      D.captions(CAP);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

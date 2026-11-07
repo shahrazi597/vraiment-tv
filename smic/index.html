@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/gsap.min.js"></script>
+    <script src="assets/da.js"></script>
+    <link rel="stylesheet" href="assets/da.css" />
+    <style>
+      /* ---------- accroche ---------- */
+      #h-t1 { top: 300px; font-size: 104px; }
+      .hc { position: absolute; left: 140px; width: 800px; height: 200px; border-radius: 32px; background: var(--panel); border: 4px solid var(--line);
+        display: flex; flex-direction: column; justify-content: center; padding: 0 48px; }
+      .hc .k { font-size: 34px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+      .hc .v { font-size: 112px; font-weight: 900; letter-spacing: -.045em; line-height: 1; white-space: nowrap; }
+      #hc-a { top: 560px; border-color: var(--red); } #hc-a .v { color: var(--red); }
+      #hc-b { top: 800px; border-color: var(--amber); opacity: 0; } #hc-b .v { color: var(--amber); }
+      #h-gap { position: absolute; left: 0; right: 0; top: 1040px; text-align: center; font-size: 60px; font-weight: 900; color: var(--ink); opacity: 0; white-space: nowrap; }
+      #h-gap .r { color: var(--red); }
+
+      /* ---------- la barre ---------- */
+      #ptag { position: absolute; left: 90px; top: 300px; width: 330px; height: 104px; border-radius: 28px; background: var(--panel);
+        border: 3px solid var(--line); display: flex; align-items: center; justify-content: center; opacity: 0;
+        font-size: 64px; font-weight: 900; letter-spacing: -.04em; color: var(--ink); white-space: nowrap; }
+      #bar { position: absolute; left: 90px; top: 420px; width: 330px; height: 710px; border-radius: 34px; border: 5px solid var(--cream);
+        background: #111115; overflow: hidden; opacity: 0; }
+      .sl { position: absolute; left: 0; right: 0; background: #2a2a32; border-bottom: 2px solid #0b0b0e; }
+      #sl-pat { top: 0; height: 43px; }
+      #sl-sal { top: 43px; height: 147px; }
+      #sl-net { top: 190px; height: 520px; border-bottom: 0; }
+      .sl .pct { position: absolute; left: 0; right: 0; top: 50%; margin-top: -34px; text-align: center; font-size: 60px; font-weight: 900;
+        letter-spacing: -.03em; color: rgba(11,11,14,.85); opacity: 0; }
+      #brk { position: absolute; left: 0; top: 0; }
+
+      .label { position: absolute; left: 470px; width: 580px; opacity: 0; }
+      .label .name { display: flex; align-items: center; gap: 14px; font-size: 34px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; white-space: nowrap; }
+      .label .name i { display: block; width: 22px; height: 22px; border-radius: 6px; }
+      .label .sub { font-size: 30px; font-weight: 600; color: var(--muted); margin-top: 4px; white-space: nowrap; }
+      .label .val { font-size: 84px; font-weight: 900; letter-spacing: -.045em; line-height: 1.04; margin-top: 2px; white-space: nowrap; opacity: 0; }
+      #l-brut { top: 430px; } #l-brut .val { color: var(--ink); }
+      #l-pat { top: 430px; } #l-pat .val { color: var(--red); }
+      #l-sal { top: 640px; } #l-sal .val { color: var(--cream); }
+      #l-red { top: 640px; } #l-red .val { color: var(--cold); }
+      #l-net { top: 960px; } #l-net .val { color: var(--amber); }
+      .chips { position: absolute; left: 470px; width: 580px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+      .chips .chip { position: relative; font-size: 30px; padding: 10px 20px; }
+      .chip i { display: block; width: 20px; height: 20px; border-radius: 50%; }
+      #ch-brut { top: 580px; }
+      #ch-sal { top: 790px; }
+
+      /* ---------- bonus : l'augmentation ---------- */
+      #b-num { position: absolute; left: 0; right: 0; top: 330px; text-align: center; font-size: 150px; font-weight: 900; letter-spacing: -.05em;
+        color: var(--cream); line-height: 1; opacity: 0; white-space: nowrap; }
+      #b-sub { position: absolute; left: 0; right: 0; top: 490px; text-align: center; font-size: 40px; font-weight: 800; color: var(--muted); opacity: 0; }
+      .bc { position: absolute; top: 600px; width: 430px; height: 330px; border-radius: 32px; background: var(--panel); border: 5px solid var(--line);
+        text-align: center; opacity: 0; }
+      .bc .k { margin-top: 42px; font-size: 36px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+      .bc .v { font-size: 112px; font-weight: 900; letter-spacing: -.05em; line-height: 1.05; white-space: nowrap; }
+      .bc .s { font-size: 32px; font-weight: 700; color: var(--muted); }
+      #bc-a { left: 90px; border-color: var(--amber); } #bc-a .v { color: var(--amber); }
+      #bc-b { left: 560px; border-color: var(--red); } #bc-b .v { color: var(--red); }
+      #b-stamp { top: 990px; }
+
+      /* ---------- chute : la réduction fond ---------- */
+      #ch-t { position: absolute; left: 0; right: 0; top: 330px; text-align: center; font-size: 40px; font-weight: 800; letter-spacing: .05em;
+        text-transform: uppercase; color: var(--muted); opacity: 0; }
+      #curve { position: absolute; left: 0; top: 0; opacity: 0; }
+      #tw-stamp { top: 1030px; }
+      #tw-stamp span { font-size: 56px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="47.51" data-width="1080" data-height="1920">
+      <audio id="vo" src="assets/voix.mp3" data-start="0" data-duration="44.565" data-volume="1"></audio>
+      <audio id="sfx0" src="assets/sfx/kaching.mp3" data-start="1.42" data-duration="1.2" data-volume="0.24" data-fade-out="0.20"></audio>
+      <audio id="sfx1" src="assets/sfx/ticker.mp3" data-start="4.277" data-duration="1.0" data-volume="0.2" data-fade-out="0.20"></audio>
+      <audio id="sfx2" src="assets/sfx/whoosh-short.mp3" data-start="8.281" data-duration="0.575" data-volume="0.22" data-fade-out="0.19"></audio>
+      <audio id="sfx3" src="assets/sfx/ticker.mp3" data-start="10.184" data-duration="1.0" data-volume="0.18" data-fade-out="0.20"></audio>
+      <audio id="sfx4" src="assets/sfx/click-soft.mp3" data-start="13.482" data-duration="0.366" data-volume="0.18" data-fade-out="0.12"></audio>
+      <audio id="sfx5" src="assets/sfx/kaching2.mp3" data-start="22.251" data-duration="1.0" data-volume="0.22" data-fade-out="0.20"></audio>
+      <audio id="sfx6" src="assets/sfx/click-soft.mp3" data-start="24.582" data-duration="0.366" data-volume="0.18" data-fade-out="0.12"></audio>
+      <audio id="sfx7" src="assets/sfx/pop.mp3" data-start="29.488" data-duration="0.72" data-volume="0.2" data-fade-out="0.20"></audio>
+      <audio id="sfx8" src="assets/sfx/whoosh-short.mp3" data-start="30.661" data-duration="0.575" data-volume="0.2" data-fade-out="0.19"></audio>
+      <audio id="sfx9" src="assets/sfx/stamp.mp3" data-start="36.449" data-duration="0.7" data-volume="0.4" data-fade-out="0.20"></audio>
+      <audio id="sfx10" src="assets/sfx/stamp2.mp3" data-start="41.234" data-duration="0.7" data-volume="0.42" data-fade-out="0.20"></audio>
+      <audio id="sfx11" src="assets/sfx/pop.mp3" data-start="42.938" data-duration="0.72" data-volume="0.28" data-fade-out="0.20"></audio>
+
+      <div id="bg" class="clip" data-start="0" data-duration="47.51" data-track-index="0" data-track-kind="graphics">
+        <div id="grid"></div>
+        <div id="gl-cream" class="glow"></div>
+        <div id="gl-red" class="glow"></div>
+        <div id="gl-amber" class="glow"></div>
+        <div id="gl-cold" class="glow"></div>
+        <div id="vign"></div>
+      </div>
+
+      <div id="cam">
+        <!-- 1. Accroche -->
+        <div id="s-hook" class="clip" data-start="0" data-duration="8.880" data-track-index="1" data-track-kind="graphics">
+          <div id="h-t1" class="hl">Un salarié<br />au <span class="a">SMIC</span></div>
+          <div id="hc-a" class="hc"><div class="k">Coûte à son patron</div><div class="v"><span id="h-n1">1&nbsp;988</span>&nbsp;€</div></div>
+          <div id="hc-b" class="hc"><div class="k">Touche sur son compte</div><div class="v"><span id="h-n2">0</span>&nbsp;€</div></div>
+          <div id="h-gap">Il manque <span class="r">532&nbsp;€</span>&nbsp;!</div>
+        </div>
+
+        <!-- 2. Où passe l'argent -->
+        <div id="s-main" class="clip" data-start="8.530" data-duration="34.190" data-track-index="2" data-track-kind="graphics">
+          <div id="ptag"><span id="p-num">1&nbsp;988</span>&nbsp;€</div>
+          <div id="bar" data-layout-allow-overflow>
+            <div id="sl-pat" class="sl"></div>
+            <div id="sl-sal" class="sl"></div>
+            <div id="sl-net" class="sl"><div id="pc-net" class="pct">73&nbsp;%</div></div>
+          </div>
+          <svg id="brk" width="1080" height="1920" viewBox="0 0 1080 1920" aria-hidden="true">
+            <path id="brk-p" d="M440 470 H452 V1125 H440" fill="none" stroke="#f6f4ee" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+          </svg>
+
+          <div id="l-brut" class="label"><div class="name"><i style="background:var(--ink)"></i>Salaire brut</div><div class="val"><span id="v-brut">0</span>&nbsp;€</div></div>
+          <div id="ch-brut" class="chips"><span id="cb1" class="chip"><i style="background:var(--ink)"></i>Le chiffre du contrat</span></div>
+          <div id="l-sal" class="label"><div class="name"><i style="background:var(--cream)"></i>Cotisations salariales</div><div class="val">−<span id="v-sal">0</span>&nbsp;€</div></div>
+          <div id="ch-sal" class="chips">
+            <span id="cs1" class="chip"><i style="background:var(--cream)"></i>180&nbsp;€ de CSG et CRDS</span>
+            <span id="cs2" class="chip"><i style="background:var(--cream)"></i>Le reste : surtout ta retraite</span>
+          </div>
+          <div id="l-net" class="label"><div class="name"><i style="background:var(--amber)"></i>Ton salaire net</div><div class="val"><span id="v-net">0</span>&nbsp;€</div></div>
+          <div id="l-pat" class="label"><div class="name"><i style="background:var(--red)"></i>Cotisations patronales</div><div class="val">+<span id="v-pat">0</span>&nbsp;€</div></div>
+          <div id="l-red" class="label"><div class="name"><i style="background:var(--cold)"></i>Réduction de l'État</div><div class="sub">au niveau du SMIC, chaque mois</div><div class="val">−<span id="v-red">0</span>&nbsp;€</div></div>
+
+          <!-- bonus -->
+          <div id="b-num">+100&nbsp;€</div>
+          <div id="b-sub">d'augmentation brute</div>
+          <div id="bc-a" class="bc"><div class="k">Toi</div><div class="v">+<span id="v-79">0</span>&nbsp;€</div><div class="s">en net</div></div>
+          <div id="bc-b" class="bc"><div class="k">Ton patron</div><div class="v">+<span id="v-197">0</span>&nbsp;€</div><div class="s">de coût en plus</div></div>
+          <div id="b-stamp" class="stamp"><span>2,5 fois plus&nbsp;!</span></div>
+
+          <!-- chute -->
+          <div id="ch-t">La réduction, selon ton salaire</div>
+          <svg id="curve" width="1080" height="1920" viewBox="0 0 1080 1920" aria-hidden="true">
+            <line x1="130" y1="900" x2="960" y2="900" stroke="#ece6d6" stroke-width="5" stroke-linecap="round" />
+            <line x1="130" y1="420" x2="130" y2="900" stroke="#2a2a32" stroke-width="4" />
+            <path id="cv-area" d="M150 450 C300 560 420 700 560 780 C680 845 820 880 930 892 L930 900 L150 900 Z" fill="#4cc4ff" opacity=".12" />
+            <path id="cv" d="M150 450 C300 560 420 700 560 780 C680 845 820 880 930 892" fill="none" stroke="#4cc4ff" stroke-width="10" stroke-linecap="round" />
+            <circle id="cv-dot" cx="150" cy="450" r="18" fill="#4cc4ff" />
+            <g font-family="Inter Display" font-weight="900" fill="#4cc4ff">
+              <text id="cv-a" x="210" y="406" font-size="64" letter-spacing="-2" text-anchor="middle">700 €</text>
+            </g>
+            <g font-family="Inter Display" font-weight="800" font-size="30" fill="#8e8c95">
+              <text id="cv-x1" x="150" y="948" text-anchor="middle">SMIC</text>
+              <text id="cv-x2" x="930" y="948" text-anchor="middle">3 SMIC</text>
+              <text id="cv-x3" x="540" y="948" text-anchor="middle">ton salaire →</text>
+            </g>
+          </svg>
+          <div id="tw-stamp" class="stamp"><span>La trappe à bas salaires</span></div>
+        </div>
+
+        <!-- 3. Carte de fin -->
+        <div id="s-cta" class="clip" data-start="42.570" data-duration="4.940" data-track-index="3" data-track-kind="graphics">
+          <div id="c-title"><div>Combien ça</div><div>coûte</div><div class="a">vraiment&nbsp;?</div></div>
+          <div id="c-btn"><span>Abonne-toi</span></div>
+          <div id="c-ep">Épisode 5 · Un salarié au SMIC</div>
+          <div id="c-src">SMIC 2026, temps plein, petite entreprise. Source : simulateur de l'Urssaf (nov. 2026)</div>
+        </div>
+      </div>
+
+      <div id="caps" class="clip" data-start="6.140" data-duration="41.370" data-track-index="5" data-track-kind="captions">
+        <div id="g0" class="cap"><span class="in"><span id="w0_0" class="wd">Alors</span></span></div>
+        <div id="g1" class="cap"><span class="in"><span id="w1_0" class="wd">où</span> <span id="w1_1" class="wd">passent</span> <span id="w1_2" class="wd">les</span></span></div>
+        <div id="g2" class="cap"><span class="in"><span id="w2_0" class="wd em">532 €</span> <span id="w2_1" class="wd">qui</span> <span id="w2_2" class="wd">manquent ?</span></span></div>
+        <div id="g3" class="cap"><span class="in"><span id="w3_0" class="wd">D'abord</span></span></div>
+        <div id="g4" class="cap"><span class="in"><span id="w4_0" class="wd">le</span> <span id="w4_1" class="wd">salaire</span> <span id="w4_2" class="wd">brut :</span></span></div>
+        <div id="g5" class="cap"><span class="in"><span id="w5_0" class="wd">1</span> <span id="w5_1" class="wd em">867 €.</span></span></div>
+        <div id="g6" class="cap"><span class="in"><span id="w6_0" class="wd">C'est</span> <span id="w6_1" class="wd">le</span> <span id="w6_2" class="wd">chiffre</span></span></div>
+        <div id="g7" class="cap"><span class="in"><span id="w7_0" class="wd">écrit</span> <span id="w7_1" class="wd">sur</span> <span id="w7_2" class="wd">le</span></span></div>
+        <div id="g8" class="cap"><span class="in"><span id="w8_0" class="wd">contrat.</span></span></div>
+        <div id="g9" class="cap"><span class="in"><span id="w9_0" class="wd">Sur</span> <span id="w9_1" class="wd">ce</span> <span id="w9_2" class="wd">brut</span></span></div>
+        <div id="g10" class="cap"><span class="in"><span id="w10_0" class="wd">on</span> <span id="w10_1" class="wd">retire</span> <span id="w10_2" class="wd em">411 €</span></span></div>
+        <div id="g11" class="cap"><span class="in"><span id="w11_0" class="wd">de</span> <span id="w11_1" class="wd">cotisations</span> <span id="w11_2" class="wd">salariales.</span></span></div>
+        <div id="g12" class="cap"><span class="in"><span id="w12_0" class="wd em">180 €</span> <span id="w12_1" class="wd">de</span> <span id="w12_2" class="wd em">CSG</span></span></div>
+        <div id="g13" class="cap"><span class="in"><span id="w13_0" class="wd">et</span> <span id="w13_1" class="wd">de</span> <span id="w13_2" class="wd em">CRDS</span></span></div>
+        <div id="g14" class="cap"><span class="in"><span id="w14_0" class="wd">pour</span> <span id="w14_1" class="wd">la</span> <span id="w14_2" class="wd">Sécu</span></span></div>
+        <div id="g15" class="cap"><span class="in"><span id="w15_0" class="wd">et</span> <span id="w15_1" class="wd">sa</span> <span id="w15_2" class="wd">dette.</span></span></div>
+        <div id="g16" class="cap"><span class="in"><span id="w16_0" class="wd">Le</span> <span id="w16_1" class="wd">reste</span></span></div>
+        <div id="g17" class="cap"><span class="in"><span id="w17_0" class="wd">surtout</span> <span id="w17_1" class="wd">pour</span> <span id="w17_2" class="wd">ta</span></span></div>
+        <div id="g18" class="cap"><span class="in"><span id="w18_0" class="wd em">retraite.</span></span></div>
+        <div id="g19" class="cap"><span class="in"><span id="w19_0" class="wd">Résultat :</span></span></div>
+        <div id="g20" class="cap"><span class="in"><span id="w20_0" class="wd">1</span> <span id="w20_1" class="wd em">456 €</span> <span id="w20_2" class="wd em">net.</span></span></div>
+        <div id="g21" class="cap"><span class="in"><span id="w21_0" class="wd">Côté</span> <span id="w21_1" class="wd">patron</span></span></div>
+        <div id="g22" class="cap"><span class="in"><span id="w22_0" class="wd">il</span> <span id="w22_1" class="wd">ajoute</span> <span id="w22_2" class="wd em">121 €</span></span></div>
+        <div id="g23" class="cap"><span class="in"><span id="w23_0" class="wd">de</span> <span id="w23_1" class="wd">cotisations.</span></span></div>
+        <div id="g24" class="cap"><span class="in"><span id="w24_0" class="wd">Seulement</span> <span id="w24_1" class="wd em">121 ?</span></span></div>
+        <div id="g25" class="cap"><span class="in"><span id="w25_0" class="wd">Oui !</span></span></div>
+        <div id="g26" class="cap"><span class="in"><span id="w26_0" class="wd">Au</span> <span id="w26_1" class="wd">niveau</span> <span id="w26_2" class="wd">du</span></span></div>
+        <div id="g27" class="cap"><span class="in"><span id="w27_0" class="wd">SMIC</span></span></div>
+        <div id="g28" class="cap"><span class="in"><span id="w28_0" class="wd">l'État</span> <span id="w28_1" class="wd">les</span> <span id="w28_2" class="wd">réduit</span></span></div>
+        <div id="g29" class="cap"><span class="in"><span id="w29_0" class="wd">de</span> <span id="w29_1" class="wd em">700 €</span> <span id="w29_2" class="wd">par</span></span></div>
+        <div id="g30" class="cap"><span class="in"><span id="w30_0" class="wd">mois.</span></span></div>
+        <div id="g31" class="cap"><span class="in"><span id="w31_0" class="wd">Le</span> <span id="w31_1" class="wd">plus</span> <span id="w31_2" class="wd">fou ?</span></span></div>
+        <div id="g32" class="cap"><span class="in"><span id="w32_0" class="wd">Si</span> <span id="w32_1" class="wd">ton</span> <span id="w32_2" class="wd">patron</span></span></div>
+        <div id="g33" class="cap"><span class="in"><span id="w33_0" class="wd">t'augmente</span> <span id="w33_1" class="wd">de</span> <span id="w33_2" class="wd em">100 €</span></span></div>
+        <div id="g34" class="cap"><span class="in"><span id="w34_0" class="wd">brut</span></span></div>
+        <div id="g35" class="cap"><span class="in"><span id="w35_0" class="wd">toi</span> <span id="w35_1" class="wd">tu</span> <span id="w35_2" class="wd">gagnes</span></span></div>
+        <div id="g36" class="cap"><span class="in"><span id="w36_0" class="wd em">79 €</span> <span id="w36_1" class="wd em">net…</span></span></div>
+        <div id="g37" class="cap"><span class="in"><span id="w37_0" class="wd">mais</span> <span id="w37_1" class="wd">lui</span> <span id="w37_2" class="wd">paie</span></span></div>
+        <div id="g38" class="cap"><span class="in"><span id="w38_0" class="wd em">197 €</span> <span id="w38_1" class="wd">de</span> <span id="w38_2" class="wd">plus !</span></span></div>
+        <div id="g39" class="cap"><span class="in"><span id="w39_0" class="wd">Plus</span> <span id="w39_1" class="wd">ton</span> <span id="w39_2" class="wd">salaire</span></span></div>
+        <div id="g40" class="cap"><span class="in"><span id="w40_0" class="wd">monte</span></span></div>
+        <div id="g41" class="cap"><span class="in"><span id="w41_0" class="wd">plus</span> <span id="w41_1" class="wd">la</span> <span id="w41_2" class="wd">réduction</span></span></div>
+        <div id="g42" class="cap"><span class="in"><span id="w42_0" class="wd em">fond.</span></span></div>
+        <div id="g43" class="cap"><span class="in"><span id="w43_0" class="wd">Les</span> <span id="w43_1" class="wd">économistes</span> <span id="w43_2" class="wd">ont</span></span></div>
+        <div id="g44" class="cap"><span class="in"><span id="w44_0" class="wd">un</span> <span id="w44_1" class="wd">nom</span> <span id="w44_2" class="wd">pour</span></span></div>
+        <div id="g45" class="cap"><span class="in"><span id="w45_0" class="wd">ça :</span></span></div>
+        <div id="g46" class="cap"><span class="in"><span id="w46_0" class="wd">la</span> <span id="w46_1" class="wd em">trappe</span> <span id="w46_2" class="wd">à</span></span></div>
+        <div id="g47" class="cap"><span class="in"><span id="w47_0" class="wd">bas</span> <span id="w47_1" class="wd">salaires.</span></span></div>
+        <div id="g48" class="cap"><span class="in"><span id="w48_0" class="wd">Abonne-toi</span> <span id="w48_1" class="wd">pour</span> <span id="w48_2" class="wd">savoir</span></span></div>
+        <div id="g49" class="cap"><span class="in"><span id="w49_0" class="wd">combien</span> <span id="w49_1" class="wd">ça</span> <span id="w49_2" class="wd">coûte</span></span></div>
+        <div id="g50" class="cap"><span class="in"><span id="w50_0" class="wd em">vraiment.</span></span></div>
+      </div>
+
+      <div id="tag" class="clip" data-start="0" data-duration="47.51" data-track-index="6" data-track-kind="graphics">
+        <span class="pill">COMBIEN ÇA COÛTE VRAIMENT&nbsp;?</span><span class="pill num">#5</span>
+      </div>
+
+      <div id="fx" class="clip" data-start="0" data-duration="47.51" data-track-index="7" data-track-kind="graphics">
+        <div id="flash"></div>
+      </div>
+    </div>
+
+    <script>
+      const C = {"n988": 1.6, "mais": 3.58, "touche": 4.2, "seulement": 4.44, "n456": 5.2, "alors": 6.2, "n532": 7.18, "dabord": 8.68, "salaire1": 9.28, "brut1": 9.56, "n867": 10.447, "contrat": 12.38, "retire": 13.6, "n411": 13.86, "n180": 15.86, "secu": 18.74, "reste": 19.92, "resultat": 21.3, "cote": 23.9, "ajoute": 24.7, "n121": 24.9, "niveau": 28.22, "n700": 29.62, "fou": 31.06, "n100": 32.42, "n79": 33.9, "n197": 36.04, "reduction": 38.98, "fond": 39.24, "trappe": 41.32, "abonne": 42.72, "n456b": 22.307, "net": 23.24, "seulement2": 26.4, "brut3": 32.8, "toi": 33.34, "lui3": 35.38, "plus_monte": 37.66, "vraiment": 44.16, "voEnd": 44.515, "end": 47.51};
+      const CAP = [{"id": "g0", "start": 6.14, "end": 6.43, "w": [{"id": "w0_0", "t": 6.2}]}, {"id": "g1", "start": 6.43, "end": 7.23, "w": [{"id": "w1_0", "t": 6.38}, {"id": "w1_1", "t": 6.8}, {"id": "w1_2", "t": 7.1}]}, {"id": "g2", "start": 7.23, "end": 8.73, "w": [{"id": "w2_0", "t": 7.18}, {"id": "w2_1", "t": 8.0}, {"id": "w2_2", "t": 8.18}]}, {"id": "g3", "start": 8.73, "end": 9.05, "w": [{"id": "w3_0", "t": 8.68}]}, {"id": "g4", "start": 9.05, "end": 9.98, "w": [{"id": "w4_0", "t": 9.0}, {"id": "w4_1", "t": 9.28}, {"id": "w4_2", "t": 9.56}]}, {"id": "g5", "start": 9.98, "end": 11.32, "w": [{"id": "w5_0", "t": 10.04}, {"id": "w5_1", "t": 10.447}]}, {"id": "g6", "start": 11.32, "end": 11.93, "w": [{"id": "w6_0", "t": 11.38}, {"id": "w6_1", "t": 11.54}, {"id": "w6_2", "t": 11.64}]}, {"id": "g7", "start": 11.93, "end": 12.43, "w": [{"id": "w7_0", "t": 11.88}, {"id": "w7_1", "t": 12.14}, {"id": "w7_2", "t": 12.3}]}, {"id": "g8", "start": 12.43, "end": 12.82, "w": [{"id": "w8_0", "t": 12.38}]}, {"id": "g9", "start": 12.82, "end": 13.37, "w": [{"id": "w9_0", "t": 12.88}, {"id": "w9_1", "t": 12.98}, {"id": "w9_2", "t": 13.14}]}, {"id": "g10", "start": 13.37, "end": 14.66, "w": [{"id": "w10_0", "t": 13.32}, {"id": "w10_1", "t": 13.6}, {"id": "w10_2", "t": 13.86}]}, {"id": "g11", "start": 14.66, "end": 15.8, "w": [{"id": "w11_0", "t": 14.72}, {"id": "w11_1", "t": 14.84}, {"id": "w11_2", "t": 15.237}]}, {"id": "g12", "start": 15.8, "end": 17.49, "w": [{"id": "w12_0", "t": 15.86}, {"id": "w12_1", "t": 16.7}, {"id": "w12_2", "t": 16.88}]}, {"id": "g13", "start": 17.49, "end": 18.19, "w": [{"id": "w13_0", "t": 17.44}, {"id": "w13_1", "t": 17.62}, {"id": "w13_2", "t": 17.72}]}, {"id": "g14", "start": 18.19, "end": 19.09, "w": [{"id": "w14_0", "t": 18.14}, {"id": "w14_1", "t": 18.62}, {"id": "w14_2", "t": 18.74}]}, {"id": "g15", "start": 19.09, "end": 19.76, "w": [{"id": "w15_0", "t": 19.04}, {"id": "w15_1", "t": 19.28}, {"id": "w15_2", "t": 19.38}]}, {"id": "g16", "start": 19.76, "end": 20.19, "w": [{"id": "w16_0", "t": 19.82}, {"id": "w16_1", "t": 19.92}]}, {"id": "g17", "start": 20.19, "end": 20.895, "w": [{"id": "w17_0", "t": 20.14}, {"id": "w17_1", "t": 20.54}, {"id": "w17_2", "t": 20.76}]}, {"id": "g18", "start": 20.895, "end": 21.24, "w": [{"id": "w18_0", "t": 20.845}]}, {"id": "g19", "start": 21.24, "end": 21.89, "w": [{"id": "w19_0", "t": 21.3}]}, {"id": "g20", "start": 21.89, "end": 23.84, "w": [{"id": "w20_0", "t": 21.84}, {"id": "w20_1", "t": 22.307}, {"id": "w20_2", "t": 23.24}]}, {"id": "g21", "start": 23.84, "end": 24.47, "w": [{"id": "w21_0", "t": 23.9}, {"id": "w21_1", "t": 24.12}]}, {"id": "g22", "start": 24.47, "end": 25.64, "w": [{"id": "w22_0", "t": 24.42}, {"id": "w22_1", "t": 24.7}, {"id": "w22_2", "t": 24.9}]}, {"id": "g23", "start": 25.64, "end": 26.34, "w": [{"id": "w23_0", "t": 25.7}, {"id": "w23_1", "t": 25.78}]}, {"id": "g24", "start": 26.34, "end": 27.57, "w": [{"id": "w24_0", "t": 26.4}, {"id": "w24_1", "t": 26.78}]}, {"id": "g25", "start": 27.57, "end": 28.17, "w": [{"id": "w25_0", "t": 27.52}]}, {"id": "g26", "start": 28.17, "end": 28.55, "w": [{"id": "w26_0", "t": 28.12}, {"id": "w26_1", "t": 28.22}, {"id": "w26_2", "t": 28.36}]}, {"id": "g27", "start": 28.55, "end": 28.79, "w": [{"id": "w27_0", "t": 28.5}]}, {"id": "g28", "start": 28.79, "end": 29.59, "w": [{"id": "w28_0", "t": 28.74}, {"id": "w28_1", "t": 29.14}, {"id": "w28_2", "t": 29.26}]}, {"id": "g29", "start": 29.59, "end": 30.47, "w": [{"id": "w29_0", "t": 29.54}, {"id": "w29_1", "t": 29.62}, {"id": "w29_2", "t": 30.24}]}, {"id": "g30", "start": 30.47, "end": 30.78, "w": [{"id": "w30_0", "t": 30.42}]}, {"id": "g31", "start": 30.78, "end": 31.53, "w": [{"id": "w31_0", "t": 30.84}, {"id": "w31_1", "t": 30.92}, {"id": "w31_2", "t": 31.06}]}, {"id": "g32", "start": 31.53, "end": 31.91, "w": [{"id": "w32_0", "t": 31.48}, {"id": "w32_1", "t": 31.6}, {"id": "w32_2", "t": 31.7}]}, {"id": "g33", "start": 31.91, "end": 32.74, "w": [{"id": "w33_0", "t": 31.86}, {"id": "w33_1", "t": 32.28}, {"id": "w33_2", "t": 32.42}]}, {"id": "g34", "start": 32.74, "end": 33.28, "w": [{"id": "w34_0", "t": 32.8}]}, {"id": "g35", "start": 33.28, "end": 33.95, "w": [{"id": "w35_0", "t": 33.34}, {"id": "w35_1", "t": 33.5}, {"id": "w35_2", "t": 33.62}]}, {"id": "g36", "start": 33.95, "end": 35.2, "w": [{"id": "w36_0", "t": 33.9}, {"id": "w36_1", "t": 34.74}]}, {"id": "g37", "start": 35.2, "end": 36.09, "w": [{"id": "w37_0", "t": 35.26}, {"id": "w37_1", "t": 35.38}, {"id": "w37_2", "t": 35.56}]}, {"id": "g38", "start": 36.09, "end": 37.71, "w": [{"id": "w38_0", "t": 36.04}, {"id": "w38_1", "t": 37.04}, {"id": "w38_2", "t": 37.14}]}, {"id": "g39", "start": 37.71, "end": 38.27, "w": [{"id": "w39_0", "t": 37.66}, {"id": "w39_1", "t": 37.8}, {"id": "w39_2", "t": 37.96}]}, {"id": "g40", "start": 38.27, "end": 38.66, "w": [{"id": "w40_0", "t": 38.22}]}, {"id": "g41", "start": 38.66, "end": 39.29, "w": [{"id": "w41_0", "t": 38.72}, {"id": "w41_1", "t": 38.82}, {"id": "w41_2", "t": 38.98}]}, {"id": "g42", "start": 39.29, "end": 39.62, "w": [{"id": "w42_0", "t": 39.24}]}, {"id": "g43", "start": 39.62, "end": 40.43, "w": [{"id": "w43_0", "t": 39.68}, {"id": "w43_1", "t": 39.8}, {"id": "w43_2", "t": 40.26}]}, {"id": "g44", "start": 40.43, "end": 40.87, "w": [{"id": "w44_0", "t": 40.38}, {"id": "w44_1", "t": 40.48}, {"id": "w44_2", "t": 40.64}]}, {"id": "g45", "start": 40.87, "end": 41.18, "w": [{"id": "w45_0", "t": 40.82}]}, {"id": "g46", "start": 41.18, "end": 42.01, "w": [{"id": "w46_0", "t": 41.24}, {"id": "w46_1", "t": 41.32}, {"id": "w46_2", "t": 41.82}]}, {"id": "g47", "start": 42.01, "end": 42.66, "w": [{"id": "w47_0", "t": 41.96}, {"id": "w47_1", "t": 42.12}]}, {"id": "g48", "start": 42.66, "end": 43.51, "w": [{"id": "w48_0", "t": 42.72}, {"id": "w48_1", "t": 43.12}, {"id": "w48_2", "t": 43.28}]}, {"id": "g49", "start": 43.51, "end": 44.21, "w": [{"id": "w49_0", "t": 43.46}, {"id": "w49_1", "t": 43.74}, {"id": "w49_2", "t": 43.98}]}, {"id": "g50", "start": 44.21, "end": 45.1, "w": [{"id": "w50_0", "t": 44.16}]}];
+      DA.fitCaptions(CAP);
+      const tl = gsap.timeline({ paused: true });
+      const D = DA(tl);
+      D.drift(C.end);
+      const sp = (v) => Math.round(v).toLocaleString("fr-FR").replace(/ | |,/g, " ");
+      const countInt = (id, a, b, at, d) => { const o = { v: a }, el = document.getElementById(id);
+        tl.to(o, { v: b, duration: d, ease: "power2.out", onUpdate: () => (el.textContent = sp(o.v)) }, at); };
+      const pulse = (sel, at, s = 1.08) => tl.fromTo(sel, { scale: 1 }, { keyframes: [{ scale: s, duration: 0.09 }, { scale: 1, duration: 0.35, ease: "expo.out" }] }, at);
+
+      // ================= 1. ACCROCHE =================
+      D.glow("red", 0, 0.4, 0.01); D.glow("amber", 0, 0.2, 0.01);
+      pulse("#hc-a", C.n988 - 0.05, 1.05);
+      D.glow("amber", C.mais, 0.45, 0.4); D.glow("red", C.mais, 0.2, 0.4);
+      tl.fromTo("#hc-b", { opacity: 0, y: 50, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.3, ease: "expo.out" }, C.touche - 0.1);
+      countInt("h-n2", 0, 1456, C.seulement - 0.05, 0.9);
+      D.shake(C.n456, 9);
+      D.flash(C.n456, 0.14, "#ffb21f");
+      tl.fromTo("#h-gap", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2.2)" }, C.n532 - 0.1);
+      // les cartes se rangent dans la barre
+      const T1 = C.dabord;
+      D.blurOut(["#h-t1", "#h-gap"], T1 - 0.3, 0.15);
+      tl.to(["#hc-a", "#hc-b"], { x: -300, y: 120, scale: 0.4, opacity: 0, duration: 0.4, ease: "power3.inOut" }, T1 - 0.3);
+      D.glow("red", T1, 0.1, 0.4); D.glow("amber", T1, 0.15, 0.4); D.glow("cream", T1, 0.4, 0.4);
+
+      // ================= 2. OÙ PASSE L'ARGENT =================
+      tl.fromTo("#ptag", { opacity: 0, y: 60, scale: 0.8 }, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "expo.out" }, T1 - 0.05);
+      tl.fromTo("#bar", { opacity: 0, y: 140, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, T1 - 0.1);
+      tl.fromTo("#bar .sl", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: 0.3, stagger: 0.06, ease: "power3.out" }, T1 + 0.2);
+      // le brut
+      tl.to("#brk-p", { opacity: 1, duration: 0.25 }, C.brut1 - 0.1);
+      tl.to(["#sl-sal", "#sl-net"], { backgroundColor: "#55545c", duration: 0.25 }, C.brut1 - 0.1);
+      D.blurIn("#l-brut", C.salaire1 - 0.1);
+      D.blurIn("#l-brut .val", C.n867 - 0.12, 0.16);
+      countInt("v-brut", 0, 1867, C.n867 - 0.1, 1.0);
+      D.popIn("#cb1", C.contrat - 0.2, 0.5);
+      // les cotisations salariales
+      D.blurOut("#cb1", C.retire - 0.3, 0.15);
+      tl.to("#sl-sal", { backgroundColor: "#ece6d6", duration: 0.25 }, C.retire - 0.1);
+      tl.fromTo("#sl-sal", { x: 0 }, { keyframes: [{ x: 26, duration: 0.15 }, { x: 0, duration: 0.3, ease: "expo.out" }] }, C.retire - 0.1);
+      D.blurIn("#l-sal", C.retire - 0.1);
+      D.blurIn("#l-sal .val", C.n411 - 0.12, 0.16);
+      countInt("v-sal", 0, 411, C.n411 - 0.1, 0.9);
+      D.popIn("#cs1", C.n180 - 0.1, 0.5);
+      D.glow("cream", C.secu, 0.55, 0.4);
+      D.popIn("#cs2", C.reste - 0.1, 0.5);
+      // le net
+      tl.to("#sl-net", { backgroundColor: "#ffb21f", duration: 0.3 }, C.resultat - 0.1);
+      D.glow("amber", C.resultat, 0.5, 0.4); D.glow("cream", C.resultat, 0.2, 0.4);
+      D.blurIn("#l-net", C.resultat - 0.1);
+      D.blurIn("#l-net .val", C.n456b - 0.15, 0.16);
+      countInt("v-net", 0, 1456, C.n456b - 0.1, 0.9);
+      tl.to("#pc-net", { opacity: 1, duration: 0.25 }, C.net + 0.2);
+      pulse("#l-net .val", C.net, 1.08);
+      // côté patron
+      tl.to("#brk-p", { opacity: 0, duration: 0.2 }, C.cote - 0.2);
+      tl.to(["#l-brut", "#l-sal", "#ch-sal"], { opacity: 0, filter: "blur(8px)", duration: 0.25 }, C.cote - 0.25);
+      tl.to("#sl-pat", { backgroundColor: "#ff5236", duration: 0.25 }, C.ajoute - 0.1);
+      tl.fromTo("#sl-pat", { x: 0 }, { keyframes: [{ x: 26, duration: 0.15 }, { x: 0, duration: 0.3, ease: "expo.out" }] }, C.ajoute - 0.1);
+      D.glow("red", C.ajoute, 0.4, 0.4); D.glow("amber", C.ajoute, 0.15, 0.4);
+      D.blurIn("#l-pat", C.cote - 0.05);
+      D.blurIn("#l-pat .val", C.n121 - 0.12, 0.16);
+      countInt("v-pat", 0, 121, C.n121 - 0.1, 0.7);
+      pulse("#ptag", C.n121 + 0.5, 1.1);
+      pulse("#l-pat .val", C.seulement2, 1.1);
+      // la réduction de l'État
+      D.blurIn("#l-red", C.niveau - 0.1);
+      D.blurIn("#l-red .val", C.n700 - 0.12, 0.16);
+      countInt("v-red", 0, 700, C.n700 - 0.1, 1.0);
+      D.glow("cold", C.n700, 0.45, 0.4); D.glow("red", C.n700, 0.15, 0.4);
+
+      // ================= BONUS : +100 € brut =================
+      tl.to(["#ptag", "#bar", ".label", "#ch-brut", "#ch-sal"], { opacity: 0, filter: "blur(10px)", duration: 0.3 }, C.fou - 0.3);
+      D.glow("cold", C.fou, 0, 0.4); D.glow("amber", C.fou, 0.25, 0.4); D.glow("cream", C.fou, 0.3, 0.4);
+      tl.fromTo("#b-num", { opacity: 0, scale: 0.7, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.35, ease: "back.out(2)" }, C.n100 - 0.15);
+      D.blurIn("#b-sub", C.brut3 - 0.1);
+      tl.fromTo("#bc-a", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.8)" }, C.toi - 0.1);
+      countInt("v-79", 0, 79, C.n79 - 0.1, 0.7);
+      D.glow("amber", C.n79, 0.5, 0.4);
+      tl.fromTo("#bc-b", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.8)" }, C.lui3 - 0.1);
+      countInt("v-197", 0, 197, C.n197 - 0.1, 0.8);
+      D.glow("red", C.n197, 0.45, 0.4); D.glow("amber", C.n197, 0.15, 0.4);
+      pulse("#bc-b", C.n197 + 0.35, 1.06);
+      D.stamp("#b-stamp span", C.n197 + 0.4, -5);
+      D.shake(C.n197 + 0.42, 11);
+      D.flash(C.n197 + 0.42, 0.15);
+
+      // ================= CHUTE : la réduction fond =================
+      tl.to(["#b-num", "#b-sub", "#bc-a", "#bc-b", "#b-stamp span"], { opacity: 0, filter: "blur(10px)", duration: 0.25 }, C.plus_monte - 0.15);
+      D.glow("red", C.plus_monte, 0, 0.4); D.glow("amber", C.plus_monte, 0, 0.4); D.glow("cold", C.plus_monte, 0.4, 0.4);
+      D.blurIn("#ch-t", C.plus_monte - 0.1);
+      tl.to("#curve", { opacity: 1, duration: 0.25 }, C.plus_monte - 0.1);
+      { const cv = document.getElementById("cv"), L = cv.getTotalLength(); cv.style.strokeDasharray = L; cv.style.strokeDashoffset = L;
+        tl.to(cv, { strokeDashoffset: 0, duration: C.fond - C.plus_monte + 0.3, ease: "power1.inOut" }, C.plus_monte);
+        const o = { p: 0 }, dot = document.getElementById("cv-dot");
+        tl.to(o, { p: 1, duration: C.fond - C.plus_monte + 0.3, ease: "power1.inOut", onUpdate: () => { const q = cv.getPointAtLength(o.p * L); dot.setAttribute("cx", q.x); dot.setAttribute("cy", q.y); const lb = document.getElementById("cv-a"); lb.setAttribute("x", Math.min(860, Math.max(210, q.x))); lb.setAttribute("y", q.y - 44); } }, C.plus_monte); }
+      tl.fromTo("#cv-area", { opacity: 0 }, { opacity: 0.12, duration: 0.6 }, C.reduction);
+      D.count("cv-a", 700, 110, C.reduction - 0.1, C.fond - C.reduction + 0.4, 0, " €");
+      D.stamp("#tw-stamp span", C.trappe - 0.05, -4);
+      D.shake(C.trappe, 10);
+      D.glow("red", C.trappe, 0.4, 0.3);
+      tl.to("#s-main", { scale: 1.3, opacity: 0, filter: "blur(16px)", duration: 0.3, ease: "power3.in" }, C.abonne - 0.32);
+
+      // ================= CARTE DE FIN =================
+      D.glow("red", C.abonne - 0.2, 0, 0.4); D.glow("amber", C.abonne - 0.2, 0, 0.4); D.glow("cold", C.abonne - 0.2, 0, 0.4);
+      D.glow("cream", C.abonne - 0.2, 0.5, 0.4);
+      D.endCard(C.abonne - 0.05, C.vraiment);
+
+      D.captions(CAP);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
