@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/gsap.min.js"></script>
+    <script src="assets/da.js"></script>
+    <link rel="stylesheet" href="assets/da.css" />
+    <style>
+      /* ---------- accroche ---------- */
+      #h-t1 { top: 300px; font-size: 104px; }
+      #pillsvg { position: absolute; left: 0; top: 0; }
+      #h-stamp { top: 1020px; }
+      #h-stamp span { font-size: 72px; }
+
+      /* ---------- étapes ---------- */
+      .row { position: absolute; left: 0; right: 0; display: flex; justify-content: center; }
+      .row .chip { position: absolute; }
+      .chip i { display: block; width: 22px; height: 22px; border-radius: 50%; }
+      #steps { top: 300px; height: 80px; }
+      #infos { top: 392px; height: 80px; }
+
+      /* étape 1 */
+      #mg { position: absolute; left: 560px; top: 560px; width: 430px; height: 230px; border-radius: 32px; background: var(--panel); border: 5px solid var(--line);
+        text-align: center; opacity: 0; }
+      #mg .k { margin-top: 36px; font-size: 32px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+      #mg .v { font-size: 110px; font-weight: 900; letter-spacing: -.05em; color: var(--cream); line-height: 1.05; white-space: nowrap; }
+      #bubble { position: absolute; left: 140px; top: 860px; width: 800px; height: 170px; border-radius: 40px; background: var(--amber); color: var(--ground);
+        display: flex; align-items: center; justify-content: center; font-size: 58px; font-weight: 900; letter-spacing: -.02em; opacity: 0; white-space: nowrap; }
+      #bubble::after { content: ""; position: absolute; left: 160px; bottom: -34px; border: 22px solid transparent; border-top: 22px solid var(--amber); }
+      #bubble .who { position: absolute; top: -52px; left: 0; font-size: 32px; font-weight: 800; color: var(--muted); letter-spacing: .05em; text-transform: uppercase; }
+
+      /* étape 2 */
+      .rx { position: absolute; left: 90px; width: 620px; height: 140px; border-radius: 30px; background: var(--panel); border: 4px solid var(--line);
+        display: flex; align-items: center; gap: 26px; padding: 0 36px; opacity: 0; }
+      .rx .ar { font-size: 84px; font-weight: 900; line-height: 1; width: 56px; text-align: center; }
+      .rx .t { font-size: 40px; font-weight: 900; text-transform: uppercase; letter-spacing: -.02em; white-space: nowrap; }
+      #rx1 { top: 540px; border-color: var(--amber); } #rx1 .ar { color: var(--amber); }
+      #rx2 { top: 710px; border-color: var(--amber); } #rx2 .ar { color: var(--amber); }
+      #rx3 { top: 880px; border-color: var(--cold); } #rx3 .ar { color: var(--cold); }
+      #gauge { position: absolute; left: 740px; top: 520px; width: 250px; height: 520px; border-radius: 34px; border: 5px solid var(--cream); background: #111115;
+        overflow: hidden; opacity: 0; }
+      #g-fill { position: absolute; left: 0; right: 0; bottom: 0; height: 80%; background: var(--red); }
+      #g-lbl { position: absolute; left: 740px; width: 250px; top: 1050px; text-align: center; font-size: 34px; font-weight: 800; letter-spacing: .05em; color: var(--muted); opacity: 0; }
+
+      /* étape 3 et bonus : barres en % */
+      .pb { position: absolute; left: 90px; width: 900px; opacity: 0; }
+      .pb .k { display: flex; justify-content: space-between; align-items: flex-end; font-size: 38px; font-weight: 900; text-transform: uppercase; white-space: nowrap; }
+      .pb .k .v { font-size: 96px; letter-spacing: -.05em; line-height: 1; }
+      .pb .tr { margin-top: 14px; height: 70px; border-radius: 20px; background: #1d1d23; overflow: hidden; }
+      .pb .fl { height: 100%; border-radius: 20px; }
+      #pb1 { top: 560px; } #pb1 .v { color: var(--amber); } #pb1 .fl { width: 85%; background: var(--amber); }
+      #pb2 { top: 800px; } #pb2 .v { color: var(--cream); } #pb2 .fl { width: 61%; background: var(--cream); }
+      #pb3 { top: 600px; } #pb3 .v { color: var(--amber); } #pb3 .fl { width: 59%; background: var(--amber); }
+      #pb4 { top: 840px; } #pb4 .v { color: var(--muted); } #pb4 .fl { width: 35%; background: #5d5b64; }
+      .pb .s { font-size: 30px; font-weight: 700; color: var(--muted); margin-top: 4px; white-space: nowrap; }
+      #b-t { position: absolute; left: 0; right: 0; top: 480px; text-align: center; font-size: 60px; font-weight: 900; text-transform: uppercase; letter-spacing: -.02em; opacity: 0; white-space: nowrap; }
+      #b-t .a { color: var(--amber); }
+
+      /* nocebo */
+      #n-t { top: 480px; font-size: 120px; }
+      #warns { position: absolute; left: 0; right: 0; top: 680px; display: flex; justify-content: center; gap: 30px; }
+      .wn { width: 190px; height: 190px; border-radius: 40px; border: 7px solid #5d5b64; display: flex; align-items: center; justify-content: center;
+        font-size: 110px; font-weight: 900; color: #75737c; opacity: 0; background: #111115; }
+      .wn.on { border-color: var(--red); color: var(--red); }
+      #n-sub { position: absolute; left: 0; right: 0; top: 895px; text-align: center; font-size: 38px; font-weight: 800; color: var(--muted); opacity: 0; white-space: nowrap; line-height: 1.3; }
+      #n-stamp { top: 1010px; }
+
+      /* chute */
+      .ok { position: absolute; left: 90px; width: 900px; height: 190px; border-radius: 32px; background: var(--panel); border: 5px solid var(--line);
+        display: flex; align-items: center; gap: 34px; padding: 0 44px; opacity: 0; }
+      .ok .ic { font-size: 100px; font-weight: 900; width: 80px; text-align: center; line-height: 1; }
+      .ok .t { font-size: 48px; font-weight: 900; text-transform: uppercase; letter-spacing: -.02em; line-height: 1.05; white-space: nowrap; }
+      #at-t { top: 400px; font-size: 100px; opacity: 0; }
+      #ok1 { top: 580px; border-color: var(--red); } #ok1 .ic { color: var(--red); }
+      #ok2 { top: 810px; border-color: var(--cold); } #ok2 .ic { color: var(--cold); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="51.15" data-width="1080" data-height="1920">
+      <audio id="vo" src="assets/voix.mp3" data-start="0" data-duration="48.196" data-volume="1"></audio>
+      <audio id="sfx0" src="assets/sfx/pop.mp3" data-start="0.0" data-duration="0.72" data-volume="0.2" data-fade-out="0.20"></audio>
+      <audio id="sfx1" src="assets/sfx/stamp.mp3" data-start="2.459" data-duration="0.7" data-volume="0.4" data-fade-out="0.20"></audio>
+      <audio id="sfx2" src="assets/sfx/whoosh-short.mp3" data-start="3.331" data-duration="0.575" data-volume="0.2" data-fade-out="0.19"></audio>
+      <audio id="sfx3" src="assets/sfx/click-soft.mp3" data-start="6.702" data-duration="0.366" data-volume="0.2" data-fade-out="0.12"></audio>
+      <audio id="sfx4" src="assets/sfx/pop.mp3" data-start="13.258" data-duration="0.72" data-volume="0.2" data-fade-out="0.20"></audio>
+      <audio id="sfx5" src="assets/sfx/pop.mp3" data-start="14.038" data-duration="0.72" data-volume="0.2" data-fade-out="0.20"></audio>
+      <audio id="sfx6" src="assets/sfx/whoosh.mp3" data-start="16.041" data-duration="0.575" data-volume="0.14" data-fade-out="0.19"></audio>
+      <audio id="sfx7" src="assets/sfx/ticker.mp3" data-start="20.857" data-duration="0.9" data-volume="0.18" data-fade-out="0.20"></audio>
+      <audio id="sfx8" src="assets/sfx/ticker.mp3" data-start="28.397" data-duration="0.9" data-volume="0.18" data-fade-out="0.20"></audio>
+      <audio id="sfx9" src="assets/sfx/impact-bass-1.mp3" data-start="34.771" data-duration="0.8" data-volume="0.24" data-fade-out="0.20"></audio>
+      <audio id="sfx10" src="assets/sfx/stamp2.mp3" data-start="38.604" data-duration="0.7" data-volume="0.38" data-fade-out="0.20"></audio>
+      <audio id="sfx11" src="assets/sfx/pop.mp3" data-start="46.518" data-duration="0.72" data-volume="0.28" data-fade-out="0.20"></audio>
+
+      <div id="bg" class="clip" data-start="0" data-duration="51.15" data-track-index="0" data-track-kind="graphics">
+        <div id="grid"></div>
+        <div id="gl-cream" class="glow"></div>
+        <div id="gl-red" class="glow"></div>
+        <div id="gl-amber" class="glow"></div>
+        <div id="gl-cold" class="glow"></div>
+        <div id="vign"></div>
+      </div>
+
+      <div id="cam">
+        <!-- 1. Accroche -->
+        <div id="s-hook" class="clip" data-start="0" data-duration="4.280" data-track-index="1" data-track-kind="graphics">
+          <div id="h-t1" class="hl">Une pilule<br />de <span class="a">sucre</span><br />peut soulager</div>
+          <svg id="pillsvg" width="1080" height="1920" viewBox="0 0 1080 1920" aria-hidden="true">
+            <g transform="translate(0 110) rotate(-24 540 800)"><g id="pill">
+              <path d="M540 720 H420 a80 80 0 0 0 0 160 H540 Z" fill="#ffb21f" />
+              <path d="M540 720 H660 a80 80 0 0 1 0 160 H540 Z" fill="#ece6d6" />
+              <rect x="340" y="720" width="400" height="160" rx="80" fill="none" stroke="#0b0b0e" stroke-width="6" />
+              <rect x="380" y="742" width="120" height="22" rx="11" fill="#fff" opacity=".35" />
+            </g></g>
+            <g id="sparks" transform="translate(0 110)" stroke="#ffb21f" stroke-width="10" stroke-linecap="round" opacity="0">
+              <line x1="300" y1="620" x2="260" y2="580" /><line x1="780" y1="620" x2="820" y2="580" /><line x1="540" y1="590" x2="540" y2="540" />
+              <line x1="290" y1="960" x2="250" y2="1000" /><line x1="790" y1="960" x2="830" y2="1000" />
+            </g>
+          </svg>
+          <div id="h-stamp" class="stamp"><span>Même en le sachant&nbsp;!</span></div>
+        </div>
+
+        <!-- 2. Les étapes -->
+        <div id="s-main" class="clip" data-start="3.530" data-duration="42.770" data-track-index="2" data-track-kind="graphics">
+          <div id="steps" class="row">
+            <div id="st1" class="chip amb"><b>1</b>TU AVALES</div>
+            <div id="st2" class="chip"><b>2</b>TON CERVEAU RÉAGIT</div>
+            <div id="st3" class="chip cold"><b>3</b>LE CONTEXTE</div>
+          </div>
+          <div id="infos" class="row">
+            <div id="in3" class="chip"><i style="background:var(--amber)"></i>Douleur : décharges électriques légères (JAMA, 2008)</div>
+            <div id="in4" class="chip"><i style="background:var(--amber)"></i>Harvard, 2010 · 80 patients, 3 semaines</div>
+            <div id="in5" class="chip"><i style="background:var(--red)"></i>Essais des vaccins Covid (JAMA Netw. Open, 2022)</div>
+          </div>
+
+          <!-- étape 1 -->
+          <svg id="pill2svg" width="1080" height="1920" viewBox="0 0 1080 1920" aria-hidden="true" style="position:absolute;left:0;top:0">
+            <g id="pill2" opacity="0" transform="rotate(-24 300 675)">
+              <path d="M300 625 H230 a50 50 0 0 0 0 100 H300 Z" fill="#ffb21f" />
+              <path d="M300 625 H370 a50 50 0 0 1 0 100 H300 Z" fill="#ece6d6" />
+              <rect x="180" y="625" width="240" height="100" rx="50" fill="none" stroke="#0b0b0e" stroke-width="5" />
+            </g>
+          </svg>
+          <div id="mg"><div class="k">Médicament</div><div class="v">0&nbsp;mg</div></div>
+          <div id="bubble"><span class="who">Ton cerveau</span>«&nbsp;Je vais aller mieux&nbsp;»</div>
+
+          <!-- étape 2 -->
+          <div id="rx1" class="rx"><div class="ar">↑</div><div class="t">Endorphines</div></div>
+          <div id="rx2" class="rx"><div class="ar">↑</div><div class="t">Dopamine</div></div>
+          <div id="rx3" class="rx"><div class="ar">↓</div><div class="t">Zones de la douleur</div></div>
+          <div id="gauge"><div id="g-fill"></div></div>
+          <div id="g-lbl">DOULEUR</div>
+
+          <!-- étape 3 -->
+          <div id="pb1" class="pb"><div class="k"><span>Pilule «&nbsp;chère&nbsp;»</span><span class="v"><span id="v-85">0</span>&nbsp;%</span></div><div class="tr"><div class="fl"></div></div><div class="s">soulagés</div></div>
+          <div id="pb2" class="pb"><div class="k"><span>Même pilule «&nbsp;soldée&nbsp;»</span><span class="v"><span id="v-61">0</span>&nbsp;%</span></div><div class="tr"><div class="fl"></div></div><div class="s">soulagés</div></div>
+
+          <!-- bonus -->
+          <div id="b-t">Ils <span class="a">savaient</span> : placebo</div>
+          <div id="pb3" class="pb"><div class="k"><span>Avec le placebo</span><span class="v"><span id="v-59">0</span>&nbsp;%</span></div><div class="tr"><div class="fl"></div></div><div class="s">soulagés</div></div>
+          <div id="pb4" class="pb"><div class="k"><span>Sans rien prendre</span><span class="v"><span id="v-35">0</span>&nbsp;%</span></div><div class="tr"><div class="fl"></div></div><div class="s">soulagés</div></div>
+
+          <!-- nocebo -->
+          <div id="n-t" class="hl"><span class="r">Effet nocebo</span></div>
+          <div id="warns"><div class="wn">!</div><div class="wn">!</div><div class="wn">!</div><div class="wn">!</div></div>
+          <div id="n-sub">effets secondaires généraux après la 1<sup>re</sup> dose</div>
+          <div id="n-stamp" class="stamp"><span>3 sur 4&nbsp;: l'attente&nbsp;!</span></div>
+
+          <!-- chute -->
+          <div id="at-t" class="hl"><span class="r">Attention</span></div>
+          <div id="ok1" class="ok"><div class="ic">✕</div><div class="t">Ne guérit pas<br />une maladie</div></div>
+          <div id="ok2" class="ok"><div class="ic">✓</div><div class="t">Agit sur ce que<br />tu ressens</div></div>
+        </div>
+
+        <!-- 3. Carte de fin -->
+        <div id="s-cta" class="clip" data-start="46.150" data-duration="5.000" data-track-index="3" data-track-kind="graphics">
+          <div id="c-title"><div>Comment ça</div><div>marche</div><div class="a">vraiment&nbsp;?</div></div>
+          <div id="c-btn"><span>Abonne-toi</span></div>
+          <div id="c-ep">Épisode 12 · L'effet placebo</div>
+          <div id="c-src">Sources : Kaptchuk et al., PLoS ONE (2010) ; Waber et al., JAMA (2008) ; Santé.fr</div>
+        </div>
+      </div>
+
+      <div id="caps" class="clip" data-start="3.520" data-duration="47.630" data-track-index="5" data-track-kind="captions">
+        <div id="g0" class="cap"><span class="in"><span id="w0_0" class="wd">Comment</span> <span id="w0_1" class="wd">ça</span> <span id="w0_2" class="wd">marche</span></span></div>
+        <div id="g1" class="cap"><span class="in"><span id="w1_0" class="wd em">vraiment ?</span></span></div>
+        <div id="g2" class="cap"><span class="in"><span id="w2_0" class="wd">Étape</span> <span id="w2_1" class="wd">1 :</span></span></div>
+        <div id="g3" class="cap"><span class="in"><span id="w3_0" class="wd">tu</span> <span id="w3_1" class="wd">avales</span> <span id="w3_2" class="wd">la</span></span></div>
+        <div id="g4" class="cap"><span class="in"><span id="w4_0" class="wd">pilule.</span></span></div>
+        <div id="g5" class="cap"><span class="in"><span id="w5_0" class="wd">Elle</span> <span id="w5_1" class="wd">ne</span> <span id="w5_2" class="wd">contient</span></span></div>
+        <div id="g6" class="cap"><span class="in"><span id="w6_0" class="wd em">aucun</span> <span id="w6_1" class="wd">médicament.</span></span></div>
+        <div id="g7" class="cap"><span class="in"><span id="w7_0" class="wd">Mais</span> <span id="w7_1" class="wd">ton</span> <span id="w7_2" class="wd">cerveau</span></span></div>
+        <div id="g8" class="cap"><span class="in"><span id="w8_0" class="wd">lui</span></span></div>
+        <div id="g9" class="cap"><span class="in"><span id="w9_0" class="wd">s'attend</span> <span id="w9_1" class="wd">à</span> <span id="w9_2" class="wd">aller</span></span></div>
+        <div id="g10" class="cap"><span class="in"><span id="w10_0" class="wd em">mieux.</span></span></div>
+        <div id="g11" class="cap"><span class="in"><span id="w11_0" class="wd">Étape</span> <span id="w11_1" class="wd">2 :</span></span></div>
+        <div id="g12" class="cap"><span class="in"><span id="w12_0" class="wd">cette</span> <span id="w12_1" class="wd">attente</span> <span id="w12_2" class="wd">déclenche</span></span></div>
+        <div id="g13" class="cap"><span class="in"><span id="w13_0" class="wd">de</span> <span id="w13_1" class="wd em">vraies</span> <span id="w13_2" class="wd">réactions.</span></span></div>
+        <div id="g14" class="cap"><span class="in"><span id="w14_0" class="wd">Ton</span> <span id="w14_1" class="wd">cerveau</span> <span id="w14_2" class="wd">libère</span></span></div>
+        <div id="g15" class="cap"><span class="in"><span id="w15_0" class="wd">des</span> <span id="w15_1" class="wd em">endorphines</span> <span id="w15_2" class="wd">et</span></span></div>
+        <div id="g16" class="cap"><span class="in"><span id="w16_0" class="wd">de</span> <span id="w16_1" class="wd">la</span> <span id="w16_2" class="wd em">dopamine</span></span></div>
+        <div id="g17" class="cap"><span class="in"><span id="w17_0" class="wd">et</span> <span id="w17_1" class="wd">l'activité</span> <span id="w17_2" class="wd">des</span></span></div>
+        <div id="g18" class="cap"><span class="in"><span id="w18_0" class="wd">zones</span> <span id="w18_1" class="wd">de</span> <span id="w18_2" class="wd">la</span></span></div>
+        <div id="g19" class="cap"><span class="in"><span id="w19_0" class="wd em">douleur</span> <span id="w19_1" class="wd em">baisse.</span></span></div>
+        <div id="g20" class="cap"><span class="in"><span id="w20_0" class="wd">Étape</span> <span id="w20_1" class="wd em">3 :</span></span></div>
+        <div id="g21" class="cap"><span class="in"><span id="w21_0" class="wd">le</span> <span id="w21_1" class="wd em">contexte</span> <span id="w21_2" class="wd">fait</span></span></div>
+        <div id="g22" class="cap"><span class="in"><span id="w22_0" class="wd">le</span> <span id="w22_1" class="wd">reste.</span></span></div>
+        <div id="g23" class="cap"><span class="in"><span id="w23_0" class="wd">Dans</span> <span id="w23_1" class="wd">une</span> <span id="w23_2" class="wd">étude</span></span></div>
+        <div id="g24" class="cap"><span class="in"><span id="w24_0" class="wd">la</span> <span id="w24_1" class="wd">même</span> <span id="w24_2" class="wd">fausse</span></span></div>
+        <div id="g25" class="cap"><span class="in"><span id="w25_0" class="wd">pilule</span> <span id="w25_1" class="wd">a</span> <span id="w25_2" class="wd">soulagé</span></span></div>
+        <div id="g26" class="cap"><span class="in"><span id="w26_0" class="wd em">85 %</span> <span id="w26_1" class="wd">des</span> <span id="w26_2" class="wd">gens</span></span></div>
+        <div id="g27" class="cap"><span class="in"><span id="w27_0" class="wd">quand</span> <span id="w27_1" class="wd">on</span> <span id="w27_2" class="wd">la</span></span></div>
+        <div id="g28" class="cap"><span class="in"><span id="w28_0" class="wd">disait</span> <span id="w28_1" class="wd em">chère…</span></span></div>
+        <div id="g29" class="cap"><span class="in"><span id="w29_0" class="wd">contre</span> <span id="w29_1" class="wd em">61 %</span> <span id="w29_2" class="wd">quand</span></span></div>
+        <div id="g30" class="cap"><span class="in"><span id="w30_0" class="wd">elle</span> <span id="w30_1" class="wd">était</span> <span id="w30_2" class="wd em">soldée !</span></span></div>
+        <div id="g31" class="cap"><span class="in"><span id="w31_0" class="wd">Le</span> <span id="w31_1" class="wd">plus</span> <span id="w31_2" class="wd">fou ?</span></span></div>
+        <div id="g32" class="cap"><span class="in"><span id="w32_0" class="wd">À</span> <span id="w32_1" class="wd">Harvard</span></span></div>
+        <div id="g33" class="cap"><span class="in"><span id="w33_0" class="wd">des</span> <span id="w33_1" class="wd">patients</span> <span id="w33_2" class="wd em">savaient</span></span></div>
+        <div id="g34" class="cap"><span class="in"><span id="w34_0" class="wd">qu'ils</span> <span id="w34_1" class="wd">prenaient</span> <span id="w34_2" class="wd">un</span></span></div>
+        <div id="g35" class="cap"><span class="in"><span id="w35_0" class="wd">placebo.</span></span></div>
+        <div id="g36" class="cap"><span class="in"><span id="w36_0" class="wd em">59 %</span> <span id="w36_1" class="wd">se</span> <span id="w36_2" class="wd">sont</span></span></div>
+        <div id="g37" class="cap"><span class="in"><span id="w37_0" class="wd">sentis</span> <span id="w37_1" class="wd">soulagés</span></span></div>
+        <div id="g38" class="cap"><span class="in"><span id="w38_0" class="wd">contre</span> <span id="w38_1" class="wd em">35 %</span> <span id="w38_2" class="wd">sans</span></span></div>
+        <div id="g39" class="cap"><span class="in"><span id="w39_0" class="wd">rien</span> <span id="w39_1" class="wd">prendre.</span></span></div>
+        <div id="g40" class="cap"><span class="in"><span id="w40_0" class="wd">Et</span> <span id="w40_1" class="wd">ça</span> <span id="w40_2" class="wd">marche</span></span></div>
+        <div id="g41" class="cap"><span class="in"><span id="w41_0" class="wd">dans</span> <span id="w41_1" class="wd">l'autre</span> <span id="w41_2" class="wd">sens :</span></span></div>
+        <div id="g42" class="cap"><span class="in"><span id="w42_0" class="wd">l'effet</span> <span id="w42_1" class="wd em">nocebo.</span></span></div>
+        <div id="g43" class="cap"><span class="in"><span id="w43_0" class="wd">Dans</span> <span id="w43_1" class="wd">les</span> <span id="w43_2" class="wd">essais</span></span></div>
+        <div id="g44" class="cap"><span class="in"><span id="w44_0" class="wd">des</span> <span id="w44_1" class="wd">vaccins</span> <span id="w44_2" class="wd">Covid</span></span></div>
+        <div id="g45" class="cap"><span class="in"><span id="w45_0" class="wd">environ</span> <span id="w45_1" class="wd em">3</span> <span id="w45_2" class="wd">effets</span></span></div>
+        <div id="g46" class="cap"><span class="in"><span id="w46_0" class="wd">secondaires</span> <span id="w46_1" class="wd">généraux</span> <span id="w46_2" class="wd">sur</span></span></div>
+        <div id="g47" class="cap"><span class="in"><span id="w47_0" class="wd em">4</span> <span id="w47_1" class="wd">après</span> <span id="w47_2" class="wd">la</span></span></div>
+        <div id="g48" class="cap"><span class="in"><span id="w48_0" class="wd">première</span> <span id="w48_1" class="wd">dose</span> <span id="w48_2" class="wd">venaient…</span></span></div>
+        <div id="g49" class="cap"><span class="in"><span id="w49_0" class="wd">de</span> <span id="w49_1" class="wd em">l'attente</span> <span id="w49_2" class="wd">elle-même.</span></span></div>
+        <div id="g50" class="cap"><span class="in"><span id="w50_0" class="wd">Attention :</span></span></div>
+        <div id="g51" class="cap"><span class="in"><span id="w51_0" class="wd">un</span> <span id="w51_1" class="wd">placebo</span> <span id="w51_2" class="wd">ne</span></span></div>
+        <div id="g52" class="cap"><span class="in"><span id="w52_0" class="wd em">guérit</span> <span id="w52_1" class="wd">pas</span> <span id="w52_2" class="wd">une</span></span></div>
+        <div id="g53" class="cap"><span class="in"><span id="w53_0" class="wd">maladie.</span></span></div>
+        <div id="g54" class="cap"><span class="in"><span id="w54_0" class="wd">Il</span> <span id="w54_1" class="wd">agit</span> <span id="w54_2" class="wd">sur</span></span></div>
+        <div id="g55" class="cap"><span class="in"><span id="w55_0" class="wd">ce</span> <span id="w55_1" class="wd">que</span> <span id="w55_2" class="wd">tu</span></span></div>
+        <div id="g56" class="cap"><span class="in"><span id="w56_0" class="wd em">ressens</span></span></div>
+        <div id="g57" class="cap"><span class="in"><span id="w57_0" class="wd">comme</span> <span id="w57_1" class="wd">la</span> <span id="w57_2" class="wd em">douleur.</span></span></div>
+        <div id="g58" class="cap"><span class="in"><span id="w58_0" class="wd">Abonne-toi</span> <span id="w58_1" class="wd">pour</span> <span id="w58_2" class="wd">savoir</span></span></div>
+        <div id="g59" class="cap"><span class="in"><span id="w59_0" class="wd">comment</span> <span id="w59_1" class="wd">ça</span> <span id="w59_2" class="wd">marche</span></span></div>
+        <div id="g60" class="cap"><span class="in"><span id="w60_0" class="wd em">vraiment.</span></span></div>
+      </div>
+
+      <div id="tag" class="clip" data-start="0" data-duration="51.15" data-track-index="6" data-track-kind="graphics">
+        <span class="pill">COMMENT ÇA MARCHE VRAIMENT&nbsp;?</span><span class="pill num">#12</span>
+      </div>
+
+      <div id="fx" class="clip" data-start="0" data-duration="51.15" data-track-index="7" data-track-kind="graphics">
+        <div id="flash"></div>
+      </div>
+    </div>
+
+    <script>
+      const C = {"pilule": 0.12, "soulager": 1.18, "meme": 1.92, "sais": 2.5, "comment": 3.58, "avales": 5.42, "contient": 6.5, "aucun": 6.82, "cerveau": 8.18, "sattend": 9.08, "mieux": 9.62, "attente": 10.86, "reactions": 12.08, "libere": 13.04, "endorphines": 13.44, "dopamine": 14.22, "lactivite": 14.92, "douleur": 15.9, "baisse": 16.24, "contexte": 17.72, "etude": 19.2, "fausse": 20.0, "n85": 21.12, "chere": 23.04, "n61": 23.88, "soldee": 25.34, "fou": 26.2, "harvard": 26.66, "savaient": 27.56, "placebo": 28.5, "n59": 28.66, "n35": 31.28, "sans": 32.16, "lautre": 33.6, "nocebo": 34.84, "vaccins": 36.12, "n4": 38.64, "dose": 39.56, "venaient": 39.94, "lattente": 40.62, "attention": 41.76, "guerit": 43.1, "maladie": 43.7, "agit": 44.38, "ressens": 45.02, "abonne": 46.3, "n3": 37.1, "sucre2": 3.08, "e1": 4.68, "e2": 10.04, "e3": 16.88, "vraiment": 47.66, "voEnd": 48.146, "end": 51.15};
+      const CAP = [{"id": "g0", "start": 3.52, "end": 4.17, "w": [{"id": "w0_0", "t": 3.58}, {"id": "w0_1", "t": 3.76}, {"id": "w0_2", "t": 3.94}]}, {"id": "g1", "start": 4.17, "end": 4.73, "w": [{"id": "w1_0", "t": 4.12}]}, {"id": "g2", "start": 4.73, "end": 5.3, "w": [{"id": "w2_0", "t": 4.68}, {"id": "w2_1", "t": 4.98}]}, {"id": "g3", "start": 5.3, "end": 5.85, "w": [{"id": "w3_0", "t": 5.36}, {"id": "w3_1", "t": 5.42}, {"id": "w3_2", "t": 5.66}]}, {"id": "g4", "start": 5.85, "end": 6.22, "w": [{"id": "w4_0", "t": 5.8}]}, {"id": "g5", "start": 6.22, "end": 6.87, "w": [{"id": "w5_0", "t": 6.28}, {"id": "w5_1", "t": 6.38}, {"id": "w5_2", "t": 6.5}]}, {"id": "g6", "start": 6.87, "end": 7.92, "w": [{"id": "w6_0", "t": 6.82}, {"id": "w6_1", "t": 7.24}]}, {"id": "g7", "start": 7.92, "end": 8.63, "w": [{"id": "w7_0", "t": 7.98}, {"id": "w7_1", "t": 8.06}, {"id": "w7_2", "t": 8.18}]}, {"id": "g8", "start": 8.63, "end": 9.02, "w": [{"id": "w8_0", "t": 8.62}]}, {"id": "g9", "start": 9.02, "end": 9.67, "w": [{"id": "w9_0", "t": 9.08}, {"id": "w9_1", "t": 9.3}, {"id": "w9_2", "t": 9.48}]}, {"id": "g10", "start": 9.67, "end": 9.98, "w": [{"id": "w10_0", "t": 9.62}]}, {"id": "g11", "start": 9.98, "end": 10.78, "w": [{"id": "w11_0", "t": 10.04}, {"id": "w11_1", "t": 10.28}]}, {"id": "g12", "start": 10.78, "end": 11.71, "w": [{"id": "w12_0", "t": 10.84}, {"id": "w12_1", "t": 10.86}, {"id": "w12_2", "t": 11.18}]}, {"id": "g13", "start": 11.71, "end": 12.6, "w": [{"id": "w13_0", "t": 11.66}, {"id": "w13_1", "t": 11.82}, {"id": "w13_2", "t": 12.08}]}, {"id": "g14", "start": 12.6, "end": 13.35, "w": [{"id": "w14_0", "t": 12.66}, {"id": "w14_1", "t": 12.74}, {"id": "w14_2", "t": 13.04}]}, {"id": "g15", "start": 13.35, "end": 14.13, "w": [{"id": "w15_0", "t": 13.3}, {"id": "w15_1", "t": 13.44}, {"id": "w15_2", "t": 13.92}]}, {"id": "g16", "start": 14.13, "end": 14.59, "w": [{"id": "w16_0", "t": 14.08}, {"id": "w16_1", "t": 14.16}, {"id": "w16_2", "t": 14.22}]}, {"id": "g17", "start": 14.59, "end": 15.59, "w": [{"id": "w17_0", "t": 14.54}, {"id": "w17_1", "t": 14.92}, {"id": "w17_2", "t": 15.4}]}, {"id": "g18", "start": 15.59, "end": 15.95, "w": [{"id": "w18_0", "t": 15.54}, {"id": "w18_1", "t": 15.7}, {"id": "w18_2", "t": 15.82}]}, {"id": "g19", "start": 15.95, "end": 16.82, "w": [{"id": "w19_0", "t": 15.9}, {"id": "w19_1", "t": 16.24}]}, {"id": "g20", "start": 16.82, "end": 17.56, "w": [{"id": "w20_0", "t": 16.88}, {"id": "w20_1", "t": 17.18}]}, {"id": "g21", "start": 17.56, "end": 18.37, "w": [{"id": "w21_0", "t": 17.62}, {"id": "w21_1", "t": 17.72}, {"id": "w21_2", "t": 18.2}]}, {"id": "g22", "start": 18.37, "end": 18.88, "w": [{"id": "w22_0", "t": 18.32}, {"id": "w22_1", "t": 18.42}]}, {"id": "g23", "start": 18.88, "end": 19.64, "w": [{"id": "w23_0", "t": 18.94}, {"id": "w23_1", "t": 19.02}, {"id": "w23_2", "t": 19.2}]}, {"id": "g24", "start": 19.64, "end": 20.35, "w": [{"id": "w24_0", "t": 19.7}, {"id": "w24_1", "t": 19.78}, {"id": "w24_2", "t": 20.0}]}, {"id": "g25", "start": 20.35, "end": 21.17, "w": [{"id": "w25_0", "t": 20.3}, {"id": "w25_1", "t": 20.58}, {"id": "w25_2", "t": 20.76}]}, {"id": "g26", "start": 21.17, "end": 22.47, "w": [{"id": "w26_0", "t": 21.12}, {"id": "w26_1", "t": 22.04}, {"id": "w26_2", "t": 22.26}]}, {"id": "g27", "start": 22.47, "end": 22.83, "w": [{"id": "w27_0", "t": 22.42}, {"id": "w27_1", "t": 22.56}, {"id": "w27_2", "t": 22.68}]}, {"id": "g28", "start": 22.83, "end": 23.62, "w": [{"id": "w28_0", "t": 22.78}, {"id": "w28_1", "t": 23.04}]}, {"id": "g29", "start": 23.62, "end": 25.07, "w": [{"id": "w29_0", "t": 23.68}, {"id": "w29_1", "t": 23.88}, {"id": "w29_2", "t": 24.84}]}, {"id": "g30", "start": 25.07, "end": 25.86, "w": [{"id": "w30_0", "t": 25.02}, {"id": "w30_1", "t": 25.16}, {"id": "w30_2", "t": 25.34}]}, {"id": "g31", "start": 25.86, "end": 26.65, "w": [{"id": "w31_0", "t": 25.92}, {"id": "w31_1", "t": 26.06}, {"id": "w31_2", "t": 26.2}]}, {"id": "g32", "start": 26.65, "end": 27.18, "w": [{"id": "w32_0", "t": 26.6}, {"id": "w32_1", "t": 26.66}]}, {"id": "g33", "start": 27.18, "end": 28.07, "w": [{"id": "w33_0", "t": 27.24}, {"id": "w33_1", "t": 27.32}, {"id": "w33_2", "t": 27.56}]}, {"id": "g34", "start": 28.07, "end": 28.55, "w": [{"id": "w34_0", "t": 28.02}, {"id": "w34_1", "t": 28.17}, {"id": "w34_2", "t": 28.42}]}, {"id": "g35", "start": 28.55, "end": 28.71, "w": [{"id": "w35_0", "t": 28.5}]}, {"id": "g36", "start": 28.71, "end": 30.29, "w": [{"id": "w36_0", "t": 28.66}, {"id": "w36_1", "t": 29.94}, {"id": "w36_2", "t": 30.08}]}, {"id": "g37", "start": 30.29, "end": 31.02, "w": [{"id": "w37_0", "t": 30.24}, {"id": "w37_1", "t": 30.5}]}, {"id": "g38", "start": 31.02, "end": 32.45, "w": [{"id": "w38_0", "t": 31.08}, {"id": "w38_1", "t": 31.28}, {"id": "w38_2", "t": 32.16}]}, {"id": "g39", "start": 32.45, "end": 32.96, "w": [{"id": "w39_0", "t": 32.4}, {"id": "w39_1", "t": 32.56}]}, {"id": "g40", "start": 32.96, "end": 33.55, "w": [{"id": "w40_0", "t": 33.02}, {"id": "w40_1", "t": 33.14}, {"id": "w40_2", "t": 33.32}]}, {"id": "g41", "start": 33.55, "end": 34.51, "w": [{"id": "w41_0", "t": 33.5}, {"id": "w41_1", "t": 33.6}, {"id": "w41_2", "t": 33.78}]}, {"id": "g42", "start": 34.51, "end": 35.52, "w": [{"id": "w42_0", "t": 34.46}, {"id": "w42_1", "t": 34.84}]}, {"id": "g43", "start": 35.52, "end": 36.09, "w": [{"id": "w43_0", "t": 35.58}, {"id": "w43_1", "t": 35.68}, {"id": "w43_2", "t": 35.8}]}, {"id": "g44", "start": 36.09, "end": 36.84, "w": [{"id": "w44_0", "t": 36.04}, {"id": "w44_1", "t": 36.12}, {"id": "w44_2", "t": 36.38}]}, {"id": "g45", "start": 36.84, "end": 37.79, "w": [{"id": "w45_0", "t": 36.9}, {"id": "w45_1", "t": 37.1}, {"id": "w45_2", "t": 37.48}]}, {"id": "g46", "start": 37.79, "end": 38.69, "w": [{"id": "w46_0", "t": 37.74}, {"id": "w46_1", "t": 38.12}, {"id": "w46_2", "t": 38.5}]}, {"id": "g47", "start": 38.69, "end": 39.37, "w": [{"id": "w47_0", "t": 38.64}, {"id": "w47_1", "t": 38.88}, {"id": "w47_2", "t": 39.2}]}, {"id": "g48", "start": 39.37, "end": 40.51, "w": [{"id": "w48_0", "t": 39.32}, {"id": "w48_1", "t": 39.56}, {"id": "w48_2", "t": 39.94}]}, {"id": "g49", "start": 40.51, "end": 41.7, "w": [{"id": "w49_0", "t": 40.46}, {"id": "w49_1", "t": 40.62}, {"id": "w49_2", "t": 41.1}]}, {"id": "g50", "start": 41.7, "end": 42.47, "w": [{"id": "w50_0", "t": 41.76}]}, {"id": "g51", "start": 42.47, "end": 43.15, "w": [{"id": "w51_0", "t": 42.42}, {"id": "w51_1", "t": 42.5}, {"id": "w51_2", "t": 42.8}]}, {"id": "g52", "start": 43.15, "end": 43.75, "w": [{"id": "w52_0", "t": 43.1}, {"id": "w52_1", "t": 43.44}, {"id": "w52_2", "t": 43.6}]}, {"id": "g53", "start": 43.75, "end": 44.22, "w": [{"id": "w53_0", "t": 43.7}]}, {"id": "g54", "start": 44.22, "end": 44.81, "w": [{"id": "w54_0", "t": 44.28}, {"id": "w54_1", "t": 44.38}, {"id": "w54_2", "t": 44.62}]}, {"id": "g55", "start": 44.81, "end": 45.07, "w": [{"id": "w55_0", "t": 44.76}, {"id": "w55_1", "t": 44.82}, {"id": "w55_2", "t": 44.9}]}, {"id": "g56", "start": 45.07, "end": 45.47, "w": [{"id": "w56_0", "t": 45.02}]}, {"id": "g57", "start": 45.47, "end": 46.24, "w": [{"id": "w57_0", "t": 45.5}, {"id": "w57_1", "t": 45.66}, {"id": "w57_2", "t": 45.78}]}, {"id": "g58", "start": 46.24, "end": 47.17, "w": [{"id": "w58_0", "t": 46.3}, {"id": "w58_1", "t": 46.72}, {"id": "w58_2", "t": 46.88}]}, {"id": "g59", "start": 47.17, "end": 47.71, "w": [{"id": "w59_0", "t": 47.12}, {"id": "w59_1", "t": 47.34}, {"id": "w59_2", "t": 47.5}]}, {"id": "g60", "start": 47.71, "end": 48.72, "w": [{"id": "w60_0", "t": 47.66}]}];
+      DA.fitCaptions(CAP);
+      const tl = gsap.timeline({ paused: true });
+      const D = DA(tl);
+      D.drift(C.end);
+      const pulse = (sel, at, s = 1.08) => tl.fromTo(sel, { scale: 1 }, { keyframes: [{ scale: s, duration: 0.09 }, { scale: 1, duration: 0.35, ease: "expo.out" }] }, at);
+      const out = (sel, at, d = 0.25) => tl.to(sel, { opacity: 0, filter: "blur(10px)", duration: d }, at);
+      const bar = (id, pct, at, show = null) => {
+        tl.fromTo(id, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.3, ease: "expo.out" }, show === null ? at - 0.3 : show);
+        tl.fromTo(id + " .fl", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: 0.9, ease: "power2.out", immediateRender: true }, at - 0.1);
+        D.count("v-" + pct, 0, pct, at - 0.1, 0.9, 0);
+      };
+
+      // ================= 1. ACCROCHE =================
+      D.glow("amber", 0, 0.4, 0.01);
+      tl.fromTo("#pill", { y: 0 }, { y: -14, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+      pulse("#h-t1 .a", C.pilule + 0.3, 1.1);
+      tl.to("#sparks", { opacity: 1, duration: 0.2 }, C.soulager);
+      tl.fromTo("#sparks line", { scale: 0.4, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, stagger: 0.04, ease: "back.out(3)" }, C.soulager);
+      D.glow("amber", C.soulager, 0.6, 0.3);
+      tl.to("#pillsvg", { opacity: 0.4, duration: 0.25 }, C.sais - 0.15);
+      D.stamp("#h-stamp span", C.sais - 0.05, -5);
+      D.shake(C.sais, 10);
+      D.flash(C.sais, 0.14, "#ffb21f");
+      pulse("#h-stamp span", C.sucre2, 1.06);
+      const T1 = C.comment;
+      D.blurOut(["#h-t1", "#h-stamp span"], T1 + 0.35, 0.16);
+      tl.to("#pillsvg", { opacity: 0, scale: 0.6, filter: "blur(8px)", transformOrigin: "540px 910px", duration: 0.3, ease: "power3.in" }, T1 + 0.3);
+      D.glow("amber", T1, 0.25, 0.4); D.glow("cream", T1, 0.2, 0.4);
+
+      const step = (n, t) => { if (n > 1) D.blurOut("#st" + (n - 1), t - 0.12, 0.12); D.popIn("#st" + n, t, 0.6); };
+
+      // ================= ÉTAPE 1 =================
+      step(1, C.e1);
+      tl.fromTo("#pill2", { opacity: 0, y: -120 }, { opacity: 1, y: 0, duration: 0.45, ease: "bounce.out" }, C.avales - 0.1);
+      tl.fromTo("#mg", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.8)" }, C.contient - 0.1);
+      pulse("#mg .v", C.aucun, 1.12);
+      tl.to("#mg", { borderColor: "#ff5236", duration: 0.2 }, C.aucun);
+      tl.fromTo("#bubble", { opacity: 0, scale: 0.6, transformOrigin: "20% 100%" }, { opacity: 1, scale: 1, duration: 0.38, ease: "back.out(2)" }, C.cerveau - 0.1);
+      D.glow("amber", C.mieux, 0.5, 0.4);
+
+      // ================= ÉTAPE 2 =================
+      step(2, C.e2);
+      out(["#pill2", "#mg", "#bubble"], C.e2 - 0.15);
+      D.glow("amber", C.e2, 0.25, 0.4);
+      tl.fromTo("#gauge", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.35, ease: "expo.out" }, C.e2 + 0.3);
+      D.blurIn("#g-lbl", C.e2 + 0.4);
+      tl.fromTo("#rx1", { opacity: 0, x: -80 }, { opacity: 1, x: 0, duration: 0.35, ease: "expo.out" }, C.endorphines - 0.15);
+      tl.fromTo("#rx1 .ar", { y: 30 }, { y: 0, duration: 0.4, ease: "back.out(3)" }, C.endorphines);
+      tl.fromTo("#rx2", { opacity: 0, x: -80 }, { opacity: 1, x: 0, duration: 0.35, ease: "expo.out" }, C.dopamine - 0.15);
+      tl.fromTo("#rx2 .ar", { y: 30 }, { y: 0, duration: 0.4, ease: "back.out(3)" }, C.dopamine);
+      tl.fromTo("#rx3", { opacity: 0, x: -80 }, { opacity: 1, x: 0, duration: 0.35, ease: "expo.out" }, C.lactivite - 0.15);
+      tl.fromTo("#g-fill", { scaleY: 1, transformOrigin: "50% 100%" }, { scaleY: 0.45, duration: 0.8, ease: "power2.inOut" }, C.baisse - 0.2);
+      tl.fromTo("#rx3 .ar", { y: -30 }, { y: 0, duration: 0.4, ease: "back.out(3)" }, C.baisse);
+      D.glow("cold", C.baisse, 0.45, 0.4); D.glow("amber", C.baisse, 0.1, 0.4);
+
+      // ================= ÉTAPE 3 : le contexte =================
+      step(3, C.e3);
+      out([".rx", "#gauge", "#g-lbl"], C.e3 - 0.15);
+      D.glow("cold", C.e3, 0.1, 0.4); D.glow("amber", C.e3, 0.3, 0.4);
+      D.popIn("#in3", C.etude - 0.1, 0.5);
+      bar("#pb1", 85, C.n85, C.contexte);
+      pulse("#pb1 .v", C.chere, 1.1);
+      bar("#pb2", 61, C.n61, C.contexte + 0.12);
+      D.glow("amber", C.n85, 0.5, 0.3);
+
+      // ================= BONUS : Harvard =================
+      out(["#st3", "#in3", "#pb1", "#pb2"], C.fou - 0.3);
+      D.glow("amber", C.fou, 0.2, 0.4); D.glow("red", C.fou, 0.2, 0.4);
+      D.popIn("#in4", C.harvard - 0.1, 0.5);
+      D.blurIn("#b-t", C.savaient - 0.1);
+      pulse("#b-t .a", C.savaient + 0.1, 1.1);
+      bar("#pb3", 59, C.n59);
+      bar("#pb4", 35, C.n35);
+      D.glow("amber", C.n59, 0.5, 0.3); D.glow("red", C.n59, 0.05, 0.4);
+
+      // ================= NOCEBO =================
+      out(["#in4", "#b-t", "#pb3", "#pb4"], C.lautre - 0.2);
+      D.glow("amber", C.lautre, 0.05, 0.4);
+      tl.fromTo("#n-t", { opacity: 0, scale: 1.4, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.3, ease: "expo.out" }, C.nocebo - 0.15);
+      D.shake(C.nocebo, 10);
+      D.glow("red", C.nocebo, 0.55, 0.3);
+      D.popIn("#in5", C.vaccins - 0.1, 0.5);
+      tl.fromTo(".wn", { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.3, stagger: 0.08, ease: "back.out(2)" }, C.n3 - 0.2);
+      tl.to(".wn:nth-child(-n+3)", { borderColor: "#ff5236", color: "#ff5236", duration: 0.12, stagger: 0.12 }, C.n4 - 0.1);
+      D.blurIn("#n-sub", C.dose - 0.6);
+      D.stamp("#n-stamp span", C.venaient - 0.05, -4);
+      D.flash(C.venaient, 0.14);
+      pulse("#n-stamp span", C.lattente, 1.06);
+
+      // ================= CHUTE =================
+      out(["#n-t", "#warns", "#n-sub", "#n-stamp span", "#in5"], C.attention - 0.2);
+      D.glow("red", C.attention, 0.3, 0.4);
+      D.blurIn("#at-t", C.attention - 0.1);
+      tl.fromTo("#ok1", { opacity: 0, x: -80 }, { opacity: 1, x: 0, duration: 0.35, ease: "expo.out" }, C.guerit - 0.25);
+      tl.fromTo("#ok2", { opacity: 0, x: -80 }, { opacity: 1, x: 0, duration: 0.35, ease: "expo.out" }, C.agit - 0.15);
+      D.glow("cold", C.ressens, 0.45, 0.4); D.glow("red", C.ressens, 0.1, 0.4);
+      pulse("#ok2", C.ressens, 1.05);
+      tl.to("#s-main", { scale: 1.3, opacity: 0, filter: "blur(16px)", duration: 0.3, ease: "power3.in" }, C.abonne - 0.32);
+
+      // ================= CARTE DE FIN =================
+      D.glow("red", C.abonne - 0.2, 0, 0.4); D.glow("amber", C.abonne - 0.2, 0, 0.4); D.glow("cold", C.abonne - 0.2, 0, 0.4);
+      D.glow("cream", C.abonne - 0.2, 0.5, 0.4);
+      D.endCard(C.abonne - 0.05, C.vraiment);
+
+      D.captions(CAP);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

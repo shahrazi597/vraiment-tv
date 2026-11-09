@@ -1,0 +1,942 @@
+[
+{
+"text": "Ce",
+"start": 0.0,
+"end": 0.14
+},
+{
+"text": "que",
+"start": 0.14,
+"end": 0.24
+},
+{
+"text": "tu",
+"start": 0.24,
+"end": 0.34
+},
+{
+"text": "cotises",
+"start": 0.34,
+"end": 0.66
+},
+{
+"text": "pour",
+"start": 0.66,
+"end": 0.8
+},
+{
+"text": "ta",
+"start": 0.8,
+"end": 0.88
+},
+{
+"text": "retraite",
+"start": 0.88,
+"end": 1.22
+},
+{
+"text": "n",
+"start": 1.22,
+"end": 1.34
+},
+{
+"text": "'est",
+"start": 1.34,
+"end": 1.42
+},
+{
+"text": "pas",
+"start": 1.42,
+"end": 1.6
+},
+{
+"text": "mis",
+"start": 1.6,
+"end": 1.7
+},
+{
+"text": "de",
+"start": 1.7,
+"end": 1.78
+},
+{
+"text": "côté",
+"start": 1.78,
+"end": 1.92
+},
+{
+"text": "pour",
+"start": 1.92,
+"end": 2.12
+},
+{
+"text": "toi",
+"start": 2.12,
+"end": 2.32
+},
+{
+"text": "!",
+"start": 2.32,
+"end": 2.58
+},
+{
+"text": "Il",
+"start": 2.58,
+"end": 2.7
+},
+{
+"text": "est",
+"start": 2.7,
+"end": 2.8
+},
+{
+"text": "dépensé",
+"start": 2.8,
+"end": 3.32
+},
+{
+"text": "!",
+"start": 3.32,
+"end": 3.54
+},
+{
+"text": "C",
+"start": 3.54,
+"end": 3.76
+},
+{
+"text": "'est",
+"start": 3.76,
+"end": 3.8
+},
+{
+"text": "moi",
+"start": 3.8,
+"end": 3.9
+},
+{
+"text": "-ci",
+"start": 3.9,
+"end": 4.1
+},
+{
+"text": "!",
+"start": 4.1,
+"end": 4.3
+},
+{
+"text": "Comment",
+"start": 4.3,
+"end": 4.48
+},
+{
+"text": "ça",
+"start": 4.48,
+"end": 4.66
+},
+{
+"text": "marche",
+"start": 4.66,
+"end": 4.86
+},
+{
+"text": "vraiment",
+"start": 4.86,
+"end": 5.14
+},
+{
+"text": "?",
+"start": 5.14,
+"end": 5.5
+},
+{
+"text": "Étape",
+"start": 5.5,
+"end": 5.72
+},
+{
+"text": "1",
+"start": 5.72,
+"end": 5.86
+},
+{
+"text": "Ton",
+"start": 5.86,
+"end": 6.14
+},
+{
+"text": "salaire",
+"start": 6.14,
+"end": 6.52
+},
+{
+"text": "tombe",
+"start": 6.52,
+"end": 6.92
+},
+{
+"text": "Sur",
+"start": 6.92,
+"end": 7.24
+},
+{
+"text": "100€",
+"start": 7.24,
+"end": 7.64
+},
+{
+"text": "brut",
+"start": 7.64,
+"end": 7.88
+},
+{
+"text": "jusqu",
+"start": 7.88,
+"end": 8.18
+},
+{
+"text": "'à",
+"start": 8.18,
+"end": 8.36
+},
+{
+"text": "28€",
+"start": 8.36,
+"end": 8.96
+},
+{
+"text": "partent",
+"start": 8.96,
+"end": 9.36
+},
+{
+"text": "pour",
+"start": 9.36,
+"end": 9.42
+},
+{
+"text": "la",
+"start": 9.42,
+"end": 9.54
+},
+{
+"text": "retraite",
+"start": 9.54,
+"end": 9.92
+},
+{
+"text": "11€",
+"start": 9.92,
+"end": 10.5
+},
+{
+"text": "de",
+"start": 10.5,
+"end": 10.6
+},
+{
+"text": "ta",
+"start": 10.6,
+"end": 10.72
+},
+{
+"text": "part,",
+"start": 10.72,
+"end": 11.0
+},
+{
+"text": "17€",
+"start": 11.26,
+"end": 11.72
+},
+{
+"text": "de",
+"start": 11.72,
+"end": 11.82
+},
+{
+"text": "la",
+"start": 11.82,
+"end": 11.92
+},
+{
+"text": "part",
+"start": 11.92,
+"end": 12.04
+},
+{
+"text": "de",
+"start": 12.04,
+"end": 12.14
+},
+{
+"text": "ton",
+"start": 12.14,
+"end": 12.24
+},
+{
+"text": "patron",
+"start": 12.24,
+"end": 12.48
+},
+{
+"text": "Étape",
+"start": 12.48,
+"end": 13.0
+},
+{
+"text": "2",
+"start": 13.0,
+"end": 13.18
+},
+{
+"text": "Les",
+"start": 13.18,
+"end": 13.44
+},
+{
+"text": "caisses",
+"start": 13.44,
+"end": 13.66
+},
+{
+"text": "de",
+"start": 13.66,
+"end": 13.76
+},
+{
+"text": "retraite",
+"start": 13.76,
+"end": 14.1
+},
+{
+"text": "reçoivent",
+"start": 14.1,
+"end": 14.48
+},
+{
+"text": "cet",
+"start": 14.48,
+"end": 14.64
+},
+{
+"text": "argent",
+"start": 14.64,
+"end": 14.96
+},
+{
+"text": "Et",
+"start": 14.96,
+"end": 15.26
+},
+{
+"text": "le",
+"start": 15.26,
+"end": 15.38
+},
+{
+"text": "verse",
+"start": 15.38,
+"end": 15.52
+},
+{
+"text": "aussitôt",
+"start": 15.52,
+"end": 16.16
+},
+{
+"text": "au",
+"start": 16.16,
+"end": 16.32
+},
+{
+"text": "retraité",
+"start": 16.32,
+"end": 16.64
+},
+{
+"text": "d",
+"start": 16.64,
+"end": 16.72
+},
+{
+"text": "'aujourd",
+"start": 16.72,
+"end": 16.88
+},
+{
+"text": "'hui",
+"start": 16.88,
+"end": 17.08
+},
+{
+"text": "Ça",
+"start": 17.08,
+"end": 17.28
+},
+{
+"text": "s",
+"start": 17.28,
+"end": 17.44
+},
+{
+"text": "'appelle",
+"start": 17.44,
+"end": 17.6
+},
+{
+"text": "la",
+"start": 17.6,
+"end": 17.86
+},
+{
+"text": "répartition",
+"start": 17.86,
+"end": 18.44
+},
+{
+"text": "Étape",
+"start": 18.44,
+"end": 18.86
+},
+{
+"text": "3",
+"start": 18.86,
+"end": 19.12
+},
+{
+"text": "En",
+"start": 19.12,
+"end": 19.38
+},
+{
+"text": "échange,",
+"start": 19.38,
+"end": 19.72
+},
+{
+"text": "toi,",
+"start": 19.98,
+"end": 20.14
+},
+{
+"text": "tu",
+"start": 20.4,
+"end": 20.44
+},
+{
+"text": "gagnes",
+"start": 20.44,
+"end": 20.68
+},
+{
+"text": "des",
+"start": 20.68,
+"end": 20.78
+},
+{
+"text": "droits",
+"start": 20.78,
+"end": 21.1
+},
+{
+"text": "Des",
+"start": 21.1,
+"end": 21.32
+},
+{
+"text": "trimestres",
+"start": 21.32,
+"end": 21.86
+},
+{
+"text": "et",
+"start": 21.86,
+"end": 22.0
+},
+{
+"text": "des",
+"start": 22.0,
+"end": 22.12
+},
+{
+"text": "points",
+"start": 22.12,
+"end": 22.32
+},
+{
+"text": "Qui",
+"start": 22.32,
+"end": 22.56
+},
+{
+"text": "serviront",
+"start": 22.56,
+"end": 22.96
+},
+{
+"text": "à",
+"start": 22.96,
+"end": 23.04
+},
+{
+"text": "calculer",
+"start": 23.04,
+"end": 23.42
+},
+{
+"text": "ta",
+"start": 23.42,
+"end": 23.52
+},
+{
+"text": "future",
+"start": 23.52,
+"end": 23.76
+},
+{
+"text": "pension",
+"start": 23.76,
+"end": 24.1
+},
+{
+"text": "Et",
+"start": 24.1,
+"end": 24.42
+},
+{
+"text": "ta",
+"start": 24.42,
+"end": 24.52
+},
+{
+"text": "pension,",
+"start": 24.52,
+"end": 24.84
+},
+{
+"text": "ce",
+"start": 25.06,
+"end": 25.12
+},
+{
+"text": "sont",
+"start": 25.12,
+"end": 25.26
+},
+{
+"text": "les",
+"start": 25.26,
+"end": 25.36
+},
+{
+"text": "actifs",
+"start": 25.36,
+"end": 25.78
+},
+{
+"text": "de",
+"start": 25.78,
+"end": 25.9
+},
+{
+"text": "demain",
+"start": 25.9,
+"end": 26.16
+},
+{
+"text": "qui",
+"start": 26.16,
+"end": 26.34
+},
+{
+"text": "l",
+"start": 26.34,
+"end": 26.46
+},
+{
+"text": "'appérons",
+"start": 26.46,
+"end": 26.72
+},
+{
+"text": "Le",
+"start": 26.72,
+"end": 26.98
+},
+{
+"text": "problème",
+"start": 26.98,
+"end": 27.24
+},
+{
+"text": "?",
+"start": 27.24,
+"end": 27.56
+},
+{
+"text": "En",
+"start": 27.56,
+"end": 27.64
+},
+{
+"text": "2023,",
+"start": 27.64,
+"end": 28.18
+},
+{
+"text": "il",
+"start": 28.44,
+"end": 28.52
+},
+{
+"text": "y",
+"start": 28.52,
+"end": 28.58
+},
+{
+"text": "avait",
+"start": 28.58,
+"end": 28.7
+},
+{
+"text": "30",
+"start": 28.7,
+"end": 29.0
+},
+{
+"text": ",4",
+"start": 29.0,
+"end": 29.54
+},
+{
+"text": "millions",
+"start": 29.54,
+"end": 29.8
+},
+{
+"text": "de",
+"start": 29.8,
+"end": 29.94
+},
+{
+"text": "cotisans",
+"start": 29.94,
+"end": 30.38
+},
+{
+"text": "pour",
+"start": 30.38,
+"end": 30.56
+},
+{
+"text": "17",
+"start": 30.56,
+"end": 30.96
+},
+{
+"text": ",2",
+"start": 30.96,
+"end": 31.52
+},
+{
+"text": "millions",
+"start": 31.52,
+"end": 31.72
+},
+{
+"text": "de",
+"start": 31.72,
+"end": 31.84
+},
+{
+"text": "retraités",
+"start": 31.84,
+"end": 32.26
+},
+{
+"text": "Moins",
+"start": 32.26,
+"end": 32.62
+},
+{
+"text": "de",
+"start": 32.62,
+"end": 32.72
+},
+{
+"text": "2",
+"start": 32.72,
+"end": 32.96
+},
+{
+"text": "actifs",
+"start": 32.96,
+"end": 33.36
+},
+{
+"text": "pour",
+"start": 33.36,
+"end": 33.54
+},
+{
+"text": "1",
+"start": 33.54,
+"end": 33.82
+},
+{
+"text": "retraité",
+"start": 33.82,
+"end": 34.34
+},
+{
+"text": "Et",
+"start": 34.34,
+"end": 34.56
+},
+{
+"text": "la",
+"start": 34.56,
+"end": 34.66
+},
+{
+"text": "facture,",
+"start": 34.66,
+"end": 35.08
+},
+{
+"text": "422",
+"start": 35.34,
+"end": 35.98
+},
+{
+"text": "milliards",
+"start": 35.98,
+"end": 36.46
+},
+{
+"text": "d",
+"start": 36.46,
+"end": 36.68
+},
+{
+"text": "'euros",
+"start": 36.68,
+"end": 36.86
+},
+{
+"text": "en",
+"start": 36.86,
+"end": 37.0
+},
+{
+"text": "2025",
+"start": 37.0,
+"end": 37.54
+},
+{
+"text": "Près",
+"start": 37.54,
+"end": 38.04
+},
+{
+"text": "d",
+"start": 38.04,
+"end": 38.2
+},
+{
+"text": "'un",
+"start": 38.2,
+"end": 38.26
+},
+{
+"text": "euro",
+"start": 38.26,
+"end": 38.5
+},
+{
+"text": "de",
+"start": 38.5,
+"end": 38.62
+},
+{
+"text": "dépenses",
+"start": 38.62,
+"end": 38.9
+},
+{
+"text": "publiques",
+"start": 38.9,
+"end": 39.2
+},
+{
+"text": "sur",
+"start": 39.2,
+"end": 39.32
+},
+{
+"text": "4",
+"start": 39.32,
+"end": 39.64
+},
+{
+"text": "Voilà",
+"start": 39.64,
+"end": 40.1
+},
+{
+"text": "pourquoi",
+"start": 40.1,
+"end": 40.36
+},
+{
+"text": "on",
+"start": 40.36,
+"end": 40.5
+},
+{
+"text": "se",
+"start": 40.5,
+"end": 40.6
+},
+{
+"text": "dispute",
+"start": 40.6,
+"end": 40.9
+},
+{
+"text": "sur",
+"start": 40.9,
+"end": 41.1
+},
+{
+"text": "l",
+"start": 41.1,
+"end": 41.24
+},
+{
+"text": "'âge",
+"start": 41.24,
+"end": 41.3
+},
+{
+"text": "de",
+"start": 41.3,
+"end": 41.4
+},
+{
+"text": "départ,",
+"start": 41.4,
+"end": 41.72
+},
+{
+"text": "les",
+"start": 41.94,
+"end": 42.0
+},
+{
+"text": "cotisations",
+"start": 42.0,
+"end": 42.56
+},
+{
+"text": "et",
+"start": 42.56,
+"end": 42.76
+},
+{
+"text": "le",
+"start": 42.76,
+"end": 42.86
+},
+{
+"text": "montant",
+"start": 42.86,
+"end": 43.14
+},
+{
+"text": "des",
+"start": 43.14,
+"end": 43.24
+},
+{
+"text": "pensions",
+"start": 43.24,
+"end": 43.6
+},
+{
+"text": "C",
+"start": 43.6,
+"end": 43.7
+},
+{
+"text": "'est",
+"start": 43.7,
+"end": 43.92
+},
+{
+"text": "le",
+"start": 43.92,
+"end": 44.02
+},
+{
+"text": "même",
+"start": 44.02,
+"end": 44.26
+},
+{
+"text": "gâteau",
+"start": 44.26,
+"end": 44.64
+},
+{
+"text": "à",
+"start": 44.64,
+"end": 44.7
+},
+{
+"text": "partager",
+"start": 44.7,
+"end": 45.02
+},
+{
+"text": "Abonne",
+"start": 45.02,
+"end": 45.5
+},
+{
+"text": "-toi",
+"start": 45.5,
+"end": 45.66
+},
+{
+"text": "pour",
+"start": 45.66,
+"end": 45.84
+},
+{
+"text": "savoir",
+"start": 45.84,
+"end": 46.08
+},
+{
+"text": "comment",
+"start": 46.08,
+"end": 46.4
+},
+{
+"text": "ça",
+"start": 46.4,
+"end": 46.58
+},
+{
+"text": "marche",
+"start": 46.58,
+"end": 46.76
+},
+{
+"text": "vraiment",
+"start": 46.76,
+"end": 46.94
+}
+]

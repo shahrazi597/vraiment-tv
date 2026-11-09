@@ -1,0 +1,1148 @@
+{
+ "cues": {
+  "pilule": 0.12,
+  "soulager": 1.18,
+  "meme": 1.92,
+  "sais": 2.5,
+  "comment": 3.58,
+  "avales": 5.42,
+  "contient": 6.5,
+  "aucun": 6.82,
+  "cerveau": 8.18,
+  "sattend": 9.08,
+  "mieux": 9.62,
+  "attente": 10.86,
+  "reactions": 12.08,
+  "libere": 13.04,
+  "endorphines": 13.44,
+  "dopamine": 14.22,
+  "lactivite": 14.92,
+  "douleur": 15.9,
+  "baisse": 16.24,
+  "contexte": 17.72,
+  "etude": 19.2,
+  "fausse": 20.0,
+  "n85": 21.12,
+  "chere": 23.04,
+  "n61": 23.88,
+  "soldee": 25.34,
+  "fou": 26.2,
+  "harvard": 26.66,
+  "savaient": 27.56,
+  "placebo": 28.5,
+  "n59": 28.66,
+  "n35": 31.28,
+  "sans": 32.16,
+  "lautre": 33.6,
+  "nocebo": 34.84,
+  "vaccins": 36.12,
+  "n4": 38.64,
+  "dose": 39.56,
+  "venaient": 39.94,
+  "lattente": 40.62,
+  "attention": 41.76,
+  "guerit": 43.1,
+  "maladie": 43.7,
+  "agit": 44.38,
+  "ressens": 45.02,
+  "abonne": 46.3,
+  "n3": 37.1,
+  "sucre2": 3.08,
+  "e1": 4.68,
+  "e2": 10.04,
+  "e3": 16.88,
+  "vraiment": 47.66,
+  "voEnd": 48.145918,
+  "end": 51.15
+ },
+ "sfx": [
+  [
+   "pop",
+   0.0,
+   0.72,
+   0.2
+  ],
+  [
+   "stamp",
+   2.459,
+   0.7,
+   0.4
+  ],
+  [
+   "whoosh-short",
+   3.331,
+   0.575,
+   0.2
+  ],
+  [
+   "click-soft",
+   6.702,
+   0.366,
+   0.2
+  ],
+  [
+   "pop",
+   13.258,
+   0.72,
+   0.2
+  ],
+  [
+   "pop",
+   14.038,
+   0.72,
+   0.2
+  ],
+  [
+   "whoosh",
+   16.041,
+   0.575,
+   0.14
+  ],
+  [
+   "ticker",
+   20.857,
+   0.9,
+   0.18
+  ],
+  [
+   "ticker",
+   28.397,
+   0.9,
+   0.18
+  ],
+  [
+   "impact-bass-1",
+   34.771,
+   0.8,
+   0.24
+  ],
+  [
+   "stamp2",
+   38.604,
+   0.7,
+   0.38
+  ],
+  [
+   "pop",
+   46.518,
+   0.72,
+   0.28
+  ]
+ ],
+ "tokens": [
+  {
+   "text": "Une",
+   "key": "une",
+   "start": 0.0,
+   "end": 0.12
+  },
+  {
+   "text": "pilule",
+   "key": "pilule",
+   "start": 0.12,
+   "end": 0.44
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 0.44,
+   "end": 0.6
+  },
+  {
+   "text": "sucre",
+   "key": "sucre",
+   "start": 0.6,
+   "end": 0.88
+  },
+  {
+   "text": "peut",
+   "key": "peut",
+   "start": 0.88,
+   "end": 1.04
+  },
+  {
+   "text": "te",
+   "key": "te",
+   "start": 1.04,
+   "end": 1.18
+  },
+  {
+   "text": "soulager…",
+   "key": "soulager",
+   "start": 1.18,
+   "end": 1.58
+  },
+  {
+   "text": "même",
+   "key": "meme",
+   "start": 1.92,
+   "end": 2.16
+  },
+  {
+   "text": "quand",
+   "key": "quand",
+   "start": 2.16,
+   "end": 2.34
+  },
+  {
+   "text": "tu",
+   "key": "tu",
+   "start": 2.34,
+   "end": 2.5
+  },
+  {
+   "text": "sais",
+   "key": "sais",
+   "start": 2.5,
+   "end": 2.76
+  },
+  {
+   "text": "que",
+   "key": "que",
+   "start": 2.76,
+   "end": 2.88
+  },
+  {
+   "text": "c'est",
+   "key": "cest",
+   "start": 2.88,
+   "end": 2.96
+  },
+  {
+   "text": "du",
+   "key": "du",
+   "start": 2.96,
+   "end": 3.08
+  },
+  {
+   "text": "sucre !",
+   "key": "sucre",
+   "start": 3.08,
+   "end": 3.58
+  },
+  {
+   "text": "Comment",
+   "key": "comment",
+   "start": 3.58,
+   "end": 3.76
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 3.76,
+   "end": 3.94
+  },
+  {
+   "text": "marche",
+   "key": "marche",
+   "start": 3.94,
+   "end": 4.12
+  },
+  {
+   "text": "vraiment ?",
+   "key": "vraiment",
+   "start": 4.12,
+   "end": 4.68
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 4.68,
+   "end": 4.98
+  },
+  {
+   "text": "1 :",
+   "key": "1",
+   "start": 4.98,
+   "end": 5.12
+  },
+  {
+   "text": "tu",
+   "key": "tu",
+   "start": 5.36,
+   "end": 5.42
+  },
+  {
+   "text": "avales",
+   "key": "avales",
+   "start": 5.42,
+   "end": 5.66
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 5.66,
+   "end": 5.8
+  },
+  {
+   "text": "pilule.",
+   "key": "pilule",
+   "start": 5.8,
+   "end": 6.1
+  },
+  {
+   "text": "Elle",
+   "key": "elle",
+   "start": 6.28,
+   "end": 6.38
+  },
+  {
+   "text": "ne",
+   "key": "ne",
+   "start": 6.38,
+   "end": 6.5
+  },
+  {
+   "text": "contient",
+   "key": "contient",
+   "start": 6.5,
+   "end": 6.82
+  },
+  {
+   "text": "aucun",
+   "key": "aucun",
+   "start": 6.82,
+   "end": 7.24
+  },
+  {
+   "text": "médicament.",
+   "key": "medicament",
+   "start": 7.24,
+   "end": 7.78
+  },
+  {
+   "text": "Mais",
+   "key": "mais",
+   "start": 7.98,
+   "end": 8.06
+  },
+  {
+   "text": "ton",
+   "key": "ton",
+   "start": 8.06,
+   "end": 8.18
+  },
+  {
+   "text": "cerveau,",
+   "key": "cerveau",
+   "start": 8.18,
+   "end": 8.58
+  },
+  {
+   "text": "lui,",
+   "key": "lui",
+   "start": 8.62,
+   "end": 8.8
+  },
+  {
+   "text": "s'attend",
+   "key": "sattend",
+   "start": 9.08,
+   "end": 9.3
+  },
+  {
+   "text": "à",
+   "key": "a",
+   "start": 9.3,
+   "end": 9.48
+  },
+  {
+   "text": "aller",
+   "key": "aller",
+   "start": 9.48,
+   "end": 9.62
+  },
+  {
+   "text": "mieux.",
+   "key": "mieux",
+   "start": 9.62,
+   "end": 9.8
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 10.04,
+   "end": 10.28
+  },
+  {
+   "text": "2 :",
+   "key": "2",
+   "start": 10.28,
+   "end": 10.44
+  },
+  {
+   "text": "cette",
+   "key": "cette",
+   "start": 10.84,
+   "end": 10.86
+  },
+  {
+   "text": "attente",
+   "key": "attente",
+   "start": 10.86,
+   "end": 11.18
+  },
+  {
+   "text": "déclenche",
+   "key": "declenche",
+   "start": 11.18,
+   "end": 11.66
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 11.66,
+   "end": 11.82
+  },
+  {
+   "text": "vraies",
+   "key": "vraies",
+   "start": 11.82,
+   "end": 12.08
+  },
+  {
+   "text": "réactions.",
+   "key": "reactions",
+   "start": 12.08,
+   "end": 12.46
+  },
+  {
+   "text": "Ton",
+   "key": "ton",
+   "start": 12.66,
+   "end": 12.74
+  },
+  {
+   "text": "cerveau",
+   "key": "cerveau",
+   "start": 12.74,
+   "end": 13.04
+  },
+  {
+   "text": "libère",
+   "key": "libere",
+   "start": 13.04,
+   "end": 13.3
+  },
+  {
+   "text": "des",
+   "key": "des",
+   "start": 13.3,
+   "end": 13.44
+  },
+  {
+   "text": "endorphines",
+   "key": "endorphines",
+   "start": 13.44,
+   "end": 13.92
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 13.92,
+   "end": 14.08
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 14.08,
+   "end": 14.16
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 14.16,
+   "end": 14.22
+  },
+  {
+   "text": "dopamine,",
+   "key": "dopamine",
+   "start": 14.22,
+   "end": 14.54
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 14.54,
+   "end": 14.92
+  },
+  {
+   "text": "l'activité",
+   "key": "lactivite",
+   "start": 14.92,
+   "end": 15.4
+  },
+  {
+   "text": "des",
+   "key": "des",
+   "start": 15.4,
+   "end": 15.54
+  },
+  {
+   "text": "zones",
+   "key": "zones",
+   "start": 15.54,
+   "end": 15.7
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 15.7,
+   "end": 15.82
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 15.82,
+   "end": 15.9
+  },
+  {
+   "text": "douleur",
+   "key": "douleur",
+   "start": 15.9,
+   "end": 16.24
+  },
+  {
+   "text": "baisse.",
+   "key": "baisse",
+   "start": 16.24,
+   "end": 16.64
+  },
+  {
+   "text": "Étape",
+   "key": "etape",
+   "start": 16.88,
+   "end": 17.18
+  },
+  {
+   "text": "3 :",
+   "key": "3",
+   "start": 17.18,
+   "end": 17.38
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 17.62,
+   "end": 17.72
+  },
+  {
+   "text": "contexte",
+   "key": "contexte",
+   "start": 17.72,
+   "end": 18.2
+  },
+  {
+   "text": "fait",
+   "key": "fait",
+   "start": 18.2,
+   "end": 18.32
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 18.32,
+   "end": 18.42
+  },
+  {
+   "text": "reste.",
+   "key": "reste",
+   "start": 18.42,
+   "end": 18.62
+  },
+  {
+   "text": "Dans",
+   "key": "dans",
+   "start": 18.94,
+   "end": 19.02
+  },
+  {
+   "text": "une",
+   "key": "une",
+   "start": 19.02,
+   "end": 19.2
+  },
+  {
+   "text": "étude,",
+   "key": "etude",
+   "start": 19.2,
+   "end": 19.46
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 19.7,
+   "end": 19.78
+  },
+  {
+   "text": "même",
+   "key": "meme",
+   "start": 19.78,
+   "end": 20.0
+  },
+  {
+   "text": "fausse",
+   "key": "fausse",
+   "start": 20.0,
+   "end": 20.3
+  },
+  {
+   "text": "pilule",
+   "key": "pilule",
+   "start": 20.3,
+   "end": 20.58
+  },
+  {
+   "text": "a",
+   "key": "a",
+   "start": 20.58,
+   "end": 20.76
+  },
+  {
+   "text": "soulagé",
+   "key": "soulage",
+   "start": 20.76,
+   "end": 21.12
+  },
+  {
+   "text": "85 %",
+   "key": "85",
+   "start": 21.12,
+   "end": 22.04
+  },
+  {
+   "text": "des",
+   "key": "des",
+   "start": 22.04,
+   "end": 22.26
+  },
+  {
+   "text": "gens",
+   "key": "gens",
+   "start": 22.26,
+   "end": 22.42
+  },
+  {
+   "text": "quand",
+   "key": "quand",
+   "start": 22.42,
+   "end": 22.56
+  },
+  {
+   "text": "on",
+   "key": "on",
+   "start": 22.56,
+   "end": 22.68
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 22.68,
+   "end": 22.78
+  },
+  {
+   "text": "disait",
+   "key": "disait",
+   "start": 22.78,
+   "end": 23.04
+  },
+  {
+   "text": "chère…",
+   "key": "chere",
+   "start": 23.04,
+   "end": 23.42
+  },
+  {
+   "text": "contre",
+   "key": "contre",
+   "start": 23.68,
+   "end": 23.88
+  },
+  {
+   "text": "61 %",
+   "key": "61",
+   "start": 23.88,
+   "end": 24.84
+  },
+  {
+   "text": "quand",
+   "key": "quand",
+   "start": 24.84,
+   "end": 25.02
+  },
+  {
+   "text": "elle",
+   "key": "elle",
+   "start": 25.02,
+   "end": 25.16
+  },
+  {
+   "text": "était",
+   "key": "etait",
+   "start": 25.16,
+   "end": 25.34
+  },
+  {
+   "text": "soldée !",
+   "key": "soldee",
+   "start": 25.34,
+   "end": 25.8
+  },
+  {
+   "text": "Le",
+   "key": "le",
+   "start": 25.92,
+   "end": 26.06
+  },
+  {
+   "text": "plus",
+   "key": "plus",
+   "start": 26.06,
+   "end": 26.2
+  },
+  {
+   "text": "fou ?",
+   "key": "fou",
+   "start": 26.2,
+   "end": 26.6
+  },
+  {
+   "text": "À",
+   "key": "a",
+   "start": 26.6,
+   "end": 26.66
+  },
+  {
+   "text": "Harvard,",
+   "key": "harvard",
+   "start": 26.66,
+   "end": 26.94
+  },
+  {
+   "text": "des",
+   "key": "des",
+   "start": 27.24,
+   "end": 27.32
+  },
+  {
+   "text": "patients",
+   "key": "patients",
+   "start": 27.32,
+   "end": 27.56
+  },
+  {
+   "text": "savaient",
+   "key": "savaient",
+   "start": 27.56,
+   "end": 28.02
+  },
+  {
+   "text": "qu'ils",
+   "key": "quils",
+   "start": 28.02,
+   "end": 28.17
+  },
+  {
+   "text": "prenaient",
+   "key": "prenaient",
+   "start": 28.17,
+   "end": 28.42
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 28.42,
+   "end": 28.5
+  },
+  {
+   "text": "placebo.",
+   "key": "placebo",
+   "start": 28.5,
+   "end": 28.66
+  },
+  {
+   "text": "59 %",
+   "key": "59",
+   "start": 28.66,
+   "end": 29.94
+  },
+  {
+   "text": "se",
+   "key": "se",
+   "start": 29.94,
+   "end": 30.08
+  },
+  {
+   "text": "sont",
+   "key": "sont",
+   "start": 30.08,
+   "end": 30.24
+  },
+  {
+   "text": "sentis",
+   "key": "sentis",
+   "start": 30.24,
+   "end": 30.5
+  },
+  {
+   "text": "soulagés,",
+   "key": "soulages",
+   "start": 30.5,
+   "end": 30.96
+  },
+  {
+   "text": "contre",
+   "key": "contre",
+   "start": 31.08,
+   "end": 31.28
+  },
+  {
+   "text": "35 %",
+   "key": "35",
+   "start": 31.28,
+   "end": 32.16
+  },
+  {
+   "text": "sans",
+   "key": "sans",
+   "start": 32.16,
+   "end": 32.4
+  },
+  {
+   "text": "rien",
+   "key": "rien",
+   "start": 32.4,
+   "end": 32.56
+  },
+  {
+   "text": "prendre.",
+   "key": "prendre",
+   "start": 32.56,
+   "end": 32.86
+  },
+  {
+   "text": "Et",
+   "key": "et",
+   "start": 33.02,
+   "end": 33.14
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 33.14,
+   "end": 33.32
+  },
+  {
+   "text": "marche",
+   "key": "marche",
+   "start": 33.32,
+   "end": 33.5
+  },
+  {
+   "text": "dans",
+   "key": "dans",
+   "start": 33.5,
+   "end": 33.6
+  },
+  {
+   "text": "l'autre",
+   "key": "lautre",
+   "start": 33.6,
+   "end": 33.78
+  },
+  {
+   "text": "sens :",
+   "key": "sens",
+   "start": 33.78,
+   "end": 34.46
+  },
+  {
+   "text": "l'effet",
+   "key": "leffet",
+   "start": 34.46,
+   "end": 34.84
+  },
+  {
+   "text": "nocebo.",
+   "key": "nocebo",
+   "start": 34.84,
+   "end": 35.4
+  },
+  {
+   "text": "Dans",
+   "key": "dans",
+   "start": 35.58,
+   "end": 35.68
+  },
+  {
+   "text": "les",
+   "key": "les",
+   "start": 35.68,
+   "end": 35.8
+  },
+  {
+   "text": "essais",
+   "key": "essais",
+   "start": 35.8,
+   "end": 36.04
+  },
+  {
+   "text": "des",
+   "key": "des",
+   "start": 36.04,
+   "end": 36.12
+  },
+  {
+   "text": "vaccins",
+   "key": "vaccins",
+   "start": 36.12,
+   "end": 36.38
+  },
+  {
+   "text": "Covid,",
+   "key": "covid",
+   "start": 36.38,
+   "end": 36.62
+  },
+  {
+   "text": "environ",
+   "key": "environ",
+   "start": 36.9,
+   "end": 37.1
+  },
+  {
+   "text": "3",
+   "key": "3",
+   "start": 37.1,
+   "end": 37.48
+  },
+  {
+   "text": "effets",
+   "key": "effets",
+   "start": 37.48,
+   "end": 37.74
+  },
+  {
+   "text": "secondaires",
+   "key": "secondaires",
+   "start": 37.74,
+   "end": 38.12
+  },
+  {
+   "text": "généraux",
+   "key": "generaux",
+   "start": 38.12,
+   "end": 38.5
+  },
+  {
+   "text": "sur",
+   "key": "sur",
+   "start": 38.5,
+   "end": 38.64
+  },
+  {
+   "text": "4",
+   "key": "4",
+   "start": 38.64,
+   "end": 38.88
+  },
+  {
+   "text": "après",
+   "key": "apres",
+   "start": 38.88,
+   "end": 39.2
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 39.2,
+   "end": 39.32
+  },
+  {
+   "text": "première",
+   "key": "premiere",
+   "start": 39.32,
+   "end": 39.56
+  },
+  {
+   "text": "dose",
+   "key": "dose",
+   "start": 39.56,
+   "end": 39.94
+  },
+  {
+   "text": "venaient…",
+   "key": "venaient",
+   "start": 39.94,
+   "end": 40.46
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 40.46,
+   "end": 40.62
+  },
+  {
+   "text": "l'attente",
+   "key": "lattente",
+   "start": 40.62,
+   "end": 41.1
+  },
+  {
+   "text": "elle-même.",
+   "key": "ellememe",
+   "start": 41.1,
+   "end": 41.58
+  },
+  {
+   "text": "Attention :",
+   "key": "attention",
+   "start": 41.76,
+   "end": 42.42
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 42.42,
+   "end": 42.5
+  },
+  {
+   "text": "placebo",
+   "key": "placebo",
+   "start": 42.5,
+   "end": 42.8
+  },
+  {
+   "text": "ne",
+   "key": "ne",
+   "start": 42.8,
+   "end": 43.1
+  },
+  {
+   "text": "guérit",
+   "key": "guerit",
+   "start": 43.1,
+   "end": 43.44
+  },
+  {
+   "text": "pas",
+   "key": "pas",
+   "start": 43.44,
+   "end": 43.6
+  },
+  {
+   "text": "une",
+   "key": "une",
+   "start": 43.6,
+   "end": 43.7
+  },
+  {
+   "text": "maladie.",
+   "key": "maladie",
+   "start": 43.7,
+   "end": 44.12
+  },
+  {
+   "text": "Il",
+   "key": "il",
+   "start": 44.28,
+   "end": 44.38
+  },
+  {
+   "text": "agit",
+   "key": "agit",
+   "start": 44.38,
+   "end": 44.62
+  },
+  {
+   "text": "sur",
+   "key": "sur",
+   "start": 44.62,
+   "end": 44.76
+  },
+  {
+   "text": "ce",
+   "key": "ce",
+   "start": 44.76,
+   "end": 44.82
+  },
+  {
+   "text": "que",
+   "key": "que",
+   "start": 44.82,
+   "end": 44.9
+  },
+  {
+   "text": "tu",
+   "key": "tu",
+   "start": 44.9,
+   "end": 45.02
+  },
+  {
+   "text": "ressens,",
+   "key": "ressens",
+   "start": 45.02,
+   "end": 45.42
+  },
+  {
+   "text": "comme",
+   "key": "comme",
+   "start": 45.5,
+   "end": 45.66
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 45.66,
+   "end": 45.78
+  },
+  {
+   "text": "douleur.",
+   "key": "douleur",
+   "start": 45.78,
+   "end": 46.16
+  },
+  {
+   "text": "Abonne-toi",
+   "key": "abonnetoi",
+   "start": 46.3,
+   "end": 46.72
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 46.72,
+   "end": 46.88
+  },
+  {
+   "text": "savoir",
+   "key": "savoir",
+   "start": 46.88,
+   "end": 47.12
+  },
+  {
+   "text": "comment",
+   "key": "comment",
+   "start": 47.12,
+   "end": 47.34
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 47.34,
+   "end": 47.5
+  },
+  {
+   "text": "marche",
+   "key": "marche",
+   "start": 47.5,
+   "end": 47.66
+  },
+  {
+   "text": "vraiment.",
+   "key": "vraiment",
+   "start": 47.66,
+   "end": 48.12
+  }
+ ]
+}

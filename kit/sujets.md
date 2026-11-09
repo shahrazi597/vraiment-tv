@@ -19,10 +19,10 @@ Les gens se fichent de savoir comment marche un frigo. Ils veulent **apprendre d
 |---|---|---|---|
 | Argent | Les tranches d'impôt | « Passer à la tranche supérieure ne te fera jamais gagner moins. Jamais. » | 📅 08/11 9h |
 | Argent | La création monétaire | « Quand ta banque te prête de l'argent, elle ne l'a pas. Elle le crée. » | 📅 08/11 19h |
-| Argent | L'inflation | « Ton billet de 50 € perd de la valeur… même rangé dans ton tiroir. » | ⏳ |
+| Argent | L'inflation | « Ton billet de 50 € perd de la valeur… même rangé dans ton tiroir. » | 📅 09/11 9h |
 | Argent | Les intérêts composés | « 100 € placés à 20 ans peuvent valoir plus que 1 000 € placés à 50 ans. » | ⏳ |
 | Argent | Le crédit immobilier | « Sur 25 ans, ta banque gagne une fortune sur ta maison. Voilà combien. » | ⏳ |
-| Argent | La retraite par répartition | « Tes cotisations retraite ne sont pas mises de côté pour toi. Elles partent dès ce mois-ci. » | ⏳ |
+| Argent | La retraite par répartition | « Tes cotisations retraite ne sont pas mises de côté pour toi. Elles partent dès ce mois-ci. » | 📅 10/11 9h |
 | Argent | Les prix qui changent (avion, Uber, hôtels) | « Les deux passagers assis côte à côte n'ont presque jamais payé le même prix. » | ⏳ |
 | Argent | Le supermarché | « Le lait est tout au fond du magasin. Ce n'est pas un hasard. » | ⏳ |
 | Argent | Les prix en ,99 | « 9,99 € au lieu de 10 € : ton cerveau a déjà vu 9. » | ⏳ |
@@ -32,9 +32,9 @@ Les gens se fichent de savoir comment marche un frigo. Ils veulent **apprendre d
 | Cerveau | L'effet d'ancrage | « Le premier prix que tu vois décide de ce que tu trouves cher. » | ⏳ |
 | Cerveau | Le déjà-vu | « Le déjà-vu, c'est ton cerveau qui se trompe de dossier. » | ⏳ |
 | Cerveau | Ce que voient tes yeux | « Tu as un trou dans ta vision… et ton cerveau le remplit en inventant. » | ⏳ |
-| Corps | Le sommeil | « Te réveiller au mauvais moment peut te fatiguer plus que dormir moins. » | ⏳ |
+| Corps | Le sommeil | « Te réveiller au mauvais moment peut te fatiguer plus que dormir moins. » | 📅 09/11 19h (inertie du sommeil) |
 | Corps | Les antibiotiques | « Les antibiotiques ne tuent pas les virus. Jamais. Et en prendre pour rien te met en danger. » | ⏳ |
-| Corps | L'effet placebo | « Un faux médicament peut marcher… même quand tu sais qu'il est faux. » | ⏳ |
+| Corps | L'effet placebo | « Un faux médicament peut marcher… même quand tu sais qu'il est faux. » | 📅 10/11 19h |
 | Corps | La caféine | « Le café ne te donne pas d'énergie. Il cache ta fatigue. » | ⏳ |
 | Corps | Le décalage horaire | « Ton corps a une horloge… et elle ne se règle pas en un jour. » | ⏳ |
 | Société | La présidentielle française | « Pour être candidat à la présidentielle, il te faut d'abord 500 signatures. » | ⏳ |
@@ -58,9 +58,9 @@ Les gens se fichent de savoir comment marche un frigo. Ils veulent **apprendre d
 | Vie | Un enfant jusqu'à 18 ans | Estimations officielles (Insee, Drees) | ⏳ |
 | Vie | Ton loyer | Où va l'argent : crédit, taxe foncière, charges, rendement du propriétaire | ⏳ |
 | Vie | Un mariage | Budget moyen et ses postes | ⏳ |
-| Argent | Un découvert bancaire | Agios et frais réels sur un an (Banque de France, comparateurs officiels) | ⏳ |
+| Argent | Un découvert bancaire | Agios et frais réels sur un an (Banque de France, comparateurs officiels) | 📅 09/11 12h |
 | Argent | Tes frais bancaires | Ce que tu paies vraiment chaque année sans le voir | ⏳ |
-| Santé | Un passage aux urgences | Ce que ça coûte à la Sécu et ce que tu paies (Assurance maladie) | ⏳ |
+| Santé | Un passage aux urgences | Ce que ça coûte à la Sécu et ce que tu paies (Assurance maladie) | 📅 10/11 12h |
 | Santé | Un accouchement | Coût réel pour la Sécu | ⏳ |
 | Conso | Un iPhone | Composants et assemblage contre prix de vente (analyses de démontage) | ⏳ |
 | Conso | Une commande Uber Eats | Ce que garde le restaurant, le livreur, l'appli | ⏳ |
@@ -89,11 +89,17 @@ Les gens se fichent de savoir comment marche un frigo. Ils veulent **apprendre d
 | Comment ça marche ? #6 | Face ID | 📅 07/11 19h |
 | Comment ça marche ? #7 | Les tranches d'impôt | 📅 08/11 9h |
 | Comment ça marche ? #8 | La création monétaire | 📅 08/11 19h |
+| Comment ça marche ? #9 | L'inflation | 📅 09/11 9h |
+| Comment ça marche ? #10 | Le réveil (inertie du sommeil) | 📅 09/11 19h |
+| Comment ça marche ? #11 | La retraite par répartition | 📅 10/11 9h |
+| Comment ça marche ? #12 | L'effet placebo | 📅 10/11 19h |
 | Combien ça coûte ? #1 | Le plein d'essence | ✅ 04/11 12h |
 | Combien ça coûte ? #2 | Un paquet de cigarettes | ✅ 05/11 12h |
 | Combien ça coûte ? #3 | Le passe Navigo | ✅ 06/11 12h |
 | Combien ça coûte ? #4 | Une place de cinéma | 📅 07/11 12h |
 | Combien ça coûte ? #5 | Un salarié au SMIC | 📅 08/11 12h |
+| Combien ça coûte ? #6 | Un découvert bancaire | 📅 09/11 12h |
+| Combien ça coûte ? #7 | Un passage aux urgences | 📅 10/11 12h |
 
 ## Réserve (priorité basse : objets techniques et sujets moins forts)
 

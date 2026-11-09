@@ -1,0 +1,1022 @@
+{
+ "cues": {
+  "urgences": 0.18,
+  "n23": 1.06,
+  "mais": 2.24,
+  "coute": 2.7,
+  "n10": 3.58,
+  "fois": 3.94,
+  "combien": 4.64,
+  "ta": 5.78,
+  "depuis": 6.82,
+  "forfait": 8.28,
+  "fixe": 8.5,
+  "meme": 9.88,
+  "consultation": 10.82,
+  "radio": 12.12,
+  "suture": 13.02,
+  "mutuelle": 13.88,
+  "responsable": 14.4,
+  "rembourse": 16.0,
+  "hospitalise": 16.74,
+  "jour": 19.32,
+  "maintenant": 20.06,
+  "vrai": 20.74,
+  "n56": 23.06,
+  "n208": 24.8,
+  "passages": 25.9,
+  "n270": 26.98,
+  "moyenne": 3.04,
+  "n95": 29.42,
+  "lassurance": 30.84,
+  "donc": 31.86,
+  "csg": 33.68,
+  "bonus": 34.3,
+  "moitie": 36.0,
+  "patients": 36.48,
+  "n3": 37.48,
+  "heures": 37.82,
+  "bref": 38.82,
+  "juste": 41.7,
+  "abonne": 42.8,
+  "n23b": 8.86,
+  "n23c": 18.5,
+  "n23d": 39.46,
+  "urgences2": 22.38,
+  "prix2": 40.78,
+  "part2": 42.3,
+  "vraiment": 44.34,
+  "voEnd": 44.697755,
+  "end": 47.7
+ },
+ "sfx": [
+  [
+   "pop",
+   0.878,
+   0.72,
+   0.22
+  ],
+  [
+   "impact-bass-1",
+   3.511,
+   0.8,
+   0.26
+  ],
+  [
+   "whoosh-short",
+   4.391,
+   0.575,
+   0.2
+  ],
+  [
+   "kaching",
+   8.63,
+   0.9,
+   0.18
+  ],
+  [
+   "click-soft",
+   12.002,
+   0.366,
+   0.2
+  ],
+  [
+   "pop",
+   16.558,
+   0.72,
+   0.2
+  ],
+  [
+   "whoosh",
+   19.861,
+   0.575,
+   0.16
+  ],
+  [
+   "ticker",
+   22.797,
+   1.0,
+   0.18
+  ],
+  [
+   "kaching2",
+   26.874,
+   1.0,
+   0.2
+  ],
+  [
+   "ticker",
+   37.217,
+   0.8,
+   0.16
+  ],
+  [
+   "stamp",
+   40.889,
+   0.7,
+   0.4
+  ],
+  [
+   "pop",
+   43.018,
+   0.72,
+   0.28
+  ]
+ ],
+ "tokens": [
+  {
+   "text": "Aux",
+   "key": "aux",
+   "start": 0.0,
+   "end": 0.18
+  },
+  {
+   "text": "urgences,",
+   "key": "urgences",
+   "start": 0.18,
+   "end": 0.64
+  },
+  {
+   "text": "tu",
+   "key": "tu",
+   "start": 0.78,
+   "end": 0.86
+  },
+  {
+   "text": "paies",
+   "key": "paies",
+   "start": 0.86,
+   "end": 1.06
+  },
+  {
+   "text": "23 €.",
+   "key": "23",
+   "start": 1.06,
+   "end": 1.48
+  },
+  {
+   "text": "Mais",
+   "key": "mais",
+   "start": 2.24,
+   "end": 2.34
+  },
+  {
+   "text": "ton",
+   "key": "ton",
+   "start": 2.34,
+   "end": 2.44
+  },
+  {
+   "text": "passage",
+   "key": "passage",
+   "start": 2.44,
+   "end": 2.7
+  },
+  {
+   "text": "coûte",
+   "key": "coute",
+   "start": 2.7,
+   "end": 2.92
+  },
+  {
+   "text": "en",
+   "key": "en",
+   "start": 2.92,
+   "end": 3.04
+  },
+  {
+   "text": "moyenne",
+   "key": "moyenne",
+   "start": 3.04,
+   "end": 3.28
+  },
+  {
+   "text": "plus",
+   "key": "plus",
+   "start": 3.28,
+   "end": 3.44
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 3.44,
+   "end": 3.58
+  },
+  {
+   "text": "10",
+   "key": "10",
+   "start": 3.58,
+   "end": 3.94
+  },
+  {
+   "text": "fois",
+   "key": "fois",
+   "start": 3.94,
+   "end": 4.12
+  },
+  {
+   "text": "plus !",
+   "key": "plus",
+   "start": 4.12,
+   "end": 4.64
+  },
+  {
+   "text": "Combien",
+   "key": "combien",
+   "start": 4.64,
+   "end": 4.9
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 4.9,
+   "end": 5.06
+  },
+  {
+   "text": "coûte",
+   "key": "coute",
+   "start": 5.06,
+   "end": 5.24
+  },
+  {
+   "text": "vraiment ?",
+   "key": "vraiment",
+   "start": 5.24,
+   "end": 5.78
+  },
+  {
+   "text": "Ta",
+   "key": "ta",
+   "start": 5.78,
+   "end": 5.92
+  },
+  {
+   "text": "part,",
+   "key": "part",
+   "start": 5.92,
+   "end": 6.16
+  },
+  {
+   "text": "d'abord :",
+   "key": "dabord",
+   "start": 6.3,
+   "end": 6.46
+  },
+  {
+   "text": "depuis",
+   "key": "depuis",
+   "start": 6.82,
+   "end": 7.0
+  },
+  {
+   "text": "mars",
+   "key": "mars",
+   "start": 7.0,
+   "end": 7.2
+  },
+  {
+   "text": "2026,",
+   "key": "2026",
+   "start": 7.2,
+   "end": 7.8
+  },
+  {
+   "text": "c'est",
+   "key": "cest",
+   "start": 8.02,
+   "end": 8.1
+  },
+  {
+   "text": "un",
+   "key": "un",
+   "start": 8.1,
+   "end": 8.28
+  },
+  {
+   "text": "forfait",
+   "key": "forfait",
+   "start": 8.28,
+   "end": 8.5
+  },
+  {
+   "text": "fixe",
+   "key": "fixe",
+   "start": 8.5,
+   "end": 8.78
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 8.78,
+   "end": 8.86
+  },
+  {
+   "text": "23 €.",
+   "key": "23",
+   "start": 8.86,
+   "end": 9.26
+  },
+  {
+   "text": "Le",
+   "key": "le",
+   "start": 9.78,
+   "end": 9.88
+  },
+  {
+   "text": "même",
+   "key": "meme",
+   "start": 9.88,
+   "end": 10.1
+  },
+  {
+   "text": "prix",
+   "key": "prix",
+   "start": 10.1,
+   "end": 10.32
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 10.32,
+   "end": 10.48
+  },
+  {
+   "text": "une",
+   "key": "une",
+   "start": 10.48,
+   "end": 10.6
+  },
+  {
+   "text": "simple",
+   "key": "simple",
+   "start": 10.6,
+   "end": 10.82
+  },
+  {
+   "text": "consultation…",
+   "key": "consultation",
+   "start": 10.82,
+   "end": 11.34
+  },
+  {
+   "text": "que",
+   "key": "que",
+   "start": 11.34,
+   "end": 11.84
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 11.84,
+   "end": 12.0
+  },
+  {
+   "text": "une",
+   "key": "une",
+   "start": 12.0,
+   "end": 12.12
+  },
+  {
+   "text": "radio",
+   "key": "radio",
+   "start": 12.12,
+   "end": 12.5
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 12.5,
+   "end": 12.66
+  },
+  {
+   "text": "des",
+   "key": "des",
+   "start": 12.66,
+   "end": 12.76
+  },
+  {
+   "text": "points",
+   "key": "points",
+   "start": 12.76,
+   "end": 12.9
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 12.9,
+   "end": 13.02
+  },
+  {
+   "text": "suture !",
+   "key": "suture",
+   "start": 13.02,
+   "end": 13.4
+  },
+  {
+   "text": "Et",
+   "key": "et",
+   "start": 13.6,
+   "end": 13.68
+  },
+  {
+   "text": "si",
+   "key": "si",
+   "start": 13.68,
+   "end": 13.78
+  },
+  {
+   "text": "ta",
+   "key": "ta",
+   "start": 13.78,
+   "end": 13.88
+  },
+  {
+   "text": "mutuelle",
+   "key": "mutuelle",
+   "start": 13.88,
+   "end": 14.2
+  },
+  {
+   "text": "est «",
+   "key": "est",
+   "start": 14.2,
+   "end": 14.4
+  },
+  {
+   "text": "responsable »,",
+   "key": "responsable",
+   "start": 14.4,
+   "end": 15.12
+  },
+  {
+   "text": "c'est",
+   "key": "cest",
+   "start": 15.34,
+   "end": 15.48
+  },
+  {
+   "text": "elle",
+   "key": "elle",
+   "start": 15.48,
+   "end": 15.74
+  },
+  {
+   "text": "qui",
+   "key": "qui",
+   "start": 15.74,
+   "end": 15.88
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 15.88,
+   "end": 16.0
+  },
+  {
+   "text": "rembourse.",
+   "key": "rembourse",
+   "start": 16.0,
+   "end": 16.28
+  },
+  {
+   "text": "Tu",
+   "key": "tu",
+   "start": 16.56,
+   "end": 16.68
+  },
+  {
+   "text": "es",
+   "key": "es",
+   "start": 16.68,
+   "end": 16.74
+  },
+  {
+   "text": "hospitalisé ?",
+   "key": "hospitalise",
+   "start": 16.74,
+   "end": 17.42
+  },
+  {
+   "text": "Pas",
+   "key": "pas",
+   "start": 17.42,
+   "end": 17.52
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 17.52,
+   "end": 17.62
+  },
+  {
+   "text": "forfait",
+   "key": "forfait",
+   "start": 17.62,
+   "end": 17.8
+  },
+  {
+   "text": "urgences,",
+   "key": "urgences",
+   "start": 17.8,
+   "end": 18.2
+  },
+  {
+   "text": "mais",
+   "key": "mais",
+   "start": 18.2,
+   "end": 18.5
+  },
+  {
+   "text": "23 €",
+   "key": "23",
+   "start": 18.5,
+   "end": 18.86
+  },
+  {
+   "text": "par",
+   "key": "par",
+   "start": 19.18,
+   "end": 19.32
+  },
+  {
+   "text": "jour",
+   "key": "jour",
+   "start": 19.32,
+   "end": 19.48
+  },
+  {
+   "text": "d'hôpital.",
+   "key": "dhopital",
+   "start": 19.48,
+   "end": 19.86
+  },
+  {
+   "text": "Maintenant,",
+   "key": "maintenant",
+   "start": 20.06,
+   "end": 20.34
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 20.66,
+   "end": 20.74
+  },
+  {
+   "text": "vrai",
+   "key": "vrai",
+   "start": 20.74,
+   "end": 20.92
+  },
+  {
+   "text": "prix.",
+   "key": "prix",
+   "start": 20.92,
+   "end": 21.18
+  },
+  {
+   "text": "En",
+   "key": "en",
+   "start": 21.44,
+   "end": 21.52
+  },
+  {
+   "text": "2023,",
+   "key": "2023",
+   "start": 21.52,
+   "end": 21.96
+  },
+  {
+   "text": "les",
+   "key": "les",
+   "start": 22.32,
+   "end": 22.38
+  },
+  {
+   "text": "urgences",
+   "key": "urgences",
+   "start": 22.38,
+   "end": 22.7
+  },
+  {
+   "text": "ont",
+   "key": "ont",
+   "start": 22.7,
+   "end": 22.8
+  },
+  {
+   "text": "coûté",
+   "key": "coute",
+   "start": 22.8,
+   "end": 23.06
+  },
+  {
+   "text": "5,6",
+   "key": "56",
+   "start": 23.06,
+   "end": 23.92
+  },
+  {
+   "text": "milliards",
+   "key": "milliards",
+   "start": 23.92,
+   "end": 24.16
+  },
+  {
+   "text": "d'euros,",
+   "key": "deuros",
+   "start": 24.16,
+   "end": 24.54
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 24.54,
+   "end": 24.8
+  },
+  {
+   "text": "20,8",
+   "key": "208",
+   "start": 24.8,
+   "end": 25.58
+  },
+  {
+   "text": "millions",
+   "key": "millions",
+   "start": 25.58,
+   "end": 25.8
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 25.8,
+   "end": 25.9
+  },
+  {
+   "text": "passages.",
+   "key": "passages",
+   "start": 25.9,
+   "end": 26.12
+  },
+  {
+   "text": "Ça",
+   "key": "ca",
+   "start": 26.5,
+   "end": 26.62
+  },
+  {
+   "text": "fait",
+   "key": "fait",
+   "start": 26.62,
+   "end": 26.72
+  },
+  {
+   "text": "environ",
+   "key": "environ",
+   "start": 26.72,
+   "end": 26.98
+  },
+  {
+   "text": "270 €",
+   "key": "270",
+   "start": 26.98,
+   "end": 27.4
+  },
+  {
+   "text": "par",
+   "key": "par",
+   "start": 28.0,
+   "end": 28.16
+  },
+  {
+   "text": "passage,",
+   "key": "passage",
+   "start": 28.16,
+   "end": 28.56
+  },
+  {
+   "text": "en",
+   "key": "en",
+   "start": 28.56,
+   "end": 28.8
+  },
+  {
+   "text": "moyenne.",
+   "key": "moyenne",
+   "start": 28.8,
+   "end": 29.18
+  },
+  {
+   "text": "Et",
+   "key": "et",
+   "start": 29.18,
+   "end": 29.42
+  },
+  {
+   "text": "95 %",
+   "key": "95",
+   "start": 29.42,
+   "end": 30.3
+  },
+  {
+   "text": "sont",
+   "key": "sont",
+   "start": 30.3,
+   "end": 30.5
+  },
+  {
+   "text": "payés",
+   "key": "payes",
+   "start": 30.5,
+   "end": 30.76
+  },
+  {
+   "text": "par",
+   "key": "par",
+   "start": 30.76,
+   "end": 30.84
+  },
+  {
+   "text": "l'Assurance",
+   "key": "lassurance",
+   "start": 30.84,
+   "end": 31.24
+  },
+  {
+   "text": "maladie…",
+   "key": "maladie",
+   "start": 31.24,
+   "end": 31.72
+  },
+  {
+   "text": "donc",
+   "key": "donc",
+   "start": 31.86,
+   "end": 31.94
+  },
+  {
+   "text": "surtout",
+   "key": "surtout",
+   "start": 31.94,
+   "end": 32.32
+  },
+  {
+   "text": "par",
+   "key": "par",
+   "start": 32.32,
+   "end": 32.58
+  },
+  {
+   "text": "tes",
+   "key": "tes",
+   "start": 32.58,
+   "end": 32.765
+  },
+  {
+   "text": "cotisations",
+   "key": "cotisations",
+   "start": 32.765,
+   "end": 33.32
+  },
+  {
+   "text": "et",
+   "key": "et",
+   "start": 33.32,
+   "end": 33.58
+  },
+  {
+   "text": "ta",
+   "key": "ta",
+   "start": 33.58,
+   "end": 33.68
+  },
+  {
+   "text": "CSG.",
+   "key": "csg",
+   "start": 33.68,
+   "end": 34.1
+  },
+  {
+   "text": "Bonus :",
+   "key": "bonus",
+   "start": 34.3,
+   "end": 34.92
+  },
+  {
+   "text": "en",
+   "key": "en",
+   "start": 34.92,
+   "end": 35.06
+  },
+  {
+   "text": "2023,",
+   "key": "2023",
+   "start": 35.06,
+   "end": 35.58
+  },
+  {
+   "text": "la",
+   "key": "la",
+   "start": 35.92,
+   "end": 36.0
+  },
+  {
+   "text": "moitié",
+   "key": "moitie",
+   "start": 36.0,
+   "end": 36.38
+  },
+  {
+   "text": "des",
+   "key": "des",
+   "start": 36.38,
+   "end": 36.48
+  },
+  {
+   "text": "patients",
+   "key": "patients",
+   "start": 36.48,
+   "end": 36.8
+  },
+  {
+   "text": "sont",
+   "key": "sont",
+   "start": 36.8,
+   "end": 36.96
+  },
+  {
+   "text": "restés",
+   "key": "restes",
+   "start": 36.96,
+   "end": 37.24
+  },
+  {
+   "text": "plus",
+   "key": "plus",
+   "start": 37.24,
+   "end": 37.36
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 37.36,
+   "end": 37.48
+  },
+  {
+   "text": "3",
+   "key": "3",
+   "start": 37.48,
+   "end": 37.82
+  },
+  {
+   "text": "heures",
+   "key": "heures",
+   "start": 37.82,
+   "end": 38.06
+  },
+  {
+   "text": "aux",
+   "key": "aux",
+   "start": 38.06,
+   "end": 38.18
+  },
+  {
+   "text": "urgences.",
+   "key": "urgences",
+   "start": 38.18,
+   "end": 38.68
+  },
+  {
+   "text": "Bref,",
+   "key": "bref",
+   "start": 38.82,
+   "end": 39.06
+  },
+  {
+   "text": "ces",
+   "key": "ces",
+   "start": 39.34,
+   "end": 39.46
+  },
+  {
+   "text": "23 €,",
+   "key": "23",
+   "start": 39.46,
+   "end": 39.76
+  },
+  {
+   "text": "ce",
+   "key": "ce",
+   "start": 40.28,
+   "end": 40.36
+  },
+  {
+   "text": "n'est",
+   "key": "nest",
+   "start": 40.36,
+   "end": 40.5
+  },
+  {
+   "text": "pas",
+   "key": "pas",
+   "start": 40.5,
+   "end": 40.66
+  },
+  {
+   "text": "le",
+   "key": "le",
+   "start": 40.66,
+   "end": 40.78
+  },
+  {
+   "text": "prix",
+   "key": "prix",
+   "start": 40.78,
+   "end": 40.96
+  },
+  {
+   "text": "de",
+   "key": "de",
+   "start": 40.96,
+   "end": 40.98
+  },
+  {
+   "text": "tes",
+   "key": "tes",
+   "start": 40.98,
+   "end": 41.08
+  },
+  {
+   "text": "soins.",
+   "key": "soins",
+   "start": 41.08,
+   "end": 41.38
+  },
+  {
+   "text": "C'est",
+   "key": "cest",
+   "start": 41.54,
+   "end": 41.7
+  },
+  {
+   "text": "juste",
+   "key": "juste",
+   "start": 41.7,
+   "end": 41.94
+  },
+  {
+   "text": "ta",
+   "key": "ta",
+   "start": 41.94,
+   "end": 42.3
+  },
+  {
+   "text": "part.",
+   "key": "part",
+   "start": 42.3,
+   "end": 42.56
+  },
+  {
+   "text": "Abonne-toi",
+   "key": "abonnetoi",
+   "start": 42.8,
+   "end": 43.24
+  },
+  {
+   "text": "pour",
+   "key": "pour",
+   "start": 43.24,
+   "end": 43.4
+  },
+  {
+   "text": "savoir",
+   "key": "savoir",
+   "start": 43.4,
+   "end": 43.6
+  },
+  {
+   "text": "combien",
+   "key": "combien",
+   "start": 43.6,
+   "end": 43.94
+  },
+  {
+   "text": "ça",
+   "key": "ca",
+   "start": 43.94,
+   "end": 44.16
+  },
+  {
+   "text": "coûte",
+   "key": "coute",
+   "start": 44.16,
+   "end": 44.34
+  },
+  {
+   "text": "vraiment.",
+   "key": "vraiment",
+   "start": 44.34,
+   "end": 44.68
+  }
+ ]
+}

@@ -315,3 +315,152 @@ Comment marche la création monétaire : quand une banque accorde un crédit, el
 Comment ça marche vraiment ? Épisode 8. Abonne-toi pour les prochains épisodes !
 Sources : Banque de France, « Comment est créée la monnaie ? » (ABC de l'économie) ; Banque de France, « L'éco en bref : la monnaie ».
 #shorts #banque #argent #economie #lesaviezvous
+
+---
+
+## Publication 14 — Comment ça marche vraiment ? #9 · L'inflation (09/11/2026 09h00)
+Fichier : `inflation_FR.mp4`
+
+**TikTok**
+Ton billet de 50 € perd de la valeur… même rangé dans ton tiroir 💶📉 Les prix ont pris +3,4 % en un an en France, et même à 2 %, ton billet perd un tiers de sa valeur en 20 ans.
+Ton salaire a suivi, toi ? 👇
+#inflation #pouvoirdachat #argent #economie #lesaviezvous #apprendresurtiktok #pourtoi
+
+**Instagram Reels**
+Ton billet de 50 € perd de la valeur… même rangé dans ton tiroir 💶📉
+En un an, les prix ont pris +3,4 % en France (Insee, octobre 2026) : ce qui coûtait 50 € en coûte maintenant 51,70 €. Et même avec 2 % d'inflation par an, ton billet perd environ un tiers de sa valeur en 20 ans.
+Ton salaire a suivi, toi ? Dis-le en commentaire 👇 et abonne-toi pour comprendre comment ça marche, vraiment.
+#inflation #pouvoirdachat #argent #economie #finance #culturegenerale #lesaviezvous #apprendre #reelsfrance
+
+**YouTube Shorts**
+Titre : Ton billet de 50 € perd de la valeur… même dans ton tiroir 💶 #shorts
+Description :
+Comment marche l'inflation. En France, les prix à la consommation ont augmenté de 3,4 % sur un an en octobre 2026 (estimation provisoire de l'Insee) : ce qui coûtait 50 € il y a un an coûte environ 51,70 €. Ton billet, lui, garde la même valeur faciale : il achète donc moins. L'Insee mesure l'inflation avec environ 160 000 prix relevés sur le terrain, complétés par d'autres sources dont les données de caisse des supermarchés ; chaque produit pèse dans l'indice selon sa part dans les dépenses des ménages. En octobre 2026, la hausse vient surtout de l'énergie (+24,1 % sur un an, tirée par le gaz et les produits pétroliers), contre +2,7 % pour les services, +1,2 % pour l'alimentation et −0,2 % pour les produits manufacturés. La BCE vise une inflation de 2 % : elle a relevé ses taux en juin et en septembre 2026 (taux de dépôt à 2,50 %), ce qui rend le crédit plus cher, freine les dépenses et ralentit les prix. Même à 2 % par an, un billet perd environ un tiers de son pouvoir d'achat en 20 ans. Si un salaire augmente moins vite que les prix, le pouvoir d'achat baisse.
+Comment ça marche vraiment ? Épisode 9. Abonne-toi pour les prochains épisodes !
+Sources : Insee, Informations rapides n° 266, indice des prix à la consommation, octobre 2026 (provisoire) ; Insee, « Les données de caisse : une nouvelle source pour le calcul de l'IPC » ; décisions de politique monétaire de la BCE (juin, septembre et octobre 2026).
+#shorts #inflation #pouvoirdachat #argent #lesaviezvous
+
+---
+
+## Publication 15 — Combien ça coûte vraiment ? #6 · Un découvert bancaire (09/11/2026 12h00)
+Fichier : `decouvert_FR.mp4`
+
+**TikTok**
+100 € de découvert pendant 7 jours : 31 centimes d'intérêts… ou plus de 60 € avec les frais 🏦💸 Le plus cher, ce n'est pas le taux.
+Ça t'est déjà arrivé ? 👇
+#banque #decouvert #fraisbancaires #argent #pouvoirdachat #lesaviezvous #pourtoi
+
+**Instagram Reels**
+100 € de découvert pendant 7 jours : 31 centimes d'intérêts… ou plus de 60 € avec les frais 🏦💸
+Les agios se calculent au jour près, donc ils restent petits. Ce qui coûte cher, ce sont les commissions d'intervention (jusqu'à 8 € par opération et 80 € par mois) et les rejets de prélèvement (jusqu'à 20 €).
+Ça t'est déjà arrivé ? Dis-le en commentaire 👇 et abonne-toi pour savoir combien ça coûte, vraiment.
+Exemple avec un taux de 16 % par an ; les frais réels dépendent de ta banque.
+#banque #decouvert #fraisbancaires #argent #budget #pouvoirdachat #culturegenerale #lesaviezvous #reelsfrance
+
+**YouTube Shorts**
+Titre : 100 € de découvert : 31 centimes… ou plus de 60 € 💸 #shorts
+Description :
+Ce que coûte vraiment un découvert bancaire en France, sur un exemple : 100 € de découvert pendant 7 jours. Les agios (intérêts débiteurs) se calculent au jour près : à un taux de 16 % par an, 100 € × 7 jours × 16 % / 365 ≈ 0,31 €. Certaines banques facturent aussi un minimum forfaitaire d'agios par trimestre (40 banques sur 86 selon l'Observatoire des tarifs bancaires 2023). Si tu dépasses ton découvert autorisé, chaque opération que la banque accepte malgré tout peut entraîner une commission d'intervention, plafonnée à 8 € par opération et 80 € par mois (4 € et 20 € pour les clients en situation de fragilité financière) : 5 paiements = 40 €. Un prélèvement rejeté peut coûter jusqu'à 20 € (et jamais plus que son montant). Total de l'exemple : 60,31 €. Le taux et les frais réels dépendent de ta banque et de ta convention de compte.
+Combien ça coûte vraiment ? Épisode 6. Abonne-toi pour les prochains épisodes !
+Sources : Code monétaire et financier (art. L. 312-1-3, R. 312-4-1, R. 312-4-2, D. 133-6) ; INC, « La tarification bancaire en cas d'incidents de paiement » ; La finance pour tous, « Les agios » et « Découvert bancaire : plus cher en raison d'une multiplication des frais » (2025).
+#shorts #banque #decouvert #argent #lesaviezvous
+
+---
+
+## Publication 16 — Comment ça marche vraiment ? #10 · Le réveil (inertie du sommeil) (09/11/2026 19h00)
+Fichier : `reveil_FR.mp4`
+
+**TikTok**
+Juste après ton réveil, ton cerveau peut marcher moins bien… qu'après une nuit blanche 😵‍💫⏰ Ça s'appelle l'inertie du sommeil.
+T'es plutôt zombie combien de temps le matin ? 👇
+#sommeil #reveil #cerveau #science #lesaviezvous #apprendresurtiktok #pourtoi
+
+**Instagram Reels**
+Juste après ton réveil, ton cerveau peut marcher moins bien… qu'après une nuit blanche 😵‍💫⏰
+Ça s'appelle l'inertie du sommeil : au réveil, ton cerveau ne repasse pas tout de suite en plein régime. C'est le pire dans les premières minutes, surtout si tu te réveilles en plein sommeil profond.
+T'es plutôt zombie combien de temps le matin ? Dis-le en commentaire 👇 et abonne-toi pour comprendre comment ça marche, vraiment.
+Contenu informatif, pas un avis médical.
+#sommeil #reveil #cerveau #science #sante #culturegenerale #lesaviezvous #apprendre #reelsfrance
+
+**YouTube Shorts**
+Titre : Ton cerveau au réveil : pire qu'après une nuit blanche ⏰ #shorts
+Description :
+Comment marche le réveil : l'inertie du sommeil. La nuit, on dort par cycles d'environ 90 minutes, 4 à 6 par nuit, qui enchaînent sommeil léger, sommeil profond et sommeil paradoxal. Au réveil, le cerveau ne repasse pas instantanément en plein régime : c'est l'inertie du sommeil, une période de somnolence, de désorientation et de baisse des performances. Elle est la plus forte dans les toutes premières minutes ; les performances reviennent souvent en 15 à 30 minutes, mais la récupération complète demande au moins une heure. Elle est plus marquée après un manque de sommeil, ou quand on se réveille pendant la nuit biologique (le creux de l'horloge interne). Dans une étude publiée dans le JAMA en 2006, des volontaires réveillés après 8 heures de sommeil calculaient moins bien dans les premières minutes qu'après plus de 24 heures sans dormir. Contenu informatif, pas un avis médical.
+Comment ça marche vraiment ? Épisode 10. Abonne-toi pour les prochains épisodes !
+Sources : Santé.fr, « Les cycles du sommeil » ; Hilditch C. J. & McHill A. W., « Sleep inertia: current insights », Nature and Science of Sleep, 2019 ; Wertz A. T. et al., « Effects of sleep inertia on cognition », JAMA, 2006 (Université du Colorado).
+#shorts #sommeil #cerveau #science #lesaviezvous
+
+---
+
+## Publication 17 — Comment ça marche vraiment ? #11 · La retraite par répartition (10/11/2026 09h00)
+Fichier : `retraite_FR.mp4`
+
+**TikTok**
+Ce que tu cotises pour ta retraite n'est pas mis de côté pour toi : c'est versé aux retraités… le mois même 💶👵 Et il y a moins de 2 actifs pour 1 retraité.
+Tu le savais ? 👇
+#retraite #argent #financetok #salaire #lesaviezvous #apprendresurtiktok #pourtoi
+
+**Instagram Reels**
+Tes cotisations retraite ne sont pas mises de côté pour toi. Elles sont versées aux retraités… le mois même 💶
+Sur 100 € de salaire brut, jusqu'à 28 € partent pour la retraite (11 € pour toi, 17 € pour ton employeur). En échange, tu gagnes des droits : trimestres et points. Et ta pension, ce sont les actifs de demain qui la paieront. Problème : 30,4 millions de cotisants pour 17,2 millions de retraités. Moins de 2 pour 1 🤯
+Tu le savais ? Dis-le en commentaire 👇 et abonne-toi pour comprendre comment ça marche, vraiment.
+Taux 2026 sous le plafond de la Sécu, avant allègements ; cotisants et retraités en 2023.
+#retraite #argent #salaire #cotisations #economie #culturegenerale #lesaviezvous #apprendre #reelsfrance
+
+**YouTube Shorts**
+Titre : Tes cotisations retraite ? Dépensées le mois même 💶 #shorts
+Description :
+Comment marche la retraite par répartition en France. Les cotisations prélevées sur les salaires ne sont pas placées sur un compte à ton nom : elles financent les pensions versées aux retraités d'aujourd'hui. En 2026, sous le plafond de la Sécurité sociale (4 005 € par mois), les cotisations retraite représentent environ 28 % du salaire brut : 11,31 % pour le salarié (vieillesse plafonnée 6,90 %, déplafonnée 0,40 %, Agirc-Arrco 3,15 %, CEG 0,86 %) et 16,67 % pour l'employeur (8,55 % + 2,11 % + 4,72 % + 1,29 %), avant les allègements de cotisations patronales sur les bas salaires. En échange, le salarié acquiert des droits (trimestres au régime de base, points à l'Agirc-Arrco) qui serviront à calculer sa pension, payée par les actifs de demain. En 2023, on comptait 30,4 millions de cotisants pour 17,2 millions de retraités, soit 1,77 cotisant par retraité (Drees, Insee). En 2025, les dépenses de retraite atteignaient 422 milliards d'euros, 14,1 % du PIB et 24,3 % des dépenses publiques (COR). Les débats sur l'âge de départ, le niveau des cotisations et le montant des pensions portent sur le partage de cette même enveloppe.
+Comment ça marche vraiment ? Épisode 11. Abonne-toi pour les prochains épisodes !
+Sources : Cleiss, taux de cotisations au 1er janvier 2026 ; Insee, « Cotisants, retraités et rapport démographique tous régimes » (Drees, déc. 2025) ; Conseil d'orientation des retraites, rapport annuel 2026 (synthèse).
+#shorts #retraite #argent #economie #lesaviezvous
+
+---
+
+## Publication 18 — Combien ça coûte vraiment ? #7 · Un passage aux urgences (10/11/2026 12h00)
+Fichier : `urgences_FR.mp4`
+
+**TikTok**
+Aux urgences, tu paies 23 €. Ton passage coûte en moyenne environ 270 € 🏥💸 Et la moitié des patients y restent plus de 3 heures.
+Tu y es allé récemment ? 👇
+#urgences #hopital #sante #securitesociale #argent #lesaviezvous #pourtoi
+
+**Instagram Reels**
+Aux urgences, tu paies 23 €. Ton passage coûte en moyenne plus de 10 fois plus 🏥
+Depuis mars 2026, le forfait patient urgences est fixe : 23 €, que tu aies une simple consultation ou une radio et des points de suture (remboursé par une mutuelle « responsable »). Hospitalisé ? Pas de forfait urgences, mais 23 € par jour d'hôpital. Le vrai prix : 5,6 milliards d'euros pour 20,8 millions de passages en 2023, soit environ 270 € par passage, payés à 95 % par l'Assurance maladie 🤯
+Tu le savais ? Dis-le en commentaire 👇 et abonne-toi pour savoir combien ça coûte, vraiment.
+Moyenne calculée : coût total ÷ nombre de passages.
+#urgences #hopital #sante #securitesociale #argent #culturegenerale #lesaviezvous #apprendre #reelsfrance
+
+**YouTube Shorts**
+Titre : Urgences : tu paies 23 €, ça coûte 10 fois plus 🏥 #shorts
+Description :
+Ce que coûte vraiment un passage aux urgences en France. Ta part : depuis le 1er mars 2026, le forfait patient urgences (FPU) est de 23 € (19,61 € auparavant) pour un passage non suivi d'une hospitalisation, quel que soit le soin reçu ; tarif réduit de 9,96 € en ALD, exonérations pour certaines situations (femmes enceintes, pension d'invalidité…). Il est pris en charge par les contrats de complémentaire santé « responsables ». En cas d'hospitalisation, pas de FPU mais le forfait journalier hospitalier (23 € par jour). Le vrai prix : selon la Cour des comptes, les urgences ont coûté environ 5,6 milliards d'euros en 2023, dont 5,3 milliards (95 %) pour l'Assurance maladie ; la Drees compte 20,8 millions de passages la même année. Rapporté au nombre de passages, cela fait environ 270 € par passage en moyenne (notre calcul ; le coût réel varie beaucoup selon les soins). La Drees relève aussi qu'en 2023, la moitié des patients sont restés plus de 3 heures aux urgences, 45 minutes de plus qu'en 2013.
+Combien ça coûte vraiment ? Épisode 7. Abonne-toi pour les prochains épisodes !
+Sources : arrêté du 27 février 2026 (JO du 28/02/2026, FHF) ; Cour des comptes, « L'accueil et le traitement des urgences à l'hôpital » (19/11/2024) ; Drees, « Les établissements de santé, édition 2025 », fiche 19 ; Drees, Études et résultats n° 1334 (mars 2025).
+#shorts #urgences #sante #argent #lesaviezvous
+
+---
+
+## Publication 19 — Comment ça marche vraiment ? #12 · L'effet placebo (10/11/2026 19h00)
+Fichier : `placebo_FR.mp4`
+
+**TikTok**
+Une pilule de sucre peut te soulager… même quand tu SAIS que c'est du sucre 💊🧠 La même fausse pilule marche mieux quand on la dit chère.
+Tu y crois ? 👇
+#placebo #cerveau #science #sante #lesaviezvous #apprendresurtiktok #pourtoi
+
+**Instagram Reels**
+Une pilule de sucre peut te soulager… même quand tu sais que c'est du sucre 💊
+Quand ton cerveau s'attend à aller mieux, il libère des endorphines et de la dopamine, et l'activité des zones de la douleur baisse. Dans une étude, la même fausse pilule a soulagé 85 % des gens quand on la disait chère, contre 61 % quand elle était « soldée ». Et à Harvard, des patients qui savaient prendre un placebo ont été 59 % à se sentir soulagés, contre 35 % sans rien 🤯 L'inverse existe aussi : l'effet nocebo.
+Tu y crois ? Dis-le en commentaire 👇 et abonne-toi pour comprendre comment ça marche, vraiment.
+Un placebo ne guérit pas une maladie. Contenu informatif, pas un avis médical.
+#placebo #cerveau #science #sante #psychologie #culturegenerale #lesaviezvous #apprendre #reelsfrance
+
+**YouTube Shorts**
+Titre : Une pilule de sucre marche… même si tu le sais 💊 #shorts
+Description :
+Comment marche l'effet placebo. Un placebo ne contient aucune substance active, mais l'attente d'aller mieux déclenche de vraies réactions : augmentation de la sécrétion d'endorphines et de dopamine, baisse de l'activité de régions cérébrales liées à la douleur (Santé.fr). Le contexte compte : dans une étude publiée dans le JAMA en 2008 (Waber, Ariely et al.), 85 % des participants ont ressenti moins de douleur (légères décharges électriques) avec une fausse pilule présentée à 2,50 $ la dose, contre 61 % quand elle était présentée à 10 cents. À Harvard (Kaptchuk et al., PLoS ONE, 2010), 80 patients souffrant du syndrome de l'intestin irritable ont été suivis 3 semaines : 59 % de ceux qui prenaient un placebo, en le sachant, ont rapporté un soulagement suffisant, contre 35 % sans traitement (petite étude, à confirmer). L'effet inverse, le nocebo, existe aussi : selon une analyse des essais des vaccins Covid-19 (JAMA Network Open, 2022), environ 76 % des effets indésirables généraux après la première dose seraient attribuables à l'effet nocebo. Un placebo ne guérit pas une maladie : il agit surtout sur ce que l'on ressent, comme la douleur. Contenu informatif, pas un avis médical.
+Comment ça marche vraiment ? Épisode 12. Abonne-toi pour les prochains épisodes !
+Sources : Santé.fr, « Effet placebo, effet nocebo, aucun effet, vraiment ? » ; Kaptchuk T. J. et al., PLoS ONE, 2010 ; Waber R. L. et al., JAMA, 2008 ; Haas J. W. et al., JAMA Network Open, 2022.
+#shorts #placebo #cerveau #science #lesaviezvous
