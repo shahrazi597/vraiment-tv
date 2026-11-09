@@ -58,7 +58,10 @@ Champs : `video` (nom du mp4), `when` (`AAAA-MM-JJTHH:MM:00`, heure de Bruxelles
 python3 kit/publish.py zernio queue/<fichier>.json        # TikTok + YouTube à l'heure "when"
 python3 kit/publish.py ig-prepare queue/<fichier>.json    # conteneur Instagram prêt (publié à l'heure par GitHub Actions / la session de contrôle)
 ```
-Programmer chaque vidéo **dès qu'elle est prête** (ne pas attendre les 3).
+Programmer chaque vidéo **dès qu'elle est prête** (ne pas attendre les 3), puis **pousser tout de suite son fichier queue** — sans lui, la publication Instagram ne peut pas partir :
+```bash
+git add queue/<fichier>.json && git commit -m "Programmé : <sujet>" && git pull --rebase -q && git push -q
+```
 
 ## 5. Ranger
 - `kit/sujets.md` : passer le sujet en 📅 avec la date.
