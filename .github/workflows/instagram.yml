@@ -4,9 +4,7 @@ name: Instagram — publication des Reels
 # Deux jeux d'horaires UTC : heure d'hiver (UTC+1) et heure d'été (UTC+2).
 # Le script choisit le créneau, attend l'heure exacte, vérifie qu'il n'est pas déjà publié, puis publie.
 on:
-  schedule:
-    - cron: "40 7,10,17 * * *"   # hiver : 8h40, 11h40, 18h40 à Bruxelles
-    - cron: "40 6,9,16 * * *"    # été : 8h40, 11h40, 18h40 à Bruxelles
+  # Horaires désactivés le 10/11/2026 : Razi publie lui-même. Lancement manuel seulement.
   workflow_dispatch:
     inputs:
       slot:

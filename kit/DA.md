@@ -51,11 +51,10 @@ Une seule identité pour toutes les séries : **Combien ça coûte vraiment ?**,
 - Logo : « V? », V blanc et point d'interrogation jaune (#FFD23F) sur fond noir bleuté (#0B0C12). Fichier : `kit/assets/logo.png`.
 
 ## Publication
-- 3 vidéos par jour, chacune sur TikTok, Instagram Reels et YouTube Shorts.
-- Horaires (heure de Bruxelles) : **9 h 00** et **19 h 00** → « Comment ça marche vraiment ? » ; **12 h 00** → « Combien ça coûte vraiment ? ».
-- Les 3 vidéos sont produites la veille au soir (voir `PRODUCTION.md`), puis programmées : TikTok et YouTube via Zernio, Instagram via l'API officielle (une tâche publie le Reel à l'heure).
-- Chaque publication a sa description et ses hashtags propres à la plateforme, sans mention « généré par IA » dans le texte (le label IA officiel de TikTok et YouTube reste activé).
-- Budget ElevenLabs (121 000 crédits/mois) : une seule prise de voix par vidéo (≈ 1 000 crédits pour 45 s), une seule image IA quand elle apporte vraiment (environ 1 vidéo sur 3), bruitages réutilisés depuis la bibliothèque.
+- **Depuis le 10/11/2026 : publication manuelle par Razi.** Plus aucune tâche planifiée, plus de programmation Zernio ni d'envoi Instagram automatique (pour économiser les crédits).
+- Claude produit les vidéos sur demande et fournit pour chacune le fichier MP4 et les textes TikTok, Instagram et YouTube (description + hashtags).
+- Horaires conseillés si Razi veut garder le rythme : 9 h et 19 h « Comment ça marche vraiment ? », 12 h « Combien ça coûte vraiment ? ».
+- Budget ElevenLabs (121 000 crédits/mois) : une seule prise de voix par vidéo, une seule image IA quand elle apporte vraiment.
 
 ## Fond
 - Faits vérifiés et sources affichées sur la carte de fin.
